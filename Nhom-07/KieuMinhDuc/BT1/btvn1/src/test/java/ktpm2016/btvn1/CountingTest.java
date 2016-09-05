@@ -11,23 +11,28 @@ public class CountingTest
     extends TestCase
 {
    public void testIsPrime(){
-	   Counting app = new Counting();
-	   assertEquals(false, app.isPrime(8));	  
+	   Counting counting = new Counting();
+	   assertEquals(false, counting.isPrime(8));	  
    }
    public void testIsEven(){
-	   Counting app = new Counting();
-	   assertEquals(true, app.isEven(0));	  
+	   Counting counting = new Counting();
+	   assertEquals(true, counting.isEven(0));	  
+   }
+   public void testIsPrimeAndEven(){
+	   Counting counting = new Counting();
+	   assertEquals(true, counting.isEven(4));	  
    }
    public void testEvenCount(){
-	   Counting app = new Counting();
-	   assertEquals(250,app.countEvenNumberSmallerThan500());
+	   Counting counting = new Counting();
+	   assertEquals(250,counting.countEvenNumberSmallerThan500());
    }
    public void testPrimeCount(){
-	   Counting app = new Counting();
-	   assertEquals(50,app.countPrimeNumberSmallerThan500());	   
+	   Counting counting = new Counting();
+	   assertEquals(97,counting.countPrimeNumberSmallerThan500());	   
    }
    public void testEvenAndPrimeCount(){
-	   Counting app = new Counting();
-	   assertEquals(15,app.countEvenAndPrimeNumberSmallerThan500());
+	   Counting counting = new Counting();
+	   assertEquals(2,counting.countEvenAndPrimeNumberSmallerThan500());
+	   
    }
 }

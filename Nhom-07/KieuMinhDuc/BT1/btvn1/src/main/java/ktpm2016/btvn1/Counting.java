@@ -1,13 +1,14 @@
 package ktpm2016.btvn1;
 
 /**
- * Counting even and prime number
+ * Counting even and prime number smaller than 500
  *
  */
 public class Counting 
 {
    public int countEvenNumberSmallerThan500(){
-	   int count = 0;
+	   
+	   int count = 0;	
 	   
 	   for ( int i = 0 ; i < 500; i++){
 		   if (isEven(i) ){
@@ -15,10 +16,12 @@ public class Counting
 		   }
 		   
 	   }
+	   
 	   return count;
    }
    public int countPrimeNumberSmallerThan500(){
-	   int count = 0;
+	   
+	   int count = 0;	   
 	   
 	   for ( int i = 0 ; i < 500; i++){
 		   if (isPrime(i) ){
@@ -29,13 +32,12 @@ public class Counting
 	   return count;
    }
    public int countEvenAndPrimeNumberSmallerThan500(){
-	   int count = 0;
 	   
-	   for ( int i = 0 ; i < 500; i++){
-		   if (isPrime(i) ){
-			   if (isEven(i)){
-				   count++;
-			   }
+	   int count = 0;	   
+	   
+	   for ( int i = 0 ; i < 500; i++){		   
+		   if(isPrimAndEven(i)){
+			   count++;
 		   }
 		   
 	   }
@@ -57,4 +59,13 @@ public class Counting
 		   return false;
 	   }
    }
+   boolean isPrimAndEven( int n ){
+	   if(isEven(n)){
+		   if ( isPrime(n)){
+			   return true;
+		   }
+	   }
+	   return false;
+   }
+   
 }
