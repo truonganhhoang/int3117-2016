@@ -18,7 +18,7 @@ Do search for TestNG (Type the text TestNG in Find text box > Click Go button)
 After searching: Click Install button at TestNG for Eclipse area
 Restart Eclipse and select the menu Window / Show View / Other...  and you should see the TestNG view listed in the Java category.  
 
-## Running the tests
+### Running the tests
 Class GreatestCommonDivisorTest.java is a simple test file. You can write more test function there.  
 To run test, Right click / Run As / TestNg Test  
 So you can see the test result in console.  
