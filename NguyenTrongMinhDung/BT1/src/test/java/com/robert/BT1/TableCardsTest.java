@@ -59,13 +59,44 @@ public class TableCardsTest {
 	}
 	
 	@Test
+	public void testContinousThreePairsStrongerThan2() {
+		tableCards1.addCard(Pack.getCardAt(3));
+		
+		tableCards2.addCard(Pack.getCardAt(8));
+		tableCards2.addCard(Pack.getCardAt(4));
+		tableCards2.addCard(Pack.getCardAt(7));
+		tableCards2.addCard(Pack.getCardAt(10));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(14));
+		
+		assertTrue(tableCards2.continousThreePairs());
+		assertEquals(tableCards1.getCardAt(0).getLevel(), 52);
+		assertTrue(tableCards2.isStrongerThan(tableCards1));
+	}
+	
+	@Test
+	public void testContinousThreePairsStrongerThanCoupleOf2() {
+		tableCards1.addCard(Pack.getCardAt(2));
+		tableCards1.addCard(Pack.getCardAt(3));
+		
+		tableCards2.addCard(Pack.getCardAt(8));
+		tableCards2.addCard(Pack.getCardAt(4));
+		tableCards2.addCard(Pack.getCardAt(7));
+		tableCards2.addCard(Pack.getCardAt(10));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(14));
+		
+		assertTrue(tableCards2.continousThreePairs());
+		assertFalse(tableCards2.isStrongerThan(tableCards1));
+	}
+	
+	@Test
 	public void testVeryLongTableCards(){
 		for (int i = 0; i < Pack.numberOfCards; i+=4){
 			tableCards1.addCard(Pack.getCardAt(i));
 		}
-
-		assertTrue(tableCards1.continousCardNumber());
 		
+		assertTrue(tableCards1.continousCardNumber());
 	}
 	
 	@Test

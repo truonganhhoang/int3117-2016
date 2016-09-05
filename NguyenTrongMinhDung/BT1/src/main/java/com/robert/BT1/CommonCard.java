@@ -13,6 +13,11 @@ public class CommonCard {
 		this.level = level;
 	}
 	
+	public CommonCard(int cardNumber, Suit suit) {
+		this.cardNumber = cardNumber;
+		this.suit = suit;
+	}
+	
 	public CommonCard clone(){
 		return new CommonCard(cardNumber, suit, level);
 	}
@@ -100,5 +105,19 @@ public class CommonCard {
 			}
 		}
 		return (level > 0) ? nameOfCardNumber + " " + nameOfSuit : "Joker";
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this)
+			return true;
+		
+		if (obj instanceof CommonCard) {
+			CommonCard otherCard = (CommonCard)obj;
+			
+			return otherCard.cardNumber == this.cardNumber && otherCard.suit == this.suit;
+		}
+		else
+			return false;
 	}
 }
