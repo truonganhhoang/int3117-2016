@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+ 		<title> Test JS </title>
+ 		<script src="lib/angular.min.js"></script>
+ 		<script src="js/app.js"></script>
+ 		<script src="test/testSum.js"></script>
+  </head>
+  <style>
+		.title_ {
+			text-align: center;
+			font-size: 30px;
+			color: Green;
+		}
+		.text-center {
+			text-align: center;
+			font-size: 25px;
+			color: Blue;
+		}
+  </style>
+  <body >
+  	<div ng-controller="appController">
+  		<p class="title_"> Program test SUM OF THE EVEN NUMBER IN ARRAY
+			<p class="text-center"> Array is: {{array}}
+		</p>
+		<div ng-controller="TestController">
+			<p class="text-center"> the sum of the even numbers : {{sum}} 
+		</p>	
+  </body>
+</html>  
