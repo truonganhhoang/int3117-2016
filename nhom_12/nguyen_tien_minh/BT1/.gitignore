@@ -64,8 +64,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-.gitignore
-.idea/BT1.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/workspace.xml
+.idea/
