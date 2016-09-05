@@ -1,0 +1,22 @@
+{
+  "name": "mocha-test",
+  "version": "1.0.0",
+  "description": "Simple Node js project using Mocha as unit test framework.",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trieudh58/mocha-test.git"
+  },
+  "author": "trieudh58",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trieudh58/mocha-test/issues"
+  },
+  "homepage": "https://github.com/trieudh58/mocha-test#readme",
+  "dependencies": {
+    "mocha": "^3.0.2"
+  }
+}
