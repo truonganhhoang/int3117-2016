@@ -1,3 +1,4 @@
+'use strict';
 
 var FibonaciNumberChecker = require('./FibonaciNumberChecker');
 const assert = require('assert');
