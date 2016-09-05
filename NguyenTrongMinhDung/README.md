@@ -40,7 +40,7 @@ Using JUnit to test
  2. Cấp độ của tập các quân bài
     * Cấp tập quân bài thường có thể so sánh được cấp độ khi chúng cùng loại với nhau.
       * Trường hợp ngoại lệ:
-        * Bộ loại 4, 5 (gồm ít nhất 4 quân bài trở lên), 6: đều có thể ra bài sau bộ loại 1 có quân bài số 2 (bất kể là chất gì).
+        * Bộ loại 4, 5 (gồm từ 5 quân bài trở lên), 6: đều có thể ra bài sau bộ loại 1 có quân bài số 2 (bất kể là chất gì).
 	* Còn lại là không hợp lệ
 
     * Trong trường hợp các tập quân bài cùng loại, độ mạnh được quyết định bởi quân bài có cấp cao nhất trong các tập quân bài ấy

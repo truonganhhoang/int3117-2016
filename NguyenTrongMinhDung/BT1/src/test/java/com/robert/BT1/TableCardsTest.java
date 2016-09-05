@@ -37,13 +37,44 @@ public class TableCardsTest {
 	
 	@Test
 	public void testContinousCardNumber(){
+		tableCards1.removeAll();
 		tableCards1.addCard(Pack.getCardAt(4));
 		tableCards1.addCard(Pack.getCardAt(11));
 		tableCards1.addCard(Pack.getCardAt(13));
 		tableCards1.addCard(Pack.getCardAt(18));
-
+		tableCards1.addCard(Pack.getCardAt(23));
+		
 		assertTrue(tableCards1.continousCardNumber());
 		assertFalse(tableCards2.continousCardNumber());
+	}
+	
+	@Test
+	public void testContinousStrongerThan2() {
+		tableCards1.addCard(Pack.getCardAt(3));
+		
+		tableCards2.addCard(Pack.getCardAt(4));
+		tableCards2.addCard(Pack.getCardAt(11));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(18));
+		tableCards2.addCard(Pack.getCardAt(23));
+		
+		assertTrue(tableCards2.continousCardNumber());
+		assertTrue(tableCards2.isStrongerThan(tableCards1));
+	}
+	
+	@Test
+	public void testContinousStrongerThanCoupleOf2() {
+		tableCards1.addCard(Pack.getCardAt(2));
+		tableCards1.addCard(Pack.getCardAt(3));
+		
+		tableCards2.addCard(Pack.getCardAt(4));
+		tableCards2.addCard(Pack.getCardAt(11));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(18));
+		tableCards2.addCard(Pack.getCardAt(23));
+		
+		assertTrue(tableCards2.continousCardNumber());
+		assertFalse(tableCards2.isStrongerThan(tableCards1));
 	}
 	
 	@Test

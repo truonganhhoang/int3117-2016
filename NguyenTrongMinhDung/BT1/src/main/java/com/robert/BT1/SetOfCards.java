@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SetOfCards implements CardActivity {
-	public enum Type{kxd, doi, ba, tu_quy, day, bo_thong};
-	private ArrayList<CommonCard> Cards;
+	public enum Type{kxd, don_le, doi, ba, tu_quy, day, bo_thong};
+	private ArrayList<CommonCard> cards;
 	
 	public SetOfCards(){
-		Cards = new ArrayList<CommonCard>();
+		cards = new ArrayList<CommonCard>();
 	}
 	
 	protected boolean similarCardNumber(){
-		if (Cards.size() <= 4 && Cards.size() > 1){
-			for (int i=0; i<Cards.size()-1; i++){
-				if (Cards.get(i).getCardNumber() != Cards.get(i+1).getCardNumber())
+		if (cards.size() <= 4 && cards.size() > 1){
+			for (int i=0; i<cards.size()-1; i++){
+				if (cards.get(i).getCardNumber() != cards.get(i+1).getCardNumber())
 					return false;
 			}
 			return true;
@@ -25,11 +25,12 @@ public class SetOfCards implements CardActivity {
 	
 	protected boolean continousCardNumber(){
 		sortCards();
-		if (Cards.size() >= 3){
-			if (Cards.get(Cards.size()-1).getCardNumber() == 2){
-				if (Cards.get(Cards.size()-2).getCardNumber() == 14){
-					for (int i=0; i < Cards.size()-2; i++)
-						if (Cards.get(i).getCardNumber() + 1 != Cards.get(i+1).getCardNumber())
+		
+		if (cards.size() >= 3){
+			if (cards.get(cards.size()-1).getCardNumber() == 2){
+				if (cards.get(cards.size()-2).getCardNumber() == 14){
+					for (int i=0; i < cards.size()-2; i++)
+						if (cards.get(i).getCardNumber() + 1 != cards.get(i+1).getCardNumber())
 							return false;
 					return true;
 				}	
@@ -37,8 +38,8 @@ public class SetOfCards implements CardActivity {
 					return false;
 			}
 			else
-				for (int i=0; i < Cards.size()-1; i++)
-					if (Cards.get(i).getCardNumber() + 1 != Cards.get(i+1).getCardNumber())
+				for (int i=0; i < cards.size()-1; i++)
+					if (cards.get(i).getCardNumber() + 1 != cards.get(i+1).getCardNumber())
 						return false;
 			return true;
 		}
@@ -48,15 +49,15 @@ public class SetOfCards implements CardActivity {
 	
 	protected boolean continousThreePairs(){
 		sortCards();
-		if (Cards.size() == 6){
-			for (int i=0; i<Cards.size()-2; i+=2)
-				if (Cards.get(i).getCardNumber() != Cards.get(i+1).getCardNumber())
+		if (cards.size() == 6){
+			for (int i=0; i<cards.size()-2; i+=2)
+				if (cards.get(i).getCardNumber() != cards.get(i+1).getCardNumber())
 					return false;
-			if (Cards.get(4).getCardNumber() == 2)
-				return (Cards.get(3).getCardNumber() == 14 && Cards.get(1).getCardNumber() == 13);
+			if (cards.get(4).getCardNumber() == 2)
+				return (cards.get(3).getCardNumber() == 14 && cards.get(1).getCardNumber() == 13);
 			else{
-				for (int i=1; i<Cards.size()-2; i+=2)
-					if (Cards.get(i).getCardNumber() + 1 != Cards.get(i+2).getCardNumber())
+				for (int i=1; i<cards.size()-2; i+=2)
+					if (cards.get(i).getCardNumber() + 1 != cards.get(i+2).getCardNumber())
 						return false;
 				return true;
 			}
@@ -66,12 +67,15 @@ public class SetOfCards implements CardActivity {
 	}
 	
 	protected boolean legalCards(){
-		return (Cards.size() == 1 || similarCardNumber() || continousCardNumber() || continousThreePairs());
+		return typeOfLegalCards() != Type.kxd;
 	}
 	
 	protected Type typeOfLegalCards(){
+		if (cards.size() == 1)
+			return Type.don_le;
+		
 		if (similarCardNumber())
-			switch(Cards.size()){
+			switch(cards.size()){
 				case 2:
 					return Type.doi;
 				case 3:
@@ -92,26 +96,29 @@ public class SetOfCards implements CardActivity {
 		return Type.kxd;
 	}
 	
-	public boolean isStrongerThan(SetOfCards other){
+	public boolean isStrongerThan(SetOfCards other){		
 		if (legalCards()){
 			if (other.isEmpty())
 				return true;
+			
+			Type currentType = typeOfLegalCards();
+			
 			if (other.numberOfCards() == numberOfCards()){
 				if (other.typeOfLegalCards() == typeOfLegalCards())
-					return (Cards.get(Cards.size()-1).getLevel() > other.getCardAt(other.numberOfCards()-1).getLevel());
+					return (cards.get(cards.size()-1).getLevel() > other.getCardAt(other.numberOfCards()-1).getLevel());
 				else
 					return false;
 			}
 			else{
-				if (other.Cards.size() == 1){
-					if (other.Cards.get(other.Cards.size()-1).getCardNumber() == 2)
-						return (typeOfLegalCards() == Type.tu_quy || typeOfLegalCards() == Type.bo_thong ||
-							(typeOfLegalCards() == Type.day && numberOfCards() >= 5));
+				if (other.cards.size() == 1){
+					if (other.cards.get(other.cards.size()-1).getCardNumber() == 2)
+						return (currentType == Type.tu_quy || currentType == Type.bo_thong ||
+							(currentType == Type.day && numberOfCards() >= 5));
 					else
 						return false;
 				}
 				else
-					return (other.getCardAt(other.Cards.size()-1).getLevel() < Cards.get(Cards.size() - 1).getLevel());
+					return (other.getCardAt(other.cards.size()-1).getLevel() < cards.get(cards.size() - 1).getLevel());
 			}
 		}
 		else
@@ -119,45 +126,44 @@ public class SetOfCards implements CardActivity {
 	}
 	
 	public boolean isEmpty(){
-		return (Cards.size() == 0);
+		return (cards.size() == 0);
 	}
 	
 	public void addCard(CommonCard card) {
-		Cards.add(card);
+		cards.add(card);
 	}
 	
 	public void setCard(int index, CommonCard card) {
-		Cards.set(index, card);
+		cards.set(index, card);
 	}
 	
 	public CommonCard getCardAt(int index) {
-		return Cards.get(index);
+		return cards.get(index);
 	}
 	
 	public void sortCards() {
-		Cards = SetOfCards.sortCardsByLevel(Cards);
+		cards = SetOfCards.sortCardsByLevel(cards);
 	}
 	
 	public void removeAt(int index) {
-		Cards.remove(index);
+		cards.remove(index);
 	}
 	
 	public ArrayList<CommonCard> getCards(){
-		return Cards;
+		return cards;
 	}
 	
 	public int numberOfCards(){
-		return Cards.size();
+		return cards.size();
 	}
 	
 	public void removeAll(){
-		for (int i = 0; i < Cards.size();)
-			Cards.remove(i);
+		cards = new ArrayList<CommonCard>();
 	}
 	
 	public void printConsole(){
 		int i = 0;
-		for (CommonCard card : Cards){
+		for (CommonCard card : cards){
 			System.out.println((i++) + " " + card.toString() + " " + card.getLevel());
 		}
 	}
