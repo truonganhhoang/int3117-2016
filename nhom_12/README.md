@@ -1,4 +1,4 @@
-# Repo nhóm FRIES 
+# Repo nhóm 12 
 
 ## Các thành viên:
 - Trần Văn Tú
