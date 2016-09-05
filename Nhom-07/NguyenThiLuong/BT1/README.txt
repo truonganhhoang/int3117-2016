@@ -9,4 +9,3 @@ Class: QHI-2013 K58CLC
 2. How to run:
 - MaxDiv.java: find maximum division of two number .
 - MaxDivTest: test js code.
-- TestRunner: run MaxDivTest class
