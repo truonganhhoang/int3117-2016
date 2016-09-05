@@ -1,0 +1,59 @@
+<!-- Owner: Ngo Duc Dung
+	Last update: 04/09/2016 -->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Phone Cost Calculator</title>
+
+		<!-- Jasmine's lib -->
+		<link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine-2.5.0/jasmine_favicon.png">
+		<link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-2.5.0/jasmine.css">
+
+		<script type="text/javascript" src="jasmine/lib/jasmine-2.5.0/jasmine.js"></script>
+		<script type="text/javascript" src="jasmine/lib/jasmine-2.5.0/jasmine-html.js"></script>
+		<script type="text/javascript" src="jasmine/lib/jasmine-2.5.0/boot.js"></script>
+
+		<!-- my app's js -->
+		<script type="text/javascript" src="js/calculate.js"></script>
+
+		<!-- my test's js -->
+		<script type="text/javascript" src="jasmine/js/calculate.js"></script>
+
+		<style>
+			.calculate {
+				margin: 10px auto;
+				padding: 10px;
+				font-size: 16px;
+				border: 1px solid black;
+				border-radius: 5px;
+				width: 45%;
+				text-align: center;
+			}
+
+			.warning {
+				margin: auto;
+				margin-top: 50px;
+				font-size: 16px;
+				color: red;
+				width: 45%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="warning" id="warning"></div>
+
+		<div class="calculate">
+			Enter calling minutes:
+			<input type="text" name="minutes" id="input">
+	 		<input type="submit" name="calculate" value="Calculate" onclick="calculate(document.getElementById('input').value)">
+	 		<br><br>
+	 		The cost of calling: <span id="result"></span> = <span id="sum"></span>$
+		</div>
+		<br><br>
+
+	</body>
+</html>
