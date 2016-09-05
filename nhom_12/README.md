@@ -8,4 +8,4 @@
 
 ## Sử dụng:
 - Các thành viên sử dụng thư mục của mình cho việc nộp bài tập cá nhân trên lớp
-- Thư mục common/ chứa project của cả nhóm
+- Thư mục nhom_12/ chứa project của cả nhóm
