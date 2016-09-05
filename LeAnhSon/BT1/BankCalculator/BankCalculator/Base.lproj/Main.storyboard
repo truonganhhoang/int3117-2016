@@ -18,44 +18,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền gửi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-Yq-bWs">
-                                <rect key="frame" x="20" y="28" width="82" height="21"/>
+                                <rect key="frame" x="20" y="60" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-eh-KkM">
-                                <rect key="frame" x="203" y="24" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SF4-eh-KkM">
+                                <rect key="frame" x="203" y="56" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="dZJ-xG-fli"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="txtMoneyValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="P4F-Td-Lxo"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lãi suất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs8-GU-YEQ">
-                                <rect key="frame" x="20" y="82" width="60" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lãi suất(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs8-GU-YEQ">
+                                <rect key="frame" x="20" y="114" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kỳ hạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq7-34-TLw">
-                                <rect key="frame" x="20" y="137" width="52" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kỳ hạn(Tháng)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq7-34-TLw">
+                                <rect key="frame" x="20" y="169" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zO8-K0-KSU">
-                                <rect key="frame" x="203" y="133" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zO8-K0-KSU">
+                                <rect key="frame" x="203" y="165" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="xoH-HB-0rs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtDueValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2nN-SJ-3vb"/>
+                                </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5cR-tr-WM6">
-                                <rect key="frame" x="0.0" y="198" width="320" height="370"/>
+                                <rect key="frame" x="0.0" y="230" width="320" height="338"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="result" textLabel="IS9-Jo-rYc" detailTextLabel="1Rd-pf-du1" rowHeight="55" style="IBUITableViewCellStyleValue1" id="0rV-li-9ux">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultCell" textLabel="IS9-Jo-rYc" detailTextLabel="1Rd-pf-du1" rowHeight="55" style="IBUITableViewCellStyleValue1" id="0rV-li-9ux">
                                         <rect key="frame" x="0.0" y="28" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0rV-li-9ux" id="WOo-q2-Qp2">
@@ -80,14 +86,21 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="A0C-sX-cVw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yn6-cb-juE"/>
+                                </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjW-Br-jND">
-                                <rect key="frame" x="203" y="78" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjW-Br-jND">
+                                <rect key="frame" x="203" y="110" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="uRD-n2-SdK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="txtRateValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pLY-7i-cid"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -95,7 +108,7 @@
                             <constraint firstItem="5cR-tr-WM6" firstAttribute="top" secondItem="Eq7-34-TLw" secondAttribute="bottom" constant="40" id="1pD-X6-eAv"/>
                             <constraint firstItem="Eq7-34-TLw" firstAttribute="top" secondItem="Hs8-GU-YEQ" secondAttribute="bottom" constant="34" id="8Dw-C7-3dn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5cR-tr-WM6" secondAttribute="bottom" id="B41-bW-d8p"/>
-                            <constraint firstItem="fyf-Yq-bWs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="EvW-df-FtW"/>
+                            <constraint firstItem="fyf-Yq-bWs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="EvW-df-FtW"/>
                             <constraint firstItem="zO8-K0-KSU" firstAttribute="centerY" secondItem="Eq7-34-TLw" secondAttribute="centerY" id="KWx-Gn-WuD"/>
                             <constraint firstItem="mjW-Br-jND" firstAttribute="centerY" secondItem="Hs8-GU-YEQ" secondAttribute="centerY" id="Le9-Oz-VPA"/>
                             <constraint firstItem="SF4-eh-KkM" firstAttribute="centerY" secondItem="fyf-Yq-bWs" secondAttribute="centerY" id="NVa-N1-bqN"/>
@@ -111,6 +124,12 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="5cR-tr-WM6" id="duF-DC-1Nr"/>
+                        <outlet property="txtDue" destination="zO8-K0-KSU" id="BPW-QU-AR4"/>
+                        <outlet property="txtInteresRate" destination="mjW-Br-jND" id="NuQ-1o-xZv"/>
+                        <outlet property="txtMoney" destination="SF4-eh-KkM" id="Ein-hF-IeQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
