@@ -1,5 +1,5 @@
 # TestNG-SoftwareTesting
-TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing to integration testing.  
+#### TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing to integration testing.  
 This is simple Java project using TestNG as an unit testing framework.  
 # Getting Started
 ### Prerequisities
@@ -21,4 +21,4 @@ Restart Eclipse and select the menu Window / Show View / Other...  and you shoul
 ## Running the tests
 Class GreatestCommonDivisorTest.java is a simple test file. You can write more test function there.  
 To run test, Right click / Run As / TestNg Test  
-So you can see the test result in console. 
+So you can see the test result in console.  
