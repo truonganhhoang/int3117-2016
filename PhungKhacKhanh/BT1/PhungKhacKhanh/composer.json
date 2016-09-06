@@ -1,13 +1,13 @@
 {
-    "name": "money",
+    "name": "PhungKhacKhanh",
     "description": "Value Object that represents a monetary value (using a currency's smallest unit)",
     "keywords": ["money"],
     "homepage": "http://www.github.com/sebastianbergmann/money",
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Sebastian Bergmann",
-            "email": "sebastian@phpunit.de"
+            "name": "Phung Khac Khanh",
+            "email": "phungkhackhanh.pkk@gmail.com"
         }
     ],
     "require": {
