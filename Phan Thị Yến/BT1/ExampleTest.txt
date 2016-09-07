@@ -1,0 +1,50 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import org.junit.Assert;
+
+public class MyStackTest {
+
+	Example example;
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		example = new Example();
+	}
+	
+	public void test1() throws Exception {
+		int values[] = null;
+		String actual = example.soChan(values);
+		String expected = "null";
+		Assert.assertEquals(expected, actual);
+	}
+
+	public void test2() throws Exception {
+		int values[] = new int[0];
+		String actual = example.soChan(values);
+		String expected = "length = 0";
+		Assert.assertEquals(expected, actual);
+	}
+
+	public void test3() throws Exception {
+		int values[] = {1,2,3,4,-2};
+		String actual = example.soChan(values);
+		String expected = "false";
+		Assert.assertEquals(expected, actual);
+	}
+
+	public void test4() throws Exception {
+		int values[] = {1,2,3,4,5,6};
+		String actual = example.soChan(values);
+		String expected = "2 4 6 ";
+		Assert.assertEquals(expected, actual);
+	}
+	
+
+}
+

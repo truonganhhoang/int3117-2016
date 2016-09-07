@@ -1,0 +1,26 @@
+public class Example{
+
+    public String soChan(int[] values) {
+	
+		String result = "";
+		if(values == null){
+			return "null";
+		}
+		
+		if(values.length() == 0){
+			return " length = 0";
+		}else{
+			for(int i = 0;i<values.length();i++){
+				if(values[i]<0){
+					return "fail";
+				}else{
+					result += values[i] + " ";
+				}
+			}
+		}
+		
+		return result;
+
+	}
+    
+}
