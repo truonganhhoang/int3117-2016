@@ -1,3 +1,0 @@
-Vũ Trung Kiên
-K58CLC
-13020595
