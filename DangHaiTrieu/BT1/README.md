@@ -13,51 +13,68 @@ Simple Node js project using Mocha as unit test framework.
 
 ## Function to be tested
 ```javascript
-// Description: Count number of even integers in input array
-// Return: number of even integers in input array
-    numberOfEvens: function (arr) {
-        if (!Array.isArray(arr)) {
-            return 0;
+    /*
+    * Description: Calculate n-th number of fibonacci sequence
+    * Params:
+    *   - n: positive number
+    * Return: n-th number of fibonacci sequence
+    * */
+    fibonacci: (n) => {
+        let a = 0,
+            b = 1,
+            c;
+        if (!Number.isInteger(n)) {
+            return 'INVALID_INPUT_VALUE';
         }
-        else {
-            var numberOfEvens = 0;
-            for (var i = 0; i < arr.length; i++) {
-                if (arr[i] % 2 == 0) {
-                    numberOfEvens++;
-                }
-            }
-            return numberOfEvens;
+        else if (n < 3) {
+            return 1;
         }
+        while (--n) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return c;
     }
 ```
 
 ## Test cases
 ```javascript
 // #1
-describe('Main app', function () {
-    describe('#numberOfEvens', function () {
-        it('should return 0 when the input param is not an array', function () {
-            assert.equal(0, mainApp.numberOfEvens(1));
+describe('Function', () => {
+    describe('#fibonacci', () => {
+        it('should return an error "INVALID_INPUT_VALUE" if the input is not integer', () => {
+            assert.equal('INVALID_INPUT_VALUE', mainApp.fibonacci(2.001));
         });
     });
 });
 ```
 ```javascript
 // #2
-describe('Main app', function () {
-    describe('#numberOfEvens', function () {
-        it('should not count characters as even numbers', function () {
-            assert.equal(0, mainApp.numberOfEvens(['a', 1, 'bcd']));
+describe('Function', () => {
+    describe('#fibonacci', () => {
+        it('should run exactly with large number like 1476', () => {
+            assert.equal(1.3069892237633987e+308, mainApp.fibonacci(1476));
         });
     });
 });
 ```
 ```javascript
 // #3
-describe('Main app', function () {
-    describe('#numberOfEvens', function () {
-        it('should run normally with big numbers', function () {
-            assert.equal(2, mainApp.numberOfEvens([1000000000000000000000000000000000000000000000000000000, 1, 999999999999999999999999999999999992]));
+describe('Function', () => {
+    describe('#fibonacci', () => {
+        it('should return Infinity if n is bigger than 1476', () => {
+            assert.equal(Infinity, mainApp.fibonacci(1477));
+        });
+    });
+});
+```
+```javascript
+// #4
+describe('Function', () => {
+    describe('#fibonacci', () => {
+        it('should return fibonacci(80) = 23416728348467684', () => {
+            assert.notEqual(23416728348467683, mainApp.fibonacci(80));
         });
     });
 });
