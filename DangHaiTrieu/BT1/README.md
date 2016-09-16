@@ -31,6 +31,8 @@
 * Lý do lựa chọn phương pháp này: Hàm fibonacci tăng theo cấp số cộng rất nhanh, giá trị của hàm có thể vượt giá trị MAX_VALUE nhanh chóng, cũng như runtime của nó không đáp ứng được hiệu năng của hệ thống (VD: hàm này yêu cầu runetime nhỏ hơn 0.1 giây)
 
 ## Kết quả kiểm thử
+![Test result](https://github.com/trieudh58/int3117-2016/raw/master/DangHaiTrieu/BT1/screenshots/test-result.png)
+
 Các ca kiểm thử (test cases) đã mô tả trong file README.md
 * \#1: Pass 
   
