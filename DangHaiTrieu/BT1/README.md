@@ -28,42 +28,48 @@
   
 ## Phương pháp kiểm thử
 * Phương pháp được lựa chọn: **Kiểm thử biên mạnh**
-* Lý do lựa chọn phương pháp này: Hàm fibonacci tăng theo cấp số cộng rất nhanh, giá trị của hàm có thể vượt giá trị MAX_VALUE nhanh chóng, cũng như runtime của nó không đáp ứng được hiệu năng của hệ thống (VD: hàm này yêu cầu runetime nhỏ hơn 0.1 g)
+* Lý do lựa chọn phương pháp này: Hàm fibonacci tăng theo cấp số cộng rất nhanh, giá trị của hàm có thể vượt giá trị MAX_VALUE nhanh chóng, cũng như runtime của nó không đáp ứng được hiệu năng của hệ thống (VD: hàm này yêu cầu runetime nhỏ hơn 0.1 giây)
 
 ## Kết quả kiểm thử
 Các ca kiểm thử (test cases) đã mô tả trong file README.md
 * \#1: Pass 
+  
   ```
   Function
      #fibonacci
        ✓ should return an error "INVALID_INPUT_VALUE" if the input is not integer
   ```
 * \#2: Pass
+  
   ```
   Function
      #fibonacci
        ✓ should run exactly with large number like 1476
   ```
 * \#3: Pass
+  
   ```
   Function
      #fibonacci
        ✓ should return Infinity if n is bigger than 1476
   ```
 * \#4: Pass
+
   ```
   Function
      #fibonacci
        ✓ should has a run time less than 0.1 second
   ```
 * \#5: Fail
+
   ```
   Function
      #fibonacci
        1) should return fibonacci(80) = 23416728348467684
   ```
+  
 ## Phân tích lỗi
-Ở ca kiểm thử #5, do hàm fibonacci(80) return một value đã vượt quá [Number.MAX_SAFE_INTEGER](http://www.ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer) (2^53 - 1) nên phép so sánh (value == value + 1) cho kết quả true.
+Ở ca kiểm thử \#5, do hàm fibonacci(80) return một value đã vượt quá [Number.MAX_SAFE_INTEGER](http://www.ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer) (2^53 - 1) nên phép so sánh (value == value + 1) cho kết quả true.
 
 Vì thế `assert.notEqual(23416728348467683, mainApp.fibonacci(80));` vẫn cho kết quả assert.equal là true, mặc dù `fibonacci(80) = 23416728348467684`
 
