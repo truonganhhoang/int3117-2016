@@ -1,10 +1,12 @@
 'use strict';
 
-const assert = require('assert'),
-    mocha = require('mocha'),
+const mocha = require('mocha'),
     mainApp = require('../app'),
+    chai = require('chai'),
+    performanceNow = require('performance-now'),
     describe = mocha.describe,
-    it = mocha.it;
+    it = mocha.it,
+    assert = chai.assert;
 
 describe('Function', () => {
     describe('#fibonacci', () => {
@@ -26,6 +28,17 @@ describe('Function', () => {
     describe('#fibonacci', () => {
         it('should return Infinity if n is bigger than 1476', () => {
             assert.equal(Infinity, mainApp.fibonacci(1477));
+        });
+    });
+});
+
+describe('Function', () => {
+    describe('#fibonacci', () => {
+        it('should has a run time less than 0.1 second', () => {
+            let t0 = performanceNow();
+            mainApp.fibonacci(80);
+            let t1 = performanceNow();
+            assert.isAbove(0.1, (t1 - t0).toFixed(3));
         });
     });
 });
