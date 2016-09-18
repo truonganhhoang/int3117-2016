@@ -154,6 +154,19 @@ describe('Function', () => {
 // #4
 describe('Function', () => {
     describe('#fibonacci', () => {
+        it('should has a run time less than 0.1 second', () => {
+            let t0 = performanceNow();
+            mainApp.fibonacci(80);
+            let t1 = performanceNow();
+            assert.isAbove(0.1, (t1 - t0).toFixed(3));
+        });
+    });
+});
+```
+```javascript
+// #5
+describe('Function', () => {
+    describe('#fibonacci', () => {
         it('should return fibonacci(80) = 23416728348467684', () => {
             assert.notEqual(23416728348467683, mainApp.fibonacci(80));
         });
