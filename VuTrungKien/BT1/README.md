@@ -1,4 +1,4 @@
-###Kiểm thử hàm get_most_popular_word(sentence)
+#Kiểm thử hàm get_most_popular_word(sentence)
 
 ##Mô tả hàm get_most_popular_word(sentence):
 
@@ -9,19 +9,18 @@
 
 Chọn phương pháp kiểm thử phân lớp tương đương yếu.
 
-#Lý do:
+###Lý do:
 
 - Không xác định được các ca kiểm thử khi sử dụng kiểm thử giá trị biên.
 - Kiểm thử sử dụng bảng quyết định tốn thời gian xây dựng, khó trình bày, nếu trình bày thì cũng tương tự như kiểm thử lớp tương đương.
 - Phương pháp kiểm thử lớp tương đương yếu là đủ trong trường hợp này, vì biến đầu vào chỉ có 1 input nên không có giả sử "multiple fault".
 
-#Thực hiện:
+###Thực hiện:
 
 Ta xác định được được các lớp input như sau:
-
-- R1 = {<sentence>: sentence là câu chứa các từ khác nhau về tần suất}
-- R2 = {<sentence>: sentence là câu chứa 2 từ có tần suất cao nhất giống nhau}
-- R3 = {<sentence>: sentence là câu rỗng}
+- R1 = {sentence: sentence là câu chứa các từ khác nhau về tần suất}
+- R2 = {sentence: sentence là câu chứa 2 từ có tần suất cao nhất giống nhau}
+- R3 = {sentence: sentence là câu rỗng}
 
 Kiểm thử lớp tương đương yếu các giá trị hợp lệ (Weak normal equivalence class):
 
@@ -35,3 +34,11 @@ Kiểm thử lớp tương đương yếu các giá trị không hợp lệ (Wea
 | Test Case | sentence | Expected Output |
 |-----------|----------|-----------------|
 | WR1       | ""       | None            |
+
+###Kết quả
+
+Chạy lần 1:
+![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/result_1.PNG)
+Phát hiện được một lỗi khi nhập câu rỗng, sửa lại hàm.
+Chạy lần 2:
+![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/result_2.PNG)
