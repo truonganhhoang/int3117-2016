@@ -1,4 +1,4 @@
-# Báo cáo bài tập 2
+# Báo cáo bài tập về nhà tuần 3.
 
 ## Function cần test
 * Mô tả: Tính giá trị fibonacci của số thứ n trong dãy fibonacci
