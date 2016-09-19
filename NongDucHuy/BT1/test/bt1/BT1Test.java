@@ -22,28 +22,46 @@ public class BT1Test {
     // The methods must be annotated with annotation @Test. For example:
     //
     
-    @Test
-    public void testInit() {
-        BT1 bt1 = new BT1(8);
-        int n = bt1.n;
-        assertEquals("8", n+"");
-    }
     
     @Test
-    public void testZeroNumber() {
+    public void testMinimumBoundary() {
         BT1 bt1 = new BT1(0);
-        assertEquals("0", bt1.toString());
+        long sum = (long) bt1.sum;
+        assertEquals(0, sum);
     }
 
     @Test
-    public void testMinusNumber() {
-        BT1 bt1 = new BT1(-3);
-        assertEquals("0", bt1.toString());
+    public void testGTMinimumBoundary() {
+        BT1 bt1 = new BT1(1);
+        long sum = (long) bt1.sum;
+        assertEquals(0, sum);
     }
 
     @Test
-    public void testN1000() {
-        BT1 bt1 = new BT1(1000);
-        assertEquals("63000", bt1.toString());
+    public void testLTMinimumBoundary() {
+        BT1 bt1 = new BT1(-1);        
+        long sum = (long) bt1.sum;
+        assertEquals(0, sum);
+    }
+    
+//    @Test
+    public void testMaximumBoundary() {
+        BT1 bt1 = new BT1(100000);
+        long sum = (long) bt1.sum;
+        assertEquals(62495000, sum);
+    }
+
+    @Test
+    public void testGTMaximumBoundary() {
+        BT1 bt1 = new BT1(100001);
+        long sum = (long) bt1.sum;
+        assertEquals(0, sum);
+    }
+
+    @Test
+    public void testLTMaximumBoundary() {
+        BT1 bt1 = new BT1(99999);
+        long sum = (long) bt1.sum;
+        assertEquals(624950000, sum);
     }
 }
