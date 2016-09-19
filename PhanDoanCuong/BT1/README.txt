@@ -5,3 +5,4 @@
  ++Hàm kiểm tra một số có phải là số nguyên tố không.
  ++Hàm trả về số nguyên tố ứng với giá trị đầu vào.
  ++Chương trình sử dụng JUnitTest.
+ 
