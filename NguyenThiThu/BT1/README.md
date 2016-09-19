@@ -17,15 +17,15 @@ Right click/Run as Junit
 ## Phương pháp kiểm thử:
 * Phương pháp: kiểm thử lớp tương đương
 * Lý do : Bài toán được chia thành nhiều miền giá trị liên tục. Kiểm thử lớp tương đương bao phủ được toàn bộ các trường hợp test.
-* Các miền:
+* Các miền giá trị:
     - Miền invalid: <0
     - Miền valid : <ul>
                   <li>+ (0,500)</li>
                   <li>+ [500,1000]</li>
                   <li>+ >1000</li>
                   </ul>
-##Test case:
-      package examples.asg01;
+## Test case:</br>
+package examples.asg01;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
