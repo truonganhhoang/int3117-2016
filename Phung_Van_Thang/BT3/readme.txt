@@ -1,0 +1,1 @@
+Nang cap bt1 su dung phuong phap kiem thu bien
