@@ -9,7 +9,7 @@ public class SoNguyenTo {
 
 	public boolean kiemTra() {
 		int d = 0;
-		if (soKT < 0) {
+		if (soKT <= 0) {
 			return false;
 		} else {
 			for (int i = 1; i <= soKT; i++) {
