@@ -79,6 +79,5 @@ public class TestCustomer {
 	   }
 }
 #Kết quả:
-
-
+http://imgur.com/a/w0NC8
 
