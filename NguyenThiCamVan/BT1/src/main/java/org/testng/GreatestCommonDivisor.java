@@ -1,7 +1,8 @@
 package org.testng;
 
 /**
- * @author Nguyen Thi Cam Van Finding the greatest common divisor of 2 integer number
+ * @author Nguyen Thi Cam Van 
+ * Finding the greatest common divisor of 2 integer number
  */
 public class GreatestCommonDivisor {
   public int greatestCommonDivisor(int num1, int num2) {
