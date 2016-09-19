@@ -4,8 +4,15 @@ class Solver:
 
     @staticmethod
     def get_most_popular_word(sentence):
-        """Returns a word which has the highest frequency in sentence,
-        order the tied words alphabetically
+        """
+        Returns:
+            str
+                A word which has the highest frequency in sentence,
+        order the tied words alphabetically.
+
+        Parameters:
+            sentence: str
+                Input sentence, case-sensitive.
         """
         words = sentence.split()
         word_dictionary = {}
