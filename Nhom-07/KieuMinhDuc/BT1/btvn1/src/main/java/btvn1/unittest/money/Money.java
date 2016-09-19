@@ -67,6 +67,8 @@ public class Money
 		}
 		return new Money(sum, currency);
 	}
+<<<<<<< HEAD
+=======
 
 	
 	public Money add(Money augend) {
@@ -81,6 +83,7 @@ public class Money
 	}
 
 	
+>>>>>>> origin/master
 	public Money[] divideEvenlyIntoParts(int parts) {
 		Money[] res = new Money[parts];
 		final BigDecimal bdParts = new BigDecimal(parts);
@@ -101,7 +104,23 @@ public class Money
 	}
 
 	
+<<<<<<< HEAD
+	public Money add(Money augend) {
+		checkCurrency(augend);
+		return new Money(amount.add(augend.amount), currency);
+	}
+
+	
+	public Money subtract(Money subtrahend) {
+		checkCurrency(subtrahend);
+		return new Money(amount.subtract(subtrahend.amount), currency);
+	}
+
+	
+	public Money newgate() {
+=======
 	public Money negate() {
+>>>>>>> origin/master
 		Money newMoney = new Money();
 		newMoney.amount = amount.negate();
 		newMoney.currency = currency;
@@ -112,7 +131,11 @@ public class Money
 	public Money abs() {
 		if (amount.compareTo(BigDecimal.ZERO) >= 0)
 			return this;
+<<<<<<< HEAD
+		return newgate();
+=======
 		return negate();
+>>>>>>> origin/master
 	}
 
 	public boolean isZero() {
@@ -145,6 +168,8 @@ public class Money
 		return amount.compareTo(other.amount) == 0;
 	}
 
+<<<<<<< HEAD
+=======
 	@Override
 	public int hashCode() {
 		return amount.hashCode();
@@ -154,4 +179,5 @@ public class Money
 //	public String toString() {
 //		return ToStringBuilder.reflectionToString(this);
 //	}
+>>>>>>> origin/master
 }
