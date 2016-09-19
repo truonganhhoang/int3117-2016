@@ -1,3 +1,16 @@
 ﻿# KTPM2016
-Bài tập về nhà tuần 1  môn kiểm thử phần mềm 2016 : Viết các ca kiểm thử đơn vị tự động, sử dụng thư viện/framework có sẵn cho 1 chương trình bất kỳ ( khoảng 10 dòng )
- 
+Bài tập môn kiểm thử phần mềm 2016
+
+/* JUnit Test */
+
+Họ và tên : Kiều Minh Đức
+Mã sinh viên: 13020121 - K58CLC
+
+/* Cập nhập thêm các test case ( sử dụng một kỹ thuật kiểm thử phù hợp nhất ) */
+
+3. Áp dụng kĩ thuật kiểm thử: Kiểm thử biên mạnh
+-
+
+4. Chi tiết kiểm thử biên mạnh
+
+5. Kết quả khi áp dụng kiểm thử biên mạnh.
