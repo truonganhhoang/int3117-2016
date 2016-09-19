@@ -4,18 +4,19 @@ import junit.framework.TestCase;
 
 
 public class TestDemo extends TestCase {
+   //public static void main(String[] args){
 	Practice pr=new Practice();
 	public void test1(){
-		assertEquals(16, pr.binhphuong(4));
+		assertEquals("Ban chi duoc phep nhap chuoi tu 6-20 ki tu", pr.password("ab1"));
 	}
 	public void test2(){
-		assertTrue(pr.isEven(3));
+		assertEquals("Dang nhap thanh cong", pr.password("abcd12345"));
 	}
-	int number[]=new int[]{5,10,3,1,45,23,34,6,21,18};
 	public void test3(){
-		assertEquals(1,pr.smallest(number));
+		assertEquals("Ban chi duoc phep nhap chuoi tu 6-20 ki tu", pr.password("abcdefghikl1234567891"));
 	}
 	public void test4(){
-		assertEquals(45,pr.largest(number));
+		assertEquals("Ban hay nhap password", pr.password(""));
 	}
 }
+
