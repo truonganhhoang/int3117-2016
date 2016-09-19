@@ -20,7 +20,7 @@ public class TinhTongDemo{
         System.out.print("Tong cac so chan nho hon " + n +" la:" + TinhTong(n));
     }
     
-     public static double TinhTong(long n){
+     public static long TinhTong(long n){
         long temp=0;
         if(n<0) return 0;
         else{
