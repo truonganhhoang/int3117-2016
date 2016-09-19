@@ -5,6 +5,7 @@ describe('Hack', function () {
     describe('#is_prime_number', function () {
         var tests = [
             {args: -99999, expected: false},
+            {args: -99997, expected: false},
             {args: -1, expected: false},
             {args: 0, expected: false},
             {args: 1, expected: false},
