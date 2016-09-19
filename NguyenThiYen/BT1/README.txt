@@ -1,12 +1,12 @@
-Bai1: Tim uoc chung l?n nh?t c?a 2 s?
-- UCLN là ý?c s? chung l?n nh?t c?a 2 s? 
-- Hàm : nh?p 2 s? c?n t?m ucln c?a 2 s? ðó
--Hàm testucln:hàm t?m ucln c?a 2 s? và tr? v? ucln
-- K? thu?t ki?m th? áp d?ng là: giá tr? biên 
-+ Giá tr? biên:
-nh?p 2 s? giá tr? biên là 0
-và nh?p 2 giá tr? c?n biên là 1
-nh?p 2 giá tr? c?n biên là -1
+Bai1: Tim uoc chung lon nhat cua 2 so
+- UCLN là uoc so chung lon nhat cua 2 so 
+- Hàm : nhap 2 so can tim uoc chung lon nhat và tra ve gia tri ucln cua 2 so do
+-Hàm testucln: ham kiem tra gia tri ucln c?a 2 so
+- Ky thuat kiem thu ap dung: Gia tri bien 
++ Gia tri bien:
+nhap 2 so co gia tri bien  la 0
+nhap 2 so co gia tri can bien  là 1
+nhap 2 gia tri can biên là -1
 - Test case:
-	v?i giá tr? biên 0: tr? v? không có ucln
-	v?i giá tr?  c?n biên 1;-1: tr? v? giá tr? icln
+	voi gia tri bien 0:  khong co ucln
+	voi gia tri  can bien 1;-1: tri ve gia tri ucln
