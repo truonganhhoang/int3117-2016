@@ -1,12 +1,18 @@
 package main;
 
 public class SoNguyen {
+	public static long MAX_INT = 2147483647L;
 	private int soNguyen;
+
 	
 	public SoNguyen(int n) {
 		soNguyen = n;
 	}
-	
+	public SoNguyen(long n) {
+		if(n >= MAX_INT)
+			soNguyen = 0;
+		else soNguyen = (int)n;
+	}
 	//Tim so nguyen to lon nhat nho hon N. Neu khong co tra ve gia tri 0.
 	public int soNguyenToLonNhatNhoHonN() {
 		int soCanTim = 0;
