@@ -16,8 +16,14 @@ public class PhuongTrinhBac2 {
 				}
 			}
 			else{
-				x1= (-c)/b;
-				return "Phuong trinh co nghiem duy nhat"+x1  ;
+				if(c==0){
+					x1= (0)/b;
+					return "Phuong trinh co nghiem duy nhat " +x1  ;
+				}
+				else{
+					x1 = (-c)/b;
+					return "Phuong trinh co nghiem duy nhat " +x1  ;
+				}
 			}
 		}
 		else{
