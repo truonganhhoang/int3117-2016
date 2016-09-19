@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>ktpm2016</groupId>
-  <artifactId>btvn1</artifactId>
+  <groupId>btvn1.unittest</groupId>
+  <artifactId>money</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>btvn1</name>
+  <name>money</name>
   <url>http://maven.apache.org</url>
 
   <properties>
