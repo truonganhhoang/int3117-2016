@@ -37,14 +37,14 @@ public class PrimeTest {
     @Test
     public void test5IsPrime() {
         Prime prime = new Prime();
-        boolean result = prime.isPrime(5);
+        boolean result = prime.isPrime(11);
         assertEquals(true, result);
     }
 
     @Test
     public void test9NotPrime() {
         Prime prime = new Prime();
-        boolean result = prime.isPrime(9);
+        boolean result = prime.isPrime(15);
         assertEquals(false, result);
     }
 
