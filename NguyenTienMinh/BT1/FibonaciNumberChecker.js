@@ -24,10 +24,14 @@ module.exports = class FibonaciNumberChecker {
             orderNumb++;
         }
 
-        if (inputNumber == tempFiboNumb) {
-            return true;
-        } else {
+        return inputNumber == tempFiboNumb;
+    }
+
+    validateInput(inputNumber){
+        if (inputNumber < 0){
             return false;
+        } else {
+            return true;
         }
     }
 };
