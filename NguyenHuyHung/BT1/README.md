@@ -1,33 +1,33 @@
 
 # Báo cáo bài tập 2
 
-## Function cần test
+## Function cần test 
 * Mô tả: đếm số số nguyên dương có 2 chữ số mà có chữ số hàng chục lớn hơn hoặc bằng chữ số hàng đơn vị trong mảng được nhập vào.
 
-VD: findMin(3,10,99,50,0) = 3;
+VD: findMin(3,10,99,50,0) = 3  
 *code:
 
-	```java
-	public int findMin (int arr[]){
-		int result =0;
-		int units = 0;
-		int tens = 0;
-		if (arr.length==0){
-			return 0;
-		}
-		for(int i=0; i<arr.length; i++){
+```java
+public int findMin (int arr[]){
+	int result =0;
+	int units = 0;
+	int tens = 0;
+	if (arr.length==0){
+		return 0;
+	}
+	for(int i=0; i<arr.length; i++){
 			
-			if(arr[i]>9 && arr[i]<100){
-				units = arr[i]%10;
-				tens = arr[i]/10;
-				if(tens>units){
-					result ++;
-				}
+		if(arr[i]>9 && arr[i]<100){
+			units = arr[i]%10;
+			tens = arr[i]/10;
+			if(tens>units){
+				result ++;
 			}
 		}
-		return result;
 	}
-	```
+	return result;
+}
+```
 	
 ## Phương pháp kiểm thử:
 * Phương pháp: kiểm thử miền giá trị.
@@ -106,12 +106,13 @@ public class Test {
 * Kết quả:
 ![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/Ketqua.PNG)
 
-Ta thấy có lỗi tại testcase 5! Các test case còn lại đều pass.
+- Ta thấy có lỗi tại testcase 5! Các test case còn lại đều pass.
 
 # Phân tích
 Lỗi ở đây là do trong mảng đưa vào của testcase 5 có số 55. Số này là hợp lệ vì là số có 2 chữ số và có chữ số hàng chục bằng chữ số hàng đơn vị. Vì thế trong mảng {49,55,5,98} kết quả trả về phải là 2 (55,98). 
 
 Nhưng nhìn vào hàm code ta thấy "if(tens>units)" nên hàm đã chỉ tính số mà có chữ số hàng chục lớn hơn hàng đơn vị, nên kết quả trả về chỉ là 1 (98). Dẫn tới testcase 5 fail!
+
 ======
 
 # Bài tập tuần 1
@@ -120,11 +121,11 @@ Test hàm java bằng junit
 
 ## Prerequisities
 Java SDK 1.8  
-Eclipse IDE
+Eclipse IDE  
 Junit
 
-## Mô tả hàm:
-ham thuc hien dem so so co hai chu so trong mang duoc input!
+## Mô tả hàm: 
+- Hàm thực hiện đếm số các số nguyên dương có hai chữ số trong mảng được đưa vào!
 
 * Code:
 ```java
