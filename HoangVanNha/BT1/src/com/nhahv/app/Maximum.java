@@ -1,5 +1,8 @@
 package com.nhahv.app;
 
+import javafx.beans.binding.NumberExpression;
+import org.omg.PortableInterceptor.INACTIVE;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -26,7 +29,6 @@ public class Maximum {
     }
 
     int maxOfList(List<Integer> list) {
-
         int max = Integer.MIN_VALUE;
         for (int item : list) {
             if (item > max) {
