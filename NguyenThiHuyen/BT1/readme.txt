@@ -7,13 +7,11 @@
 -Test case: sử dụng kỹ thuật  kiểm thử lớp tương đương. 
 +Lý do: do bài toán kiểm tra số nguyên tố là bài toán khá đơn giản, ta có thể dễ dàng phân hoạch được miền giá trị đầu vào thành các miền con. Trong khi nếu ta sử dụng kiểm thử lớp biến thì sẽ mất nhiều thời gian hơn để xác định giá trị đặc biệt như giá trị max,... hay là kỹ thuật kiểm thử bằng bẳng quyết định.
 +Áp dụng:
-
-	Invalid	Valid
-Number	-2	3, 6
+Valid: các số tự nhiên lớn hơn 0: 2,4,5...
+Invalid: các số âm và số 0: 0, -2, -3...
 
 Các ca kiểm thử:
-
-STT	Number	Kết quả mong đợi
-1	3	Số nguyên tố
-2	6	Không phải số nguyên tố
-3	-2	Không hợp lệ
+5 => số nguyên tố
+-3 => không hợp lệ
+6 => không phải số nguyên tố
+...
