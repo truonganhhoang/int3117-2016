@@ -104,7 +104,7 @@ public class Test {
 ```
 
 * Kết quả:
-![Test result](https://github.com/trieudh58/int3117-2016/raw/master/NguyenHuyHung\BT1\image\Ketqua.png)
+![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/Ketqua.PNG)
 
 Ta thấy có lỗi tại testcase 5! Các test case còn lại đều pass.
 
