@@ -1,4 +1,5 @@
-﻿Phương pháp kiểm thử được sử dụng: **Bảng quyết định**
+﻿Bài toán: Cho biết một ngày, tìm ngày tiếp theo.
+Phương pháp kiểm thử được sử dụng: **Bảng quyết định**
 
 ### Lý do
 -  Bài toán đặt ra nhiều trường hợp khác nhau cần xem xét.
