@@ -20,4 +20,5 @@
 		+ n = -5 Giá trị kỳ vọng n! = 0
 		+ n = 30 Giá trị ky vọng n! > 20!(Do số quá lớn nên không thể tính cụ thể con số)
 	2. Kết quả kiểm thử
+	
 	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT1/TestResult.PNG)
