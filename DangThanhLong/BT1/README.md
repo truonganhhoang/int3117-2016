@@ -21,8 +21,8 @@
 		+ n = -5 Giá trị kỳ vọng n! = 0
 		+ n = 30 Giá trị ky vọng n! > 20!(Do số quá lớn nên không thể tính cụ thể con số)
 	2. Giải thích
-	- Sử dụng Kiểm thử lớp tương đương cho bài toán này vì giá trị đầu vào là 1 số nguyên, dễ dàng tìm được giá trị biên của bài toán từ đó dễ xác định các lớp tương đương.
-	- Bài toán không có nhiều giá trị đặc biệt nên sử dụng các lớp tương đương có thể kiểm tra được hết các trường hợp của bài toán.
+		- Sử dụng Kiểm thử lớp tương đương cho bài toán này vì giá trị đầu vào là 1 số nguyên, dễ dàng tìm được giá trị biên của bài toán từ đó dễ xác định các lớp tương đương.
+		- Bài toán không có nhiều giá trị đặc biệt nên sử dụng các lớp tương đương có thể kiểm tra được hết các trường hợp của bài toán.
 	3. Kết quả kiểm thử
 	
 	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT1/TestResult.PNG)
