@@ -5,9 +5,6 @@
  */
 package com.sofwaretesting.project1;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -32,8 +29,7 @@ public class MathUtilsTest {
      * Test of factorial method, of class MathUtils.
      */
     @Test
-    public void testCase1() {
-        System.out.println("Test Case 1");
+    public void testBoundaryValue1() {
         int n = 0;
         long expResult = 1;
         long result = mathUtils.factorial(n);
@@ -41,17 +37,7 @@ public class MathUtilsTest {
     }
     
     @Test
-    public void testCase2() {
-        System.out.println("Test Case 2");
-        int n = 5;
-        long expResult = 120;
-        long result = mathUtils.factorial(n);
-        assertEquals(expResult, result);
-    }
-    
-    @Test
-    public void testCase3() {
-        System.out.println("Test Case 3");
+    public void testBoundaryValue2() {
         int n = 20;
         long expResult = 2432902008176640000L;
         long result = mathUtils.factorial(n);
@@ -59,8 +45,15 @@ public class MathUtilsTest {
     }
     
     @Test
-    public void testCase4() {
-        System.out.println("Test Case 4");
+    public void testInRangeValue() {
+        int n = 5;
+        long expResult = 120;
+        long result = mathUtils.factorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testLessThanBoundaryValue() {
         int n = -5;
         long expResult = 0;
         long result = mathUtils.factorial(n);
@@ -68,12 +61,10 @@ public class MathUtilsTest {
     }
     
     @Test
-    public void testCase5() {
-        System.out.println("Test Case 5");
+    public void testBiggerThanBoundaryValue() {
         int n = 30;
         long expResult = 2432902008176640000L;
         long result = mathUtils.factorial(n);
-        //=> Test Out range of value
         assertTrue(result > expResult);
     }
 }
