@@ -71,9 +71,9 @@ public class MathUtilsTest {
     public void testCase5() {
         System.out.println("Test Case 5");
         int n = 30;
-        long expResult = 0;
+        long expResult = 2432902008176640000L;
         long result = mathUtils.factorial(n);
         //=> Test Out range of value
-        assertEquals(expResult, result);
+        assertTrue(result > expResult);
     }
 }

@@ -1,0 +1,23 @@
+#Bài toán tìm giai thừa của 1 số
+
+1. Bài toán
+	1. Giới thiệu bài toán
+		- Bài toán tính giai thừa của 1 số n cho trước
+	2. Giải pháp
+		- Tạo ra 1 phương thức factorial với tham số nhận vào là n, trả về giá trị kiểu long là kết quả n!.
+		- Do giới hạn của kiểu long là 9.223.372.036.854.775.807 nên khi n đủ lớn bài toán sẽ bị sai số.
+		- Giới hạn n của bài toán là 0<=n<=20
+2. Kiểm thử
+	1. Áp dụng kiểm thử lớp tương đương cho bài toán này với các lớp tương đương
+	D1={n | n < 0}
+	D2={n | 0<=n<=20 }
+	D3={n | n > 20}
+
+	 - Từ 3 lớp tương đương trên ta có 5 TestCase:
+		+ n = 0 Giá trị kỳ vọng n! = 1
+		+ n = 5 Giá trị kỳ vọng n! = 120
+		+ n = 20 Giá trị kỳ vọng n! = 2432902008176640000L
+		+ n = -5 Giá trị kỳ vọng n! = 0
+		+ n = 30 Giá trị ky vọng n! > 20!(Do số quá lớn nên không thể tính cụ thể con số)
+	2. Kết quả kiểm thử
+	![alt tag]()
