@@ -2,21 +2,26 @@
 
 module.exports = {
     /*
-    * Description: Count number of even integers in input array
-    * Return: number of even integers in input array
+    * Description: Calculate n-th number of fibonacci sequence
+    * Params:
+    *   - n: positive number
+    * Return: n-th number of fibonacci sequence
     * */
-    numberOfEvens: function (arr) {
-        if (!Array.isArray(arr)) {
-            return 0;
+    fibonacci: (n) => {
+        let a = 0,
+            b = 1,
+            c;
+        if (!Number.isInteger(n)) {
+            return 'INVALID_INPUT_VALUE';
         }
-        else {
-            var numberOfEvens = 0;
-            for (var i = 0; i < arr.length; i++) {
-                if (arr[i] % 2 == 0) {
-                    numberOfEvens++;
-                }
-            }
-            return numberOfEvens;
+        else if (n < 3) {
+            return 1;
         }
+        while (--n) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return c;
     }
 };
