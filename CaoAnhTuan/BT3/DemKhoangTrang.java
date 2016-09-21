@@ -1,7 +1,7 @@
-package kiemthu2;
+package kiemthu;
 
-public class bt1 {
-	public int dem(String x){
+public class DemKhoangTrang {
+	public int Dem(String x){
 		int count=0;
 		for(int i=0; i<x.length(); i++){
 			if(x.charAt(i)==' '){
