@@ -8,8 +8,8 @@
 +Lý do: do bài toán kiểm tra số nguyên tố là bài toán khá đơn giản, ta có thể dễ dàng phân hoạch được miền giá trị đầu vào thành các miền con. Trong khi nếu ta sử dụng kiểm thử lớp biến thì sẽ mất nhiều thời gian hơn để xác định giá trị đặc biệt như giá trị max,... hay là kỹ thuật kiểm thử bằng bẳng quyết định.
 
 +Áp dụng:
-Valid: các số nguyên lớn hơn hoặc bằng 2.
-Invalid: các số nhỏ hơn 2.
+ Valid: các số nguyên lớn hơn hoặc bằng 2.
+ Invalid: các số nhỏ hơn 2.
 
 Các ca kiểm thử:
 5 => số nguyên tố
