@@ -8,26 +8,26 @@ public class SoNguyenToTest {
 
 	@Test
 	public void testKiemTra_So5() {
-		SoNguyenTo number = new SoNguyenTo();
-		assertTrue(number.kiemTra(5));
+		SoNguyenTo number = new SoNguyenTo(5);
+		assertTrue(number.kiemTra());
 
 	}
 
 	@Test
 	public void testKiemTra_So6() {
-		SoNguyenTo number = new SoNguyenTo();
-		assertFalse(number.kiemTra(6));
+		SoNguyenTo number = new SoNguyenTo(6);
+		assertFalse(number.kiemTra());
 	}
 
 	@Test
 	public void testKiemTra_So1() {
-		SoNguyenTo number = new SoNguyenTo();
-		assertFalse(number.kiemTra(1));
+		SoNguyenTo number = new SoNguyenTo(1);
+		assertFalse(number.kiemTra());
 	}
 	
 	@Test
 	public void testKiemTra_SoAm() {
-		SoNguyenTo number = new SoNguyenTo();
-		assertFalse(number.kiemTra(-2));
+		SoNguyenTo number = new SoNguyenTo(-2);
+		assertFalse(number.kiemTra());
 	}
 }

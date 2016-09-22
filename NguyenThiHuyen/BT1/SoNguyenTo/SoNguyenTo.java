@@ -1,8 +1,13 @@
 package com.KTDBCL.SoNguyenTo;
 
 public class SoNguyenTo {
+	int number;
 
-	public boolean kiemTra(int number) {
+	public SoNguyenTo(int number) {
+		this.number = number;
+	}
+
+	public boolean kiemTra() {
 		if (number <= 1) {
 			return false;
 		} else {
@@ -11,6 +16,7 @@ public class SoNguyenTo {
 					return false;
 			}
 			return true;
+
 		}
 	}
 }
