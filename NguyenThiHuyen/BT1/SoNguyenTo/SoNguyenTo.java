@@ -16,7 +16,6 @@ public class SoNguyenTo {
 					return false;
 			}
 			return true;
-
 		}
 	}
 }
