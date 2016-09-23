@@ -50,4 +50,6 @@ Hành động|d++|x|||x||x||x|x|
 ||Không xảy ra|||x|||||||||x|x|
 
 ### Kết quả
-Sau khi test và chỉnh sửa lại code: pass các test case với test coverage = 89.4% (xem kết quả tại file ảnh đính kèm).
+Sau khi test và chỉnh sửa lại code: pass các test case với test coverage = 89.4%.
+
+![alt text](http://i.imgur.com/j5rtLEq.png "Test Result")
