@@ -80,4 +80,6 @@ public class TestCustomer {
 }
 #Kết quả:
 http://imgur.com/a/w0NC8
+#Sơ đồ mô tả bài toán:
+http://imgur.com/a/CFCvL
 
