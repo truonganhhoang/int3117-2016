@@ -1,0 +1,70 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.sofwaretesting.project1;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author DangThanh
+ */
+public class MathUtilsTest {
+    
+    private static MathUtils mathUtils;
+    
+    public MathUtilsTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+        mathUtils = new MathUtils();
+    }
+
+    /**
+     * Test of factorial method, of class MathUtils.
+     */
+    @Test
+    public void testBoundaryValue1() {
+        int n = 0;
+        long expResult = 1;
+        long result = mathUtils.factorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testBoundaryValue2() {
+        int n = 20;
+        long expResult = 2432902008176640000L;
+        long result = mathUtils.factorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testInRangeValue() {
+        int n = 5;
+        long expResult = 120;
+        long result = mathUtils.factorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testLessThanBoundaryValue() {
+        int n = -5;
+        long expResult = 0;
+        long result = mathUtils.factorial(n);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testBiggerThanBoundaryValue() {
+        int n = 30;
+        long expResult = 2432902008176640000L;
+        long result = mathUtils.factorial(n);
+        assertTrue(result > expResult);
+    }
+}
