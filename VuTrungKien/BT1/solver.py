@@ -1,7 +1,4 @@
-class Solver:
-    def __init__(self):
-        pass
-
+class Solver(object):
     @staticmethod
     def get_most_popular_word(sentence):
         """
