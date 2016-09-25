@@ -19,7 +19,13 @@
 
   - Test coverage detail:
   ![Test coverage detail](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT1/screenshots/test-coverage-detail.png)
+  
+## Vẽ đồ thị chương trình
+- Sơ đồ khối (Flowchart) này được generate tự động nhờ code2flow.com
+- Kết quả:
+![Flowchart](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT1/screenshots/flowchart.png)
 
+======
 
 # Báo cáo bài tập về nhà tuần 3.
 
