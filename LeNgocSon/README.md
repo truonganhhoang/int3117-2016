@@ -8,3 +8,11 @@ update bt tuần 3:
 - Sử dụng phương pháp kiểm thử biên mạnh
 + tính bình phương số a <= n <= b
 + sử dụng các giá trị a, a+1, x(a < x < b), b-1, b, a-1, b+1
+
+Độ bao phủ code:
+<br>
+<img src="https://github.com/longdt03/int3117-2016/blob/master/LeNgocSon/coverage.jpg" />
+
+Sơ đồ khối:
+<br>
+<img src="https://github.com/longdt03/int3117-2016/blob/master/LeNgocSon/sodo.JPG"/>
