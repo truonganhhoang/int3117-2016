@@ -9,3 +9,6 @@
   - và n > 2 (n = 3)
 + với trường hợp n > 2 : có 2 lớp tương đương là 1 lớp xác định n là số nguyên tố, 1 lớp mà tại đó n không phải là số nguyên tố.
 + được xét với 2 giá trị đại diện cho 2 lớp đó là : n = 11 và n = 15.
+## update độ bao phủ :
+độ bao phu=( số câu lệnh/quyết định/đường đi được thực hiện):(tổng số câu lệnh/quyết định/đường đi)X100%
+độ bảo phủ của chương trình = 50%.
