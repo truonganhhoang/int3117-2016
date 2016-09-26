@@ -5,7 +5,7 @@
  + 2 câu gần giống nhau
  + 2 câu khác hoàn toàn nhau
 
-Độ bao phủ:
-https://www.dropbox.com/s/zc38m9d4qkn9o6z/test_coverage_1.PNG?dl=0
-https://www.dropbox.com/s/gae8nas5zl44c62/test_coverage_2.PNG?dl=0
+* Độ bao phủ:
+- https://www.dropbox.com/s/zc38m9d4qkn9o6z/test_coverage_1.PNG?dl=0
+- https://www.dropbox.com/s/gae8nas5zl44c62/test_coverage_2.PNG?dl=0
 
