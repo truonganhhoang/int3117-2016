@@ -6,6 +6,7 @@ module.exports = class FibonaciNumberChecker {
     }
 
     fibonaciNumberInOrder(inputOrderNumb) {
+        // console.log(inputOrderNumb);
         if (inputOrderNumb == 0) {
             return 0;
         } else if (inputOrderNumb == 1) {
