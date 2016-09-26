@@ -32,6 +32,17 @@ public class SoHoanHaoTest {
         boolean result = shh.kiemTraSoHoanHao(0);
         assertEquals(false, result);
     }
-
+    @Test
+    public void test1() {
+        SoHoanHao shh = new SoHoanHao();
+        boolean result = shh.kiemTraSoHoanHao(0);
+        assertEquals(false, result);
+    }
+    @Test
+    public void testNegative1() {
+        SoHoanHao shh = new SoHoanHao();
+        boolean result = shh.kiemTraSoHoanHao(0);
+        assertEquals(false, result);
+    }
 
 }

@@ -1,4 +1,5 @@
-﻿Phương pháp kiểm thử được sử dụng: **Bảng quyết định**
+﻿Bài toán: Cho biết một ngày, tìm ngày tiếp theo.
+Phương pháp kiểm thử được sử dụng: **Bảng quyết định**
 
 ### Lý do
 -  Bài toán đặt ra nhiều trường hợp khác nhau cần xem xét.
@@ -49,4 +50,10 @@ Hành động|d++|x|||x||x||x|x|
 ||Không xảy ra|||x|||||||||x|x|
 
 ### Kết quả
-Sau khi test và chỉnh sửa lại code: pass các test case với test coverage = 89.4% (xem kết quả tại file ảnh đính kèm).
+Sau khi test và chỉnh sửa lại code: pass các test case với test coverage = 89.4%.
+
+![alt text](http://i.imgur.com/j5rtLEq.png "Test Result")
+
+Đồ thị cho nextDate().
+
+![alt text](http://i.imgur.com/sBC8vIH.png "Source Code Graph")

@@ -16,7 +16,13 @@ function calculate(minutes){
 		} 
 		else {
 
-			if(minutes <= 0) return 0;
+			if(minutes <= 0) {
+				//print result
+				document.getElementById("result").innerHTML = 0;
+				document.getElementById("sum").innerHTML = 0;
+
+				return 0;
+			}
 
 			var sum = 25000;		//sum of cost
 			var temp = 0;		//current cost minus 50/150/200

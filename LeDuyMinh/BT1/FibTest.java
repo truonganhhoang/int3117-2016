@@ -5,14 +5,7 @@ public class FibTest {
 	@Test
 	public void nNhoHon1() {
 		Fib f = new Fib();
-		String result = f.printFirstNFib(-1);
-		assertEquals("Khong hop le", result);
-	}
-	
-	@Test
-	public void nBang0() {
-		Fib f = new Fib();
-		String result = f.printFirstNFib(0);
+		String result = f.printFirstNFib(-10);
 		assertEquals("Khong hop le", result);
 	}
 	
@@ -26,7 +19,7 @@ public class FibTest {
 	@Test
 	public void nLonHon100() {
 		Fib f = new Fib();
-		String result = f.printFirstNFib(101);
+		String result = f.printFirstNFib(110);
 		assertEquals("So qua lon", result);
 	}
 }

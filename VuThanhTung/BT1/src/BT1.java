@@ -12,5 +12,4 @@ public class BT1 {
         }
         return tong;
     }
-
 }

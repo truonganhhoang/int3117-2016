@@ -9,6 +9,6 @@ public class test {
 	public void testDEM() {
 		bt1 bt = new bt1();
 		int u = bt.dem("kiem thu va dam bao chat luong");
-		assertEquals(2, u);
+		assertEquals(8, u);
 	}
 }
