@@ -40,54 +40,68 @@ public class IsNumericTest {
     }
     
     @Test
-    public void testIsNumericTrue_v1(){
+    public void xau_la_so_nguyen_duong_true(){
         assertEquals(this.isNumeric.is_Numeric("123"), true);
     }
     @Test
-    public void testIsNumericTrue_v2(){
+    public void xau_la_so_thuc_duong_true(){
         assertEquals(this.isNumeric.is_Numeric("123.13"), true);
     }
     @Test
-    public void testIsNumericTrue_v3(){
+    public void xau_la_so_thuc_am_true(){
         assertEquals(this.isNumeric.is_Numeric("-123.13"), true);
     }
     @Test
-    public void testIsNumericTrue_v4(){
+    public void xau_la_so_nguyen_am_true(){
         assertEquals(this.isNumeric.is_Numeric("-123"), true);
     }
     @Test
-    public void testIsNumericTrue_v5(){
+    public void xau_la_so_thuc_am_khong_true(){
         assertEquals(this.isNumeric.is_Numeric("-."), true);
     }
     
     @Test
-    public void testIsNumericFalse_v1(){
+    public void xau_chua_dau_cong_dau_tru_va_dau_thap_phan_true(){
+        assertEquals(this.isNumeric.is_Numeric("-++++++-+-+-+-+-."), true);
+    }
+    @Test
+    public void xau_chua_dau_cong_dau_tru_va_dau_thap_phan_va_so_true(){
+        assertEquals(this.isNumeric.is_Numeric("-++++++-+-+-+-+-123."), true);
+    }
+    
+    @Test
+    public void xau_la_dau_tru_false(){
         assertEquals(this.isNumeric.is_Numeric("-"), false);
     }
     
     @Test
-    public void testIsNumericFalse_v2(){
+    public void xau_chua_ca_so_va_chu_false(){
         assertEquals(this.isNumeric.is_Numeric("132ac23423"), false);
     }
     @Test
-    public void testIsNumericFalse_v3(){
+    public void xau_chua_dau_tru_va_dau_thap_phan_false(){
         assertEquals(this.isNumeric.is_Numeric("-....."), false);
     }
     @Test
-    public void testIsNumericFalse_v4(){
+    public void xau_chua_dau_tru_va_dau_thap_phan_1_false(){
         System.out.println(this.isNumeric.is_Numeric("-.-"));
         assertEquals(this.isNumeric.is_Numeric("-.-"), false);
     }
     @Test
-    public void testIsNumericFalse_v5(){
+    public void xau_la_xau_rong_false(){
         assertEquals(this.isNumeric.is_Numeric(""), false);
     }
     @Test
-    public void testIsNumericFalse_v6(){
+    public void xau_chi_chua_khoang_trong_false(){
         assertEquals(this.isNumeric.is_Numeric("           "), false);
     }
     @Test
-    public void testIsNumericFalse_v7(){
+    public void xau_chua_dau_tru_va_dau_thap_phan_va_khoang_trong_false(){
         assertEquals(this.isNumeric.is_Numeric("-.      -"), false);
+    }
+    
+    @Test
+    public void xau_chua_dau_cong_va_dau_tru_false(){
+        assertEquals(this.isNumeric.is_Numeric("++---+++++++--+-+"), false);
     }
 }
