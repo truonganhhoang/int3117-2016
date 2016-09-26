@@ -16,6 +16,35 @@ Phương pháp hộp đen:
 
 Sơ đồ khối 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![alt text][logo]
+[logo]:https://github.com/longdt03/int3117-2016/blob/master/NguyenNhuVuong/sodo.png
 ___
 - Nâng cấp bài tập tuần 1: tính tổng các số chẵn trong mảng cho trước
  + sử dụng kiểm thử biên : do hàm kiểm tra không kiểm tra kiểu của các phần tử trong mảng nên khi chạy với mảng có chứa các kí tự chuỗi kiểu số 
