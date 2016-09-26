@@ -1,14 +1,13 @@
 ﻿# KTPM2016
 Bài tập môn kiểm thử phần mềm 2016
 
-/* Info */
-
+## Thông tin
+```
 Họ và tên : Kiều Minh Đức 
 Mã sinh viên : 13020121
-
-
-/* Update new test cases */
-
+```
+## Thêm các test case mới 
+```
 1. Áp dụng kĩ thuật kiểm thử: Kiểm thử  các giá trị đặc biệt
 Do các hàm có các biến đầu vào độc lập , ko phụ thuộc vào nhau.
 Không cần các giá trị max,min .
@@ -22,3 +21,15 @@ Lấy các giá trị đặc biệt sao cho phần thập phân của tổng c�
 Chặt chẽ hơn phát hiện được thêm các lỗi khi cộng các số thập phân lớn.
 Tiết kiệm được thời gian kiểm thử , viết các test case khác .
 Số lượng ca kiểm thử ít hơn.
+```
+## Ảnh test coverage
+![1](http://i.imgur.com/ht29B1J.png)
+![2](http://i.imgur.com/neLJDeY.png)
+
+## Ảnh đồ thị 
+![1](http://i.imgur.com/2DihB5V.png)
+![2](http://i.imgur.com/Fgz8Ke4.png)
+![3](http://i.imgur.com/lJjHouR.png)
+![4](http://i.imgur.com/YmQXcTp.png)
+
+
