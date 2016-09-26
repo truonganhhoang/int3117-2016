@@ -18,3 +18,7 @@ Các ca kiểm thử:
 6 => không phải số nguyên tố
 1=> không là số nguyên tố
 ...
+
++ Độ bao phủ: Dựa vào đồ thị chương trình
+=> độ bao phủ theo câu lênh: 2
+=> độ bao phủ theo nhánh: 3
