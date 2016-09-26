@@ -19,6 +19,8 @@
 - Sử dụng Website code2flow.com để tự sinh sơ đồ khối khi đẩy sources code lên.
 - Đồ thị sau khi nhận được:
 
+![code-flow](https://github.com/trieudh58/int3117-2016/blob/master/HoangTungLam/BT1/screenshots/codeflow.PNG)
+
 =====
 
 # Homework 1: test
