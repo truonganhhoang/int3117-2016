@@ -56,3 +56,9 @@ Xác định các lớp tương đương
 #Kết quả của việc áp dụng
 - Kiểm tra được trường hợp cần bắt ngoại lệ (vượt quá kiểu Number), các test case trở lên rõ ràng hơn
 - Giúp chương trình thêm chặt chẽ đầy đủ hơn
+
+#Đo mức độ bao phủ 
+![Coverage](https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT1/Coverage.JPG)
+
+#Đồ thị chương trình
+![Flowchart](https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT1/FlowChart.JPG)
