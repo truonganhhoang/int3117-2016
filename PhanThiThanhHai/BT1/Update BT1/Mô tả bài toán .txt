@@ -1,11 +1,11 @@
-﻿Mô tả chương trình:kiểm thử các chức năng push dữ liệu vào, pop dữ liệu ra và tìm kiếm một vị trí của một stack bằng Unit Test.
-Kỹ thuật kiểm thử được ấp dụng:kỹ thuật phân tích các giá trị biên - Value Boundary Analysis.
-Nguyên nhân áp dụng kĩ thuật này trong bài toán là: 
+﻿1. Mô tả chương trình:kiểm thử các chức năng push dữ liệu vào, pop dữ liệu ra và tìm kiếm một vị trí của một stack bằng Unit Test.
+2. Kỹ thuật kiểm thử được ấp dụng:kỹ thuật phân tích các giá trị biên - Value Boundary Analysis.
+3. Nguyên nhân áp dụng kĩ thuật này trong bài toán là: 
 	-Phân tích giá trị biên là phân tích những giá trị mà khả năng chương thường hay gặp phải
 	-Đây là một bài toán khá đơn giản chỉ có 3 chức năng chình là : push, pop và get nên nếu sử dụng các kí năng như phân lớp tương đương(Case study) hay kĩ thuật dùng bảng quyết định(decision table)là rất khó 
 	 xác định và mất nhiều thời gian hơn.
-	-Kiểm thử giá trị biên nhằm xác định rõ được các ca kiểm thử nhanh hơn, dễ dàng hơn.
-Đối với bài toán này sử dụng phương pháp giá trị biên được dùng:
+	-Kiểm thử giá trị biên mạnh nhằm xác định rõ được các ca kiểm thử nhanh hơn, dễ dàng hơn.
+   Đối với bài toán này sử dụng phương pháp giá trị biên được dùng:
 	-với method push các các gía trị biên như:
 		+ trường hợp đặc biệt như đối tượng đó là null.
 		+ các trường hợp bình thường.
@@ -18,3 +18,16 @@ Nguyên nhân áp dụng kĩ thuật này trong bài toán là:
 	- với method pop các gái trị biên là:
 		+TH đặc biệt khi Stack rỗng
 		+Khi Stack khác rỗng.
+
+4. Số liệu kiểm thử (Test Metrics)
+
+   4.1. Độ bao phủ kiểm thử(Test Coverage)
+
+	Test Coverage = (10/10)x 100% = 100%
+
+   4.2.Mức độ kiểm thử thành công(Test success coverage)
+	
+	Test success coverage = (8/10)x100% = 80%.
+
+	
+	
