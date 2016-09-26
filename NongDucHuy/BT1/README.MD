@@ -1,3 +1,14 @@
+## Bài tập tuần 4
+
+Phương pháp hộp đen đã áp dụng là kiểm thử biên. Khi tính tổng nếu số n đủ lớn thì tổng sẽ vượt quá giới hạn của số nguyên INT trong khi n còn cách xa giới hạn đó. Vì vậy nhờ kiểm thử biên đầu ra đã giới hạn giá trị đầu vào của n.
+
+###Mức độ bao phủ
+
+###Đồ thị chương trình
+
+
+## Bài tập tuần 3
+
 Bài toán: Tính tổng các số chia hết cho 8 trong n số nguyên dương đầu tiên (n<100000).
 
 Trong phần nâng cấp BT1 này em sử dụng phương pháp kiểm thử biên mạnh.
