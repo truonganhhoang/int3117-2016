@@ -10,6 +10,7 @@ Bài toán: Đầu vào là một ngày, đầu ra là thuộc ngày thứ bao n
 ##### Lập bảng:
 
 Đầu vào | Đầu ra
+---- | ----
 1/1/1999 | 1
 0/1/1999 | false
 2/1/1999 | 2
