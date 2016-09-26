@@ -56,22 +56,33 @@ Chia bộ 52 quân bài thành 13 bộ con Ai (i = 1, 13) sắp xếp tăng dầ
 Tùy vào số lượng quân bài N mà sẽ cho mỗi quân bài trong tập C thuộc phân hoạch (bộ con) của bộ bài trên
 
 * N = 1
+
   N = 2
+  
   N = 3
+  
   N = 4
+
   N = 6
+
   N >= 5 nhưng N ≠ 6
 
 * Các quân bài C có thể có cùng số với nhau hoặc khác số
 Có các trường hợp
 N = 1: Bộ 1 quân (tối đa 13 cases)
+
 N = 2: C gồm 2 quân thuộc cùng 1 bộ con Ai: Bộ đôi (tối đa 13 cases)
+
 N = 3: C gồm 3 quân thuộc cùng 1 bộ con Ai: Bộ tam (tối đa 13 cases)
+
 N = 4: C gồm 4 quân thuộc cùng 1 bộ con Ai: Bộ tứ (tối đa 13 cases)
+
 N = 6: C gồm 6 quân thành 3 cặp quân có số giống nhau và các số đại diện cho 3 cặp quân ấy phải liên tiếp nhau theo quy luật *: Bộ thông (tối đa 11 cases)
+
 N >= 3: C gồm các quân có số tạo thành dãy liên tiếp nhau theo luật *: Bộ dây (tối đa 44 cases)
 
 Ngoài các trường hợp trên thì bộ bài không hợp lệ
 
 * Phương pháp kiểm thử kể trên đã được áp dụng trong project trong lần đầu tiên khởi tạo
+
 Lý do: nếu sử dụng phương pháp BVT thì quá dài dòng, và nhiều trường hợp không cần thiết phải kiểm thử
