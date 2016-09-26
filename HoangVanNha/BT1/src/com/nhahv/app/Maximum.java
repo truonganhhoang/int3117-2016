@@ -21,14 +21,13 @@ public class Maximum {
         }
 
         listInteger.forEach(System.out::println);
-        int max = new Maximum().maxOfList(listInteger);
+        int max = new Maximum().maximumOfListInteger(listInteger);
         System.out.printf("Maximum: " + max);
     }
 
-    int maxOfList(List<Integer> list) {
-
+    int maximumOfListInteger(List<Integer> listInteger) {
         int max = Integer.MIN_VALUE;
-        for (int item : list) {
+        for (int item : listInteger) {
             if (item > max) {
                 max = item;
             }
