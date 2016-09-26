@@ -24,4 +24,4 @@
 
 ## Đồ thị chương trình
 
-<img src="https://github.com/hoangbd58/int3117-2016/blob/master/BuiDangHoang/BT1/flowChart.pdf" />
+<a href="https://github.com/hoangbd58/int3117-2016/blob/master/BuiDangHoang/BT1/flowChart.pdf">View as PDF</a>
