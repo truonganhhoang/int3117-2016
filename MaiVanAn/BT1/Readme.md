@@ -9,4 +9,4 @@ Nâng cấp BT tuần 1:
 
 Sơ đồ khối:
 <br>
-<img src="https://github.com/longdt03/int3117-2016/tree/master/MaiVanAn/BT1/tinhtong.JPG"/>
+<img src="https://github.com/longdt03/int3117-2016/blob/master/MaiVanAn/BT1/tinhtong.JPG"/>
