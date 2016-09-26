@@ -16,6 +16,7 @@
 ![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/diagrams.PNG)
 
 ## Độ bao phủ code của test:
+* Sử dụng EclEmma của Junit test trong Java Eclipse để đo độ bao phủ code của các ca kiểm thử!
 
 * Độ bao phủ cho từng đơn vị:
 ![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/TestCoverage.PNG)
