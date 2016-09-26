@@ -37,8 +37,13 @@ Kiểm thử lớp tương đương yếu các giá trị không hợp lệ (Wea
 
 ###Kết quả
 
-Chạy lần 1:
-![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/result_1.PNG)
+####Chạy lần 1:
+![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/screenshots/result_1.PNG)
 Phát hiện được một lỗi khi nhập câu rỗng, sửa lại hàm.
-Chạy lần 2:
-![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/result_2.PNG)
+####Chạy lần 2:
+![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/screenshots/result_2.PNG)
+
+####Độ bao phủ (test coverage) theo câu lệnh
+![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/screenshots/test_coverage.png)
+####Đồ thị chương trình
+![alt tag](https://github.com/longdt03/int3117-2016/blob/master/VuTrungKien/BT1/screenshots/program_flowchart.png)
