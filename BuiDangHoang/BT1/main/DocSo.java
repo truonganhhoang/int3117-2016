@@ -5,10 +5,7 @@ public class DocSo {
 		String result = "";
 		switch (number) {
 		case 0:
-			if (!special)
-				result = "khong";
-			else
-				result = "";
+			result = "khong";
 			break;
 		case 1:
 			result = "mot";
@@ -81,9 +78,6 @@ public class DocSo {
 	private String docHangTram(int number) {
 		String result = "";
 		switch (number) {
-		case 0:
-			result = "";
-			break;
 		case 1:
 			result = "mot tram";
 			break;
@@ -137,8 +131,8 @@ public class DocSo {
 				if (number / 10 > 0) {
 					result += docHangChuc(number / 10);
 					number = number % 10;
-					if(number % 10 != 0)
-					result += " " + docDonVi(number, true);
+					if (number % 10 != 0)
+						result += " " + docDonVi(number, true);
 				} else {
 					result += docDonVi(number, false);
 				}
@@ -147,10 +141,4 @@ public class DocSo {
 		return result;
 	}
 
-	public static void main(String[] args) {
-		DocSo ds = new DocSo();
-		for (int i = 1; i < 999; i++) {
-			System.out.println(ds.docSo(i));
-		}
-	}
 }

@@ -20,6 +20,45 @@ public class TestDocSo {
 		assertEquals("mot", n);
 	}
 	@Test
+	public void doc2() {
+		String n = ds.docSo(2);
+		assertEquals("hai", n);
+	}
+	@Test
+	public void doc3() {
+		String n = ds.docSo(3);
+		assertEquals("ba", n);
+	}
+	@Test
+	public void doc4() {
+		String n = ds.docSo(4);
+		assertEquals("bon", n);
+	}
+	@Test
+	public void doc5() {
+		String n = ds.docSo(5);
+		assertEquals("nam", n);
+	}
+	@Test
+	public void doc6() {
+		String n = ds.docSo(6);
+		assertEquals("sau", n);
+	}
+	@Test
+	public void doc7() {
+		String n = ds.docSo(7);
+		assertEquals("bay", n);
+	}
+	@Test
+	public void doc8() {
+		String n = ds.docSo(8);
+		assertEquals("tam", n);
+	}@Test
+	public void doc9() {
+		String n = ds.docSo(9);
+		assertEquals("chin", n);
+	}
+	@Test
 	public void doc10() {
 		String n = ds.docSo(10);
 		assertEquals("muoi", n);
@@ -48,6 +87,41 @@ public class TestDocSo {
 	public void doc25() {
 		String n = ds.docSo(25);
 		assertEquals("hai muoi lam", n);
+	}
+	@Test
+	public void doc30() {
+		String n = ds.docSo(30);
+		assertEquals("ba muoi", n);
+	}
+	@Test
+	public void doc45() {
+		String n = ds.docSo(45);
+		assertEquals("bon muoi lam", n);
+	}
+	@Test
+	public void doc50() {
+		String n = ds.docSo(50);
+		assertEquals("nam muoi", n);
+	}
+	@Test
+	public void doc60() {
+		String n = ds.docSo(60);
+		assertEquals("sau muoi", n);
+	}
+	@Test
+	public void doc70() {
+		String n = ds.docSo(70);
+		assertEquals("bay muoi", n);
+	}
+	@Test
+	public void doc80() {
+		String n = ds.docSo(80);
+		assertEquals("tam muoi", n);
+	}
+	@Test
+	public void doc90() {
+		String n = ds.docSo(90);
+		assertEquals("chin muoi", n);
 	}
 	@Test
 	public void doc99() {
@@ -79,6 +153,42 @@ public class TestDocSo {
 		String n = ds.docSo(125);
 		assertEquals("mot tram hai muoi lam", n);
 	}
+	@Test
+	public void doc200() {
+		String n = ds.docSo(200);
+		assertEquals("hai tram", n);
+	}
+	@Test
+	public void doc300() {
+		String n = ds.docSo(300);
+		assertEquals("ba tram", n);
+	}
+	@Test
+	public void doc400() {
+		String n = ds.docSo(400);
+		assertEquals("bon tram", n);
+	}
+	@Test
+	public void doc500() {
+		String n = ds.docSo(500);
+		assertEquals("nam tram", n);
+	}
+	@Test
+	public void doc600() {
+		String n = ds.docSo(600);
+		assertEquals("sau tram", n);
+	}
+	@Test
+	public void doc700() {
+		String n = ds.docSo(700);
+		assertEquals("bay tram", n);
+	}
+	@Test
+	public void doc800() {
+		String n = ds.docSo(800);
+		assertEquals("tam tram", n);
+	}
+	
 	@Test
 	public void doc901() {
 		String n = ds.docSo(901);
