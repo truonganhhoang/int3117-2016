@@ -1,28 +1,23 @@
 package Demo;
 
 public class Practice {
-	public int smallest(int[] number){
-		int min=number[0];
-		for(int i=1;i<number.length;i++){
-			if(number[i]<min)
-				min=number[i];
+	//String s=new String();
+	public String password(String s){
+		String result;
+		if(s.length()<6&&s.length()>0){
+			result="Ban chi duoc phep nhap chuoi tu 6-20 ki tu";
 		}
-		return min;
-	}
-	public int largest(int[] number){
-		int max=number[0];
-		for(int i=1;i<number.length;i++){
-			if(number[i]>max)
-				max=number[i];
-		}
-		return max;
-	}
-	public int binhphuong(int a){
-		return a*a;
-	}
-	public boolean isEven(int number){
-		if (number%3==0)
-			return true;
-		return false;
+			else if(6<=s.length()&&s.length()<=20){
+				result="Dang nhap thanh cong";
+			}
+				else if (s.length()==0){
+					result="Ban hay nhap password";
+				}
+				else {
+					result="Ban chi duoc phep nhap chuoi tu 6-20 ki tu";
+				}
+		
+				
+		return result;
 	}
 }
