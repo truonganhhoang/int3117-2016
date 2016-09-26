@@ -1,7 +1,7 @@
 package pkDemo;
 
 public class DemoTest {
-	public int findMin (int arr[]){
+	public int countEvent (int arr[]){
 		int result =0;
 		int units = 0;
 		int tens = 0;
