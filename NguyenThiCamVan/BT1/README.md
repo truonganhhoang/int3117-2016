@@ -8,12 +8,14 @@
 - Test case được viết bằng [TestNG framework](http://testng.org/doc/eclipse.html) được cài vào Elipse IDE (Chi tiết xem báo cáo tuần 1).  
 - Test coverage report được sinh tự động từ chính TestNG Plugin được cài trong Elipse IDE.  
 - Kết quả:  
-![Test coverage summary](https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT1/test_result/TestCoverageResult.png)  
+
+![Test coverage summary](https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT1/test_coverage/TestCoverageResult.png)  
 
 ## Vẽ đồ thị chương trình:  
 - Sơ đồ khối (Flowchart) này được sinh tự động bằng [code2flow.com](http://code2flow.com)  
 - Kết quả:  
-![Flowchart](https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT1/test_result/FlowChartGenFromCode.png)  
+  
+![Flowchart](https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT1/flow_chart_gen/FlowChartGenFromCode.png)  
 
 =====
 
