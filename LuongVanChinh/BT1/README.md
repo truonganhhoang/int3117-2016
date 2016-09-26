@@ -14,4 +14,5 @@
 ## Upgrade 4
 - Su dung ki thuat kiem thu bien manh vi chuong trinh gioi han kieu du lieu dau vao la so nguyen tu 0 den 2147483647 nen thay vi phai test toan bo cac gia tri trong vung tuong duong thi ki thuat phan tich gia tri bien chi can tap trung vao kiem thu cac gia tri bien.
 - Do thi chuong trinh:
+
  <img src="https://github.com/chinhlv95/int3117-2016/blob/master/LuongVanChinh/BT1/images/diagram.jpg">
