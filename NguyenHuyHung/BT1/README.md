@@ -21,7 +21,7 @@
 ![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/TestCoverage.PNG)
 
 *Hình ảnh trong code:
-![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/Coverage.PNG)
+![Test result](https://github.com/trieudh58/int3117-2016/blob/master/NguyenHuyHung/BT1/image/Coverage.png)
 
 
 # Báo cáo bài tập 3
