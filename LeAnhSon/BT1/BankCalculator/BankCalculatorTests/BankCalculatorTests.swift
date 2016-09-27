@@ -40,7 +40,7 @@ class BankCalculatorTests: XCTestCase {
 	// MARK: - Test valid Money, Interest rate, due
 	
 	func testValidMoney() {
-		let testCases = [(-10, 0), (1000000, 1000000), (MAXFLOAT, MAXFLOAT)]
+		let testCases = [(-10, 0), (1000000, 1000000), (MAXFLOAT - 1, MAXFLOAT - 1), (MAXFLOAT + 1, MAXFLOAT + 1), (MAXFLOAT, MAXFLOAT)]
 		testCases.forEach {
 			XCTAssertEqual(vc.validMoney($0), $1)
 		}
@@ -61,6 +61,9 @@ class BankCalculatorTests: XCTestCase {
 	}
 	
 	func testCalculate() {
-//		let testCases = [(, 0),(0, 0),(12, 12), (100, 12)]
+		let testCases = [(0, 0, 0), (0, 99, 0), (100, 10.0, 110), (MAXFLOAT, 10.0, MAXFLOAT + (MAXFLOAT * 10 / 100))]
+		testCases.forEach {
+			XCTAssertEqual(vc.calculateMoney($0, interestRate: Float($1)), $2)
+		}
 	}
 }
