@@ -8,63 +8,63 @@ import org.junit.Test;
 public class MaxDivTest {
 	
 	@Test
-	public void test1(){
+	public void doubleNegatives(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(-2, -2);
 		 assertEquals(2, output);
 	}
 
 	@Test
-	public void test2() {
+	public void doubleZeros() {
 		 MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(0, 0);
 		 assertEquals(0, output);
 	}
 
 	@Test
-	public void test3(){
+	public void doublePositive(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(3, 3);
 		 assertEquals(3, output);
 	}
 
 	@Test
-	public void test4(){
+	public void positiveZero(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(3, 0);
 		 assertEquals(3, output);
 	}
 
 	@Test
-	public void test5(){
+	public void twoPositives(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(3, 2);
 		 assertEquals(1, output);
 	}
 
 	@Test
-	public void test6(){
+	public void positiveNegative(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(3, -2);
 		 assertEquals(1, output);
 	}
 
 	@Test
-	public void test7(){
+	public void twoNegatives(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(-4, -2);
 		 assertEquals(2, output);
 	}
 
 	@Test
-	public void test8(){
+	public void NegativeZero(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(-2, 0);
 		 assertEquals(2, output);
 	}
 
 	@Test
-	public void test9(){
+	public void negativePositive(){
 		MaxDiv test = new MaxDiv();
 		 int output = test.maxDiv(-3, 3);
 		 assertEquals(3, output);
