@@ -9,6 +9,7 @@
 		- Do giới hạn của kiểu long là 9.223.372.036.854.775.807 nên khi n đủ lớn bài toán sẽ bị sai số.
 		- Giới hạn n(giá trị đầu vào) của bài toán là 0<=n<=20		
 	3. Đồ thị chương trình
+	- Đồ thị được vẽ sử dụng công cụ hỗ trợ tại http://code2flow.com/
 	
 	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT1/FlowChart.png)
 	
