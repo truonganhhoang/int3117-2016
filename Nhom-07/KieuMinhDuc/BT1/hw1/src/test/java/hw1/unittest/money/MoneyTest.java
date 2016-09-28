@@ -1,4 +1,4 @@
-package btvn1.unittest.money;
+package hw1.unittest.money;
 
 import junit.framework.Assert;
 import junit.framework.Test;
@@ -11,6 +11,8 @@ import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Currency;
 import java.util.HashSet;
+
+import hw1.unittest.money.Money;
 
 
 /**
@@ -30,12 +32,11 @@ public class MoneyTest extends TestCase {
 		assertNull(Money.sum(null)); // Null-collection should give null-result
 		Collection<Money> c = new HashSet<Money>();
 		assertNull(Money.sum(c)); // Empty set should give null-result
-<<<<<<< HEAD
-		Money m1 = new Money(new BigDecimal("555555555"), DKK);
+		Money m1 = new Money(new BigDecimal("5.644445"), DKK);
 		c.add(m1);
-		Money m2 = new Money(new BigDecimal("555555555"), DKK);
+		Money m2 = new Money(new BigDecimal("5.55555"), DKK);
 		c.add(m2);
-		Money m3 = new Money(new BigDecimal("1111111110"), DKK);
+		Money m3 = new Money(new BigDecimal("11.20"), DKK);
 		Money sum = Money.sum(c);
 		assertEquals(m3, sum);
 		Money m4 = new Money(new BigDecimal("3.25"), NOK);
@@ -56,13 +57,6 @@ public class MoneyTest extends TestCase {
 		Money m2 = new Money(new BigDecimal("1.25"), DKK);
 		c.add(m2);
 		Money m3 = new Money(new BigDecimal("2.75"), DKK);
-=======
-		Money m1 = new Money(new BigDecimal("1.50"), DKK);
-		c.add(m1);
-		Money m2 = new Money(new BigDecimal("1.75"), DKK);
-		c.add(m2);
-		Money m3 = new Money(new BigDecimal("3.25"), DKK);
->>>>>>> origin/master
 		Money sum = Money.sum(c);
 		assertEquals(m3, sum);
 		Money m4 = new Money(new BigDecimal("3.25"), NOK);
@@ -74,10 +68,6 @@ public class MoneyTest extends TestCase {
 			// OK
 		}
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 	
 	public void testEquals() {
 		Money a = new Money(BigDecimal.valueOf(1.50d), DKK);
@@ -100,18 +90,11 @@ public class MoneyTest extends TestCase {
 		Money d = new Money(BigDecimal.valueOf(2.75d), DKK);
 		assertEquals(d, c);
 	}
-<<<<<<< HEAD
 	public void testAdd_currencyValidation() {
 		Money a = new Money(BigDecimal.valueOf(1.50d), DKK);
 		Money b = new Money(BigDecimal.valueOf(1.25d), NOK);
 		a.add(b);
 	}
-=======
-
-	
-	
-
->>>>>>> origin/master
 	
 	public void testSubtract() {
 		Money a = new Money(BigDecimal.valueOf(1.50d), DKK);
@@ -120,7 +103,6 @@ public class MoneyTest extends TestCase {
 		Money d = new Money(BigDecimal.valueOf(0.25d), DKK);
 		assertEquals(d, c);
 	}
-<<<<<<< HEAD
 	public void testSubtract_currencyValidation() {
 		Money a = new Money(BigDecimal.valueOf(1.50d), DKK);
 		Money b = new Money(BigDecimal.valueOf(1.50d), NOK);
@@ -207,14 +189,6 @@ public class MoneyTest extends TestCase {
 		
 		Money m2 = m1.newgate();
 		assertEquals(m1, m2.newgate());
-=======
-
-
-	public void testNegate() {
-		Money m1 = new Money(BigDecimal.TEN, DKK);
-		Money m2 = m1.negate();
-		assertEquals(m1, m2.negate());
->>>>>>> origin/master
 	}
 
 	public void testAbs() {
@@ -262,14 +236,10 @@ public class MoneyTest extends TestCase {
 		assertEquals(0, b.compareTo(c));
 		assertEquals(1, b.compareTo(a));
 	}
-<<<<<<< HEAD
 	public void testCompareTo_currencyValidation() {
 		Money a = new Money(BigDecimal.valueOf(1.50d), DKK);
 		Money b = new Money(BigDecimal.valueOf(1.50d), NOK);
 		a.compareTo(b);
 	}
-=======
-
->>>>>>> origin/master
 
 }
