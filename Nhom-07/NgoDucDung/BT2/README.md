@@ -18,7 +18,7 @@ Class: QHI-2013 K58CLC
 /* Upgrade from BT1 */
 
 3. Giả sử đang sử dụng nhà mạng Viettel. Người dùng có thể lựa chọn sử dụng một trong hai gói cước nội mạng sau:
-- Gói DK3: miễn phí 20 phút gọi nội mạng
+-  Gói DK3: miễn phí 20 phút gọi nội mạng
 - Gói KM100: miễn phí 100 phút gọi nội mạng
 
 4. Sử dụng MC/DC testing để đưa ra các test case sau
