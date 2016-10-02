@@ -4,22 +4,19 @@ import java.util.Random;
 
 import static java.lang.System.out;
 
-/**
- * Created by TuanIdol on 10/02/2016.
- */
 public class SoNguyen {
     private int soNguyen[];
 
     public SoNguyen(){
-        soNguyen = new int[30];
+        soNguyen = new int[5];
         Random();
     }
 
     private void Random(){
-        //lay so ngau nhien [0,100]
+        //lay so ngau nhien [0,10]
         Random random = new Random();
         for(int i=0; i<soNguyen.length; i++){
-            soNguyen[i]= random.nextInt(101);
+            soNguyen[i]= random.nextInt(11);
         }
     }
 
