@@ -88,3 +88,7 @@ Ngoài các trường hợp trên thì bộ bài không hợp lệ
 Lý do: nếu sử dụng phương pháp BVT thì quá dài dòng, và nhiều trường hợp không cần thiết phải kiểm thử
 
 ![Test coverage](https://github.com/dungntm58/int3117-2016/blob/master/NguyenTrongMinhDung/Test.png)
+
+Đồ thị chương trình:
+
+![Program Graph](https://github.com/dungntm58/int3117-2016/blob/master/NguyenTrongMinhDung/BT2/program_graph.png)
