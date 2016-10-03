@@ -37,7 +37,9 @@
 
    return jaccardIndex(s1, s2);
   }
-  private double jaccardIndex(Set<String> s1, Set<String> s2) {
+  
+  private double jaccardIndex(Set<String> s1, Set<String> s2) 
+  {
 		
 		int c = 0;
 		
@@ -45,15 +47,15 @@
 			if(s2.contains(x)) {
 				c++;
 			}
-   }
-
+   		}
 
    int s = s1.size() + s2.size() - c;
 
    return c/(double)(s==0 ? 1 : s);
   }
 
-  private Set<String> toSet(String s) {
+  private Set<String> toSet(String s)
+  {
    Set<String> res = new TreeSet<String>();
 
    for(String sk: s.split("\\s+"))
@@ -63,5 +65,24 @@
 
    return res;
   }
+ ```
+ 
+ ## Test cases
+ ```java
+public void testApp()
+{
+	JaccardEngine eng = new JaccardEngine();
+
+	String s1 = "I love you";
+	String s2 = "I love her";
+	String s3 = "She like him";
+	
+	assertFalse(eng.jaccardIndex(s1, s1) > 1.0);
+	
+	assertTrue(eng.jaccardIndex(s1, s2) < 1.0);
+    	assertFalse(eng.jaccardIndex(s1, s2) > 1.0);
+	
+	assertFalse(eng.jaccardIndex(s1, s2) == 0.0);
+}
  ```
  
