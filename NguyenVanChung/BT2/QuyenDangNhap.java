@@ -11,6 +11,7 @@ public class QuyenDangNhap {
 			else if ((ten != "nguyen van chung") || (mk != "12345") || (sochungminh != "987"))
 				quyendangnhap = false;
 			solannhap--;
+			break;
 		}
 		return quyendangnhap;
 	}
