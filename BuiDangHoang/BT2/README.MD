@@ -6,7 +6,8 @@
 
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
-Condition: (%3=0 AND %5=0) OR %7=0
+Biểu thức điều kiện: (%3=0 AND %5=0) OR %7=0
+Không áp dụng MC/DC: Cần 2^3=8 ca kiểm thử tất cả.
 
 Test Case  | %3 = 0 | %5 = 0 | %7=0 | OUTPUT
 ------------- | ------------- | ------------- | ------------- | -------------
@@ -18,3 +19,5 @@ Test Case  | %3 = 0 | %5 = 0 | %7=0 | OUTPUT
 6  | False | True | False | False
 7  | False | False | True | True
 8  | False | False | False | False
+
+Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 1,5,3,2 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.
