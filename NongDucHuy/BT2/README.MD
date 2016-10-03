@@ -9,7 +9,8 @@ Tạm gọi điều kiện là if ((A & B) || C)
  - Test case thứ 3 cho A hoặc B sai, C đúng.
  - Test case thứ 4 cho A hoặc B sai, C sai.
  - Test case thứ 5 cho A và B sai, C đúng.
- - Test case thứ 5 cho A và B sai, C sai.
+ - Test case thứ 6 cho A và B sai, C sai.
 Kết quả: Sau khi tiến hành đo độ bao phủ, các test case đã bao phủ toàn bộ các nhánh, các dòng.
 
-####Thảo luận: theo em thì  chương trình của em có thế sử dụng bao phủ C1 là có thể tương đương MC/DC ở độ bao phủ về nhánh và các dòng lệnh.
+####Thảo luận:
+Theo em thì  chương trình của em có thế sử dụng bao phủ C1 là có thể tương đương MC/DC ở độ bao phủ về nhánh và các dòng lệnh.
