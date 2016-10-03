@@ -30,7 +30,7 @@ Biểu thức điều kiện: `Branch = ((baseCondition1 && baseCondition2) && (
 
 Thông thường, nếu không áp dụng MCDC, ta cần test đủ cả 32 ca kỉểm thử như bảng dưới đây:  
 \# | baseCondition1 | baseCondition2 | condition1 | condtion2 | condition3 | Branch
----- | --- | --- | ---- | --- | --- | ---
+---- | --- | --- | ---- | --- | --- | --- | ---
 1. | T | T | T | T | T | T
 2. | T | T | T | T | F | T
 3. | T | T | T | F | T | T
