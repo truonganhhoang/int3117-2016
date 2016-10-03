@@ -3,50 +3,44 @@
 const mocha = require('mocha'),
     mainApp = require('../app'),
     chai = require('chai'),
-    performanceNow = require('performance-now'),
-    describe = mocha.describe,
-    it = mocha.it,
     assert = chai.assert;
 
 describe('Function', () => {
-    describe('#fibonacci', () => {
-        it('should return an error "INVALID_INPUT_VALUE" if the input is not integer', () => {
+    describe('#fibonacci with input is not an integer', () => {
+        it('should return an error "INVALID_INPUT_VALUE"', () => {
             assert.equal('INVALID_INPUT_VALUE', mainApp.fibonacci(2.001));
         });
     });
 });
 
 describe('Function', () => {
-    describe('#fibonacci', () => {
-        it('should run exactly with large number like 1476', () => {
+    describe('#fibonacci with n = 1476', () => {
+        it('should produce maximum Fibonacci number that javascript can handle/perform', () => {
             assert.equal(1.3069892237633987e+308, mainApp.fibonacci(1476));
         });
     });
 });
 
 describe('Function', () => {
-    describe('#fibonacci', () => {
-        it('should return Infinity if n is bigger than 1476', () => {
+    describe('#fibonacci with n < 3', () => {
+        it('should return 1', () => {
+            assert.equal(1, mainApp.fibonacci(0));
+        });
+    });
+});
+
+describe('Function', () => {
+    describe('#fibonacci if n is bigger than 1476', () => {
+        it('should return Infinity', () => {
             assert.equal(Infinity, mainApp.fibonacci(1477));
         });
     });
 });
 
 describe('Function', () => {
-    describe('#fibonacci', () => {
-        it('should has a run time less than 0.1 second', () => {
-            let t0 = performanceNow();
-            mainApp.fibonacci(80);
-            let t1 = performanceNow();
-            assert.isAbove(0.1, (t1 - t0).toFixed(3));
-        });
-    });
-});
-
-describe('Function', () => {
-    describe('#fibonacci', () => {
-        it('should return fibonacci(80) = 23416728348467684', () => {
-            assert.notEqual(23416728348467683, mainApp.fibonacci(80));
+    describe('#fibonacci with n = 80 (fibonacci that is out of safe limit number in javascript)', () => {
+        it('should return 23416728348467684', () => {
+            assert.equal(23416728348467684, mainApp.fibonacci(80));
         });
     });
 });
