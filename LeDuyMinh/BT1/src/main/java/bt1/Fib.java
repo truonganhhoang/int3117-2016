@@ -1,3 +1,5 @@
+package bt1;
+
 public class Fib {
 	public String printFirstNFib(int n) {
 		if(n <= 0) return "Khong hop le";

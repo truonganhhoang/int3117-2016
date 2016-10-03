@@ -11,16 +11,16 @@ Mô tả: Chương trình kiểm tra sự chênh lệch thời gian cũ với th
 
 	- Các test case với giá trị biên:
 
-		"just now" ("2016/09/19 22:24:59"), 
+		"just now" ("2016/09/19 22:24:59"),
 	    		   ("2016/09/19 22:25:00")
 
-	    "1 minute ago" ("2016/09/19 22:23:01"), 
+	    "1 minute ago" ("2016/09/19 22:23:01"),
 	    			   ("2016/09/19 22:24:00")
 
-	   "1 hour ago" ("2016/09/19 21:25:00"), 
+	   "1 hour ago" ("2016/09/19 21:25:00"),
 	    			("2016/09/19 21:24:59")
 
-	   "Yesterday": ("2016/09/18 22:24:59"), 
+	   "Yesterday": ("2016/09/18 22:24:59"),
 	    			("2016/09/18 22:25:00")
 #Độ bao phủ
 Dựa vào sơ đồ khối (DoThiChuongTrinh.png)
