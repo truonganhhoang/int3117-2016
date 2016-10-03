@@ -6,3 +6,7 @@
 + Mảng gồm 1 số chẵn âm, 1 số chẵn dương.
 + Mảng gồm 1 số lẻ âm, 1 số lẻ dương.
 + Mảng gồm 1 số chẵn âm, 1 số lẻ dương.
+
+Độ bao phủ code:
+<br>
+<img src="https://github.com/longdt03/int3117-2016/blob/master/LeNgocSon/BT2/coverage.jpg" />
