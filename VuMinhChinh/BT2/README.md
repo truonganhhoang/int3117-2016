@@ -16,3 +16,7 @@ STT | y % 400 == 0 | y % 4 == 0 | y % 100 == 0 | y % 12 == 3 | Đầu ra (theo c
 9 | F | T | T | F | 0
 10 | F | T | F | T | 2
 11 | F | T | F | F | 1
+
+## Kết quả
+
+![result](https://c2.staticflickr.com/9/8275/30007529121_8772ed181b_b.jpg)
