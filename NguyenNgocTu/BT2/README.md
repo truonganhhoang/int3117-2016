@@ -34,3 +34,4 @@ Xác thực một mật khẩu có hợp lệ không (một mật khẩu hợp l
 | 8 | F | F | F | F |
 
 ## Đo độ bao phủ
+<img src="https://github.com/chinhlv95/int3117-2016/blob/master/NguyenNgocTu/BT2/Image/Cover.png">
