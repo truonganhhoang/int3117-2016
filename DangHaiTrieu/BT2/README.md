@@ -123,3 +123,15 @@ describe('#5 - Function #pushFruitsIntoBridge: ', () => {
     });
 });
 ```
+
+## Kết quả test
+
+![test-result](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT2/screenshots/test-result.PNG)
+
+## Đo mức độ bao phủ
+
+Tóm tắt kết quả đo bao phủ:
+![test-coverage-sumary](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT2/screenshots/test-coverage-sumary.PNG)
+
+Kết quả đo bao phủ trong hàm chính (main function):
+![main-function-coverage](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT2/screenshots/main-function-coverage.PNG)
