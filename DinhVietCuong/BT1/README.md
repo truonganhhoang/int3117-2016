@@ -30,8 +30,3 @@ Số lượng phần tử	Mảng 	Khóa tìm kiếm	Vị trí	Pass/Fail
 4	{10, 15, 20, 25}	10	1	P
 4	{10, 15, 20, 25}	15	2	P
 
-
-Sơ đồ thuật toán:
- 
-Đo bao phủ:
- 
