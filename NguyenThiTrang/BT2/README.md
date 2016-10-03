@@ -26,6 +26,7 @@ function checkSum(arr) {
 
 # Áp dụng tiêu chuẩn MCDC
 - Ta đặt các điều kiện của chương trình tương ứng với C1, C2... như ảnh dưới 
+![block](https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT2/images/Block.JPG)
 - Xét tổ hợp điều kiện C345 (C3 && C4) || C5
 Ta có bảng sau:
 
@@ -94,6 +95,7 @@ Vậy tổng số testcase = 1 + 1  + 2 + 4*2 = 12 test
 
 
 # Đo mức độ bao phủ
+![Coverage](https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT2/images/Coverage.JPG)
 
 # Nhận xét:
 Với chương trình này, dùng bao phủ quyết định là đơn giản nhất, vì các biểu thức điều kiện đều rõ ràng, không bị rơi vào các trường hợp đoản mạch (như chia cho 0...)
