@@ -7,7 +7,7 @@
 ![test-coverage-2](https://github.com/ducanhk58uet/int3117-2016/blob/master/LeDucAnh/BT1/JaccardEngine/screenshots/test_coverage_2.PNG)
 
 * Vẽ đồ thị chương trình cho chương trình BT1:
-- Sử dụng google draw.io tự vẽ tay sơ đồ khối:
+ - Sử dụng google draw.io tự vẽ tay sơ đồ khối:
 ![flow-chart](https://github.com/ducanhk58uet/int3117-2016/blob/master/LeDucAnh/BT1/JaccardEngine/screenshots/flowchart.PNG)
 
 # Bài tập tuần 3
