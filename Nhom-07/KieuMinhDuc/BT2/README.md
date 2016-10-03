@@ -14,7 +14,7 @@ Mã sinh viên : 13020121
    Ta có bảng các ca kiểm thử có thể có với điều kiện của bài toán : if ( a and b ) or c 
    ![1](http://i.imgur.com/pGHVIFK.png)
    Áp dụng kỹ thuật MC/DC để tìm ra các ca kiểm thử quan trọng.
-   ![1](http://i.imgur.com/YpY1F9H.png)	
+   ![2](http://i.imgur.com/YpY1F9H.png)	
 
 3. Kết quả .
    Test Coverage Result :
