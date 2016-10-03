@@ -42,17 +42,17 @@ Biểu thức Branch = ```java (dx==0 && dy==0 || x<0 || y<0 || x>=img.getWidth(
 
 
 ## Áp dụng tiêu chuẩn MCDC, ta có bảng sau:
-| #        | dx = 0 | dy = 0 | x < 0 | y < 0 | x>=img.getWidth() | y>=img.getHeight() | Màu trắng | Branch1 |
-| -------- |:------:|:------:|:-----:| :----:|-:----------------:|:------------------:|:---------:| -------:|
-| 1.       |T       |T       | T     | T     | F                 |F                   |T          | F       |
-| 2.       |T       |T       | F     | T     | T                 |F                   |T          | F       |
-| 3.       |T       |T       | T     | F     | F                 |T                   |T          | F       |
-| 4.       |T       |T       | T     | T     | F                 |F                   |F          | F       |
-| 5.       |F       |F       | T     | T     | F                 |F                   |T          | F       |
-| 6.       |F       |F       | F     | T     | T                 |F                   |T          | F       |
-| 7.       |F       |F       | T     | F     | F                 |T                   |T          | F       |
-| 8.       |F       |F       | T     | T     | F                 |F                   |F          | F       |
-| 8.       |F       |F       | F     | F     | F                 |F                   |F          | T       |
+`#       | dx = 0 | dy = 0 | x < 0 | y < 0 | x>=img.getWidth() | y>=img.getHeight() | Màu trắng | Branch1
+-------- |------|------|-----| ----|---------------|------------------|---------| -------
+1.       |T       |T       | T     | T     | F                 |F                   |T          | F
+2.       |T       |T       | F     | T     | T                 |F                   |T          | F
+3.       |T       |T       | T     | F     | F                 |T                   |T          | F       
+4.       |T       |T       | T     | T     | F                 |F                   |F          | F
+5.       |F       |F       | T     | T     | F                 |F                   |T          | F       
+6.       |F       |F       | F     | T     | T                 |F                   |T          | F
+7.       |F       |F       | T     | F     | F                 |T                   |T          | F
+8.       |F       |F       | T     | T     | F                 |F                   |F          | F
+9.       |F       |F       | F     | F     | F                 |F                   |F          | T
 
 ## Unit tests cho các ca kiểm thử đã tính trên
 
