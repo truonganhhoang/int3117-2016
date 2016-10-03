@@ -24,35 +24,16 @@ public class TestTimSo {
 		assertEquals(true, n);
 	}
 	@Test
-	public void kiemTraSo21(){
-		boolean n = ts.kiemTraSo(21);
+	public void kiemTraSo7(){
+		boolean n = ts.kiemTraSo(7);
 		assertEquals(true, n);
 	}
 	@Test
-	public void kiemTraSo3(){
-		boolean n = ts.kiemTraSo(3);
+	public void kiemTraSo1(){
+		boolean n = ts.kiemTraSo(1);
 		assertEquals(false, n);
 	}
-	@Test
-	public void kiemTraSo35(){
-		boolean n = ts.kiemTraSo(35);
-		assertEquals(true, n);
-	}
-	@Test
-	public void kiemTraSo25(){
-		boolean n = ts.kiemTraSo(25);
-		assertEquals(false, n);
-	}
-	@Test
-	public void kiemTraSo14(){
-		boolean n = ts.kiemTraSo(14);
-		assertEquals(true, n);
-	}
-	@Test
-	public void kiemTraSo11(){
-		boolean n = ts.kiemTraSo(11);
-		assertEquals(false, n);
-	}
+	
 	@Test
 	public void kiemTraSoAm1(){
 		boolean n = ts.kiemTraSo(-1);
@@ -63,17 +44,5 @@ public class TestTimSo {
 		boolean n = ts.kiemTraSo(1001);
 		assertEquals(false, n);
 	}
-	@Test
-	public void tim1001(){
-		lst = ts.tim(1001);
-		List<Integer> n = new ArrayList<Integer>();
-		assertEquals(n, lst);
-		
-	}
-	@Test
-	public void timAm1(){
-		lst = ts.tim(-1);
-		List<Integer> n = new ArrayList<Integer>();
-		assertEquals(n, lst);
-	}
+
 }
