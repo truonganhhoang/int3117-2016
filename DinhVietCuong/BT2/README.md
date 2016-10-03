@@ -15,25 +15,25 @@ Trường hợp	A	B	Result
 Với trường hợp xâu có độ dài lớn hơn 0 sẽ chạy vào trong else.
 Trong else có lệnh while và vòng if thứ 2: 
 	if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122))
-		      (C)		          (D)		               (E)		         (F)
+		 (C)	          (D)               (E)	           (F)
 Các trường hợp:
 Trường hợp	C	D	E	F	Result
-1	        	T	T	T	T	T	=> trường hợp này không xảy ra
-2	        	T	T	T	F	T
-3	         	T	T	F	T	T
-4	        	T	F	T	T	T
-5		        T	T	F	F	T
-6		        T	F	T	F	F
-7		        T	F	F	T	F	
-8	         	T	F	F	F	F	
-9		        F	T	T	T	T
+1	        T	T	T	T	T	=> trường hợp này không xảy ra
+2	        T	T	T	F	T
+3	        T	T	F	T	T
+4	        T	F	T	T	T
+5		T	T	F	F	T
+6		T	F	T	F	F
+7		T	F	F	T	F	
+8	        T	F	F	F	F	
+9		F	T	T	T	T
 10	      	F	T	T	F	F
 11	      	F	T	F	T	F
 12	      	F	F	T	T	T
 13	       	F	T	F	F	F
-14		      F	F	T	F	F
-15		      F	T	F	F	F
-16		      F	F	F	F	F => trường hợp không xảy ra
+14		F	F	T	F	F
+15		F	T	F	F	F
+16		F	F	F	F	F => trường hợp không xảy ra
 => ta tính được các test case:
 	+ trường hợp xâu có 1 kí tự chữ thường.
 	+ trường hợp xâu có 1 kí tự chữ hoa.
