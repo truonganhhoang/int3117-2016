@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f046745a-7ef6-418c-a8d8-79992b7937ef" name="Nguyen@FDO 2016-09-27 00:00:35" runUser="FDO\Nguyen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2016-09-27T00:00:35.2809834+07:00" queuing="2016-09-27T00:00:35.2809834+07:00" start="2016-09-27T00:00:34.5053916+07:00" finish="2016-09-27T00:00:35.2969936+07:00" />
+  <TestSettings name="default" id="924f6d86-db30-4719-b7c4-490200ab505c">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="Nguyen_FDO 2016-09-27 00_00_35" />
+    <Properties />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="88bdbddd-e7d7-4267-bdbb-da4f6b55b788" testId="b77ec651-33f8-8c95-0763-480aec3f7afc" testName="isLeapYearTestEvenlyDeviedBy4AndNotDeviedBy100" computerName="FDO" duration="00:00:00.1257502" startTime="2016-09-27T00:00:34.5053916+07:00" endTime="2016-09-27T00:00:35.0451439+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88bdbddd-e7d7-4267-bdbb-da4f6b55b788" />
+    <UnitTestResult executionId="d9812448-f923-4e40-878e-69e4a4021178" testId="5c715cf0-940c-9ab0-40df-0170792be193" testName="isLeapYearTestEvenlyDeviedBy100ButNotDeviedBy400" computerName="FDO" duration="00:00:00.0007275" startTime="2016-09-27T00:00:35.0481443+07:00" endTime="2016-09-27T00:00:35.0521489+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9812448-f923-4e40-878e-69e4a4021178" />
+    <UnitTestResult executionId="74962121-593e-4409-85a0-37e312433eec" testId="06c174fc-e9b3-4bd3-c0f3-afa005f2e933" testName="isLeapYearTestEvenlyDeviedBy400" computerName="FDO" duration="00:00:00.0005585" startTime="2016-09-27T00:00:35.0531476+07:00" endTime="2016-09-27T00:00:35.0561520+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74962121-593e-4409-85a0-37e312433eec" />
+    <UnitTestResult executionId="a9da90e7-8aeb-4310-912a-9778d7c71f4a" testId="0c231277-89a5-d65c-fd73-02e7b20b81b2" testName="isLeapYearTestEvenlyNotDeviedBy4" computerName="FDO" duration="00:00:00.0004334" startTime="2016-09-27T00:00:35.0571503+07:00" endTime="2016-09-27T00:00:35.0621536+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9da90e7-8aeb-4310-912a-9778d7c71f4a" />
+    <UnitTestResult executionId="45eabaf2-c097-4da2-8b9a-6402a8a45074" testId="247b9a57-1f29-e765-9d80-b577fe966eca" testName="isLeapYearTestInvalidInput" computerName="FDO" duration="00:00:00.0112753" startTime="2016-09-27T00:00:35.0631551+07:00" endTime="2016-09-27T00:00:35.0771636+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45eabaf2-c097-4da2-8b9a-6402a8a45074" />
+    <UnitTestResult executionId="5a771e70-789e-45b1-8597-837c0eab9673" testId="21b7d22f-0956-1118-6586-3928fe96de01" testName="ListLeapYearValidInput" computerName="FDO" duration="00:00:00.0054489" startTime="2016-09-27T00:00:35.0791657+07:00" endTime="2016-09-27T00:00:35.0881705+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a771e70-789e-45b1-8597-837c0eab9673" />
+    <UnitTestResult executionId="a6b7b709-b792-478f-b350-14473c3ce3ee" testId="2bad5360-84e5-c5ff-cff3-38eea22b4e36" testName="ListLeapYearALessThanB" computerName="FDO" duration="00:00:00.0005838" startTime="2016-09-27T00:00:35.0891715+07:00" endTime="2016-09-27T00:00:35.0941753+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6b7b709-b792-478f-b350-14473c3ce3ee" />
+    <UnitTestResult executionId="aee2b79d-19cf-4177-b27a-25d273f7b31b" testId="c2c475f7-13d3-9795-739d-fe89615cc7cf" testName="ListLeapYearTestInvalid" computerName="FDO" duration="00:00:00.0009260" startTime="2016-09-27T00:00:35.0951759+07:00" endTime="2016-09-27T00:00:35.0991782+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aee2b79d-19cf-4177-b27a-25d273f7b31b" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="isLeapYearTestEvenlyDeviedBy4AndNotDeviedBy100" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="b77ec651-33f8-8c95-0763-480aec3f7afc">
+      <Execution id="88bdbddd-e7d7-4267-bdbb-da4f6b55b788" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="isLeapYearTestEvenlyDeviedBy4AndNotDeviedBy100" />
+    </UnitTest>
+    <UnitTest name="isLeapYearTestEvenlyDeviedBy100ButNotDeviedBy400" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="5c715cf0-940c-9ab0-40df-0170792be193">
+      <Execution id="d9812448-f923-4e40-878e-69e4a4021178" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="isLeapYearTestEvenlyDeviedBy100ButNotDeviedBy400" />
+    </UnitTest>
+    <UnitTest name="isLeapYearTestEvenlyDeviedBy400" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="06c174fc-e9b3-4bd3-c0f3-afa005f2e933">
+      <Execution id="74962121-593e-4409-85a0-37e312433eec" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="isLeapYearTestEvenlyDeviedBy400" />
+    </UnitTest>
+    <UnitTest name="isLeapYearTestEvenlyNotDeviedBy4" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="0c231277-89a5-d65c-fd73-02e7b20b81b2">
+      <Execution id="a9da90e7-8aeb-4310-912a-9778d7c71f4a" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="isLeapYearTestEvenlyNotDeviedBy4" />
+    </UnitTest>
+    <UnitTest name="isLeapYearTestInvalidInput" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="247b9a57-1f29-e765-9d80-b577fe966eca">
+      <Execution id="45eabaf2-c097-4da2-8b9a-6402a8a45074" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="isLeapYearTestInvalidInput" />
+    </UnitTest>
+    <UnitTest name="ListLeapYearValidInput" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="21b7d22f-0956-1118-6586-3928fe96de01">
+      <Execution id="5a771e70-789e-45b1-8597-837c0eab9673" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="ListLeapYearValidInput" />
+    </UnitTest>
+    <UnitTest name="ListLeapYearALessThanB" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="2bad5360-84e5-c5ff-cff3-38eea22b4e36">
+      <Execution id="a6b7b709-b792-478f-b350-14473c3ce3ee" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="ListLeapYearALessThanB" />
+    </UnitTest>
+    <UnitTest name="ListLeapYearTestInvalid" storage="c:\users\nguyen\documents\visual studio 2015\projects\baitapkiemthu\unittest\bin\debug\unittest.dll" id="c2c475f7-13d3-9795-739d-fe89615cc7cf">
+      <Execution id="aee2b79d-19cf-4177-b27a-25d273f7b31b" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="UnitTest.LeapYearTest" name="ListLeapYearTestInvalid" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b77ec651-33f8-8c95-0763-480aec3f7afc" executionId="88bdbddd-e7d7-4267-bdbb-da4f6b55b788" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c715cf0-940c-9ab0-40df-0170792be193" executionId="d9812448-f923-4e40-878e-69e4a4021178" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06c174fc-e9b3-4bd3-c0f3-afa005f2e933" executionId="74962121-593e-4409-85a0-37e312433eec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c231277-89a5-d65c-fd73-02e7b20b81b2" executionId="a9da90e7-8aeb-4310-912a-9778d7c71f4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="247b9a57-1f29-e765-9d80-b577fe966eca" executionId="45eabaf2-c097-4da2-8b9a-6402a8a45074" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21b7d22f-0956-1118-6586-3928fe96de01" executionId="5a771e70-789e-45b1-8597-837c0eab9673" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2bad5360-84e5-c5ff-cff3-38eea22b4e36" executionId="a6b7b709-b792-478f-b350-14473c3ce3ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2c475f7-13d3-9795-739d-fe89615cc7cf" executionId="aee2b79d-19cf-4177-b27a-25d273f7b31b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

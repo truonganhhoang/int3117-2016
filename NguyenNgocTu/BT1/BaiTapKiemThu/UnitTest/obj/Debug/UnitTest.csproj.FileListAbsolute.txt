@@ -1,0 +1,8 @@
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\BaiTapKiemThu.exe
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\bin\Debug\BaiTapKiemThu.pdb
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BaiTapKiemThu\UnitTest\obj\Debug\UnitTest.pdb

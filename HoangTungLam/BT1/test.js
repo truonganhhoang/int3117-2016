@@ -1,5 +1,9 @@
 var assert = require('assert');
 var index = require('./index');
+var mocha = require('mocha'), 
+chai = require('chai'),
+describe = mocha.describe;
+
 
 describe('Main app', function () {
     describe('#kiemTraNguyenTo', function () {
@@ -32,3 +36,20 @@ describe('Main app', function () {
         });
     });
 });
+
+describe('Main app', function () {
+    describe('#kiemTraNguyenTo', function () {
+        it('should run normally with positive safe limit', function () {
+            assert.equal("Khong la so nguyen to", index.kiemTraNguyenTo(Math.pow(2,53) - 1 ));
+        });
+    });
+});
+
+describe('Main app', function () {
+    describe('#kiemTraNguyenTo', function () {
+        it('should run normally with negative safe limit', function () {
+            assert.equal("Khong la so nguyen to", index.kiemTraNguyenTo(-Math.pow(2,53) + 1));
+        });
+    });
+});
+
