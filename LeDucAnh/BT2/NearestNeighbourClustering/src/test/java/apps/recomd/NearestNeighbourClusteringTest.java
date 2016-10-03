@@ -1,5 +1,8 @@
 package apps.recomd;
 
+import java.awt.Point;
+import java.util.List;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -29,10 +32,18 @@ public class NearestNeighbourClusteringTest
     }
 
     /**
-     * Rigourous Test :-)
+     * Extension File Test :-)
      */
     public void testApp()
-    {
-        assertTrue( true );
+    throws Exception {
+    	
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(0, 0), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(100, 0), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(0, 100), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(100, 100), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(50, 50), 100, 100).size() > 0);
+    	
     }
+    
+    
 }
