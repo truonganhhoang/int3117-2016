@@ -21,3 +21,10 @@ Test Case  | %3 = 0 | %5 = 0 | %7=0 | OUTPUT
 8  | False | False | False | False
 
 Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 1,5,7,8 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.
+
+## Đo mức độ bao phủ
+
+Full 8 test case : 
+<img src="https://github.com/hoangbd58/int3117-2016/blob/master/BuiDangHoang/BT2/fullTestCase.png"/>
+4 Test case MC/DC:
+<img src="https://github.com/hoangbd58/int3117-2016/blob/master/BuiDangHoang/BT2/4TestCase.png"/>
