@@ -15,7 +15,7 @@ public class MathUtils {
             return 0;
         } 
         
-        if(a != 0 && b == 0 || a == b) {
+        if(a == b || a != 0 && b == 0) {
             return Math.abs(a);
         }
               
