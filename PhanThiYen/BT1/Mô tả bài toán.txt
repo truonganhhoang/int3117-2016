@@ -1,0 +1,7 @@
+﻿Mô tả chương trình:kiểm thử chức năng tìm số chẵn trong mảng bằng Unit Test.
+2. Kỹ thuật kiểm thử được ấp dụng:kỹ thuật phân tích các giá trị biên - Value Boundary Analysis.
+vì áp dụng Kiểm thử giá trị biên mạnh nhằm xác định rõ được các ca kiểm thử nhanh hơn, dễ dàng hơn so với 2 kiểm thử khác
+   Đối với bài toán này sử dụng phương pháp giá trị biên được dùng:
+	+ TH mảng rỗng
+	+ TH mảng có độ dài =0
+	+ vì các đối tượng được xét có kiểu Interger nên ta lấy 2 vị trí biên là 2147483647, -2147483647
