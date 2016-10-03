@@ -7,28 +7,36 @@
 ## Hàm cần kiểm thử
 ```java
 public static List<Point> neigbors(Point p, int w, int h) 
-	throws Exception {
+	{
 			
-			List<Point> res = new ArrayList<Point>();
-			
-			int cx = 7, cy = 7;
-			
-			int dx = -cx, dy = -cy;
-			
-			while(dx<=cx) {
-				while(dy<=cy) {
-					int x = p.x + dx;
-					int y = p.y + dy;
-					if(dx==0 && dy==0 || x<0 || y<0 || w>=w || y>=h) continue;
-					else 
-						res.add(new Point(x, y));
-					dy++;
-				}
-				dx++;
+	List<Point> res = new ArrayList<Point>();
+
+	int cx = 7, cy = 7;
+
+	int dx = -cx, dy = -cy;
+
+	while(dx<=cx) {
+		dy = -cy;
+		while(dy<=cy) {
+			int x = p.x + dx;
+			int y = p.y + dy;
+
+			if(dx==0 && dy==0 || x<0 || y<0 || x>=w || y>=h) {
+				dy++;
+				continue;
 			}
-			
-			return res;
+			else {
+				res.add(new Point(x, y));
+				dy++;
+			}
+
 		}
+
+		dx++;
+	}
+
+	return res;
+}
 ```
 Biểu thức Branch = 
 ```(dx==0 && dy==0 || x<0 || y<0 || w>=w || y>=h)```
@@ -46,5 +54,18 @@ Biểu thức Branch =
 
 
 ## Unit tests cho các ca kiểm thử đã tính trên
+```java
+public void testApp()
+    throws Exception {
+    	
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(0, 0), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(100, 0), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(0, 100), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(100, 100), 100, 100).size() > 0);
+    	assertTrue(NearestNeighbourClustering.neigbors(new Point(50, 50), 100, 100).size() > 0);
+    	
+    }
+```
+
 
 ## Đo mức độ bao phủ
