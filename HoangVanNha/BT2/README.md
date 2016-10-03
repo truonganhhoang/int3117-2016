@@ -18,6 +18,14 @@ Bài tập 2:
         		if ((number1 % 3 == 0 && number2 % 5 == 0)
                     && ((number1 + number2) % 8 == 0));
                  Ta thấy điều kiện trên có 3 kiện nên ta có 2^3 ca kiểm thử
+
 		+ Đo độ bao phủ
 			- Sử dụng Emma Coverage trong intellij để đo độ bao phủ
 			- Kết quả được 100%
+
+		+ Thảo luận, với chương trình của em thì dùng bao phủ nào đơn giản nhất mà vẫn tạo bộ kiểm thử chất lượng như MCDC
+			- Với chương trình theo đề bài toán trên ta có thể sử dụng phương pháp kiểm thử lớp tương đương
+			- Chia thành lớp kiểm thử làm 3 lớp
+			 	+ Lớp thứ 1:  N = {-∞, 0}
+			 	+ Lớp thứ 2:  N = 0
+			 	+ Lớp thứ 3:  N = {0, +∞}
