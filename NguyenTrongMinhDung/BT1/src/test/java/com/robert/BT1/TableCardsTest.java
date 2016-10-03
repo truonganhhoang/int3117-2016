@@ -16,6 +16,20 @@ public class TableCardsTest {
 	}
 	
 	@Test
+	public void testUndefinedCardSet() {
+		tableCards1.addCard(Pack.getCardAt(0));
+		assertEquals("2 Bich", tableCards1.getCardAt(0).toString());
+		tableCards1.addCard(Pack.getCardAt(2));
+		assertEquals("2 Ro", tableCards1.getCardAt(1).toString());
+		tableCards1.addCard(Pack.getCardAt(4));
+		assertEquals("3 Bich", tableCards1.getCardAt(2).toString());
+		tableCards1.addCard(Pack.getCardAt(6));
+		assertEquals("3 Ro", tableCards1.getCardAt(3).toString());
+		
+		assertEquals(tableCards1.typeOfLegalCards(), Type.kxd);
+	}
+	
+	@Test
 	public void testSimilarCardNumber(){
 		tableCards1.addCard(Pack.getCardAt(4));
 		tableCards1.addCard(Pack.getCardAt(5));
@@ -87,6 +101,15 @@ public class TableCardsTest {
 		tableCards2.addCard(Pack.getCardAt(14));
 		
 		assertTrue(tableCards2.continousThreePairs());
+		
+		tableCards2.addCard(Pack.getCardAt(8));
+		tableCards2.addCard(Pack.getCardAt(4));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(14));
+		tableCards2.addCard(Pack.getCardAt(15));
+		tableCards2.addCard(Pack.getCardAt(16));
+		
+		assertFalse(tableCards2.continousThreePairs());
 	}
 	
 	@Test
@@ -103,6 +126,22 @@ public class TableCardsTest {
 		assertTrue(tableCards2.continousThreePairs());
 		assertEquals(tableCards1.getCardAt(0).getLevel(), 52);
 		assertTrue(tableCards2.isStrongerThan(tableCards1));
+	}
+	
+	@Test
+	public void testContinousThreePairsStrongerThan2False() {
+		tableCards1.addCard(Pack.getCardAt(11));
+		
+		tableCards2.addCard(Pack.getCardAt(8));
+		tableCards2.addCard(Pack.getCardAt(4));
+		tableCards2.addCard(Pack.getCardAt(7));
+		tableCards2.addCard(Pack.getCardAt(10));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(14));
+		
+		assertTrue(tableCards2.continousThreePairs());
+		assertFalse(tableCards2.isStrongerThan(tableCards1));
+		assertFalse(tableCards1.isStrongerThan(tableCards2));
 	}
 	
 	@Test
@@ -131,7 +170,7 @@ public class TableCardsTest {
 	}
 	
 	@Test
-	public void testStrength(){
+	public void testStrength(){		
 		tableCards1.addCard(Pack.getCardAt(8));
 		tableCards1.addCard(Pack.getCardAt(9));
 		tableCards1.addCard(Pack.getCardAt(10));
@@ -139,6 +178,9 @@ public class TableCardsTest {
 		
 		tableCards2.addCard(Pack.getCardAt(3));
 		assertEquals(Type.tu_quy, tableCards1.typeOfLegalCards());
+		assertTrue(tableCards1.isStrongerThan(emptyTableCards));
+		assertTrue(tableCards2.isStrongerThan(emptyTableCards));
+		
 		assertTrue(tableCards1.isStrongerThan(tableCards2));
 		
 		tableCards2.removeAll();
@@ -164,5 +206,26 @@ public class TableCardsTest {
 			tableCards1.addCard(Pack.getCardAt(i));
 		}
 		assertTrue(tableCards1.isStrongerThan(tableCards2));
+		
+		tableCards1.removeAll();
+		tableCards2.removeAll();
+		tableCards1.addCard(Pack.getCardAt(8));
+		tableCards1.addCard(Pack.getCardAt(9));
+		tableCards1.addCard(Pack.getCardAt(10));
+		tableCards2.addCard(Pack.getCardAt(12));
+		tableCards2.addCard(Pack.getCardAt(13));
+		assertFalse(tableCards2.isStrongerThan(tableCards1));
+		assertFalse(tableCards1.isStrongerThan(tableCards2));
+		
+		tableCards1.removeAll();
+		tableCards2.removeAll();
+		tableCards1.addCard(Pack.getCardAt(20));
+		tableCards1.addCard(Pack.getCardAt(16));
+		tableCards1.addCard(Pack.getCardAt(15));
+		tableCards2.addCard(Pack.getCardAt(12));
+		tableCards2.addCard(Pack.getCardAt(13));
+		tableCards2.addCard(Pack.getCardAt(14));
+		assertFalse(tableCards2.isStrongerThan(tableCards1));
+		assertFalse(tableCards1.isStrongerThan(tableCards2));
 	}
 }

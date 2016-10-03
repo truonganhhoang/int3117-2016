@@ -1,5 +1,9 @@
 var assert = require('assert');
 var index = require('./index');
+var mocha = require('mocha'), 
+chai = require('chai'),
+describe = mocha.describe;
+
 
 describe('Main app', function () {
     describe('#kiemTraNguyenTo', function () {

@@ -8,9 +8,9 @@ module.exports = {
     * Return: n-th number of fibonacci sequence
     * */
     fibonacci: (n) => {
-        let a = 0,
-            b = 1,
-            c;
+        let fn1 = 0,
+            fn2 = 1,
+            fn3;
         if (!Number.isInteger(n)) {
             return 'INVALID_INPUT_VALUE';
         }
@@ -18,10 +18,10 @@ module.exports = {
             return 1;
         }
         while (--n) {
-            c = a + b;
-            a = b;
-            b = c;
+            fn3 = fn1 + fn2;
+            fn1 = fn2;
+            fn2 = fn3;
         }
-        return c;
+        return fn3;
     }
 };
