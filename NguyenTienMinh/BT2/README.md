@@ -6,12 +6,19 @@ Nếu một số chia hết cho 2 & 3 | 5 thì trả về một số hơn số b
 ### Test case khi dùng phương pháp bao phủ điều kiện (Condition coverage)
 STT | % 2 = 0 | % 3 = 0 | % 5 = 0 | Result|
 ---|---|---|---|---|
-1|T|T|T|T
-2|T|T|T|T
-3|T|T|T|T
-4|T|T|T|T
-5|T|T|T|T
-6|T|T|T|T
+1|T|T|T|r+1
+2|F|T|T|r+2
+3|T|F|T|r+2
+4|T|T|F|r+1
+5|F|F|T|r+2
+6|T|F|F|r+2
+7|F|T|F|r+2
+8|F|F|F|r+2
+
+### Test case khi dùng phương pháp MC/DC
+1, 2, 3, 4, 7
+
+-> sử dụng MC/DC tiết kiệm được 3 test case
 
 ### Chạy test:
 ```
