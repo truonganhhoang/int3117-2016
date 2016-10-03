@@ -6,7 +6,9 @@ Kiểm tra 1 số bất kì có phải là số nguyên tố hay không.
 
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
-Biểu thức điều kiện: ( %2=0 OR %3=0 OR %5=0 OR %7=0) AND > 7 => FALSE
+Biểu thức điều kiện: ( %2=0 OR %3=0 OR %5=0 OR %7=0) => FALSE
+
+Không áp dụng MC/DC: Cần 2^4=16 ca kiểm thử tất cả.
 
 Test Case  | %2 = 0| %3 = 0 | %5 = 0 | %7=0 | OUTPUT
 ------------- | ------------- | ------------- | ------------- | ------------- | -------------
@@ -27,4 +29,10 @@ Test Case  | %2 = 0| %3 = 0 | %5 = 0 | %7=0 | OUTPUT
 15 | False | False | False | True | False
 16 | False | False | False | False | True
 
-[Coverage][http://image.prntscr.com/image/87dfb5e58f2b4ae2bb8212223187bb93.png]
+Áp dụng MC/DC: ta chỉ cần cả 16 ca để đảm bảo độ bao phủ tương đương việc thực hiện cả 16 ca kiểm thử trên.
+
+## Đo mức độ bao phủ
+
+16 Test case:
+
+![Coverage](http://image.prntscr.com/image/87dfb5e58f2b4ae2bb8212223187bb93.png)
