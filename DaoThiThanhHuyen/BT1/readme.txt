@@ -23,5 +23,4 @@ Sử dụng test giá trị biên (BVA):
 
 #Độ bao phủ
 Dựa vào sơ đồ khối (controlFlow.png)
-=> độ bao phủ theo câu lênh: 5
-=> độ bao phủ theo nhánh: 5
+=> độ bao phủ câu lệnh: 100%
