@@ -14,9 +14,11 @@
 
 # Bài tập tuần 1:
 - Chương trình java với maven, sử dụng JUnit Test.
+
 ## Mô tả:
 - Chương trình tính hệ số độ tương tự giữa 2 văn bản (Jaccard Index).
 - Tham khảo tại: https://en.wikipedia.org/wiki/Jaccard_index
+
 ## Phân tích
 - Hàm so sánh độ tương tự của 2 văn bản. Do vậy độ đo tương tự Jaccard Index sẽ nằm trong đoạn [0, 1]
 - Các trường hợp kiểm thử cho 2 biên trên sẽ là
