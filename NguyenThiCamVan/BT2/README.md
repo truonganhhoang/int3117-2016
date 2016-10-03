@@ -29,40 +29,40 @@ Biểu thức điều kiện: `Branch = ((baseCondition1 && baseCondition2) && (
 ## Nếu không áp dụng MCDC  
 
 Thông thường, nếu không áp dụng MCDC, ta cần test đủ cả 32 ca kỉểm thử như bảng dưới đây:  
-\# | baseCondition1 | baseCondition2 | condition1 | condtion2 | condition3 | Branch  
----- | ---- | ---- | ---- | ---- | ---- | ----  
+\# | baseCondition1 | baseCondition2 | condition1 | condtion2 | condition3 | Branch
+---- | --- | --- | ---- | --- | --- | ---
 1. | T | T | T | T | T | T
-2. |T | T | T | T | F | T
-3. |T | T | T | F | T | T
-4. |T | T | F | T | T | T
-5. |T | T | T | F | F | T
-6. |T | T | F | T | F | T
-7. |T | T | F | F | T | T
-8. |T | F | T | T | T | F
-9. |T | F | T | T | F | F
-10. |T | F | T | F | T | F
-11. |T | F | F | T | T | F
-12. |T | F | T | F | F | F
-13. |T | F | F | T | F | F
-14. |T | F | F | F | T | F
-15. |T | T | F | F | F | F
-16. |F | T | T | T | T | F
-17. |F | T | T | T | F | F
-18. |F | T | T | F | T | F
-19. |F | T | F | T | T | F
-20. |F | T | T | F | F | F
-21. |F | T | F | T | F | F
-22. |F | T | F | F | T | F
-23. |T | F | F | F | F | F
-24. |F | T | F | F | F | F
-25. |F | F | T | T | T | F
-26. |F | F | T | T | F | F
-27. |F | F | T | F | T | F
-28. |F | F | F | T | T | F
-29. |F | F | T | F | F | F
-30. |F | F | F | T | F | F
-31. |F | F | F | F | T | F
-32. |F | F | F | F | F | F  
+2. | T | T | T | T | F | T
+3. | T | T | T | F | T | T
+4. | T | T | F | T | T | T
+5. | T | T | T | F | F | T
+6. | T | T | F | T | F | T
+7. | T | T | F | F | T | T
+8. | T | F | T | T | T | F
+9. | T | F | T | T | F | F
+10. | T | F | T | F | T | F
+11. | T | F | F | T | T | F
+12. | T | F | T | F | F | F
+13. | T | F | F | T | F | F
+14. | T | F | F | F | T | F
+15. | T | T | F | F | F | F
+16. | F | T | T | T | T | F
+17. | F | T | T | T | F | F
+18. | F | T | T | F | T | F
+19. | F | T | F | T | T | F
+20. | F | T | T | F | F | F
+21. | F | T | F | T | F | F
+22. | F | T | F | F | T | F
+23. | T | F | F | F | F | F
+24. | F | T | F | F | F | F
+25. | F | F | T | T | T | F
+26. | F | F | T | T | F | F
+27. | F | F | T | F | T | F
+28. | F | F | F | T | T | F
+29. | F | F | T | F | F | F
+30. | F | F | F | T | F | F
+31. | F | F | F | F | T | F
+32. | F | F | F | F | F | F  
 
 ## Áp dụng MCDC  
 
@@ -75,8 +75,77 @@ Chỉ cần xây dựng 6 ca kiểm thử tương ứng với 6 trường hợp 
 ## Xây dựng các ca kiểm thử  
 
 Ca kiểm thử \#5 T - T - T - F - F  => True Branch  
+
+```java  
+@Test
+	public void CheckRightAngledTriangleTest1() {
+		Triangle triangle = new Triangle();
+		Assert.assertEquals(triangle.checkTriangleType(3, 4, 5),
+				triangle.RIGHT_ANGLED_TRIANGLE);
+	}
+```  
+
 Ca kiểm thử \#6 T - T - F - T - F  => True Branch  
-Ca kiểm thử \#7 T - T - F - F - T  => True Branch      
-Ca kiểm thử \#15 T - T - F - F - F => False Branch
+
+```java  
+@Test
+	public void CheckRightAngledTriangleTest2() {
+		Triangle triangle = new Triangle();
+		Assert.assertEquals(triangle.checkTriangleType(5, 4, 3),
+				triangle.RIGHT_ANGLED_TRIANGLE);
+	}
+```  
+
+Ca kiểm thử \#7 T - T - F - F - T  => True Branch    
+
+```java  
+@Test
+	public void CheckRightAngledTriangleTest3() {
+		Triangle triangle = new Triangle();
+		Assert.assertEquals(triangle.checkTriangleType(3, 5, 4),
+				triangle.RIGHT_ANGLED_TRIANGLE);
+	}
+```  
+  
+Ca kiểm thử \#15 T - T - F - F - F => False Branch  
+
+```java  
+@Test
+	public void CheckNotRightAngledTriangleTest1() {
+		Triangle triangle = new Triangle();
+		Assert.assertEquals(triangle.checkTriangleType(3, 4, 2),
+				triangle.NOT_RIGHT_ANGLED_TRIANGLE);
+	}
+```  
+
 Ca kiểm thử \#23 T - F - F - F - F  => False Branch   
+
+```java  
+@Test
+	public void CheckNotRightAngledTriangleTest2() {
+		Triangle triangle = new Triangle();
+		Assert.assertEquals(triangle.checkTriangleType(3, 4, 2),
+				triangle.NOT_RIGHT_ANGLED_TRIANGLE);
+	}
+```  
+
 Ca kiểm thử \#32 F - F - F - F - F => False Branch  
+
+```java  
+@Test
+	public void CheckInvalidTriangleTest() {
+		Triangle triangle = new Triangle();
+		Assert.assertEquals(triangle.checkTriangleType(-1, 3, 9),
+				triangle.INVALID_TRIANGLE);
+		Assert.assertEquals(triangle.checkTriangleType(-1, -3, -9),
+				triangle.INVALID_TRIANGLE);
+		Assert.assertEquals(triangle.checkTriangleType(-1, -3, 9),
+				triangle.INVALID_TRIANGLE);
+	}
+```  
+
+## Kết quả test  
+
+## Đo mức độ bao phủ
+
+
