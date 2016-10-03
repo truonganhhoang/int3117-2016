@@ -12,7 +12,64 @@
 
 # Bài tập tuần 3
 
+## Mô tả:
+- Nâng cấp test cases
+ - Với dữ liệu kiểm thử cho đã cho ở BT1, độ tượng tự luôn nằm trong đoạn [0, 1], do vậy kiểm thử biên sẽ kiểm tra được các trường hợp 2 đoạn văn bản giống nhau, hay khác nhau.
+ - Tuy nhiên, với các ca kiểm thử biên, ta chỉ biết được văn bản có giống nhau hay khác nhau nhưnng lại không hề biết được chính xác "độ tương tự" (similar score) của 2 văn bản là bao nhiêu.
+ 
+## Test cases
+ - Khởi tạo dữ liệu 
+```java
+JaccardEngine eng = new JaccardEngine();
+    	
+String s1 = "I love you";
+String s2 = "I love her";
+String s3 = "She like him";
+```
 
+* Kiểm thử lớp biên trên: 1.0
+- Kiểm tra với 2 văn bản giống nhau s1 == s1
+```java
+assertFalse(eng.jaccardIndex(s1, s1) > 1.0);
+assertTrue(eng.jaccardIndex(s1, s1) == 1.0);
+assertFalse(eng.jaccardIndex(s1, s1) < 1.0);
+```
+
+- Kiểm tra với 2 văn bản gần giống nhau s1 ~ s2
+```java
+assertFalse(eng.jaccardIndex(s1, s2) == 1.0);
+assertTrue(eng.jaccardIndex(s1, s2) < 1.0);
+assertFalse(eng.jaccardIndex(s1, s2) > 1.0);
+```
+
+- Kiểm tra với 2 văn bản khác nhau hoàn toàn s1 != s3
+```java
+assertTrue(eng.jaccardIndex(s1, s3) < 1.0);
+assertFalse(eng.jaccardIndex(s1, s3) == 1.0);
+assertFalse(eng.jaccardIndex(s1, s3) > 1.0);
+```
+
+* Kiểm thử lớp biên dưới 0.0
+- 2 chuoi giong nhau: s1 == s1
+```java
+assertTrue(eng.jaccardIndex(s1, s1) > 0.0);
+assertFalse(eng.jaccardIndex(s1, s2) == 0.0);
+assertFalse(eng.jaccardIndex(s1, s1) < 0.0);
+```
+    	
+- 2 chuoi gan giong nhau: s1 ~ s2
+```java
+assertFalse(eng.jaccardIndex(s1, s2) == 0.0);
+assertFalse(eng.jaccardIndex(s1, s2) < 0.0);
+assertTrue(eng.jaccardIndex(s1, s2) > 0.0);
+```
+	
+- 2 chuoi khac nhau hoan toan: s1 != s3
+```java
+assertFalse(eng.jaccardIndex(s1, s3) < 0.0);
+assertTrue(eng.jaccardIndex(s1, s3) == 0.0);
+assertFalse(eng.jaccardIndex(s1, s3) > 0.0);
+```
 
 # Bài tập tuần 1:
 - Chương trình java với maven, sử dụng JUnit Test.
