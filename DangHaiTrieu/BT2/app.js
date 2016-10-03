@@ -5,13 +5,8 @@ let user = {
     personalKey: '1'
 };
 
-let bridge = {
-    container: ['meat', 'banana', 'egg'],
-    superKey: '!@#123'
-};
-
 module.exports = {
-    pushFruitsIntoBridge : (name, personalKey, fruits, superKey) => {
+    pushFruitsIntoBridge : (bridge, name, personalKey, fruits, superKey) => {
         let
             firstCondition = (name == user.name),
             secondCondition = (personalKey == user.personalKey),
