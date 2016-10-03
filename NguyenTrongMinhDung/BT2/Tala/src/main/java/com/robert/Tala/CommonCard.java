@@ -13,6 +13,52 @@ public class CommonCard {
 		this.level = level;
 	}
 	
+	/*
+	public CommonCard(String s) throws Exception {
+		String[] comp = s.split(" ");
+		
+		try {
+			Integer number = Integer.valueOf(comp[0]);
+			this.cardNumber = number;
+		}
+		catch (NumberFormatException e) {
+			switch (comp[0]) {
+			case "J":
+				this.cardNumber = 11;
+				break;
+			case "Q":
+				this.cardNumber = 12;
+				break;
+			case "K":
+				this.cardNumber = 13;
+				break;
+			case "A":
+				this.cardNumber = 14;
+				break;
+			default:
+				throw new Exception("Incompatible card");
+			}
+		}
+		
+		switch (comp[1]) {
+		case "Ro" :
+			this.suit = Suit.diamonds;
+			break;
+		case "Co" :
+			this.suit = Suit.hearts;
+			break;
+		case "Bich":
+			this.suit = Suit.spades;
+			break;
+		case "Nhep":
+			this.suit = Suit.clubs;
+			break;
+		default:
+			throw new Exception("Incompatible card");
+		}
+	}
+	*/
+	
 	public CommonCard(int cardNumber, Suit suit) {
 		this.cardNumber = cardNumber;
 		this.suit = suit;
@@ -30,8 +76,12 @@ public class CommonCard {
 		this.cardNumber = cardNumber;
 	}
 	
-	public String getSuit() {
+	public String getSuitName() {
 		return suit.name();
+	}
+	
+	public Suit getSuit() {
+		return suit;
 	}
 	
 	public void setSuit(Suit suit) {
