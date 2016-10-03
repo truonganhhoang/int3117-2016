@@ -6,8 +6,8 @@
  + 2 văn bản khác hoàn toàn nhau
 
 * Độ bao phủ:
-![alt text](https://www.dropbox.com/s/zc38m9d4qkn9o6z/test_coverage_1.PNG)
-![alt text](https://www.dropbox.com/s/gae8nas5zl44c62/test_coverage_2.PNG?dl=0)
+![Flowchart](https://www.dropbox.com/s/zc38m9d4qkn9o6z/test_coverage_1.PNG)
+![Flowchart](https://www.dropbox.com/s/gae8nas5zl44c62/test_coverage_2.PNG?dl=0)
 
 * Vẽ đồ thị chương trình cho chương trình BT1:
 ![alt text](https://www.dropbox.com/s/io7w40s2jwpix1a/test3.PNG?dl=0)
