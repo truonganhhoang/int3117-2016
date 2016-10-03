@@ -64,3 +64,62 @@ Chỉ cần xây dựng 5 ca kiểm thử tương ứng với 5 trường hợp 
 
 ## Xây dựng các ca kiểm thử
 
+Ca kiểm thử \#2: True - True - True - False => True Branch
+```javascript
+describe('#2 case - Function #pushFruitsIntoBridge: ', () => {
+    describe('push ["coconut"] into bridge.container with True name, True personalKey, True fruits, and False superKey', () => {
+        it('should return new bridge.container with a \'coconut\' inside => [\'meat\', \'banana\', \'egg\', \'coconut\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg', 'coconut'], pushFruitsIntoBridge(brandNewBridge, 'trieudh', '1', ['coconut'], 'falseSuperKey'));
+        });
+    });
+});
+```
+
+Ca kiểm thử \#10: False - True - True - False => False Branch
+```javascript
+describe('#10 case - Function #pushFruitsIntoBridge: ', () => {
+    describe('push ["coconut"] into bridge.container with False name, True personalKey, False fruits, and True superKey', () => {
+        it('should return the old bridge.container [\'meat\', \'banana\', \'egg\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg'], pushFruitsIntoBridge(brandNewBridge, 'trieudh-false', '1', 'thisFruitIsNotInArray', '123!@#'));
+        });
+    });
+});
+```
+
+Ca kiểm thử \#6: True - False - True - False => False Branch
+```javascript
+describe('#6 case - Function #pushFruitsIntoBridge: ', () => {
+    describe('push ["coconut"] into bridge.container with True name, False personalKey, False fruits, and True superKey', () => {
+        it('should return the old bridge.container [\'meat\', \'banana\', \'egg\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg'], pushFruitsIntoBridge(brandNewBridge, 'trieudh', '1-false', 'thisFruitIsNotInArray', '123!@#'));
+        });
+    });
+});
+```
+
+Ca kiểm thử \#4: True - True - False - False => False Branch
+```javascript
+describe('#4 case - Function #pushFruitsIntoBridge: ', () => {
+    describe('push ["coconut"] into bridge.container with True name, True personalKey, False fruits, and False superKey', () => {
+        it('should return the old bridge.container [\'meat\', \'banana\', \'egg\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg'], pushFruitsIntoBridge(brandNewBridge, 'trieudh', '1', 'thisFruitIsNotInArray', 'falseSuperKey'));
+        });
+    });
+});
+```
+
+Ca kiểm thử \#2: True - False - True - True => True Branch
+```javascript
+describe('#5 - Function #pushFruitsIntoBridge: ', () => {
+    describe('push ["coconut"] into bridge.container with True name, False personalKey, True fruits, and True superKey; but the fruits are already in bridge.container', () => {
+        it('should return the old bridge.container [\'meat\', \'banana\', \'egg\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg'], pushFruitsIntoBridge(brandNewBridge, 'trieudh', '1-false', ['banana'], '!@#123'));
+        });
+    });
+});
+```
