@@ -2,7 +2,7 @@
 
 ## Mô tả
 - Chương trình viết bằng java với maven.
-- Chương trình đo độ tương tự của 2 văn bản **ở mức độ ký tự**.
+- Giải thuật tìm các hàng xóm gần nhất trong việc xử lý điểm ảnh.
 
 ## Áp dụng tiêu chuẩn MCDC để tính ra bộ ca kiểm thử cho chương trình trên
 
