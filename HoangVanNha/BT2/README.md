@@ -17,7 +17,7 @@ Bài tập 2:
         	- Như vậy trong chương trình ta có điều kiện :
         		if ((number1 % 3 == 0 && number2 % 5 == 0)
                     && ((number1 + number2) % 8 == 0));
-                 Ta thấy điều kiện trên có 4 kiện nên ta có 2^4 ca kiểm thử
+                 Ta thấy điều kiện trên có 3 kiện nên ta có 2^3 ca kiểm thử
 		+ Đo độ bao phủ
 			- Sử dụng Emma Coverage trong intellij để đo độ bao phủ
 			- Kết quả được 100%

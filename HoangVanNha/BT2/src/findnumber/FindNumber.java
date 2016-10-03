@@ -48,8 +48,7 @@ public class FindNumber {
                 numberNegative = true;
             }
 
-            if ((number1 % 3 == 0 && number2 % 5 == 0)
-                    && ((number1 + number2) % 8 == 0)) {
+            if (checkCondition(number1, number2)) {
                 result.number1 = number1;
                 result.number2 = number2;
                 isFindNumber = true;
@@ -58,6 +57,12 @@ public class FindNumber {
             }
         }
         return result;
+    }
+
+    public boolean checkCondition(int number1, int number2) {
+
+        return (number1 % 3 == 0 && number2 % 5 == 0
+                && ((number1 + number2) % 8 == 0));
     }
 
     public static class Number {
