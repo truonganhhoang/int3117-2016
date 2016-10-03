@@ -19,15 +19,6 @@
 		+TH đặc biệt khi Stack rỗng
 		+Khi Stack khác rỗng.
 
-4. Số liệu kiểm thử (Test Metrics)
-
-   4.1. Độ bao phủ kiểm thử(Test Coverage)
-
-	Test Coverage = (10/10)x 100% = 100%
-
-   4.2.Mức độ kiểm thử thành công(Test success coverage)
-	
-	Test success coverage = (8/10)x100% = 80%.
 
 	
 	
