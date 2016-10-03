@@ -85,7 +85,7 @@ assertFalse(eng.jaccardIndex(s1, s3) > 0.0);
  + 2 văn bản gần giống nhau
  + 2 văn bản khác hoàn toàn nhau.
  
- ## Hàm chức năng
+## Hàm chức năng
  ```java
   public double jaccardIndex(String d1, String d2)
   {
@@ -124,8 +124,8 @@ assertFalse(eng.jaccardIndex(s1, s3) > 0.0);
   }
  ```
  
- ## Test cases
- ```java
+## Test cases
+```java
 public void testApp()
 {
 	JaccardEngine eng = new JaccardEngine();
@@ -141,5 +141,5 @@ public void testApp()
 	
 	assertFalse(eng.jaccardIndex(s1, s2) == 0.0);
 }
- ```
+```
  
