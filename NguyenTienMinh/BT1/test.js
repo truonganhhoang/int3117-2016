@@ -3,7 +3,6 @@
 var FibonaciNumberChecker = require('./FibonaciNumberChecker');
 const assert = require('assert');
 
-
 let fibonaciChecker = new FibonaciNumberChecker();
 
 describe('get fibonaci number at order number', function () {
