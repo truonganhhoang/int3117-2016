@@ -13,7 +13,7 @@ module.exports = class MyNumberValidate {
         let dividable3 = (inputNumber % 3) == 0;
         let dividable5 = (inputNumber % 5) == 0;
 
-        if (dividable2 && dividable3 || dividable5){
+        if ((dividable2 && dividable3) || dividable5){
             return inputNumber + 1;
         }
 
