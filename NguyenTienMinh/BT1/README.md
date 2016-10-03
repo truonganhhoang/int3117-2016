@@ -13,10 +13,6 @@ mocha test.js
 # Note
 ver 2 bổ sung kiẻm thử biên -> lỗi khi miền giá trị âm
 
-bt: đo bao phủ kiểm thử (test coverage)
-(cài tool plugin)
-dòng nào được test dòng nào chưa đc test
-
 ## Độ bao phủ
 ```
 Statements   : 91.43% ( 32/35 )

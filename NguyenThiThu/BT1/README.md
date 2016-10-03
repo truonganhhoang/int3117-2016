@@ -84,13 +84,14 @@ public class TestCustomer {
 http://imgur.com/a/EMLdE
 # Báo cáo bài tập tuần 4  
 ##Sơ đồ mô tả bài toán:  
-http://imgur.com/a/CFCvL
+Sử dụng tool code2flow để vẽ sơ đồ:  
+http://imgur.com/a/oNswv
 ##Đo độ bao phủ của testcase:  
 ##Thực hiện  
 Sử dụng EclEmma plugin for eclipse - code coverage tool
 ##Chạy tool  
 Right click asg01/Coverage As
 ##Kết quả  
-http://imgur.com/a/oqVUM
+http://imgur.com/a/P9v77
 
 

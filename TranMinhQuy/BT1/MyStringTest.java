@@ -1,11 +1,9 @@
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 import org.junit.*;
+import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+
 
 /**
  * Created by tmq on 05/09/2016.
@@ -63,6 +61,13 @@ public class MyStringTest {
         Assert.assertArrayEquals(new int[]{6, 7}, value);
     }
 
+    @Test
+    public void testInputIsCharAndResultIsAllIndex() {
+        MyString myString = new MyString("aaaaaaaaaaaaaaa");
+        int[] value = myString.indexOf("a");
+        Assert.assertArrayEquals(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}, value);
+    }
+
 
     // --------------------------------------------------------------------------
 
@@ -107,4 +112,13 @@ public class MyStringTest {
         int[] value = myString.indexOf("aa");
         Assert.assertArrayEquals(new int[]{2, 3, 4, 12}, value);
     }
+
+    @Test
+    public void testInputIsStringAndResultIsAllIndex() {
+        MyString myString = new MyString("aaaaaaaaaaaaaaa");
+        int[] value = myString.indexOf("aaa");
+        Assert.assertArrayEquals(new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}, value);
+    }
+
+
 }
