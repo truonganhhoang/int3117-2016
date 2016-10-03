@@ -18,4 +18,4 @@
 3. Kết quả
 	- Độ bao phủ đo được là 100%
 	
-	
+	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT2/TestCoverage.PNG)
