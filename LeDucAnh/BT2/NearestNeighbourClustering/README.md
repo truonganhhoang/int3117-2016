@@ -69,3 +69,5 @@ public void testApp()
 
 
 ## Đo mức độ bao phủ
+ - Kết quả:
+ ![test-coverage-3](https://github.com/ducanhk58uet/int3117-2016/blob/master/LeDucAnh/BT2/NearestNeighbourClustering/screenshots/test_coverage_3.PNG)
