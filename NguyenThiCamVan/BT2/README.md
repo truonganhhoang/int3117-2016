@@ -147,6 +147,10 @@ Ca kiểm thử \#32 F - F - F - F - F => False Branch
 
 ## Kết quả test  
 
+![test-result] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT2/test_result/TestResult.PNG)
+
 ## Đo mức độ bao phủ
+
+![test-coverage] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT2/test_coverage_result/TestResult.PNG)
 
 
