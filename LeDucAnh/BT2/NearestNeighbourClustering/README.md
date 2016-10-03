@@ -38,12 +38,12 @@ public static List<Point> neigbors(File f, Point p)
 	}
 ```
 Biểu thức Branch = 
-```java (dx==0 && dy==0 || x<0 || y<0 || x>=img.getWidth() || y>=img.getHeight() || img.getRGB(x, y) == Color.white.getRGB())```
+```(dx==0 && dy==0 || x<0 || y<0 || x>=img.getWidth() || y>=img.getHeight() || img.getRGB(x, y) == Color.white.getRGB())```
 
 
 
 ## Áp dụng tiêu chuẩn MCDC, ta có bảng sau:
-`#       | dx = 0 | dy = 0 | x < 0 | y < 0 | x>=img.getWidth() | y>=img.getHeight() | Màu trắng | Branch1
+\#       | dx = 0 | dy = 0 | x < 0 | y < 0 | x>=img.getWidth() | y>=img.getHeight() | Màu trắng | Branch1
 -------- |------|------|-----| ----|---------------|------------------|---------| -------
 1.       |T       |T       | T     | T     | F                 |F                   |T          | F
 2.       |T       |T       | F     | T     | T                 |F                   |T          | F
