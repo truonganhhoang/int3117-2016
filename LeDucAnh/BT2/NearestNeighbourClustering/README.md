@@ -2,7 +2,7 @@
 
 ## Mô tả
 - Chương trình viết bằng java với maven.
-- Giải thuật tìm các hàng xóm gần nhất trong việc xử lý điểm ảnh. (Nearest Neighbour Clustering)
+- Giải thuật tìm kiếm các hàng xóm gần nhất. (Nearest Neighbour Clustering)
 
 ## Hàm cần kiểm thử
 ```java
