@@ -10,10 +10,14 @@ import XCTest
 @testable import BankCalculator
 
 class BankCalculatorTests: XCTestCase {
+	
+	var vc: ViewController!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+		let storyBoard = UIStoryboard.init(name: "Main", bundle: NSBundle.mainBundle())
+		vc = storyBoard.instantiateInitialViewController() as! ViewController
     }
     
     override func tearDown() {
@@ -32,5 +36,34 @@ class BankCalculatorTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+	
+	// MARK: - Test valid Money, Interest rate, due
+	
+	func testValidMoney() {
+		let testCases = [(-10, 0), (1000000, 1000000), (MAXFLOAT - 1, MAXFLOAT - 1), (MAXFLOAT + 1, MAXFLOAT + 1), (MAXFLOAT, MAXFLOAT)]
+		testCases.forEach {
+			XCTAssertEqual(vc.validMoney($0), $1)
+		}
+	}
+	
+	func testRate() {
+		let testCases = [(-10, 0),(0, 0),(50, 50), (100, 100), (101, 100), (MAXFLOAT, 100)]
+		testCases.forEach {
+			XCTAssertEqual(vc.validRate($0), Float($1))
+		}
+	}
+	
+	func testDue() {
+		let testCases = [(-10, 0),(0, 0),(12, 12), (100, 12)]
+		testCases.forEach {
+			XCTAssertEqual(vc.validDue($0), $1)
+		}
+	}
+	
+	func testCalculate() {
+		let testCases = [(0, 0, 0), (0, 99, 0), (100, 10.0, 110), (MAXFLOAT, 10.0, MAXFLOAT + (MAXFLOAT * 10 / 100))]
+		testCases.forEach {
+			XCTAssertEqual(vc.calculateMoney($0, interestRate: Float($1)), $2)
+		}
+	}
 }

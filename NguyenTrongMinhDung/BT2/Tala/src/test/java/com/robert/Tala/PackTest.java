@@ -1,8 +1,8 @@
-package com.robert.BT1;
+package com.robert.Tala;
 
 import static org.junit.Assert.*;
 import org.junit.*;
-import com.robert.BT1.CommonCard.Suit;
+import com.robert.Tala.CommonCard.Suit;
 
 public class PackTest {
 	/*

@@ -1,9 +1,9 @@
-package com.robert.BT1;
+package com.robert.Tala;
 
 import static org.junit.Assert.*;
 
 import org.junit.*;
-import com.robert.BT1.SetOfCards.Type;
+import com.robert.Tala.SetOfCards.Type;
 
 public class TableCardsTest {
 	private SetOfCards tableCards1, tableCards2, emptyTableCards;
@@ -93,14 +93,14 @@ public class TableCardsTest {
 	
 	@Test
 	public void testContinousThreePairs(){
-		tableCards2.addCard(Pack.getCardAt(8));
-		tableCards2.addCard(Pack.getCardAt(4));
-		tableCards2.addCard(Pack.getCardAt(7));
-		tableCards2.addCard(Pack.getCardAt(10));
-		tableCards2.addCard(Pack.getCardAt(13));
-		tableCards2.addCard(Pack.getCardAt(14));
+		tableCards1.addCard(Pack.getCardAt(8));
+		tableCards1.addCard(Pack.getCardAt(4));
+		tableCards1.addCard(Pack.getCardAt(7));
+		tableCards1.addCard(Pack.getCardAt(10));
+		tableCards1.addCard(Pack.getCardAt(13));
+		tableCards1.addCard(Pack.getCardAt(14));
 		
-		assertTrue(tableCards2.continousThreePairs());
+		assertTrue(tableCards1.continousThreePairs());
 		
 		tableCards2.addCard(Pack.getCardAt(8));
 		tableCards2.addCard(Pack.getCardAt(4));
@@ -110,6 +110,17 @@ public class TableCardsTest {
 		tableCards2.addCard(Pack.getCardAt(16));
 		
 		assertFalse(tableCards2.continousThreePairs());
+		
+		tableCards1.removeAll();
+		
+		tableCards1.addCard(Pack.getCardAt(8));
+		tableCards1.addCard(Pack.getCardAt(4));
+		tableCards1.addCard(Pack.getCardAt(7));
+		tableCards1.addCard(Pack.getCardAt(10));
+		tableCards1.addCard(Pack.getCardAt(13));
+		tableCards1.addCard(Pack.getCardAt(14));
+		
+		assertTrue(tableCards1.continousThreePairs());
 	}
 	
 	@Test
