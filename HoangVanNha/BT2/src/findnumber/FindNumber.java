@@ -4,7 +4,7 @@ package findnumber;
  * Created by Nhahv on 10/3/2016.
  * <></>
  */
-public class FindNumber {
+class FindNumber {
 
 //    public static void main(String[] args) {
 //
@@ -14,7 +14,7 @@ public class FindNumber {
 //    }
 
 
-    public Number findNumberDivisibleBy8(int numberStart) {
+    Number findNumberDivisibleBy8(int numberStart) {
 
         if (numberStart == 0) {
             return null;
@@ -59,13 +59,13 @@ public class FindNumber {
         return result;
     }
 
-    public boolean checkCondition(int number1, int number2) {
+    boolean checkCondition(int number1, int number2) {
 
         return (number1 % 3 == 0 && number2 % 5 == 0
                 && ((number1 + number2) % 8 == 0));
     }
 
-    public static class Number {
+    static class Number {
         int number1, number2;
     }
 }
