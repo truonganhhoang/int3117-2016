@@ -1,11 +1,10 @@
-Môn học: Kiểm thử phần mềm
+Bài tập tuần 1:
 
-Họ và tên: Ngô Thị Phượng
-Mã SV: 13020335
+Mô tả bài toán: Tìm ước chung lớn nhất của hai số
+Sử dụng JUnit Test
 
-Tuần 1: Bài toán tìm ước chung lớn nhất
+Bài tập tuần 3:
 
-Tuần 3
 Đề bài: Áp dụng các kỹ thuật kiểm thử vào bài tập một và nêu lý do chọn kỹ thuật đó
 1. Áp dụng kỹ thuật kiểm thử: Phân lớp tương đương.
 2. Nguyên nhân: 
