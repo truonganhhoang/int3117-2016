@@ -9,7 +9,7 @@ Tiêu chuẩn MDCD
 year%400 | year%4 | year%100 | Kết quả
       T  |    T   |    F     | T
       T  |    T   |    T     | T
-	  F  |    T   |    F     | T
+      F  |    T   |    F     | T
       F  |    T   |    T     | F
 
 Ðộ bao phủ câu lênh: 89.7%
