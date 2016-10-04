@@ -14,7 +14,7 @@ Biểu thức Branch:
 + (edge1 > 0 && edge2 > 0 && edge3 > 0) && ((edge1 + edge2 > edge3) && (edge1 + edge3 > edge2) && (edge3 + edge2 > edge1)) && ((edge1 == edge3) || (edge1 == edge2) || (edge3 == edge2))
 
 Áp dụng tiêu chuẩn MCDC, ta có bảng sau:
-![MCDC](/Nhom3/DoanVanThien/BT2/Triangle/screenshots/mc_dc.PNG)
+![MCDC](/Nhom3/DoanVanThien/BT2/Triangle/screenshots/mc_dc.png
 
 Unit tests cho các ca kiểm thử đã tính trên: 
 
@@ -25,6 +25,6 @@ Unit tests cho các ca kiểm thử đã tính trên:
 
 Đo mức độ bao phủ
 
-![Coverage](/Nhom3/DoanVanThien/BT2/Triangle/screenshots/coverage.PNG)
+![Coverage](/Nhom3/DoanVanThien/BT2/Triangle/screenshots/coverage.png)
 
 ![Code](/Nhom3/DoanVanThien/BT2/Triangle/screenshots/code_coverage.PNG)
