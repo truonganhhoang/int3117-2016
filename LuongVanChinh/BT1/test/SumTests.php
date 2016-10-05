@@ -20,16 +20,10 @@ class SumTests extends PHPUnit_Framework_TestCase
         $result = $this->calculator->calculator(3);
         $this->assertEquals(6, $result);
     }
-    // String
-    public function testAdd2()
-    {
-        $result = $this->calculator->calculator('string');
-        $this->assertEquals(0, $result);
-    }
-    // So nguyen am
+    // So nguyen am (duoi gia tri cuc tieu)
     public function testAdd3()
     {
-        $result = $this->calculator->calculator(-2);
+        $result = $this->calculator->calculator(-1);
         $this->assertEquals(0, $result);
     }
     // Bien Min
@@ -38,19 +32,25 @@ class SumTests extends PHPUnit_Framework_TestCase
         $result = $this->calculator->calculator(0);
         $this->assertEquals(0, $result);
     }
-    // So thap phan
+    // Can tren bien Min
     public function testAdd5()
+    {
+        $result = $this->calculator->calculator(1);
+        $this->assertEquals(1, $result);
+    }
+    // So thap phan
+    public function testAdd6()
     {
         $result = $this->calculator->calculator(1.5);
         $this->assertEquals(0, $result);
     }
-    // Bien max 
+    //Gia tri cuc dai
     public function testAdd7()
     {
         $result = $this->calculator->calculator(2147483647);
-        $this->assertEquals(0, $result);
+        $this->assertEquals(2305843007133300000, $result);
     }
-    // Ngoai bien max 
+    //Ngoai gia tri cuc dai
     public function testAdd8()
     {
         $result = $this->calculator->calculator(2147483648);
