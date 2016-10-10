@@ -5,6 +5,8 @@
  */
 package com.sofwaretesting.project1;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -62,9 +64,9 @@ public class MathUtilsTest {
     
     @Test
     public void testBiggerThanBoundaryValue() {
-        int n = 30;
-        long expResult = 2432902008176640000L;
+        int n = 21;
+        BigDecimal expResult = new BigDecimal("51090942171709440000");
         long result = mathUtils.factorial(n);
-        assertTrue(result > expResult);
+        assertNotEquals(expResult, result);
     }
 }

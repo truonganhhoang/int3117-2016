@@ -21,13 +21,13 @@ public class TinhTongDemo{
     }
     
      public static long TinhTong(long n){
-        long temp=0;
+        long TongChan=0;
         if(n<0) return 0;
         else{
             for(long i=0;i<=n;i++){
-            if(i%2==0) temp+= i;
+            if(i%2==0) TongChan+= i;
         }
-        return temp;
+        return TongChan;
         }  
     }
 }

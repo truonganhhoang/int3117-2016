@@ -1,5 +1,5 @@
 from unittest import TestCase
-from Solver import Solver
+from solver import Solver
 
 
 class TestSolver(TestCase):

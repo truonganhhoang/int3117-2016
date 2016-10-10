@@ -70,30 +70,32 @@ public class SetOfCards implements CardActivity {
 		return typeOfLegalCards() != Type.kxd;
 	}
 	
-	protected Type typeOfLegalCards(){
+	protected Type typeOfLegalCards() {
 		if (cards.size() == 1)
 			return Type.don_le;
-		
-		if (similarCardNumber())
-			switch(cards.size()){
-				case 2:
-					return Type.doi;
-				case 3:
-					return Type.ba;
-				case 4:
-					return Type.tu_quy;
-			}
-		else{
-			if (continousCardNumber())
-				return Type.day;
+		else {
+			if (similarCardNumber())
+				switch(cards.size()){
+					case 2:
+						return Type.doi;
+					case 3:
+						return Type.ba;
+					case 4:
+						return Type.tu_quy;
+					default:
+						return Type.kxd;
+				}
 			else{
-				if (continousThreePairs())
-					return Type.bo_thong;
-				else
-					return Type.kxd;
+				if (continousCardNumber())
+					return Type.day;
+				else{
+					if (continousThreePairs())
+						return Type.bo_thong;
+					else
+						return Type.kxd;
+				}
 			}
 		}
-		return Type.kxd;
 	}
 	
 	public boolean isStrongerThan(SetOfCards other){		
@@ -104,7 +106,7 @@ public class SetOfCards implements CardActivity {
 			Type currentType = typeOfLegalCards();
 			
 			if (other.numberOfCards() == numberOfCards()){
-				if (other.typeOfLegalCards() == typeOfLegalCards())
+				if (other.typeOfLegalCards() == currentType)
 					return (cards.get(cards.size()-1).getLevel() > other.getCardAt(other.numberOfCards()-1).getLevel());
 				else
 					return false;
@@ -118,7 +120,7 @@ public class SetOfCards implements CardActivity {
 						return false;
 				}
 				else
-					return (other.getCardAt(other.cards.size()-1).getLevel() < cards.get(cards.size() - 1).getLevel());
+					return (other.getCardAt(other.cards.size()-1).getLevel() < cards.get(cards.size() - 1).getLevel() && other.typeOfLegalCards() == currentType);
 			}
 		}
 		else

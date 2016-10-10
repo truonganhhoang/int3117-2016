@@ -36,14 +36,7 @@ public class TinhTongDemoTest {
     @After
     public void tearDown() {
     }
-        long n = -100;
-        long expResult = 0;
-        long result = TinhTongDemo.TinhTong(n);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-    @Test
-    public void testT
+
     /**
      * Test of main method, of class TinhTongDemo.
      */
@@ -52,104 +45,48 @@ public class TinhTongDemoTest {
      * Test of TinhTong method, of class TinhTongDemo.
      */
     @Test
-    public void testTinhTong() {
-        //System.out.prlongln("TinhTong");
+    public void testTinhTongGiaTriNho() {
         long n = 3;
         long expResult = 2;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
     
     @Test
-    public void testTinhTong2() {
-        //System.out.prlongln("TinhTong");
+    public void testTinhTongGiaTriVua() {
         long n = 15;
         long expResult = 56;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }  
-    
+    }     
     @Test
-    public void testTinhTong3() {
-        //System.out.prlongln("TinhTong");
-        long n = 4;
-        long expResult = 6;
-        long result = TinhTongDemo.TinhTong(n);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-    @Test
-    public void testTinhTong4() {
-        //System.out.prlongln("TinhTong");
-        long n = 100;
-        long expResult = 2550;
-        long result = TinhTongDemo.TinhTong(n);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-    
-     @Test
-    public void testTinhTong5() {
-        //System.out.prlongln("TinhTong");
-        long n = 1000;
-        long expResult = 250500;
-        long result = TinhTongDemo.TinhTong(n);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-    
-     @Test
-    public void testTinhTong6() {
-        //System.out.prlongln("TinhTong");
-        long n = 10000;
-        long expResult = 25005000;
-        long result = TinhTongDemo.TinhTong(n);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-    }
-    
-    @Test
-    public void testTinhTong7() {
-        //System.out.prlongln("TinhTong");
-inhTong8() {
-        //System.out.prlongln("TinhTong");
-        long n = -1000;
+    public void testTinhTongGiaTriAm() {
+        long n = -100;
         long expResult = 0;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
-    
+   
     @Test
-    public void testTinhTong9() {
-        //System.out.prlongln("TinhTong");
+    public void testTinhTongGiaTriAmTo() {
         long n = -10000;
         long expResult = 0;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
     
     @Test
-    public void testTinhTong10() {
-        //System.out.prlongln("TinhTong");
+    public void testTinhTongGiaTriDacBiet() {
         long n = 1;
         long expResult = 0;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
-	@Test
-    public void testTinhTong11() {
-        //System.out.prlongln("TinhTong");
-        long n = 100000;
-        long expResult = 2500050000;
+    @Test
+    public void testTinhTongGiaTriMax() {
+        long n = 50000;
+		long expResult = 625025000;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
-	
-	
 }

@@ -20,3 +20,7 @@ Sử dụng test giá trị biên (BVA):
 - C: test các giá trị 50, 51, 55, 59
 - B: test các giá trị 60, 61, 70, 79
 - A: test các giá trị 80, 81, 90, 100
+
+#Độ bao phủ
+Dựa vào sơ đồ khối (controlFlow.png)
+=> độ bao phủ câu lệnh: 100%

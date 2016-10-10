@@ -1,0 +1,25 @@
+{
+  "name": "bt2",
+  "version": "1.0.0",
+  "description": "Bai tap 2 mon kiem thu & dam bao chat luong phan mem",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test/*",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trieudh58/int3117-2016.git"
+  },
+  "author": "trieudh58",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trieudh58/int3117-2016/issues"
+  },
+  "homepage": "https://github.com/trieudh58/int3117-2016#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.0"
+  }
+}

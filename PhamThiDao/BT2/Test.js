@@ -6,26 +6,13 @@
  *
  * Date: 2016-09-6
  */
-QUnit.test("prettydate basics", function( assert ) {
-     var now = "2016/09/19 22:25:00";
+QUnit.test("so_nguyen_to", function( assert ) {
+     // var now = "2016/09/19 22:25:00";
 
-    assert.equal(prettyDate(now, "2016/09/19 22:24:30"), "just now");
-    assert.equal(prettyDate(now, "2016/09/19 22:24:59"), "just now");
-    assert.equal(prettyDate(now, "2016/09/19 22:25:00"), "just now");
+    assert.equal(kiem_tra_snt(0), "Khong la so nguyen to!");
+    assert.equal(kiem_tra_snt(1), "Khong la so nguyen to!");
+    assert.equal(kiem_tra_snt(2), "La so nguyen to!");
 
-    assert.equal(prettyDate(now, "2016/09/19 22:23:01"), "1 minute ago");
-    assert.equal(prettyDate(now, "2016/09/19 22:24:00"), "1 minute ago");
-
-    assert.equal(prettyDate(now, "2016/09/19 21:25:00"), "1 hour ago");
-    assert.equal(prettyDate(now, "2016/09/19 21:24:59"), "1 hour ago");
-
-    assert.equal(prettyDate(now, "2016/09/18 22:24:59"), "Yesterday");
-    assert.equal(prettyDate(now, "2016/09/18 22:25:00"), "Yesterday");
-
-    assert.equal(prettyDate(now, "2016/09/17 22:23:30"), "2 days ago");
-
-    assert.equal(prettyDate(now, "2016/09/16 22:23:30"), "2 days ago");
-    assert.equal(prettyDate(now, "2016/09/18 22:23:30"), "2 days ago");
-    
-    assert.equal(prettyDate(now, "2015/09/17 22:23:30"), undefined);
+    assert.equal(kiem_tra_snt(3), "La so nguyen to!");
+    assert.equal(kiem_tra_snt(1231), "La so nguyen to!");
   });

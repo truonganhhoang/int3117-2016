@@ -20,3 +20,7 @@ Ta có các testcase:
 1. Testcase 1: {Input: 1, Output: False}
 2. Testcase 2: {Input: 6, Output: False}
 3. Testcase 3: {Input: 7, Output: True}
+
++ Độ bao phủ
+- Độ bao phủ theo câu lệnh: 6/24
+- Độ bao phủ theo quyết định: 50%
