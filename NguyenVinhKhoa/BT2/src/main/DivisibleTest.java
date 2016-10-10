@@ -34,4 +34,11 @@ public class DivisibleTest {
 		assertEquals(false, actual);
 	}
 	
+	@Test
+	public void testNoForLoop() {
+		Range range = new Range(6, 3);
+		boolean actual = range.isDivisible();
+		assertEquals(false, actual);
+	}
+
 }
