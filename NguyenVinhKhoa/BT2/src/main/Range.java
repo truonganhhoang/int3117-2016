@@ -28,5 +28,5 @@ public class Range {
 			return false;
 		}
 	}
-	
+
 }
