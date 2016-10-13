@@ -4,46 +4,76 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * @author Ngoc Anh
+ */
 public class TestDaoNguoc {
 
+	/**
+	 * Test main method, class SoDaoNguoc
+	 */
 	@Test
-	public void test() {
-		
+	public void TestSoDaoNguoc() {
 		SoDaoNguoc num = new SoDaoNguoc();
-		//test ham doa nguoc so
-		//so doi xung
-		int k = num.DaoNguocSo(121);
-		assertEquals(121, k);
-		//so khong doi xung
-		int s = num.DaoNguocSo(123);
-		assertEquals(321, s);
-		//test ham so sanh
-		//so doi xung
-		int e = num.SoSanh(22022, num.DaoNguocSo(22022));
-		assertEquals(1, e);
-		//so khong doi xung
-		int t = num.SoSanh(132, num.DaoNguocSo(132));
-		assertEquals(0, t);
-		//gt nho nhat
-		int a = num.SoSanh(-2147483648, num.DaoNguocSo(-2147483648));
-		assertEquals(0, a);
-		//gt ngay tren nho nhat
-		int b = num.SoSanh(-2147483647, num.DaoNguocSo(-2147483647));
-		assertEquals(0, b);
-		//mot so gt binh thuong
-		//so 0
-		int i = num.SoSanh(0, num.DaoNguocSo(0));
-		assertEquals(1, i);
-		//so -1
-		int j = num.SoSanh(-1, num.DaoNguocSo(-1));
-		assertEquals(1, j);
-		
-		//gt ngay duoi gt lon nhat
-		int c = num.SoSanh(2147483646, num.DaoNguocSo(2147483646));
-		assertEquals(0, c);
-		//gt lon nhat
-		int d = num.SoSanh(2147483647, num.DaoNguocSo(2147483647));
-		assertEquals(0, d);
-	}
-
+		int n = 212;
+        int expected = 212;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc1() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = 123;
+        int expected = 321;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc2() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = -2147483648;
+        int expected = -8463847412;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc3() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = -2147483647;
+        int expected = -7463847412;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc4() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = 0;
+        int expected = 0;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc5() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = -1;
+        int expected = -1;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc6() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = 2147483646;
+        int expected = 6463847412;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
+	@Test
+	public void TestSoDaoNguoc7() {
+		SoDaoNguoc num = new SoDaoNguoc();
+		int n = 2147483647;
+        int expected = 7463847412;
+        int result = num.DaoNguocSo(n);
+        assertEquals(expected, result);
+    }
 }

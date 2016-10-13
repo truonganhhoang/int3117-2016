@@ -8,15 +8,16 @@ public class SoDaoNguoc {
        System.out.print("nhập số n : ");
        n = (int) ip.nextInt();
              
-       System.out.println(sdn.SoSanh(n,sdn.DaoNguocSo(n)));
+       System.out.println(sdn.DaoNguocSo(n));
         
 	}
-/*	private int nextInt(Scanner sc) {
+	/*private int nextInt(Scanner sc) {
 	    try {
 	          return sc.nextInt();
 	    } catch (Exception e) { System.out.print("ban phai nhap so"); }
 	    return -1;
 	}*/
+	
 	public int DaoNguocSo(int a){
 		int x = a;
 		int y =0;
@@ -25,10 +26,5 @@ public class SoDaoNguoc {
 			x=x/10;
 		}
 		return y;
-	}
-	public int SoSanh(int i, int j){
-		if(i == j)
-			return 1;
-		else return 0;
 	}
 }

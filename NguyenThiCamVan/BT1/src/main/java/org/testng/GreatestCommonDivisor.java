@@ -5,26 +5,29 @@ package org.testng;
  * Finding the greatest common divisor of 2 integer number
  */
 public class GreatestCommonDivisor {
-  public int greatestCommonDivisor(int num1, int num2) {
-    num1 = Math.abs(num1);
-    num2 = Math.abs(num2);
-    while (num1 != num2) {
-      if (num1 == 0 || num2 == 0) {
-        return (num1 + num2);
-      }
-      if (num1 == 1 || num2 == 1) {
-        return 1;
-      }
-      if (num1 > num2) {
-        num1 = num1 - num2;
-      } else {
-        num2 = num2 - num1;
-      }
-    }
-    return num1;
-  }
+  public static int IS_NOT_INTEGER_NUMBER = -1;
 
-  public static void main(String[] args) {
-    System.out.println(Integer.MAX_VALUE);
+  public int greatestCommonDivisor(String str1, String str2) {
+    try {
+      int number1 = Integer.parseInt(str1);
+      int number2 = Integer.parseInt(str2);
+      number1 = Math.abs((int) number1);
+      number2 = Math.abs((int) number2);
+
+      if (number1 == 0 || number2 == 0) {
+        return (number1 + number2);
+      }
+
+      while (number2 != 0) {
+        int tmp = number2;
+        number2 = number1 % number2;
+        number1 = tmp;
+      }
+
+      return number1;
+
+    } catch (NumberFormatException e) {
+      return IS_NOT_INTEGER_NUMBER;
+    }  
   }
 }

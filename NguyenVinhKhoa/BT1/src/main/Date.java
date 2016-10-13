@@ -7,13 +7,13 @@ public class Date {
 	private int[] numOfDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
 	public Date(int d, int m, int y) {
-		if (!isValid(d, m, y)) {
-			throw new IllegalArgumentException("Values for Date are invalid");
-		}
-		
 		this.d = d;
 		this.m = m;
 		this.y = y;
+
+		if (!isValid(d, m, y)) {
+			throw new IllegalArgumentException("Values for Date are invalid");
+		}
 	}
 
 	public boolean isLeapYear() {

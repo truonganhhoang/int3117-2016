@@ -1,4 +1,25 @@
-# Báo cáo tuần 2  
+# Báo cáo tuần 4  
+
+## Phương pháp kiểm thử hộp đen lựa chọn:  
+- Bài tập này sử dụng phương pháp kiểm thử lớp tương đương  
+- Phương pháp kiểm thử lớp tương đương phù hợp vì: Hàm tìm ước chung lớn nhất với 2 đối số đầu vào có nhiều trường hợp để kiểm tra. Vì thế chọn phương pháp kiểm thử này để bao phủ được hết tất cả các trường hợp.  
+
+## Mức độ bao phủ:  
+- Test case được viết bằng [TestNG framework](http://testng.org/doc/eclipse.html) được cài vào Elipse IDE (Chi tiết xem báo cáo tuần 1).  
+- Test coverage report được sinh tự động từ chính TestNG Plugin được cài trong Elipse IDE.  
+- Kết quả:  
+
+![Test coverage summary](https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT1/test_coverage/TestCoverageResult.png)  
+
+## Vẽ đồ thị chương trình:  
+- Sơ đồ khối (Flowchart) này được sinh tự động bằng [code2flow.com](http://code2flow.com)  
+- Kết quả:  
+  
+![Flowchart](https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT1/flow_chart_gen/FlowChartGenFromCode.png)  
+
+=====
+
+# Báo cáo tuần 3  
 
 ## Function cần test:  
 * Mô tả: Tính ước chung lớn nhất của 2 số nguyên kiểu integer  
@@ -75,7 +96,7 @@ Các ca kiểm thử được thiết kế:
   } 
   ```
   
-  
+=====
   
 # Báo cáo tuần 1
 ## TestNG-SoftwareTesting

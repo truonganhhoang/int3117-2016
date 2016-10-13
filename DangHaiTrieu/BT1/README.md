@@ -1,3 +1,32 @@
+# Báo cáo bài tập về nhà tuần 4.
+
+## Refactor
+- Refactor tên biến.
+- Đã refactor các mô tả (describe) ca kiểm thử trong file test (test/test.js) để mọi người đọc dễ hiểu hơn.
+- Bỏ ca kiểm thử \#4 về thời gian chạy (run time) vì không nằm trong phạm vi kiểm thử biên.
+- Bổ sung ca kiểm thử ở cận dưới (n < 3) để test coverage lên 100%
+
+## Phương pháp hộp đen đã áp dụng
+- Bài tập này sử dụng phương pháp kiểm thử biên (bounday-value analysis)
+- Phương pháp kiểm thử biên phù hợp vì: bài toán cần được kiểm tra các giá trị biên và cận biên thật chính xác, vì hàm fibonacci tăng theo cấp số rất nhanh; trong khi giới hạn số có thể thể hiện của javascript (hay bất kỳ ngôn ngữ nào khác) đều có hạn. Một điều nữa là khi kiểm thử biên, chúng ta sẽ xem xét được một phần mức độ hiệu quả của hàm đã viết. VD: nếu trong hàm viết bằng đệ quy thì rất có thể không chạy được trên các laptop thông thường, khi số n ngày càng lớn.
+
+## Mức độ bao phủ (2 ảnh bên dưới)
+- Test case được implement sử dụng [Mochajs framework](http://mochajs.org/).
+- Test coverage report được sinh tự động sử dụng [Istanbul library](https://www.npmjs.com/package/istanbul).
+- Kết quả:
+  - Test coverage summary:
+  ![Test coverage summary](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT1/screenshots/test-coverage-sumary.png)
+
+  - Test coverage detail:
+  ![Test coverage detail](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT1/screenshots/test-coverage-detail.png)
+  
+## Vẽ đồ thị chương trình
+- Sơ đồ khối (Flowchart) này được generate tự động nhờ code2flow.com
+- Kết quả:
+![Flowchart](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT1/screenshots/flowchart.png)
+
+======
+
 # Báo cáo bài tập về nhà tuần 3.
 
 ## Function cần test
