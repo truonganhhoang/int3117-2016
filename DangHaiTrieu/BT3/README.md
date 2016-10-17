@@ -106,3 +106,10 @@ Tóm tắt kết quả:
 Kết quả bao phủ chi tiết:
 
 ![bt3-coverage-detal](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT3/screenshots/bt3-coverage-detail.png)
+
+## Nhận xét, đối sánh về kết quả nhận được khi áp dụng All-DU-Path và MCDC
+
+- MCDC chặt chẽ hơn về bao phủ nhánh (branch), khi các điều kiện đơn chắc chắn sẽ được thực thi ít nhất một lần.
+- All-DU-Path giúp kiểm tra bao phủ dòng lệnh (statement) rất tốt, vì để sinh ra được các ca kiểm thử thì ta cần dựa vào đồ thị chu trình của chương trình
+- All-DU-Path hỗ trợ kiểm tra cách các dòng dữ liệu chạy trong chương trình.
+- Tuy nhiên, trong bao phủ nhánh, All-DU-Path làm chưa thể chặt chẽ khi so với MCDC. Trong kết quả bao phủ đã nếu ở trên, bao phủ nhánh chỉ đạt 83.33% vì có một điều kiện đơn chưa được chạy qua. 
