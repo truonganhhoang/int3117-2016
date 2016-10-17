@@ -17,7 +17,6 @@ public class DemoChangePassword {
 	@SuppressWarnings("resource")
 	public static void main (String [] args){
 		 
-		 DemoChangePassword check = new DemoChangePassword();
 		 Scanner scan = new Scanner (System.in);
 		 int countAttempts = 0;
 		 int totalAttemps = 3;
@@ -31,10 +30,8 @@ public class DemoChangePassword {
              
              System.out.print("Nhập mật khẩu mới: ");
              String newPwd = scan.nextLine();
-
-             boolean result = check.changePwd(input, pwd, newPwd);
              
-             if (result){
+             if ((username.equals(input) || email.equals(input)) && password.equals(pwd) && !password.equals(newPwd)){
             	 System.out.println("Thay đổi mật khẩu thành công");
             	 break;
              } else {
