@@ -9,17 +9,21 @@ Kiểm tra tính chia hết của tổng dãy số
 
 # Áp dụng tiêu chuẩn All-DU-Path
 - Luồng dữ liệu của chương trình
+![general] (https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT3/images/LuongDuLieuChung.png)
 
 - Luồng dữ liệu cho biến i
+![variablei] (https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT3/images/LuongDuLieuBieni.png)
 
 - Luồng dữ liệu cho biến sum
+![variablesum] (https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT3/images/LuongDuLieuBienSum.png)
 
 - Luồng dữ liệu cho biến arr
-
+![variablearr] (https://raw.githubusercontent.com/fiser-khoanv11/int3117-2016/master/NguyenThiTrang/BT3/images/LuongDuLieuBienArr.png)
 
 - Kết quả: 
-7 test case
-coverage
+7 test case <br>
+Coverage:<br>
+![coverage] (https://github.com/fiser-khoanv11/int3117-2016/blob/master/NguyenThiTrang/BT3/images/Coverage.JPG)
 
 
 # So sánh và rút ra nhận xét về All-DU-Path và MCDC
