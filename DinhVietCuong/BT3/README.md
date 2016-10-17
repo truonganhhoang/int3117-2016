@@ -5,21 +5,37 @@ Hàm cần kiểm thử:
 1 public int countLetter(String str) {
 
 2		int result = 0;
+
 3		if (str == null || str.length() == 0) {
+
 4			return -1;
+
 5		} else {
+
 6			while (str.length() != 0) {
+
 7				int i = 0;
+
 8				char letter = str.charAt(i);
+
 9				if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122)) {
+
 10					result++;
+
 11				}
+
 12				str = str.substring(i + 1);
+
 13				i++;				
+
 14			}
+
 15		}
+
 16		return result;
+
 17	}
+
 
 All-DU-Paths của biến str: 
 - Đường thứ nhất: 1-2-3
