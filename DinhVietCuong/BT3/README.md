@@ -61,11 +61,11 @@ Các ca kiểm thử xây dựng:
 
 So sánh với MCDC:
 
-- Giống nhau: 
+Giống nhau: 
 + Để sử dụng cả 2 đều phải vẽ đồ thị bài toán.
 + Phải tính các giá trị đầu vào để chương trình chạy theo các đường đã tìm được.
 
-- Khác nhau:
+Khác nhau:
 + MCDC sẽ thiết kế các ca kiểm thử đảm bảo phủ hết các luồng điều khiển trong chương trình (các lệnh rẽ nhánh, lặp) còn All-DU-Paths phủ luồng dữ liệu (tức là từ khi biến được khai báo đến khi được sử dụng tính toán).
 + MCDC có độ bao phủ tốt hơn so với All-DU-Paths. Ví dụ ở lệnh if có nhiều điều kiện so sánh, khi áp dụng MCDC sẽ thiết kế mỗi ca kiểm thử tương ứng với 1 điều kiện, còn khi áp dụng All-DU-Paths thì chỉ cần 1 ca kiểm thử thỏa mãn là được.
 + Áp dụng MCDC để tính ra đầu vào cho các ca kiểm thử dễ dàng hơn so với áp dụng All-DU-Paths vì sử dụng All-DU-Paths phải xác định tất cả các đường du cho tất cả các biến có trong chương trình, bao gồm cả tham số đầu vào và các biến được 
