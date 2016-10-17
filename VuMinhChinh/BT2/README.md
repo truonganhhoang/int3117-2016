@@ -1,6 +1,6 @@
 ## Bài toán đặt ra:
 Nhập vào 2 năm (bé trước lớn sau), tìm ra tổng số năm nhuận và năm hợi trong khoảng cách giữa 2 năm nhập vào.
-## Cách làm:
+## Áp dụng tiêu chuẩn MCDC:
 - Lập bảng tất cả các trường hợp có thể xảy ra đối với điều kiện năm nhuận và năm hợi:
 
 STT | y % 400 == 0 | y % 4 == 0 | y % 100 == 0 | y % 12 == 3 | Đầu ra (theo case trong code) 
