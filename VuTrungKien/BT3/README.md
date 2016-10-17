@@ -2,11 +2,11 @@
 
 ## Chương trình
 
-![program]("screenshots/program.png")
+![program](screenshots/program.png)
 
 ## Đồ thị luồng
 
-![cfg]("screenshots/cfg.png")
+![cfg](screenshots/cfg.png)
 
 ## All-DU-Path và ca kiểm thử tương ứng
 
@@ -29,7 +29,7 @@
 
 ## Đo độ bao phủ
 
-![coverage]("screenshots/coverage.png")
+![coverage](screenshots/coverage.png)
 
 ## Nhận xét
 
