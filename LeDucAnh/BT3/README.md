@@ -22,7 +22,7 @@ Ta có bảng so sánh sau:
 
 \#       | Tiêu chí | MCDC | All-DU-Paths 
 -------- |------|------|-----
-1.       | Ý tưởng |T       | Quan trọng tới việc lựa chọn đường đi với mục tiêu bao phủ các cặp gán (definition) và dùng (use) dữ liệu.
-2.       |T       |T       | F
+1.       | Ý tưởng | Mục tiêu bao phủ thông qua các luồng điều khiển | Quan trọng tới việc lựa chọn đường đi với mục tiêu bao phủ các cặp gán (definition) và dùng (use) dữ liệu.
+2.       | Định nghĩa       |T       | Với mọi v, T gồm các đường đi dc-Path từ mọi đỉnh gán của v đến mọi đỉnh dùng của v và đến đỉnh tiếp theo của mối use(v,n) và các đường đi này hoặc là lặp một lần hoặc không lặp.
 
 ### Nhận xét
