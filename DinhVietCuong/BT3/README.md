@@ -2,7 +2,7 @@
 
 Hàm cần kiểm thử:
 
-1	public int countLetter(String str) {
+1 public int countLetter(String str) {
 2		int result = 0;
 3		if (str == null || str.length() == 0) {
 4			return -1;
