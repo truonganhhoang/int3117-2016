@@ -3,6 +3,7 @@
 Hàm cần kiểm thử:
 
 1 public int countLetter(String str) {
+
 2		int result = 0;
 3		if (str == null || str.length() == 0) {
 4			return -1;
@@ -25,6 +26,7 @@ All-DU-Paths của biến str:
 - Đường thứ 2: 1-2-5-6
 - Đường thứ 3: 1-2-5-6-8-9-10-12-6-8-9-....-6-14
 - Đường thứ 4: 1-2-5-6-8-9-10-11-12-6-8-9-....-12-6-14
+
 All-DU-Paths của biến result:
 - Đường thứ nhất: 2-3-4-16
 - Đường thứ 2: 2-3-4-6-16
