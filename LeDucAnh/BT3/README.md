@@ -18,9 +18,11 @@
 
 ## So sánh và rút ra nhận xét về All-DU-Path và MCDC.
 ### So sánh
-\# | Tiêu chí | MCDC | All-DU-Paths 
--- |----------|--------|--------
-1. | Ý tưởng | abc | def       
+Ta có bảng so sánh sau:
 
+\#       | Tiêu chí | MCDC | All-DU-Paths 
+-------- |------|------|-----
+1.       | Ý tưởng |T       | Quan trọng tới việc lựa chọn đường đi với mục tiêu bao phủ các cặp gán (definition) và dùng (use) dữ liệu.
+2.       |T       |T       | F
 
 ### Nhận xét
