@@ -18,9 +18,9 @@
 
 ## So sánh và rút ra nhận xét về All-DU-Path và MCDC.
 ### So sánh
-\#| Tiêu chí | MCDC | All-DU-Paths 
---| -------- |--------|--------
-1.|          |        |        
+\# | Tiêu chí | MCDC | All-DU-Paths 
+-- |----------|--------|--------
+1. | Ý tưởng | abc | def       
 
 
 ### Nhận xét
