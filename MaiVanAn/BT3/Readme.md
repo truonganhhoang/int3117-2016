@@ -6,7 +6,7 @@ Bài tập tuần 7:
 <br>
 Đường đi du-path của biến num như sau:
 <br>
-<img src="https://github.com/longdt03/int3117-2016/blob/master/MaiVanAn/BT2/var_num.JPG" />
+<img src="https://github.com/longdt03/int3117-2016/blob/master/MaiVanAn/BT3/var_num.JPG" />
 <br>
 Với đường đi all du-path của biến num, các ca kiểm thử cho nó là:
 key=5;
@@ -14,7 +14,7 @@ num= 100; 101; 108; 111
 <br>
 Đường đi du-path của biến key như sau:
 <br>
-<img src="https://github.com/longdt03/int3117-2016/blob/master/MaiVanAn/BT2/var_key.JPG" />
+<img src="https://github.com/longdt03/int3117-2016/blob/master/MaiVanAn/BT3/var_key.JPG" />
 <br>
 Với đường đi all du-path của biến key, các ca kiểm thử cho nó là:
 num=100; 
