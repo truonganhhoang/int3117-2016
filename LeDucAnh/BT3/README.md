@@ -18,9 +18,9 @@
 
 ## So sánh và rút ra nhận xét về All-DU-Path và MCDC.
 ### So sánh
-\#| Tiêu chí | dx = 0 | dy = 0 |
---| -------- |--------|--------|
-1.|          |        |        |
+\#| Tiêu chí | MCDC | All-DU-Paths 
+--| -------- |--------|--------
+1.|          |        |        
 
 
 ### Nhận xét
