@@ -1,6 +1,6 @@
 # Bài tập tuần 7
 
-## Áp dụng tiêu chuẩn kiểm thử All-DU-Path cho chương trình ở BT2 (sử dụng MCDC).
+## Áp dụng tiêu chuẩn kiểm thử All-DU-Path cho chương trình ở BT2.
 * CFG của hàm *neigbors*
 ![cfg](https://github.com/ducanhk58uet/int3117-2016/blob/master/LeDucAnh/BT3/screenshots/cfg.PNG)
 
@@ -18,6 +18,9 @@
 
 ## So sánh và rút ra nhận xét về All-DU-Path và MCDC.
 ### So sánh
+\#| Tiêu chí | dx = 0 | dy = 0 |
+--| -------- |--------|--------|
+1.|          |        |        |
 
 
 ### Nhận xét
