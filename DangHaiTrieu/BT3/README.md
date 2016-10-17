@@ -97,3 +97,12 @@ describe('#2 case - Function #pushFruitsIntoBridge: ', () => {
     });
 });
 ```
+
+## Kết quả test và bao phủ
+Tóm tắt kết quả:
+
+![bt3-coverage-summary](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT3/screenshots/bt3-coverage-summary.png)
+
+Kết quả bao phủ chi tiết:
+
+![bt3-coverage-detal](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT3/screenshots/bt3-coverage-detail.png)
