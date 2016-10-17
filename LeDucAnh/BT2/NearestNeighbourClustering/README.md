@@ -2,7 +2,7 @@
 
 ## Mô tả
 - Chương trình viết bằng java với maven.
-- Giải thuật tìm các hàng xóm gần nhất trong việc xử lý điểm ảnh. (Nearest Neighbour Clustering)
+- Giải thuật tìm kiếm các hàng xóm gần nhất. (Nearest Neighbour Clustering)
 
 ## Hàm cần kiểm thử
 ```java
@@ -69,3 +69,5 @@ public void testApp()
 
 
 ## Đo mức độ bao phủ
+ - Kết quả:
+ ![test-coverage-3](https://github.com/ducanhk58uet/int3117-2016/blob/master/LeDucAnh/BT2/NearestNeighbourClustering/screenshots/test_coverage_3.PNG)
