@@ -24,3 +24,6 @@ pushFruitsIntoBridge : (bridge, name, personalKey, fruits, superKey) => { // 9
     } // 27
 }
 ```
+
+## Đồ thị chu trình
+![flow-graph](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/BT3/screenshots/flow-graph.png)
