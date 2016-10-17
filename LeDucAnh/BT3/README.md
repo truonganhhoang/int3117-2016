@@ -33,3 +33,5 @@ Ta có bảng so sánh sau:
  - chọn tiêu chuẩn kiểm thử luồng dữ liệu.
  - xác định các đường đi trong đồ thị để thỏa mãn tiêu chuẩn lựa chọn
  - Tạo các ca kiểm thử cho các đường đi đã xác định.
+
+<-- Sẽ cập nhật thêm -->
