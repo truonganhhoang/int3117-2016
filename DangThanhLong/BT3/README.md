@@ -6,21 +6,21 @@
 2. Kiểm thử
 	- Áp dụng tiêu chuẩn kiểm thử All-DU-Path vào bài toán
 	
-	1. public int findGreatestCommonDivisor(int a, int b) {        
-    2.     if(a == b || a != 0 && b == 0) {
-    3.         return Math.abs(a);
-    4.     }             
-    5.     if(b != 0 && a == 0) {
-    6.         return Math.abs(b);
-    7.     }        
-    8.     int temp = 0;
-    9.     while(b != 0) {
-    10.         temp = a % b;
-    11.         a = b;
-    12.         b = temp;
-    13.     }
-    14.     return a;
-	15. }   
+	"1. public int findGreatestCommonDivisor(int a, int b) {        
+    "2.     if(a == b || a != 0 && b == 0) {
+    "3.         return Math.abs(a);
+    "4.     }             
+    "5.     if(b != 0 && a == 0) {
+    "6.         return Math.abs(b);
+    "7.     }        
+    "8.     int temp = 0;
+    "9.     while(b != 0) {
+    "10.         temp = a % b;
+    "11.         a = b;
+    "12.         b = temp;
+    "13.     }
+    "14.     return a;
+	"15. }   
 
 	- Đường đi DU-Path của biến a:
 		+ 1->2->3
