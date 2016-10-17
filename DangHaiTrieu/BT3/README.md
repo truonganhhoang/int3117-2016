@@ -68,3 +68,32 @@ pushFruitsIntoBridge : (bridge, name, personalKey, fruits, superKey) => { // 9
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', 'thisIsNotAnArrayOfFruits', '!@#123')    
     ```
+
+## Triển khai (implement) các ca kiểm thử tương ứng
+Chúng ta cần tối thiểu 2 ca kiểm thử để bao phủ được tất cả các đường đi DU của 5 biến trên:
+
+- Ca kiểm thử \#1: phủ được các 1 đường đi DU của biến `bridge` và đường đi DU của biến `fruits`
+
+```javascript
+describe('#1 case - Function #pushFruitsIntoBridge: ', () => {
+    describe('push ["coconut"] into bridge.container', () => {
+        it('should return new bridge.container with a \'coconut\' inside => [\'meat\', \'banana\', \'egg\', \'coconut\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg', 'coconut'], pushFruitsIntoBridge(brandNewBridge, 'trieudh', '1', ['coconut'], '!@#123'));
+        });
+    });
+});
+```
+
+- Ca kiểm thử \#2: phủ được các 1 đường đi DU của biến `bridge` và đường đi DU của các biến `name`, `personalKey` và `superKey`
+
+```javascript
+describe('#2 case - Function #pushFruitsIntoBridge: ', () => {
+    describe('push a non-array of fruits into bridge.container', () => {
+        it('should return unchanged bridge.container => [\'meat\', \'banana\', \'egg\']', () => {
+            let brandNewBridge = require('../bridge')(['meat', 'banana', 'egg'], '!@#123');
+            assert.sameMembers(['meat', 'banana', 'egg'], pushFruitsIntoBridge(brandNewBridge, 'trieudh', '1', 'thisIsNotAnArrayOfFruits', '!@#123'));
+        });
+    });
+});
+```
