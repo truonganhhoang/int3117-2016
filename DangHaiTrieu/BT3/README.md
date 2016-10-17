@@ -31,34 +31,40 @@ pushFruitsIntoBridge : (bridge, name, personalKey, fruits, superKey) => { // 9
 ## Xác định các đường đi DU và sinh các bộ kiểm thử tương ứng
 - Biến `bridge`:
   + `A (d) --> B (p) --> C --> D -- E (p) --> F (c) --> G --> H (c)`:
+  
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', ['coconut'], '!@#123')
     ```
   + `A (d) --> B (p) --> C --> I (c)`:
+  
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', 'thisIsNotAnArrayOfFruits', '!@#123')
     ```
   
 - Biến `name`:
-  + `A (d) --> B (p) --> C --> I`
+  + `A (d) --> B (p) --> C --> I`:
+  
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', 'thisIsNotAnArrayOfFruits', '!@#123') 
     ```
   
 - Biến `personalKey`:
   + `A (d) --> B (p) --> C --> I`:
+  
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', 'thisIsNotAnArrayOfFruits', '!@#123')
     ```
   
 - Biến `fruits`:
   + `A (d) --> B (p) --> C --> D (p) --> E (c) --> F --> G --> H`:
+  
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', ['coconut'], '!@#123')
     ```
 
 - Biến `superKey`:
   + `A (d) --> B (p) --> C --> I`:
+  
     ```javascript
     ({container: ['meat', 'banana', 'egg'], superKey: '!@#123'}, 'trieudh', '1', 'thisIsNotAnArrayOfFruits', '!@#123')    
     ```
