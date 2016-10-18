@@ -7,8 +7,9 @@ Họ và tên : Kiều Minh Đức
 Mã sinh viên : 13020121
 ```
 ## Bài tập 3 :  Áp dụng tiêu chuẩn kiểm thử All-DU-Path
+
+### 1. Bài toán
 ```
-1. Bài toán
    Chương trình được đánh số thứ tự như sau:
 1. initialize(n)   
 2. isValidate(n)
@@ -39,15 +40,14 @@ Mã sinh viên : 13020121
 	
 6. False
 7. True
-
 ```
 
-```
-2. So sánh và rút ra nhận xét về All-DU-Path và MCDC.
+
+### 2. So sánh và rút ra nhận xét về All-DU-Path và MCDC.
 
 ```
-- MCDC: test tất cả các biểu thức condition và decicions của hàm caculate(minutes, path).
-- All-Du-path: test tất cả các definition và các trường hợp sử dụng của minutes.
+- MCDC: test tất cả các biểu thức condition và decicions của hàm isValidate.
+- All-Du-path: test tất cả các definition và các trường hợp sử dụng của biến n.
 ```
   
 
