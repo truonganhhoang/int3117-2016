@@ -4,11 +4,11 @@ public class BinarySearchTree {
 	public BinarySearchTree(){
 		this.root = null;
 	}
-	public void insert(int id){
+	public boolean insert(int id){
 		Node newNode = new Node(id);
 		if(root == null){
 			root = newNode;
-			return;
+			return true;
 		}
 		Node current = root;
 		Node parent = null;
@@ -18,13 +18,13 @@ public class BinarySearchTree {
 				current = current.left;
 				if(current == null){
 					parent.left = newNode;
-					return;
+					return true;
 				}
 			}else{
 				current = current.right;
 				if(current == null){
 					parent.right = newNode;
-					return;
+					return true;
 				}
 			}
 		}
