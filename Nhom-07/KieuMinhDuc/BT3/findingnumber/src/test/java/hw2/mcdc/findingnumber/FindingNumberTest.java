@@ -37,4 +37,10 @@ public class FindingNumberTest extends TestCase {
 		int a = 400;
 		assertEquals(true, findingNumber.isCountingEvenNumber(a));
 	}
+	/* All Du Path Test Case*/
+	public void testAllDuPath() {		
+		FindingNumber findingNumber = new FindingNumber();
+		int a = 1600;
+		assertEquals(true, findingNumber.isValidate(a));
+	}
 }
