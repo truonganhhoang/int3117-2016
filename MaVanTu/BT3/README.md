@@ -12,9 +12,9 @@
  - TestNG Plugin
  
 ## Tìm DU-Path cho từng biến
-![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT3/Flow%20Graph/tong.PNG)
-![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT3/Flow%20Graph/result.PNG)
-![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT3/Flow%20Graph/i.PNG)
+![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT3/FlowGraph/tong.PNG)
+![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT3/FlowGraph/result.PNG)
+![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT3/FlowGraph/i.PNG)
 
 ##So sánh với MCDC và nhận xét
 - All-DU-Path cần số lượng test-case ít hơn, thực hiện đơn giản hơn.
