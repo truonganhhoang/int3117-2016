@@ -17,6 +17,8 @@
       "webdriver.edge.driver" : "bin/MicrosoftWebDriver.exe"
     }
   },
+  
+  "test_workers": true,
 
   "test_settings" : {
     "default" : {
