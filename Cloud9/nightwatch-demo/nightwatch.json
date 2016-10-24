@@ -18,7 +18,7 @@
     }
   },
   
-  "test_workers": true,
+  "test_workers": false,
 
   "test_settings" : {
     "default" : {
@@ -27,7 +27,7 @@
       "selenium_host"  : "localhost",
       "silent": true,
       "screenshots" : {
-        "enabled" : true,
+        "enabled" : false,
         "path" : "screenshots"
       },
       "desiredCapabilities": {

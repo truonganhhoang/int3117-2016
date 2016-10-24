@@ -5,16 +5,16 @@
 
   <testsuite name="googleTest"
     errors="0" failures="0" hostname="" id="" package="googleTest" skipped="0"
-    tests="2" time="9.162" timestamp="Sun, 23 Oct 2016 10:56:12 GMT">
+    tests="2" time="10.05" timestamp="Mon, 24 Oct 2016 12:27:10 GMT">
   
-    <testcase name="step one" time="6.610" assertions="2">
+    <testcase name="step one" time="7.625" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="step two" time="2.552" assertions="1">
+    <testcase name="step two" time="2.427" assertions="1">
 
     
     </testcase>
