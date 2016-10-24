@@ -1,9 +1,9 @@
 #Bài tập 3
-## Bài toán
+1. Bài toán
 	- Bài toán tính ước số chung lớn nhất của 2 số nguyên.
 	- Tham số đầu vào là 2 số a và b, output của bài toán là ước chung lớn nhất của a và b. Nếu a và b không có ước chung hoặc a = b = 0, bài toán sẽ trả về kết quả 0	
 	- Bài tập tuần này đã tối ưu 1 câu lệnh điều kiện
-## Kiểm thử
+2. Kiểm thử
 	- Áp dụng tiêu chuẩn kiểm thử All-DU-Path vào bài toán
 	
     ```java
@@ -23,7 +23,8 @@
 		    return a;
 		}   
     ```
-#### Đồ thị đường đi
+	
+	* Đồ thị đường đi
     ![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT3/Diagram.png)
     
 	- Đường đi DU-Path của biến a:
@@ -38,9 +39,9 @@
 		+ a = 5 và b = 0 => Expected result = 5
 		+ b = 5 và a = 0 => Expected result = 5
 		+ a = 14 và b = 4 => Expected result = 2
-## Kết quả
+3. Kết quả
 	- Độ bao phủ đo được là 100%
 	
 	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT3/TestCoverage.PNG)
 
-## Nhận xét
+4. Nhận xét
