@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+ 		<title> Home </title>
+ 		<meta charset="utf-8">
+ 		<script src="../BT2/lib/angular.min.js"></script>
+ 		<script src="js/app.js"></script>
+ 		<script src="test/testApp.js"></script>
+  </head>
+ 	<style>
+		.title_ {
+			text-align: center;
+			font-size: 30px;
+			color: Green;
+		}
+		.text-center {
+			text-align: center;
+			font-size: 25px;
+			color: Blue;
+		}
+  </style>
+  <body >
+  	<div ng-controller="appController">
+			<p class="title_"> Tính tổng chẵn các số trong khoảng cách từ A đến B </p>
+		</div>	
+		<div ng-controller="TestController">
+			<p> Sum1 : {{sum1}}
+			<p> Sum2 : {{sum2}}
+		</div>
+  </body>
+  </body>	
+</html>  

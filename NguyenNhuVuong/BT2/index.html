@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+ 		<title> Home </title>
+ 		<meta charset="utf-8">
+ 		<script src="lib/angular.min.js"></script>
+ 		<script src="js/app.js"></script>
+ 		<script src="test/testApp.js"></script>
+  </head>
+ 	<style>
+		.title_ {
+			text-align: center;
+			font-size: 30px;
+			color: Green;
+		}
+		.text-center {
+			text-align: center;
+			font-size: 25px;
+			color: Blue;
+		}
+		.red {
+			color:  red;
+		}
+  </style>
+  <body >
+  	<div ng-controller="appController">
+  		<p class="title_">BT2</p>
+		</div>	
+	<div ng-controller="TestController">
+		<p class="red"> Test a = 0 and b = 0 </p>
+		<p> Result: {{result1}} 
+		<p class="red"> Test a = 0 and b = !0 </p>
+		<p> Result: {{result2}}
+		<p class="red"> Test a = !0 and b = 0 </p>
+		<p> Result: {{result3}}
+		<p class="red"> Test a = b </p>
+		<p> Result: {{result4}}
+		<p class="red"> Test a = 4 and b = 43 </p>
+		<p> Result: {{result5}}
+	</p>	
+  </body>	
+</html>  
