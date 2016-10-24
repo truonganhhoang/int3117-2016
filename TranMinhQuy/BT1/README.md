@@ -17,11 +17,11 @@ Class `MyString` chứa dữ liệu `String`, trong đó có hàm `indexOf(Strin
 * Sử dụng [code2flow](http://code2flow.com) để sinh tự động sơ đồ khối của chương trình
 
 
-![alt text](https://github.com/minhnt58/int3117-2016/blob/master/TranMinhQuy/BT1-Tuan3%2B4/IMG/flow.png "Sơ đồ khối")
+![alt text](https://github.com/minhnt58/int3117-2016/blob/master/TranMinhQuy/BT1/IMG/flow.png "Sơ đồ khối")
 
 
 ## Đo mức độ bao phủ
 * Sử dụng plugin [JUnit Generator v2](https://code.google.com/archive/p/junit-generator-v2/) cho IDE Intellij để đo độ bao phủ.
 
 
-![alt text](https://github.com/minhnt58/int3117-2016/blob/master/TranMinhQuy/BT1-Tuan3%2B4/IMG/coverage.png "Độ bao phủ")
+![alt text](https://github.com/minhnt58/int3117-2016/blob/master/TranMinhQuy/BT1/IMG/coverage.png "Độ bao phủ")
