@@ -7,7 +7,7 @@
  - Java SDK 1.8
  - Maven
  - Eclipse IDE
- - TestNG Plugin
+ - JUnit
  
 ## Phương pháp kiểm thử hộp đen đã áp dụng
  - Bài tập này sử dụng phương pháp kiểm thử biên (bounday-value analysis)

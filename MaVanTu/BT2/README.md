@@ -9,7 +9,7 @@
  - Java SDK 1.8
  - Maven
  - Eclipse IDE
- - TestNG Plugin
+ - JUnit 
  
 ## Bộ ca kiểm thử
 ![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT2/TestResult/TestCase.PNG)
