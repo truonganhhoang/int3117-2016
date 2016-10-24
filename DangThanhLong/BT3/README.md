@@ -46,3 +46,4 @@
 	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT3/TestCoverage.PNG)
 
 4. Nhận xét
+	- Sử dụng Kiểm thử All-DU-Path và MCDC trong bài toán này đều có số ca kiểm thử và độ bao phủ như nhau. Tuy nhiên sử dụng kiểm thử All-DU-Path thực hiện dễ dàng hơn do có sơ đồ luồng.
