@@ -24,7 +24,8 @@
 		}   
     ```
 	
-	* Đồ thị đường đi
+	- Đồ thị đường đi
+	
     ![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT3/Diagram.png)
     
 	- Đường đi DU-Path của biến a:
