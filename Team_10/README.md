@@ -67,4 +67,73 @@ Xem source file html này, ta thấy gồm những file thư viện, file code v
 </body>
 </html>
 ```
+Để đơn giản, chúng ta sẽ tạo 1 file spec mới làm ví dụ, đặt tên là MySpec.js. Ta sửa lại file html như sau:
+```html
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jasmine Spec Runner v2.2.0</title>
 
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.2.0/jasmine_favicon.png">
+    <link rel="stylesheet" href="lib/jasmine-2.2.0/jasmine.css">
+
+    <script src="lib/jasmine-2.2.0/jasmine.js"></script>
+    <script src="lib/jasmine-2.2.0/jasmine-html.js"></script>
+    <script src="lib/jasmine-2.2.0/boot.js"></script>
+
+    <!-- include spec files here... -->
+    <script src="spec/MySpec.js"></script>
+
+</head>
+
+<body>
+</body>
+</html>
+```
+
+Trong file spec mới, ta sẽ viết 1 class Calculator, chuyên thực hiện các phép toán cộng trừ nhân chia, sau đó viết test case cho nó (Viết trong cùng file MySpec.js nhé) . Class Calculator:
+```javascript
+function Calculator()
+{
+  this.add = function(a, b) { return a+b;};
+  this.minus = function(a, b) { return a-b;};
+  this.multiply = function(a, b) { return a*b;};
+  this.divide = function(a,b) {return a/b;} ;
+}
+```
+Một số unit test cộng trừ nhân chia:
+-	Hàm describe dùng để gom nhóm, ghi chú cho nhiều unit test.
+-	Hàm it tương đương với 1 unit test.
+-	Hàm expect chính là hàm assert để kiểm tra tính đúng đắn của unit test
+
+```javascript
+describe("Cộng trừ", function() {
+  var cal = new Calculator();
+
+  it("Một với một là hai", function() {
+    expect(2).toBe(cal.add(1,1));
+  });
+
+  it("Hai với hai là bốn", function() {
+    expect(4).toBe(cal.add(2,2));
+  });
+
+  it("Năm trừ hai bằng ba", function() {
+    expect(3).toBe(cal.minus(5,2));
+  });
+
+});
+
+describe("Nhân chia", function() {
+  var cal = new Calculator();
+
+  it("Năm nhân hai bằng mười", function() {
+    expect(10).toBe(cal.multiply(5,2));
+  });
+
+  it("Sáu chia hai bằng ba", function() {
+    expect(3).toBe(cal.divide(6,2));
+  });
+});
+```
+Chạy lại file SpecRunner.html, ta được kết quả.
