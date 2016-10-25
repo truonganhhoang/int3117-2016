@@ -17,22 +17,22 @@ import static org.junit.Assert.*;
  * @author An
  */
 public class TinhTongDemoTest {
-    
+
     public TinhTongDemoTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -40,7 +40,6 @@ public class TinhTongDemoTest {
     /**
      * Test of main method, of class TinhTongDemo.
      */
-
     /**
      * Test of TinhTong method, of class TinhTongDemo.
      */
@@ -51,14 +50,15 @@ public class TinhTongDemoTest {
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testTinhTongGiaTriVua() {
         long n = 15;
         long expResult = 56;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
-    }     
+    }
+
     @Test
     public void testTinhTongGiaTriAm() {
         long n = -100;
@@ -66,7 +66,7 @@ public class TinhTongDemoTest {
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
     }
-   
+
     @Test
     public void testTinhTongGiaTriAmTo() {
         long n = -10000;
@@ -74,7 +74,7 @@ public class TinhTongDemoTest {
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testTinhTongGiaTriDacBiet() {
         long n = 1;
@@ -82,10 +82,11 @@ public class TinhTongDemoTest {
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTinhTongGiaTriMax() {
         long n = 50000;
-		long expResult = 625025000;
+        long expResult = 625025000;
         long result = TinhTongDemo.TinhTong(n);
         assertEquals(expResult, result);
     }
