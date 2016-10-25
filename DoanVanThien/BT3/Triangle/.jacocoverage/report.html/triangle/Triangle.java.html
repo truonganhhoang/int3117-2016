@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Triangle.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Triangle&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">triangle</a> &gt; <span class="el_source">Triangle.java</span></div><h1>Triangle.java</h1><pre class="source lang-java linenums">package triangle;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Triangle {
+    int edge1;
+    int edge2;
+    int edge3;
+
+    public int getEdge1() {
+<span class="fc" id="L12">        return edge1;</span>
+    }
+
+    public void setEdge1(int edge1) {
+<span class="fc" id="L16">        this.edge1 = edge1;</span>
+<span class="fc" id="L17">    }</span>
+
+    public int getEdge2() {
+<span class="fc" id="L20">        return edge2;</span>
+    }
+
+    public void setEdge2(int edge2) {
+<span class="fc" id="L24">        this.edge2 = edge2;</span>
+<span class="fc" id="L25">    }</span>
+
+    public int getEdge3() {
+<span class="fc" id="L28">        return edge3;</span>
+    }
+
+    public void setEdge3(int edge3) {
+<span class="fc" id="L32">        this.edge3 = edge3;</span>
+<span class="fc" id="L33">    }</span>
+
+<span class="fc" id="L35">    public Triangle(int edge1, int edge2, int edge3) {</span>
+<span class="fc" id="L36">        this.setEdge1(edge1);</span>
+<span class="fc" id="L37">        this.setEdge2(edge2);</span>
+<span class="fc" id="L38">        this.setEdge3(edge3);</span>
+<span class="fc" id="L39">    }</span>
+
+<span class="fc" id="L41">    public Triangle() {</span>
+           
+<span class="fc" id="L43">    }</span>
+    
+    public int total_isosceles_triangle(ArrayList&lt;Triangle&gt; arrayListTriangle) {
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">        if (arrayListTriangle.size() == 0) {</span>
+<span class="nc" id="L47">            return 0;</span>
+        }
+<span class="fc" id="L49">        int index = 0;</span>
+<span class="fc" id="L50">        int length = arrayListTriangle.size();</span>
+<span class="fc" id="L51">        int total_isosceles_triangle = 0;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">        while (index &lt; length) {</span>
+<span class="fc" id="L53">            Triangle triangle = arrayListTriangle.get(index);</span>
+<span class="fc" id="L54">            int edge1 = triangle.getEdge1();</span>
+<span class="fc" id="L55">            int edge2 = triangle.getEdge2();</span>
+<span class="fc" id="L56">            int edge3 = triangle.getEdge3();</span>
+<span class="pc bpc" id="L57" title="13 of 18 branches missed.">            if ((edge1 &gt; 0 &amp;&amp; edge2 &gt; 0 &amp;&amp; edge3 &gt; 0) &amp;&amp; ((edge1 + edge2 &gt; edge3) &amp;&amp; (edge1 + edge3 &gt; edge2) &amp;&amp; (edge3 + edge2 &gt; edge1)) </span>
+                    &amp;&amp; ((edge1 == edge3) || (edge1 == edge2) || (edge3 == edge2))){
+<span class="nc" id="L59">                total_isosceles_triangle += 1;</span>
+            }            
+<span class="fc" id="L61">            index++;</span>
+<span class="fc" id="L62">        }</span>
+<span class="fc" id="L63">        return total_isosceles_triangle;</span>
+    }
+    public static void main(String[] args) {
+<span class="fc" id="L66">        Triangle triangle = new Triangle();</span>
+<span class="fc" id="L67">        Triangle triangle_para = new Triangle(1,2,3);</span>
+<span class="fc" id="L68">        ArrayList&lt;Triangle&gt; arrayList = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L69">        arrayList.add(triangle);</span>
+<span class="fc" id="L70">        arrayList.add(triangle_para);</span>
+<span class="fc" id="L71">        System.out.println(triangle.total_isosceles_triangle(arrayList));</span>
+<span class="fc" id="L72">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
