@@ -137,3 +137,65 @@ describe("Nhân chia", function() {
 });
 ```
 Chạy lại file SpecRunner.html, ta được kết quả.
+
+## Kỳ vọng (Expectations)
+### Một số matcher
+Matcher ở đây là 1 số hàm dùng để so sánh kết quả ta mong chờ (excepted value) và kết quả trả về từ hàm (return value).
+```javascript
+it("Một với một là hai", function() {
+    expect(2).toBe(cal.add(1,1));
+});
+//Thêm not và trước matcher
+it("Một với một không phải là ba", function() {
+    expect(3).not.toBe(cal.add(1,1));
+});
+```
+
+Ta còn có thể so sánh 2 object, sử dụng matcher toEqual:
+```javascript
+it("So sánh 2 object", function() {
+    var foo = {
+        a: 12,
+        b: 34
+    };
+    var bar = {
+        a: 12,
+        b: 34
+    };
+    //foo == bar có kể quả false
+    //Nhưng match toEqual vẫn so sánh đúng
+    expect(foo).toEqual(bar);
+});
+```
+
+Một số matcher tiện lợi khác là: *toBeDefined, toBeUndefined, toBeNull*
+```javascript
+it("Sử dụng toBeDefined", function() {
+    var a = {
+        foo: "foo"
+    };
+
+    expect(a.foo).toBeDefined();
+    expect(a.bar).not.toBeDefined();
+});
+
+it("Sử dụng toBeUndefined", function() {
+    var a = {
+        foo: "foo"
+    };
+
+    expect(a.foo).not.toBeUndefined();
+    expect(a.bar).toBeUndefined();
+});
+
+it("Sử dụng toBeNull", function() {
+    var a = null;
+    var foo = "foo";
+
+    expect(null).toBeNull();
+    expect(a).toBeNull();
+    expect(foo).not.toBeNull();
+});
+```
+
+### Cách dùng các hàm before, after: << comming soon >>
