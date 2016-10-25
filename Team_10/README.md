@@ -198,4 +198,4 @@ it("Sử dụng toBeNull", function() {
 });
 ```
 
-### Cách dùng các hàm before, after: << comming soon >>
+### Cách dùng các hàm before, after: (comming soon)
