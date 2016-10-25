@@ -6,28 +6,34 @@
 2. Kiểm thử
 	- Áp dụng tiêu chuẩn kiểm thử All-DU-Path vào bài toán
 	
-		+ 1 public int findGreatestCommonDivisor(int a, int b) {        
-		+ 2     if(a == b || a != 0 && b == 0) {
-		+ 3         return Math.abs(a);
-		+ 4     }             
-		+ 5     if(b != 0 && a == 0) {
-		+ 6         return Math.abs(b);
-		+ 7     }        
-		+ 8     int temp = 0;
-		+ 9     while(b != 0) {
-		+ 10         temp = a % b;
-		+ 11         a = b;
-		+ 12         b = temp;
-		+ 13     }
-		+ 14     return a;
-		+ 15 }   
-
+    ```java
+		public int findGreatestCommonDivisor(int a, int b) {        
+		    if(a == b || a != 0 && b == 0) {
+		        return Math.abs(a);
+		    }             
+		    if(b != 0 && a == 0) {
+		        return Math.abs(b);
+		    }        
+		    int temp = 0;
+		    while(b != 0) {
+		        temp = a % b;
+		        a = b;
+		        b = temp;
+		    }
+		    return a;
+		}   
+    ```
+	
+	- Đồ thị đường đi
+	
+    ![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT3/Diagram.png)
+    
 	- Đường đi DU-Path của biến a:
-		+ 1->2->3
-		+ 1->2->5->8->10->11->14
+		+ A->B->C
+		+ A->B->D->E
 	- Đường đi DU-Path của biến b:
-		+ 1->2->5->6
-		+ 1->2->5->8->9->10->11->12->14
+		+ A->B->D->E
+		+ A->B->D->F->H->G
 		
 	- Từ đường đi DU-Path ta có các bộ kiểm thử tương ứng
 		+ a = b = 5 => Expected result = 5
@@ -38,3 +44,6 @@
 	- Độ bao phủ đo được là 100%
 	
 	![alt tag](https://github.com/longdt03/int3117-2016/blob/master/DangThanhLong/BT3/TestCoverage.PNG)
+
+4. Nhận xét
+	- Sử dụng Kiểm thử All-DU-Path và MCDC trong bài toán này đều có số ca kiểm thử và độ bao phủ như nhau. Tuy nhiên sử dụng kiểm thử All-DU-Path thực hiện dễ dàng hơn do có sơ đồ luồng.
