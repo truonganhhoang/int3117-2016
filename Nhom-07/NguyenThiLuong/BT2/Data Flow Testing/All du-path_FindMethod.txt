@@ -1,0 +1,32 @@
+1. boolean find(int data){
+2.		Node current = root;
+3.		while( current!=null ){
+4.			if(current.data == data){
+5.				return true;
+6.			}else if(current.data > data){
+7.				current = current.left;
+			}else{
+8.				current = current.right;
+			}
+		}
+9.		return false;
+	}
+
+
+/*TEST*/
+after insert to binary tree using array [3,2,7,4,8,1,9,6]
+// Test find method
+@ Test
+id = 3
+path: 1-2-3-4-5
+
+@ Test
+id = 7
+path: 1-2-3-4-6-8-3-4-5
+
+@ Test
+id = 5
+path: 1-2-3-4-6-8-3-4-6-9
+
+using other id to get many paths.
+

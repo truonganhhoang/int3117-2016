@@ -1,0 +1,64 @@
+1. boolean insert(int id){
+2.		Node newNode = new Node(id);
+3.		if(root == null){
+4.			root = newNode;
+5.			return true;
+		}
+6.		Node current = root;
+7.		Node parent = null;
+8.		while(true){
+9.			parent = current;
+10.			if(id < current.data){				
+11.				current = current.left;
+12.				if(current == null){
+13.					parent.left = newNode;
+14.					return true;
+				}
+			}else{
+15.				current = current.right;
+16.				if(current == null){
+17.					parent.right = newNode;
+18.					return true;
+				}
+			}
+		}
+	}
+
+Create empty binary search tree.
+
+// ALL DU PATH with root
+1-2-3-4
+
+// ALL DU PATH with parrent node
+7-(8-9-10)*n-(11-12)*m-(13)*l-(16-17) *k  {n>=1; m,k,l>=0 & m+k>=1}
+7-8-9-10-11-12-16-17
+
+// ALL DU PATH with current node
+6-7-(8-9-10)*n-(11-12)*m-(15-16)*l
+
+/*TESTING*/ 
+
+@test
+id = 3
+path: 1-2-3-4
+
+@test
+id = 2 ==> n =1, m = 1 , l =0
+path: 1-2-3-6-7-8-9-10-11-12-13-14
+path for current node: 6-7-8-9-10-11-12
+path for parrent node: 7-8-9-10-11-12-13
+
+@test
+id = 7 ==> n = 1, m = 0, l = 1
+path: 1-2-3-6-7-8-9-10-15-16-17-18
+path for current node: 6-7-8-9-10-15-16
+path for parrent node: 7-8-9-10-16-17
+
+@test
+id = 4 ==> n=2, m = 1, l = 1
+path: 1-2-3-6-7-8-9-10-15-16-8-9-10-11-12-13-14
+path for current node: 6-7-8-9-10-15-16-8-9-10-11-12
+path for parent node: 7-8-9-10-15-16-8-9-10-11-12-13
+
+// do the same for other elements in array [3,2,7,4,8,1,9,6]
+ 
