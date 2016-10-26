@@ -39,7 +39,7 @@ public class BT1Test {
 
 
     @Test
-    public void testUCLN() {
+    public void test00UCLN() {
         int a = 0;
         int b = 0;
         assertFalse(a>0);
@@ -47,7 +47,7 @@ public class BT1Test {
     }
     
     @Test
-    public void test00UCLN() {
+    public void test01UCLN() {
         int a = 32768;
         int b = 32768;
         assertFalse(a<=32767);
@@ -55,7 +55,7 @@ public class BT1Test {
     }
 
     @Test
-    public void test0UCLN() {
+    public void test02UCLN() {
         int a = 100;
         int b = 80;
         int expResult = 20;
@@ -64,7 +64,7 @@ public class BT1Test {
     }
     
     @Test
-    public void test1UCLN() {
+    public void test03UCLN() {
         int a = 32767;
         int b = 32767;
         int expResult = 32767;
@@ -73,7 +73,7 @@ public class BT1Test {
     }
     
     @Test
-    public void test2UCLN() {
+    public void test04UCLN() {
         int a = 1;
         int b = 327;
         int expResult = 1;
@@ -82,7 +82,7 @@ public class BT1Test {
     }
     
     @Test
-    public void test3UCLN() {
+    public void test05UCLN() {
         int a = 13;
         int b = 29;
         int expResult = 1;
@@ -91,7 +91,7 @@ public class BT1Test {
     }
     
     @Test
-    public void test4UCLN() {
+    public void test06UCLN() {
         int a = -10;
         int b = -100;
         assertFalse(a>0);
