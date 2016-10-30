@@ -1,7 +1,6 @@
 <?php
 class Sum
 {
- 
     public function calculator($a)
     {
     	if(is_int($a)){
@@ -15,5 +14,4 @@ class Sum
     		return 0;
     	}
     }
- 
 }
