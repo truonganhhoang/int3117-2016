@@ -9,3 +9,6 @@ sử dụng Kỹ thuật kiểm thử biên:
 kiểm tra độ bao phủ sử dụng EclEmma trả về kết quả 72% (ảnh dobaophu.png)
 
 sơ đồ khối sử dụng công cụ draw.io (ảnh PhuongTrinhBacHai.png)
+
+BT3: MCDC bao phủ cao hơn với các ca kiểm thử, All - DU - Paths cụ thể hơn cho từng luồng data.
+	
