@@ -29,7 +29,7 @@ class DivisibleNumberCount
 ```
 
 ## Neu khong ap dung MCDC 
-- Se can 2^4=16 ca kiem thu cho 2 lenh if : $a>$b va ($i%2==0 && $i%3==0 ) || $i%5==0 .
+- Se can 2^4=16 ca kiem thu cho 2 lenh if : $a>$b va ($i%4==0 && $i%3==0 ) || $i%5==0 .
 
 Test Case  | $a>$b | $i%4==0 | $i%3==0 | $i%5==0 
 ---------- | -------------- | ------------- | ------------- | -------------
