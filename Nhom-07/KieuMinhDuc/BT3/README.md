@@ -21,7 +21,7 @@ public boolean isCountingEvenLeapNumber( int n ){
 ```
 
 ## Đồ thị chu trình
-![flow-graph](https://github.com/dungnd58/int3117-2016/tree/master/Nhom-07/KieuMinhDuc/BT3/screenshots/data_flow.png)
+![flow-graph](http://i.imgur.com/f2VMGFj.png)
 
 ## Xác định các đường đi DU và sinh các bộ kiểm thử tương ứng
 - Biến `n`:
@@ -38,7 +38,7 @@ public void testCountingLeapNumber() {
 ```
 ## Kết quả kiểm thử (test) và bao phủ
 
-![bt3-coverage-summary](https://github.com/dungnd58/int3117-2016/tree/master/Nhom-07/KieuMinhDuc/BT3/screenshots/converage_test.png)
+![bt3-coverage-summary](http://i.imgur.com/AG4BrgG.png)
 
 ## So sánh kết quả khi áp dụng All-DU-Path và MCDC
 
