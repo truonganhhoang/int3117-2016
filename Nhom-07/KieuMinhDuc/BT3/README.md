@@ -2,6 +2,7 @@
 Kiểm thử luồng dữ liệu: áp dụng tiêu chuẩn kiểm thử All-DU-Path
 
 ## Hàm cần kiểm thử
+` Đếm số lượng của số "nhuận" ( số nhuận : tương tự như năm nhuận ) . Nếu kết quả là số chẵn thì trả về true hoặc ngược lại `
 ```java
 public boolean isCountingEvenLeapNumber( int n ){
     int count = 0 , i = 0;                                              // 1
@@ -24,7 +25,7 @@ public boolean isCountingEvenLeapNumber( int n ){
 
 ## Xác định các đường đi DU và sinh các bộ kiểm thử tương ứng
 - Biến `n`:
-  + `1 (d) --> 2 (c) --> 3 (c)`:
+  + `1 (d) --> 2 (c) --> 3 (c)`
 ## Các ca kiểm thử tương ứng
 Cần 1 ca kiểm thử để bao phủ được DU-path :
 
