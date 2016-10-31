@@ -24,8 +24,9 @@ public boolean isCountingEvenLeapNumber( int n ){
 ![flow-graph](http://i.imgur.com/f2VMGFj.png)
 
 ## Xác định các đường đi DU và sinh các bộ kiểm thử tương ứng
-- Biến `n`:
+Biến `n`:
    `1 (d) --> 2 (c) --> 3 (c)`
+   
 ## Các ca kiểm thử tương ứng
 Cần 1 ca kiểm thử để bao phủ được DU-path :
 
