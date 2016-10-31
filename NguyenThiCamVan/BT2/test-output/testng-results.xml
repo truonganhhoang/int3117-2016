@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="84" started-at="2016-10-03T14:46:15Z" finished-at="2016-10-03T14:46:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="84" started-at="2016-10-03T14:46:15Z" finished-at="2016-10-03T14:46:15Z">
+      <class name="org.testng.CheckTriangleTypeTest">
+        <test-method status="PASS" signature="CheckInvalidTriangleTest()[pri:0, instance:org.testng.CheckTriangleTypeTest@26f67b76]" name="CheckInvalidTriangleTest" duration-ms="16" started-at="2016-10-03T21:46:15Z" finished-at="2016-10-03T21:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckInvalidTriangleTest -->
+        <test-method status="PASS" signature="CheckNotRightAngledTriangleTest1()[pri:0, instance:org.testng.CheckTriangleTypeTest@26f67b76]" name="CheckNotRightAngledTriangleTest1" duration-ms="0" started-at="2016-10-03T21:46:15Z" finished-at="2016-10-03T21:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckNotRightAngledTriangleTest1 -->
+        <test-method status="PASS" signature="CheckRightAngledTriangleTest1()[pri:0, instance:org.testng.CheckTriangleTypeTest@26f67b76]" name="CheckRightAngledTriangleTest1" duration-ms="0" started-at="2016-10-03T21:46:15Z" finished-at="2016-10-03T21:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckRightAngledTriangleTest1 -->
+        <test-method status="PASS" signature="CheckRightAngledTriangleTest2()[pri:0, instance:org.testng.CheckTriangleTypeTest@26f67b76]" name="CheckRightAngledTriangleTest2" duration-ms="0" started-at="2016-10-03T21:46:15Z" finished-at="2016-10-03T21:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckRightAngledTriangleTest2 -->
+        <test-method status="PASS" signature="CheckRightAngledTriangleTest3()[pri:0, instance:org.testng.CheckTriangleTypeTest@26f67b76]" name="CheckRightAngledTriangleTest3" duration-ms="15" started-at="2016-10-03T21:46:15Z" finished-at="2016-10-03T21:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckRightAngledTriangleTest3 -->
+        <test-method status="PASS" signature="CheckNotRightAngledTriangleTest2()[pri:0, instance:org.testng.CheckTriangleTypeTest@26f67b76]" name="CheckNotRightAngledTriangleTest2" duration-ms="0" started-at="2016-10-03T21:46:15Z" finished-at="2016-10-03T21:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckNotRightAngledTriangleTest2 -->
+      </class> <!-- org.testng.CheckTriangleTypeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,26 +1,46 @@
-var assert = require('assert');
-var mainApp = require('../app');
+'use strict';
 
-describe('Main app', function () {
-    describe('#numberOfEvens', function () {
-        it('should return 0 when the input param is not an array', function () {
-            assert.equal(0, mainApp.numberOfEvens(1));
+const mocha = require('mocha'),
+    mainApp = require('../app'),
+    chai = require('chai'),
+    assert = chai.assert;
+
+describe('Function', () => {
+    describe('#fibonacci with input is not an integer', () => {
+        it('should return an error "INVALID_INPUT_VALUE"', () => {
+            assert.equal('INVALID_INPUT_VALUE', mainApp.fibonacci(2.001));
         });
     });
 });
 
-describe('Main app', function () {
-    describe('#numberOfEvens', function () {
-        it('should not count characters as even numbers', function () {
-            assert.equal(0, mainApp.numberOfEvens(['a', 1, 'bcd']));
+describe('Function', () => {
+    describe('#fibonacci with n = 1476', () => {
+        it('should produce maximum Fibonacci number that javascript can handle/perform', () => {
+            assert.equal(1.3069892237633987e+308, mainApp.fibonacci(1476));
         });
     });
 });
 
-describe('Main app', function () {
-    describe('#numberOfEvens', function () {
-        it('should run normally with big numbers', function () {
-            assert.equal(2, mainApp.numberOfEvens([1000000000000000000000000000000000000000000000000000000, 1, 999999999999999999999999999999999992]));
+describe('Function', () => {
+    describe('#fibonacci with n < 3', () => {
+        it('should return 1', () => {
+            assert.equal(1, mainApp.fibonacci(0));
+        });
+    });
+});
+
+describe('Function', () => {
+    describe('#fibonacci if n is bigger than 1476', () => {
+        it('should return Infinity', () => {
+            assert.equal(Infinity, mainApp.fibonacci(1477));
+        });
+    });
+});
+
+describe('Function', () => {
+    describe('#fibonacci with n = 80 (fibonacci that is out of safe limit number in javascript)', () => {
+        it('should return 23416728348467684', () => {
+            assert.equal(23416728348467684, mainApp.fibonacci(80));
         });
     });
 });

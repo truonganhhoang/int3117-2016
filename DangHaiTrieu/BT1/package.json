@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/trieudh58/mocha-test#readme",
   "dependencies": {
-    "mocha": "^3.0.2"
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "performance-now": "^0.2.0"
   }
 }

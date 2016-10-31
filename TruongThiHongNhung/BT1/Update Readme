@@ -1,0 +1,25 @@
+#Bài toán: Kiểm tra một số tự nhiên lớn hơn 0 có phải số hoàn hảo hay không?
+
+#Hướng giải quyết
+_Số hoàn hảo: là số có tổng các ước trừ nó bằng chính nó
+_Hàm sô hoan hao: hàm đưa vào số tự nhiên cần kiểm tra
+_Hàm testsohoanhao: hàm kiểm tra số đưa vào là số hoàn hảo không? Đúng trả về True, sai trả về Fail
+_ Kỹ thuật kiểm thử áp dụng: Kiểm thử giá trị biên và Kiểm thử vùng tương đương
+_Giải thích:
++ Kiểm thử giá trị biên: vì số hoàn hảo là số nguyên dương
+ Ta có: giá trị biên : 0
+ Giá trị cận biện: 1, -1
++ Kiểm thử lớp tương đường: có 2 vùng tương đương nhau
+Vùng các số âm
+Vùng các sô dương
+_Các testcase
++ Số 0 : Không phải số hoàn hảo
++ Số 1: Không phải số hoàn hảo
++ Số -1: Không phải số hoàn hảo
++ Số 6: Là sô hoàn hảo
++Số -6: Không phải số hoàn hảo
+#Độ bao phủ:
+_Dựa vào sơ đồ khối (sodoBT1.jpg) theo công thức tính độ bao phủ:
+   độ bao phu=( số câu lệnh/quyết định/đường đi được thực hiện):(tổng số câu lệnh/quyết định/đường đi)X100%
+  => độ bao phủ theo câu lệnh: 8/11
+  => độ bao phủ theo quyết định: 50%

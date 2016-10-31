@@ -14,20 +14,20 @@ import java.util.Scanner;
 public class TinhTongDemo{
     public static void main(String[] args) {
         Scanner scanIn = new Scanner(System.in);
-        int n;
+        long n;
         System.out.print("Nhap so n: ");
         n = scanIn.nextInt();
         System.out.print("Tong cac so chan nho hon " + n +" la:" + TinhTong(n));
     }
     
-     public static int TinhTong(int n){
-        int temp=0;
+     public static long TinhTong(long n){
+        long TongChan=0;
         if(n<0) return 0;
         else{
-            for(int i=0;i<=n;i++){
-            if(i%2==0) temp+= i;
+            for(long i=0;i<=n;i++){
+            if(i%2==0) TongChan+= i;
         }
-        return temp;
+        return TongChan;
         }  
     }
 }
