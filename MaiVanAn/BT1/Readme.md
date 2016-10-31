@@ -1,6 +1,7 @@
 Mai Văn An - 13020001
 Nâng cấp BT tuần 1:
 - Mô tả bài toán: Nhập vào một số n, đầu ra là tổng các số chẵn dương nhỏ hơn n.
+(ví dụ nhập n =10 thì sẽ tính tổng 0+2+4+6+8+10 = 30)
 - Các ca kiểm thử: Cho n giá trị cực tiểu, cận cực tiểu, giá trị cực đại và giá trị âm.
 - Sử dụng Kiểm thử biên mạnh : 
 	+ Do hàm tính tổng các số chẵn dương nhỏ hơn số n cho trước nên tăng giá trị biên lớn nhất và thử các giá trị đặc biệt.
