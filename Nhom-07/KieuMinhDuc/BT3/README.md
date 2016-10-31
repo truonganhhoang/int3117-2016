@@ -25,7 +25,7 @@ public boolean isCountingEvenLeapNumber( int n ){
 
 ## Xác định các đường đi DU và sinh các bộ kiểm thử tương ứng
 - Biến `n`:
-  + `1 (d) --> 2 (c) --> 3 (c)`
+   `1 (d) --> 2 (c) --> 3 (c)`
 ## Các ca kiểm thử tương ứng
 Cần 1 ca kiểm thử để bao phủ được DU-path :
 
@@ -41,8 +41,5 @@ public void testCountingLeapNumber() {
 ![bt3-coverage-summary](http://i.imgur.com/AG4BrgG.png)
 
 ## So sánh kết quả khi áp dụng All-DU-Path và MCDC
-
-- MCDC chặt chẽ hơn về bao phủ nhánh (branch), khi các điều kiện đơn chắc chắn sẽ được thực thi ít nhất một lần.
-- All-DU-Path giúp kiểm tra bao phủ dòng lệnh (statement) rất tốt, vì để sinh ra được các ca kiểm thử thì ta cần dựa vào đồ thị chu trình của chương trình
-- All-DU-Path hỗ trợ kiểm tra cách các dòng dữ liệu chạy trong chương trình.
-- Tuy nhiên, trong bao phủ nhánh, All-DU-Path làm chưa thể chặt chẽ khi so với MCDC.
+- MCDC chặt chẽ hơn về bao phủ nhánh (branch) .
+- All-DU-Path chặt chẽ hơn về giúp kiểm tra bao phủ dòng lệnh (statement).
