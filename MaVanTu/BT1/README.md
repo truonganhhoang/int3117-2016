@@ -10,23 +10,25 @@
  - JUnit
  
 ## Hàm cần kiểm thử
-    public int findMin(int[] arr) {
-		int min = arr[0];
-		int n = arr.length;
-		for (int i = 0; i < n; i++) {
-			if (arr[i] < min) {
-				min = arr[i];
-			}
+```java
+public int findMin(int[] arr) {
+	int min = arr[0];
+	int n = arr.length;
+	for (int i = 0; i < n; i++) {
+		if (arr[i] < min) {
+			min = arr[i];
 		}
-		return min;
 	}
-
+	return min;
+}
+```
 ## Phương pháp kiểm thử hộp đen đã áp dụng
  - Bài tập này sử dụng phương pháp kiểm thử biên (bounday-value analysis)
  - Phương pháp kiểm thử biên phù hợp vì: bài toán cần được kiểm tra các giá trị biên và cận biên thật chính xác,
  trong khi giới hạn số có thể thể hiện của java (hay bất kỳ ngôn ngữ nào khác) đều có hạn.
 
-## Unit Test 
+## Unit Test
+```java
     public class TestMinClass {
 	    MinClass minClass = new MinClass();
 
@@ -65,6 +67,7 @@
 		    assertEquals(-2, minClass.findMin(arr));
 	    }
 	}
+```
 
 ## Kết quả
 ![alt text](https://github.com/tumv58/int3117-2016/blob/master/MaVanTu/BT1/TestResult/result.PNG)
