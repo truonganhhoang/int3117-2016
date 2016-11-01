@@ -4,46 +4,36 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestAllDuPath {
+import junit.framework.Assert;
 
-	SoDienThoai soDienThoai = new SoDienThoai();
+public class TestAllDuPath {
 	@Test
 	public void test0() {
-		String s= "0906130$895";
-		String expResult= "Khong phai la mot so dien thoai hop le";
-		String result = soDienThoai.ktraSDT(s);
-		assertTrue(expResult==result);
+		SoDienThoai soDienThoai = new SoDienThoai();
+		Assert.assertEquals(soDienThoai.ktraSDT("0906130$895"), soDienThoai.s2);
 	}
-	
+
 	@Test
 	public void test1() {
-		String s= "9061308956";
-		String expResult= "Khong phai la mot so dien thoai hop le";
-		String result = soDienThoai.ktraSDT(s);
-		assertTrue(expResult==result);
+		SoDienThoai soDienThoai = new SoDienThoai();
+		Assert.assertEquals(soDienThoai.ktraSDT("9061308956"), soDienThoai.s2);
 	}
 	
 	@Test
 	public void test2() {
-		String s= "090613089v";
-		String expResult= "Khong phai la mot so dien thoai hop le";
-		String result = soDienThoai.ktraSDT(s);
-		assertTrue(expResult==result);
+		SoDienThoai soDienThoai = new SoDienThoai();
+		Assert.assertEquals(soDienThoai.ktraSDT("090613089v"), soDienThoai.s2);
 	}
 	
 	@Test
 	public void test3() {
-		String s= "0906130895";
-		String expResult= "La mot so dien thoai hop le";
-		String result = soDienThoai.ktraSDT(s);
-		assertTrue(expResult==result);
+		SoDienThoai soDienThoai = new SoDienThoai();
+		Assert.assertEquals(soDienThoai.ktraSDT("0906130895"), soDienThoai.s2);
 	}
 	
 	@Test
 	public void test4() {
-		String s= "09061v30%89";
-		String expResult= "Khong phai la mot so dien thoai hop le";
-		String result = soDienThoai.ktraSDT(s);
-		assertTrue(expResult==result);
+		SoDienThoai soDienThoai = new SoDienThoai();
+		Assert.assertEquals(soDienThoai.ktraSDT("09061v30%89"), soDienThoai.s2);
 	}
 }
