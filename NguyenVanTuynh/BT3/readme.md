@@ -20,21 +20,21 @@
 20.}
 
 Áp dụng tiêu chuẩn kiểm thử All-DU-Path cho chương trình BT2 ta có các đườnng dẫn sau:
-Đối với biến s thì ta có các đường dẫn sau:
+- Đối với biến s thì ta có các đường dẫn sau:
 * 2(define)->5(use)->6(use)
 * 2(define)->5(use)->9(use)
 * 2(define)->5(use)->12(use)
-Đối với biến result thì ta có các đường dẫn sau:
+- Đối với biến result thì ta có các đường dẫn sau:
 * 3(define)->10(use)->18(use)
 * 3(define)->13(use)->18(use)
 * 3(define)->16(use)->18(use)
-Đối với biến i thì ta có các đường dẫn sau:
+- Đối với biến i thì ta có các đường dẫn sau:
 * 4(define)->5(use)->6(use)->7(use)
 * 4(define)->5(use)->6(use)
 
-Từ đó ta sẽ có các bộ kiểm thử sau:
-Số thứ tự	  Input	                    Output
-1	          abc	                      "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
-2	          abc1234	                  "Dang nhap thanh cong"
-3	          nguyenvantuynh30061995	  "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
-4	          “”	                      "Ban hay nhap password"
+=>Từ đó ta sẽ có các bộ kiểm thử sau:
+# Số thứ tự	  Input	                    Output
+# 1	          abc	                      "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
+# 2	          abc1234	                  "Dang nhap thanh cong"
+# 3	          nguyenvantuynh30061995	  "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
+# 4	          “”	                      "Ban hay nhap password"
