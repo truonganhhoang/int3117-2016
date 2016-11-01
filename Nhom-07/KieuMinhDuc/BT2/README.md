@@ -29,7 +29,29 @@ public boolean isLeapNumber(int n ){
 
 
    ![1](http://i.imgur.com/pGHVIFK.png)
-
+#### Implement các ca kiểm thử
+```java
+public void testTrueTrueFalse() {						// True - True - False
+	FindingNumber findingNumber = new FindingNumber();
+	int a = 4;
+	assertEquals(true, findingNumber.isValidate(a));
+}
+public void testTrueFalseFalse() {						// True - False - False
+	FindingNumber findingNumber = new FindingNumber();
+	int a = 100;
+	assertEquals(true, findingNumber.isValidate(a));
+}
+public void testFalseTrueTrue() {						// False - True - True
+	FindingNumber findingNumber = new FindingNumber();
+	int a = 800;
+	assertEquals(true, findingNumber.isValidate(a));
+}
+public void testFalseTrueFalse() {						// False - True - False
+	FindingNumber findingNumber = new FindingNumber();
+	int a = 300;
+	assertEquals(true, findingNumber.isValidate(a));
+}
+```
 #### Áp dụng kỹ thuật MC/DC để tìm ra các ca kiểm thử quan trọng.
 
    ![2](http://i.imgur.com/YpY1F9H.png)	
