@@ -21,9 +21,10 @@ Dựa vào bao phủ điều kiện và bao phủ quyết định, em đã tạo
 18.		return result;
 19. 	}
 20. }
-Áp dụng tiêu chuẩn MCDC ta có, ta xét tất cả các đường đi mà mọi điều kiện có thể ảnh hưởng tới kết quả. Tại bước số 9, ta kiểm tra độ dài của password, nếu True thì result="Ban chi duoc phep nhap chuoi tu 6-20 ki tu", nếu False thì thực hiện bước tiếp theo. Tại bước số 12, nếu True thì result="Dang nhap thanh cong", nếu False thì thực hiện bước cuối cùng result="Ban hay nhap password". Với các đường đi như thế, ta sinh được các ca kiểm thử sau:
 
-* Số thứ tự	|---|     Input	               |---|           Output
+=> Áp dụng tiêu chuẩn MCDC ta có, ta xét tất cả các đường đi mà mọi điều kiện có thể ảnh hưởng tới kết quả. Tại bước số 9, ta kiểm tra độ dài của password, nếu True thì result="Ban chi duoc phep nhap chuoi tu 6-20 ki tu", nếu False thì thực hiện bước tiếp theo. Tại bước số 12, nếu True thì result="Dang nhap thanh cong", nếu False thì thực hiện bước cuối cùng result="Ban hay nhap password". Với các đường đi như thế, ta sinh được các ca kiểm thử sau:
+
+* STT	|---|     Input	               |---|           Output
 * 1	        |---|        abc	                |---|          "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
 * 2	        |---|        abc1234	            |---|           "Dang nhap thanh cong"
 * 3	        |---|        nguyenvantuynh30061995	|---|      "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
