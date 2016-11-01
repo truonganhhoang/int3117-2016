@@ -11,7 +11,16 @@ Mã sinh viên : 13020121
 1. Bài toán
    Tìm các số chia hết cho 4 và ko chia hết cho 100 hoặc có thể chia hết cho 400 ( tương tự như năm nhuận ).
 ```
-
+2. Hàm cần kiểm thử
+```java
+public boolean isLeapNumber(int n ){
+	if ( ( n % 4 == 0 ) && ( n % 100 != 0) || ( n % 400 == 0 ) ){		// if ( ( a && b) || c)
+		return true;			
+	}else{
+		return false;
+	}
+}
+```
 ```
 2. Tìm ca kiểm thử
 
