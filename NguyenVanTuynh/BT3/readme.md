@@ -33,8 +33,8 @@
 * 4(define)->5(use)->6(use)
 
 =>Từ đó ta sẽ có các bộ kiểm thử sau:
-* Số thứ tự	        Input	                          Output
-* 1	                abc	                            "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
-* 2	                abc1234	                        "Dang nhap thanh cong"
-* 3	                nguyenvantuynh30061995	        "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
-* 4	                “”	                            "Ban hay nhap password"
+* Số thứ tự	   |     Input	               |           Output
+* 1	        |        abc	                 |           "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
+* 2	        |        abc1234	             |           "Dang nhap thanh cong"
+* 3	        |        nguyenvantuynh30061995	|        "Ban chi duoc phep nhap chuoi tu 6-20 ki tu"
+* 4	        |        “”	                     |       "Ban hay nhap password"
