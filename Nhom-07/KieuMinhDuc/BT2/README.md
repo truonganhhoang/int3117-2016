@@ -29,6 +29,10 @@ public boolean isLeapNumber(int n ){
 
 
    ![1](http://i.imgur.com/pGHVIFK.png)
+
+#### Áp dụng kỹ thuật MC/DC để tìm ra các ca kiểm thử quan trọng.
+
+   ![2](http://i.imgur.com/YpY1F9H.png)	
 #### Implement các ca kiểm thử
 ```java
 public void testTrueTrueFalse() {						// True - True - False
@@ -52,10 +56,6 @@ public void testFalseTrueFalse() {						// False - True - False
 	assertEquals(true, findingNumber.isValidate(a));
 }
 ```
-#### Áp dụng kỹ thuật MC/DC để tìm ra các ca kiểm thử quan trọng.
-
-   ![2](http://i.imgur.com/YpY1F9H.png)	
-
 
 ### Kết quả .
 #### Test Coverage Result :   
