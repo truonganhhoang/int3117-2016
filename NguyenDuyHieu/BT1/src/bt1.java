@@ -5,8 +5,7 @@ public class BT1 {
     //Tinh tong cac so chan trong n chu so dau
     
 public class TinhTongSoChan {
-    //Tinh tong cac so chan trong n chu so dau
-    
+   
     private int n = 0;
     private int sum = 0;
 
@@ -32,7 +31,7 @@ public class TinhTongSoChan {
     }
     
     public static void main (String[] args) {
-        TinhTongSoChan tong = new TinhTongSoChan8(100000);
+        TinhTongSoChan tong = new TinhTongSoChan(100000);
         System.out.println(tong.getSum());
     }
     
