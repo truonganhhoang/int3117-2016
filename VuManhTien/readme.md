@@ -56,7 +56,7 @@ public static int timSoLuongUoc(int number) {
  * chương trình được kiểm tra kỹ hơn khi áp dụng kỹ thuật kiểm thử biên
  * trước: chỉ tập trung vào các số tự nhiên theo cảm tính
  * sau: mở rộng test cho các số 0 và số nguyên âm, bao phủ toàn bộ các input hợp lệ.
-______________________________________________________________________________________________________________
+#______________________________________________________________________________________________________________
 
 ## BÀI TẬP 2:
 ## Mô tả bài toán:
@@ -147,11 +147,13 @@ TC5 | F  | F  | -  | -  | T  | T
 		Assert.assertFalse(Password.check("aaaAAA111@@@"));
 	}
 ```
-
+* Với chương trình này thì dùng bao phủ cạnh đồ thị đường đi cho độ bao phủ tương đương.
 ## Kết quả: BT2/BT2 - test result.png
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT2/BT2%20-%20test%20result.png)
 ## Test Coverage: BT2/BT2 - test coverage.png
-## Với chương trình này thì dùng bao phủ cạnh đồ thị đường đi cho độ bao phủ tương đương.
-______________________________________________________________________________________________________________
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT2/BT2%20-%20test%20coverage.png)
+
+#______________________________________________________________________________________________________________
 
 ## BÀI TẬP 3:
 ## Mô tả bài toán: bài toán ở BT2
@@ -179,6 +181,8 @@ ________________________________________________________________________________
 
 ## Áp dụng tiêu chuẩn kiểm thử All-DU-Path
 * Phân tích dựa trên biểu đồ BT3/BT3 - All DU Path - biến pass.png
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT3/BT3%20-%20All%20DU%20Path%20-%20bi%E1%BA%BFn%20pass.png)
+
 * Các đường đi cho biến pass:
 * Path 1: 1-3-4-16
 * Path 2: 1-3-7-15-16
@@ -205,6 +209,8 @@ ________________________________________________________________________________
 	}
 ```
 ## Kết quả: BT3/BT3 - test result.png
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT3/BT3%20-%20test%20result.png)
+
 ## Nhận xét: giữa All DU Path và MCDC có sự khác nhau về cách thực hiện qua đó cũng mang lại hiệu quả khác nhau
 * Với MCDC tất cả các trường đều được test có nghĩa là khi đó tất cả các đường đi đều được bao phủ.
 	* Phải thực hiện nhiều ca kiểm thử để hoàn thành tiêu chuẩn này.
