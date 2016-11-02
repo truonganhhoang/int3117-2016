@@ -3,14 +3,28 @@
 Bài toán: Cho 3 số a,b,c nguyên dương tùy ý (a,b < 100). Nếu cả a và b đều chia hết cho 3 hoặc c chia hết cho 3 thì tính tổng các số chia hết cho a, không thì tính tổng các số chia hết cho b. 
 Giới hạn trong 100 số đầu tiên.
 
-####Cách tạo ca kiểm thử (Test case).
-Tạm gọi điều kiện là if ((A & B) || C)
- - Test case đầu tiên cho cả 3 điều kiện A, B, C đều đúng.
- - Test case thứ 2 cho A và B đúng, C sai.
- - Test case thứ 3 cho A hoặc B sai, C đúng.
- - Test case thứ 4 cho A hoặc B sai, C sai.
- - Test case thứ 5 cho A và B sai, C đúng.
- - Test case thứ 6 cho A và B sai, C sai.
+## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
+
+Biểu thức điều kiện: (%3=0 AND %3=0) OR %3=0 hoặc rút gọn thành (A && B ) || C
+Không áp dụng MC/DC: Cần 2^3=8 ca kiểm thử tất cả.
+
+Test Case  | A | B | C | OUTPUT
+------------- | ------------- | ------------- | ------------- | -------------
+1  | True | True | True | True
+2  | True | True | False | True
+3  | True | False | True | True
+4  | True | False | False | False
+5  | False | True | True | True
+6  | False | True | False | False
+7  | False | False | True | True
+8  | False | False | False | False
+
+Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 3,4,2,6 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.
+Lý giải: Mỗi điều kiện (condition) đều ảnh hưởng độc lập đến kết quả (decision)
+3: A True, B False, C True -> OUTPUT True
+4: A True, B False, C False -> OUTPUT False Thay 1 mình C => Output thay đổi
+2: A True, B True, C False -> OUTPUT True Thay đổi 1 mình B => Output thay đổi
+6: A False, B True, C False -> OUTPUT False Thay đổi 1 mình A => Output thay đổi
 
 Kết quả: Sau khi tiến hành đo độ bao phủ, các test case đã bao phủ toàn bộ các nhánh, các dòng.
 
