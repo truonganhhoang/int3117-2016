@@ -2,7 +2,7 @@ package bt1;
 
 
 public class BT1 {
-    //Tinh tong cac so chan trong n chu so dau
+    //Tinh tong cac so chan trong n chu so dau, n <= 10000
     
 public class TinhTongSoChan {
    
@@ -31,12 +31,12 @@ public class TinhTongSoChan {
     }
     
     public static void main (String[] args) {
-        TinhTongSoChan tong = new TinhTongSoChan(100000);
+        TinhTongSoChan tong = new TinhTongSoChan(10000);
         System.out.println(tong.getSum());
     }
     
     private void tinhtong() {
-        if (n >= 0 && n <= 100000) {
+        if (n >= 0 && n <= 10000) {
             for (int i = 0; i <= n; i++) {
                 if (i%2 == 0) {
                     sum += i;
