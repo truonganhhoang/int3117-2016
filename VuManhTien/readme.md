@@ -56,7 +56,7 @@ public static int timSoLuongUoc(int number) {
  * chương trình được kiểm tra kỹ hơn khi áp dụng kỹ thuật kiểm thử biên
  * trước: chỉ tập trung vào các số tự nhiên theo cảm tính
  * sau: mở rộng test cho các số 0 và số nguyên âm, bao phủ toàn bộ các input hợp lệ.
-#______________________________________________________________________________________________________________
+##______________________________________________________________________________________________________________
 
 ## BÀI TẬP 2:
 ## Mô tả bài toán:
@@ -153,7 +153,7 @@ TC5 | F  | F  | -  | -  | T  | T
 ## Test Coverage: BT2/BT2 - test coverage.png
 ![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT2/BT2%20-%20test%20coverage.png)
 
-#______________________________________________________________________________________________________________
+##______________________________________________________________________________________________________________
 
 ## BÀI TẬP 3:
 ## Mô tả bài toán: bài toán ở BT2
