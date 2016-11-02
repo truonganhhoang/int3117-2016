@@ -56,7 +56,8 @@ public static int timSoLuongUoc(int number) {
  * chương trình được kiểm tra kỹ hơn khi áp dụng kỹ thuật kiểm thử biên
  * trước: chỉ tập trung vào các số tự nhiên theo cảm tính
  * sau: mở rộng test cho các số 0 và số nguyên âm, bao phủ toàn bộ các input hợp lệ.
-##______________________________________________________________________________________________________________
+##
+______________________________________________________________________________________________________________
 
 ## BÀI TẬP 2:
 ## Mô tả bài toán:
@@ -106,7 +107,7 @@ TC4 | F  | F  | -  | T  | -  | T
 TC5 | F  | F  | -  | -  | T  | T
 
 
-##Unit Test cho các ca kiểm thử
+## Unit Test cho các ca kiểm thử
 ```java
 	@Test
 	public void testShortPassword(){
@@ -148,12 +149,15 @@ TC5 | F  | F  | -  | -  | T  | T
 	}
 ```
 * Với chương trình này thì dùng bao phủ cạnh đồ thị đường đi cho độ bao phủ tương đương.
+
 ## Kết quả: BT2/BT2 - test result.png
 ![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT2/BT2%20-%20test%20result.png)
+
 ## Test Coverage: BT2/BT2 - test coverage.png
 ![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT2/BT2%20-%20test%20coverage.png)
 
-##______________________________________________________________________________________________________________
+##
+______________________________________________________________________________________________________________
 
 ## BÀI TẬP 3:
 ## Mô tả bài toán: bài toán ở BT2
@@ -216,4 +220,6 @@ TC5 | F  | F  | -  | -  | T  | T
 	* Phải thực hiện nhiều ca kiểm thử để hoàn thành tiêu chuẩn này.
 * Với All DU Path thì tập trung vào test cho đường đi của một biến.
 	* Cần thực hiện các ca kiểm thử ít hơn với mục tiêu cụ thể.
+
+##
 ______________________________________________________________________________________________________________
