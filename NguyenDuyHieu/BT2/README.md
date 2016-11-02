@@ -5,7 +5,7 @@ Giới hạn trong 100 số đầu tiên.
 
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
-Biểu thức điều kiện: (%3=0 AND %3=0) OR %3=0 hoặc rút gọn thành (A && B ) || C
+Biểu thức điều kiện: (%3=0 AND %3=0) OR %3=0 hoặc rút gọn thành (A && B ) || C   
 Không áp dụng MC/DC: Cần 2^3=8 ca kiểm thử tất cả.
 
 Test Case  | A | B | C | OUTPUT
@@ -19,16 +19,18 @@ Test Case  | A | B | C | OUTPUT
 7  | False | False | True | True
 8  | False | False | False | False
 
-Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 3,4,2,6 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.
-Lý giải: Mỗi điều kiện (condition) đều ảnh hưởng độc lập đến kết quả (decision)
-3: A True, B False, C True -> OUTPUT True
-4: A True, B False, C False -> OUTPUT False Thay 1 mình C => Output thay đổi
-2: A True, B True, C False -> OUTPUT True Thay đổi 1 mình B => Output thay đổi
-6: A False, B True, C False -> OUTPUT False Thay đổi 1 mình A => Output thay đổi
-
+Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 3,4,2,6 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.   
+Lý giải: Mỗi điều kiện (condition) đều ảnh hưởng độc lập đến kết quả (decision)   
+3: A True, B False, C True -> OUTPUT True   
+4: A True, B False, C False -> OUTPUT False Thay 1 mình C => Output thay đổi   
+2: A True, B True, C False -> OUTPUT True Thay đổi 1 mình B => Output thay đổi   
+6: A False, B True, C False -> OUTPUT False Thay đổi 1 mình A => Output thay đổi   
+  
 Kết quả: Sau khi tiến hành đo độ bao phủ, các test case đã bao phủ toàn bộ các nhánh, các dòng.
 
 ![Test coverage overview](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/CoverageOverview.jpg)
+
+Code:
 
 ![Test coverage detail](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/CoverageDetail.jpg)
 
