@@ -3,12 +3,12 @@
 ##*input: đầu vào là độ dài các cạnh của tam giác: s1, s2, s3*
 ##*output: xem xét tam giác đó là tam giác gì.*
 ##*Xét các trường tam giác:* 
--nếu tổng số đo 2 cạnh <= cạnh còn lại hoặc một trong ba cạnh của nó < 0 thì đó không phải tam giac (-1)
--nếu số đo hai cạnh bằng nhau thì tam giác cân (1)
--nếu số đo ba cạnh bằng nhau thi tam giác đều (2)
--nếu bình phương một cạnh bằng tổng bình phương hai cạnh còn lại thì là tam giác vuông (4)
--nếu là tam giác vuông và có hai cạnh của góc vuông bằng nhau thi là tam giác vuông cân (3)
--còn lại là tam giác bình thường (5)
+*tổng số đo 2 cạnh <= cạnh còn lại hoặc một trong ba cạnh của nó < 0 thì đó không phải tam giac (-1)
+*nếu số đo hai cạnh bằng nhau thì tam giác cân (1)
+*nếu số đo ba cạnh bằng nhau thi tam giác đều (2)
+*nếu bình phương một cạnh bằng tổng bình phương hai cạnh còn lại thì là tam giác vuông (4)
+*nếu là tam giác vuông và có hai cạnh của góc vuông bằng nhau thi là tam giác vuông cân (3)
+*còn lại là tam giác bình thường (5)
 ----
 ##*áp dụng MC/DC cho các điều kiện của một số trường hợp cụ thể:*
 ```sh
