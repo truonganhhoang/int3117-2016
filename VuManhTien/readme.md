@@ -48,7 +48,9 @@ public static int timSoLuongUoc(int number) {
 	}
 ```
 ## Kết quả: BT1/BT1 - test result.png
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT1/BT1%20-%20test%20result.png)
 ## Sơ đồ khối: BT1/BT1 - flowchart draw.io
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/VuManhTien/BT1/BT1%20-%20%20flowchart%20-%20draw.io.png)
 
 ## Cải thiện: 
  * chương trình được kiểm tra kỹ hơn khi áp dụng kỹ thuật kiểm thử biên
