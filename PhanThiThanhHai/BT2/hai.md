@@ -56,22 +56,22 @@ http://prntscr.com/d2a53x
 | 6 | T | F | T | F | F | F | - |
 ----
 **Tổng quát áp dụng với trường hợp MCDC ta có 14 ca kiểm thử như sau:**
-| TC | condition1 | condition2 | s1=s2 | s2=s3 | s3=s1 | s3= Math.sqrt(s1*s1+s2*s2) | s2= Math.sqrt(s3*s3+s2*s2) | s1= Math.sqrt(s3*s3+s2*s2) | KQ |
+| TC | condition1 | condition2 | s1=s2 | s2=s3 | s3=s1 | s3= Math.sqrt(s1Xs1+s2Xs2) | s2= Math.sqrt(s3Xs3+s2Xs2) | s1= Math.sqrt(s3Xs3+s2Xs2) | KQ |
 |----|------------|------------|-------|-------|-------|----------------------------|----------------------------|----------------------------|----|
 | 1 | T | F | - | - | - | - | - | - | -1 | 
 | 2 | F | T | - | - | - | - | - | - | -1 | 
 | 3 | T | T | - | - | - | - | - | - | -1 | 
-| 4 | T | T | T | T | T | - | - | - |  2 | 
-| 5 | T | T | T | F | F | F | F | F |  1 | 
-| 6 | T | T | F | T | F | F | F | F |  1 | 
-| 7 | T | T | F | F | T | F | F | F |  1 | 
-| 8 | T | T | F | F | F | T | - | - |  4 | 
-| 9 | T | T | F | F | F | - | T | - |  4 | 
-| 10 | T | T | F | F | F | - | - | T | 4 | 
+| 4 | T | T | T | T | T | - | - | - | 2 | 
+| 5 | T | T | T | F | F | F | F | F | 1 | 
+| 6 | T | T | F | T | F | F | F | F | 1 | 
+| 7 | T | T | F | F | T | F | F | F | 1 | 
+| 8 | T | T | F | F | F | T | - | - | 4 | 
+| 9 | T | T | F | F | F | - | T | - | 4 | 
+| 10 | T | T | F | F | F | - | - | T | 4 |
 | 11 | T | T | T | F | F | T | - | - | 3 | 
 | 12 | T | T | F | T | F | - | - | F | 3 | 
 | 13 | T | T | F | F | T | - | T | - | 3 | 
 | 14 | T | T | F | F | F | F | F | F | 5 | 
 ----
-#Mức độ bao phủ của bài toán
+# Đo mức độ bao phủ của bài toán
 http://prntscr.com/d2a4fu
