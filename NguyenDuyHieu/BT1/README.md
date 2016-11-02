@@ -15,8 +15,19 @@ Nếu sử dụng lớp tương đương mà chọn giá trị đại diện ch�
 
 
 
+
 Bài tập tuần 4
 
 Phương pháp hộp đen đã áp dụng là kiểm thử biên. 
 Khi tính tổng nếu số n đủ lớn thì tổng sẽ vượt quá giới hạn của số nguyên INT trong khi n còn cách xa giới hạn đó. 
 Vì vậy nhờ kiểm thử biên đầu ra đã giới hạn giá trị đầu vào của n.
+
+Mức độ bao phủ
+
+https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT1/Image/coverage1.jpg
+
+https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT1/Image/coverage2.jpg
+
+Đồ thị chương trình
+
+https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT1/Image/flowchart.jpg
