@@ -1,7 +1,10 @@
 ## Bài tập tuần 5.
 
-Bài toán: Cho 3 số a,b,c nguyên dương tùy ý (a,b < 100). Nếu cả a và b đều chia hết cho 3 hoặc c chia hết cho 3 thì tính tổng các số chia hết cho a, không thì tính tổng các số chia hết cho b. 
-Giới hạn trong 100 số đầu tiên.
+Bài toán: Cho 3 số a,b,c nguyên dương tùy ý (a,b < 100). Nếu cả a và b đều chia hết cho 3 hoặc c chia hết cho 3 thì tính tổng các số chia hết cho a, không thì tính tổng các số chia hết cho b, giới hạn trong 100 số đầu tiên.
+
+Code:
+
+![Test coverage detail](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/CoverageDetail.jpg)
 
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
@@ -26,12 +29,10 @@ Lý giải: Mỗi điều kiện (condition) đều ảnh hưởng độc lập 
 2: A True, B True, C False -> OUTPUT True Thay đổi 1 mình B => Output thay đổi   
 6: A False, B True, C False -> OUTPUT False Thay đổi 1 mình A => Output thay đổi   
   
-Kết quả: Sau khi tiến hành đo độ bao phủ, các test case đã bao phủ toàn bộ các nhánh, các dòng.
+Kết quả: Chỉ cần 4 ca kiểm thử trên cũng có coverage 100%
 
 ![Test coverage overview](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/CoverageOverview.jpg)
 
-Code:
 
-![Test coverage detail](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/CoverageDetail.jpg)
 
 
