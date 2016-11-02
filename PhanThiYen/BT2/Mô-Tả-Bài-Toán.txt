@@ -1,0 +1,9 @@
+﻿-input: Nhập vào 3 số a,b,c bất kỳ
+-Output: trả về hình dạng của tam giác
+-Nếu a hoặc b hoặc c <0 thì trả về false
+-Nếu a+b=c hoặc a+c=b hoặc b+c=a thì trả về false
+
+-Nếu a=b=c thì trả về tam giác đều
+-Nếu a*a+b*b=c*c hoặc b*b+c*c=a*a hoặc c*c+a*a=b*b thì trả về tam giác vuông
+-Nếu a=b và a=c thì trả về tam giác cân
+-Còn lại trả về tam giác thường.

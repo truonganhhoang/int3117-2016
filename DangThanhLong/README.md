@@ -1,0 +1,3 @@
+- Họ Tên: Đặng Thành Long
+- Lóp: K58CLC
+- Mã số SV: 13020596
