@@ -1,7 +1,26 @@
-* Mô tả bài toán
-Áp dụng tiêu chuẩn kiểm thử All-DU-Path cho chương trình ở BT2 (sử dụng MCDC). Dựa trên việc áp dụng vào chương trình của em, so sánh và rút ra nhận xét về All-DU-Path và MCDC.
+#Giải thuật
+![result](https://github.com/phuongnt58/int3117-2016/blob/master/Nhom08/NgoThiPhuong/BT3/Demsokytu.png)
 
-* So sánh: All-Du-Path và MCDC
+##All-DU-PATH
+- 1-2-3-4-5-14 : while false 
+@test: a = '', len = 0
+
+
+- 1-2-3-4-5-6-7-10-12-14 (6,7 true)
+@test: a='phuong' => len = 6; total = 6
+
+
+- 1-2-3-4-5-6-8-9-10-12-14 (6 false 8,9 true)
+@test: a=' phuong' => len = 7; total = 6
+
+
+- 1-2-3-4-5-6-12-14(if false)
+@test: a=';*' => len = 2; total = 0
+
+
+- 1-2-3-4-5-6-7-8-9-10-12-14(6 true; 7 false; 8,9 true )
+
+##So sánh: All-Du-Path và MCDC
 
 - Giống: Phương pháp kiểm thử hộp trắng
 
