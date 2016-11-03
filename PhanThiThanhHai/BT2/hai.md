@@ -55,7 +55,7 @@ http://prntscr.com/d2a53x
 | 5 | T | F | F | T | F | F | - |
 | 6 | T | F | T | F | F | F | - |
 ----
-**Tổng quát áp dụng với trường hợp MCDC ta có 14 ca kiểm thử như sau:**
+##**Tổng quát áp dụng với trường hợp MCDC ta có 14 ca kiểm thử như sau:**
 | TC | condition1 | condition2 | s1=s2 | s2=s3 | s3=s1 | s3= Math.sqrt(s1Xs1+s2Xs2) | s2= Math.sqrt(s3Xs3+s2Xs2) | s1= Math.sqrt(s3Xs3+s2Xs2) | KQ |
 |----|------------|------------|-------|-------|-------|----------------------------|----------------------------|----------------------------|----|
 | 1 | T | F | - | - | - | - | - | - | -1 | 
