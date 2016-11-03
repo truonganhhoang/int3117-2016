@@ -3,12 +3,12 @@
 ##*input: đầu vào là độ dài các cạnh của tam giác: s1, s2, s3*
 ##*output: xem xét tam giác đó là tam giác gì.*
 ##*Xét các trường tam giác:* 
--nếu tổng số đo 2 cạnh <= cạnh còn lại hoặc một trong ba cạnh của nó < 0 thì đó không phải tam giac (-1)
--nếu số đo hai cạnh bằng nhau thì tam giác cân (1)
--nếu số đo ba cạnh bằng nhau thi tam giác đều (2)
--nếu bình phương một cạnh bằng tổng bình phương hai cạnh còn lại thì là tam giác vuông (4)
--nếu là tam giác vuông và có hai cạnh của góc vuông bằng nhau thi là tam giác vuông cân (3)
--còn lại là tam giác bình thường (5)
+1. nếu tổng số đo 2 cạnh <= cạnh còn lại hoặc một trong ba cạnh của nó < 0 thì đó không phải tam giac (-1)
+2. nếu số đo hai cạnh bằng nhau thì tam giác cân (1)
+3. nếu số đo ba cạnh bằng nhau thi tam giác đều (2)
+4. nếu bình phương một cạnh bằng tổng bình phương hai cạnh còn lại thì là tam giác vuông (4)
+5. nếu là tam giác vuông và có hai cạnh của góc vuông bằng nhau thi là tam giác vuông cân (3)
+6. còn lại là tam giác bình thường (5)
 ----
 ##*áp dụng MC/DC cho các điều kiện của một số trường hợp cụ thể:*
 ```sh
@@ -55,8 +55,10 @@ http://prntscr.com/d2a53x
 | 5 | T | F | F | T | F | F | - |
 | 6 | T | F | T | F | F | F | - |
 ----
-**Tổng quát áp dụng với trường hợp MCDC ta có 14 ca kiểm thử như sau:**
-| TC | condition1 | condition2 | s1=s2 | s2=s3 | s3=s1 | s3= Math.sqrt(s1Xs1+s2Xs2) | s2= Math.sqrt(s3Xs3+s2Xs2) | s1= Math.sqrt(s3Xs3+s2Xs2) | KQ |
+
+##Tổng quát áp dụng với trường hợp MCDC ta có 14 ca kiểm thử như sau:
+
+| TC | condition1 | condition2 | s1=s2 | s2=s3 | s3=s1 | s3= Math.sqrt(s1*s1+s2*s2) | s2= Math.sqrt(s3*s3+s2*s2) | s1= Math.sqrt(s3*s3+s2*s2) | KQ |
 |----|------------|------------|-------|-------|-------|----------------------------|----------------------------|----------------------------|----|
 | 1 | T | F | - | - | - | - | - | - | -1 | 
 | 2 | F | T | - | - | - | - | - | - | -1 | 
