@@ -69,13 +69,13 @@ http://prntscr.com/d2i7ac
 
 ##**Áp dụng All-DU-Path cho các biến trong chương trình 
 
-1. Biểu đồ luồng dữ liệu cho biến considition1 và considition2 (do vai trò của hai biến này là như nhau)
+*Biểu đồ luồng dữ liệu cho biến considition1 và considition2 (do vai trò của hai biến này là như nhau)*
 - 0, 1, 2, 3, 4, 5, 16
 - 0, 1, 2, 3, 4, 5 ,6,...
 
 http://prntscr.com/d2i7ac
 
-2. Biểu đồ luồng dữ liệu cho biến result
+*Biểu đồ luồng dữ liệu cho biến result*
 - 0, 1, 2, 3, 4, 5, 16.
 - 0, 1, 2, 3, 4, 6, 7, 8, 16.
 - 0, 1, 2, 3, 4, 6, 9, 10, 16.
