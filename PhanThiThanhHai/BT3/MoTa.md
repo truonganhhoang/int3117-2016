@@ -1,4 +1,4 @@
-# Mô tả bài toán : Áp dụng tiêu chuẩn kiểm thử All-DU-Path cho chương trình ở BT2
+# Mô tả bài toán : Áp dụng tiêu chuẩn kiểm thử All-DU-Path (là tiêu chuẩn kiểm thử theo luồng dữ liệu : chọn đường đi với mục tiêu bao phủ các cặp gán và dùng dữ liệu). 
 ----
 ##*input: đầu vào là độ dài các cạnh của tam giác: s1, s2, s3*
 ##*output: xem xét tam giác đó là tam giác gì.*
@@ -8,9 +8,8 @@
 3. nếu số đo ba cạnh bằng nhau thi tam giác đều (2)
 4. nếu bình phương một cạnh bằng tổng bình phương hai cạnh còn lại thì là tam giác vuông (4)
 5. nếu là tam giác vuông và có hai cạnh của góc vuông bằng nhau thi là tam giác vuông cân (3)
-6. còn lại là tam giác bình thường (5)
-----
-## Đây là tiêu chuẩn kiểm thử theo luồng dữ liệu : chọn đường đi với mục tiêu bao phủ các cặp gán và dùng dữ liệu 
+6. còn lại là tam giác bình thường (5).
+
 ----
 ## Chương trình:
 ```sh
@@ -71,23 +70,22 @@ http://prntscr.com/d2i7ac
 ##**Áp dụng All-DU-Path cho các biến trong chương trình 
 
 1. Biểu đồ luồng dữ liệu cho biến considition1 và considition2 (do vai trò của hai biến này là như nhau)
--0, 1, 2, 3, 4, 5, 16
--0, 1, 2, 3, 4, 5 ,6,...
+- 0, 1, 2, 3, 4, 5, 16
+- 0, 1, 2, 3, 4, 5 ,6,...
 
 http://prntscr.com/d2i7ac
 2. Biểu đồ luồng dữ liệu cho biến result
--0, 1, 2, 3, 4, 5, 16.
--0, 1, 2, 3, 4, 6, 7, 8, 16.
--0, 1, 2, 3, 4, 6, 9, 10, 16.
--0, 1, 2, 3, 4, 6, 11, 12, 16.
--0, 1, 2, 3, 4, 6, 13, 14, 16
--0, 1, 2, 3, 4, 6, 15, 16.
+- 0, 1, 2, 3, 4, 5, 16.
+- 0, 1, 2, 3, 4, 6, 7, 8, 16.
+- 0, 1, 2, 3, 4, 6, 9, 10, 16.
+- 0, 1, 2, 3, 4, 6, 11, 12, 16.
+- 0, 1, 2, 3, 4, 6, 13, 14, 16
+- 0, 1, 2, 3, 4, 6, 15, 16.
 
 ##**So sánh kĩ thuật kiểm thử All-DU-Path và kĩ thuật MCDC trong bt2**
-1. Giống nhau : 
+*Giống nhau:* 
 - là các kĩ thuật kiểm thử hộp trắng.
-
-2. Khác nhau: 
+*Khác nhau:* 
 - kĩ thuật All-DU-Path là kĩ thuật dựa vào luồng dữ liệu đi của các biến.
 - so với MCDC thì kĩ thuật All-DU - Path ít ca kiểm thử hơn và dễ thưc hiện hơn. Tuy vậy trong trường hợp này thì kĩ thuật kiểm thử MC/DC chặt chẽ hơn và vét được hết các trường hợp
 
