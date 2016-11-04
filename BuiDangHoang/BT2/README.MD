@@ -20,7 +20,7 @@ Test Case  | %3 = 0 | %5 = 0 | %7=0 | OUTPUT
 7  | False | False | True | True
 8  | False | False | False | False
 
-Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 1,5,7,8 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.
+Áp dụng MC/DC: ta chỉ cần 4 ca kiểm thử 3,4,2,6 để đảm bảo độ bao phủ tương đương việc thực hiện cả 8 ca kiểm thử trên.
 
 ## Đo mức độ bao phủ
 
