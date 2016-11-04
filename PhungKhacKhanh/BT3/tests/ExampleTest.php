@@ -5,10 +5,10 @@ class ExampleTest extends PHPUnit_Framework_TestCase
 	/**
      * @covers Example::check
      */
-    public function testCheck0()
+    public function testCheck5()
     {
 		$valTest = new Example();
-		$val = $valTest->check(0);
+		$val = $valTest->check(5);
         $this->assertEquals(1, $val);
     }
 	/**
@@ -19,28 +19,13 @@ class ExampleTest extends PHPUnit_Framework_TestCase
 		$val = $valTest->check(10);
         $this->assertEquals(0, $val);
 	}
+	
 	/**
      * @covers Example::check
      */
-	public function testCheckMinus1(){
+	public function testCheck1000(){
 		$valTest = new Example();
-		$val = $valTest->check(-1);
-        $this->assertEquals(0, $val);
-	}
-	/**
-     * @covers Example::check
-     */
-	public function testCheck99(){
-		$valTest = new Example();
-		$val = $valTest->check(99);
-        $this->assertEquals(1, $val);
-	}
-	/**
-     * @covers Example::check
-     */
-	public function testCheckBigInteger(){
-		$valTest = new Example();
-		$val = $valTest->check(10000000000000000000000000000000000000000000000000000000000000000000000000000);
+		$val = $valTest->check(1000);
         $this->assertEquals(0, $val);
 	}
 }

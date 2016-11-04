@@ -37,7 +37,7 @@ All-DU-Path
 ?>
 
 Đường đi cho biến a: 
-	Đường đi		Ca kiểm thử
-	1-2-3-4-5-6		a = 5
-	1-2-3			a = 1000
-	1-2-3-4			a = 10
+	Đường đi		Ca kiểm thử		KQ mong đợi
+	1-2-3-4-5-6		a = 5			1
+	1-2-3			a = 1000		0
+	1-2-3-4			a = 10			0
