@@ -18,10 +18,10 @@
 
 ## Luong du lieu cua cac bien
 
-- Luong du lieu cua bien count: 1-2-3-4-5-6-... ; 1-2-3-4-..11-14-15-...
+- Luong du lieu cua bien count: 1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-10-16-17 ; 1-2-3-4-9-10-16-17; 
 - Luong du lieu cho bien a: 1-2-3-4-5-6-... ; 1-2-3-4-9-10-... ;
 - Luong du lieu cho bien b: 1-2-3-4-5-6-... ; 1-2-3-4-9-10-... ;
-- Luong du lieu cho bien i: 1-2-3-4-5-6-... ; 1-2-3-4-...-9-10-11-14... ;
+- Luong du lieu cho bien i: 1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-10-16-17 ; 1-2-3-4-9-10-11-14-15-10-16-17 ;
 
 -> Chi can 3 ca kiem thu cho 3 luong du lieu : 1-2-3-4-5-6-... ; 1-2-3-4-..11-14-15-...; 1-2-3-4-9-10-... 
 

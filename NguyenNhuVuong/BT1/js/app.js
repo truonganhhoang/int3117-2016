@@ -4,7 +4,8 @@ angular.module('app', [])
 	$rootScope.SumArray = function(array, callback){
 		var sum = 0;
 		for(var i = 0; i < array.length; i++){
-			if(array[i] % 2 == 0){
+			
+			if(array[i] % 2 == 0 && typeof (array[i]) == 'number'){
 				sum += array[i];
 			}
 		}
