@@ -1,10 +1,20 @@
-package findnumber;
-
+- Bài tập 3 : Áp dụng tiêu chuẩn kiểm thử All-DU-Path cho chương trình ở BT2
+- Mã nguồn chương trình
+	
 /**
  * Created by Nhahv on 10/3/2016.
  * <></>
  */
 public class FindNumber {
+
+    public static void main(String[] args) {
+
+        FindNumber find = new FindNumber();
+        Number number = find.findNumberDivisibleBy8(1);
+        System.out.printf("Result : " + "number1 = " + number.number1 + ", number2 = " + number.number2);
+    }
+
+
     public Number findNumberDivisibleBy8(int numberStart) {
 
         if (numberStart == 0) {
@@ -37,7 +47,7 @@ public class FindNumber {
     boolean checkCondition(int number1, int number2) {
 
         return (number1 % 3 == 0 && number2 % 5 == 0
-            && ((number1 + number2) % 8 == 0));
+                && ((number1 + number2) % 8 == 0));
     }
 
     public static class Number {
@@ -49,3 +59,15 @@ public class FindNumber {
         }
     }
 }
+
+
+
+- Chương trình bt3.html
+- Luồng path của chương trình luong_dk.png
+- Theo tiên chuẩn kiểm thử All-DU-PATH ta có các luồng đi với biến: numberStart
+- Luồng điều khiển xuất phát từ dòng thứ 2
+ 1: 2 - 4 (use) - 5
+ 2: 4 - 7(use) - 8 (def)- 15(use) -28
+ 3: 4 - 7(use) - 8 (def)- 15(use) -17 (use)- 18 (use)- 20 (use) - 23
+ 4: 4 - 7 -  15 (use) -  17 (use)- 18 (use) -28
+
