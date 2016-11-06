@@ -1,8 +1,8 @@
-package tranglt58.songuyento; 
+package tranglt58.SNT;
 
 public class SoNguyenTo {
 	public boolean kiemTraSoNguyenTo(int n) {
-		if (n==1) {
+		if (n==0 || n==1) {
 			return false;
 		}
 		if (n==2) {
@@ -16,9 +16,3 @@ public class SoNguyenTo {
 		return true;
 	}
 }
-
-
-
-
-
-
