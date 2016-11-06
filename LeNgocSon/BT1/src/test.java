@@ -5,11 +5,53 @@ import org.junit.Test;
 public class test {
 
 	@Test
-	public void test() {
-		baitap1 demo = new baitap1();
-		int[] array = {1, 2, 3, 0, 6, 7, 5};
-		int i = demo.findMax(array);
-		assertEquals(7, i);
+	public void test1() {
+		int n = 10;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(100, i);
+		
+	}
+	@Test
+	public void test2() {
+		int n = 11;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(121, i);
+		
+	}
+	
+	@Test
+	public void test3() {
+		int n = 20;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(400, i);	
+	}
+	
+	@Test
+	public void test4() {
+		int n = 99;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(9801, i);	
+	}
+	
+	@Test
+	public void test5() {
+		int n = 100;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(10000, i);	
+	}
+	
+	@Test
+	public void test6() {
+		int n = 9;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(0, i);	
+	}
+	
+	@Test
+	public void test7() {
+		int n = 101;
+		int i = baitap1.BinhPhuong(n);
+		assertEquals(0, i);	
 	}
 
 }

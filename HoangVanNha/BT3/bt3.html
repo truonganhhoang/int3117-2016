@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0056)file:///C:/Users/Nhahv/appdata/local/temp/tmpyodw8l.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Untitled</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<style type="text/css">
+/* General */
+* html a:hover { background: transparent; }
+body { color: #000000; }
+pre { border: 0; margin: 0; padding: 0; }
+td { padding: 0; }
+table { border: 0; margin: 0; padding: 0; border-collapse: collapse; empty-cells: show; }
+.code_text { font: 14pt "Consolas", "Courier", Monospace; }
+.code_page { background-color: #FFFFFF; }
+.simple_code_page { background-color: white; color: black }
+.code_gutter { display: table-cell; background-color: #E5E5E5; padding-right: 10px; }
+td.code_line div { width: 100%; }
+span { display: inline-block; border: 0; margin: 0; }
+span.bold { font-weight: bold; }
+span.italic { font-style: italic; }
+span.normal { font-style: normal; }
+span.underline { text-decoration:underline; }
+
+/* Wrapping */
+div.wrap {
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP printers */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word;      /* IE */
+}
+div.wrap span { display: inline; }
+
+/* Toolbar */
+div#toolbarhide {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+div#toolbar {
+    visibility: hidden;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    -webkit-transform: translateZ(0);    /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -ms-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    background-color:black;
+    color: white;
+}
+div#toolbarhide:hover div#toolbar {
+    visibility: visible;
+    opacity: .8;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+div#toolbar img {
+    display:  inline-block ;
+    vertical-align: middle;
+    border: 0;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    padding: 5px;
+}
+
+/* tooltips */
+#tooltip {
+    border-radius: 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP printers */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word;      /* IE */
+    position:absolute; display:block;
+    color: black;
+    padding: 0.8em 1em;
+    background: #FFFFE0; border: solid black;
+    font-family: Calibri, Tahoma, Geneva, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+a.annotation {
+    color: #000000;
+    outline: none;
+    text-decoration: underline;
+}
+
+span.annotation{ display: inline; }
+
+.tooltip_hotspot { cursor:pointer; }
+
+/* Annotation Table */
+div#comment_list {
+    visibility: hidden;
+    display: none;
+    margin: auto auto;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    left:0px;
+    top: 0px;
+}
+div#comment_wrapper {
+    max-height: 200px;
+    overflow: auto;
+    border: solid black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+table#comment_table {
+    border: thin solid; border-collapse: collapse;
+    color: #000000; background-color: #FFFFE0; margin: auto auto;
+}
+div.table_footer { text-align:right; font-size: 8pt; font-weight: bold;}
+a.table_close { color: black; float: right; }
+a.table_close:link { text-decoration: none; }
+a.table_close:active { text-decoration: none; }
+a.table_close:visited { text-decoration: none; }
+a.table_close:hover { text-decoration: none; }
+table#comment_table th, table#comment_table td { border: thin solid; padding: 5px; }
+td.annotation_link { width: 60px; text-align: right; padding-right: 20px; }
+.annotation_comment { width: 500px; }
+div.annotation_comment {
+    float: left;
+    text-align: left;
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP printers */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word;      /* IE */
+}
+
+</style>
+
+<script type="text/javascript">
+function isUndef(obj) {
+  return obj === void 0;
+}
+
+function isNull(obj) {
+  return obj === null;
+}
+
+</script>
+<script type="text/javascript">
+var plist = {
+    color_scheme: {},
+    content: "",
+    indentlevel: 0,
+
+    get: function(file_name) {
+        this.content = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+                        '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n' +
+                        '<plist version="1.0">\n' +
+                        '<!-- ' + file_name + ' -->\n';
+        this.parsedict(this.color_scheme);
+        this.content += '</plist>\n';
+        return this.content;
+    },
+
+    isinstance: function(obj, s) {
+        return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase() === s;
+    },
+
+    sortkeys: function(obj) {
+        var sorted = {},
+            keys = [],
+            key;
+
+        for (key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                keys.push(key);
+            }
+        }
+        keys.sort();
+        return keys;
+    },
+
+    indent: function() {
+        var i;
+        for (i = 0; i < this.indentlevel; i++) {
+            this.content += "    ";
+        }
+    },
+
+    parsekey: function(k) {
+        this.indent();
+        this.content += '<key>' + k + '</key>\n';
+    },
+
+    parseitem: function(obj) {
+        if (this.isinstance(obj, "string")) {
+            this.parsestring(obj);
+        } else if (this.isinstance(obj, "array")) {
+            this.parsearray(obj);
+        } else if (this.isinstance(obj, "object")) {
+            this.parsedict(obj);
+        }
+    },
+
+    parsearray: function(obj) {
+        var i, len = obj.length;
+        this.indent();
+        this.content += '<array>\n';
+        this.indentlevel++;
+        for (i = 0; i < len; i++) {
+            this.parseitem(obj[i]);
+        }
+        this.indentlevel--;
+        this.indent();
+        this.content += '</array>\n';
+    },
+
+    parsestring: function(s) {
+        this.indent();
+        this.content += '<string>' + s + '</string>\n';
+    },
+
+    parsedict: function(obj) {
+        var keys = this.sortkeys(obj),
+            len = keys.length,
+            k, i;
+
+        this.indent();
+        this.content += '<dict>\n';
+        this.indentlevel++;
+        for (i = 0; i < len; i++)
+        {
+            k = keys[i];
+            this.parsekey(k);
+            this.parseitem(obj[k]);
+        }
+        this.indentlevel--;
+        this.indent();
+        this.content += '</dict>\n';
+    }
+},
+
+escape_html = {
+    safe_chars: {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': '&quot;',
+        "'": '&#39;',
+        "/": '&#x2F;'
+    },
+    escape: function (s) {
+        return String(s).replace(/[&<>"'\/]/g, function (c) {return escape_html.safe_chars[c];});
+    }
+};
+
+function extract_theme(name) {
+    var text, wnd, doc,
+        a = document.createElement('a');
+    window.URL = window.URL || window.webkitURL;
+
+    if (isUndef(window.Blob) && isUndef(a.download)) {
+        text = new Blob([plist.get(name)], {'type':'application/octet-stream'});
+        a.href = window.URL.createObjectURL(text);
+        a.download = name;
+        a.click();
+    } else {
+        text = '<pre>' + escape_html.escape(plist.get(name)) + '</pre>';
+        wnd  = window.open('', '_blank', "status=1,toolbar=0,scrollbars=1");
+        doc  = wnd.document;
+        doc.write(text);
+        doc.close();
+        wnd.focus();
+    }
+}
+
+plist.color_scheme = {
+    "name": "Print Color",
+    "settings": [
+        {
+            "settings": {
+                "activeGuide": "#34A7BD",
+                "background": "#FFFFFF",
+                "bracketContentsForeground": "#F8F8F2A5",
+                "bracketContentsOptions": "underline",
+                "bracketsForeground": "#F8F8F2A5",
+                "bracketsOptions": "underline",
+                "caret": "#000000",
+                "findHighlight": "#FFE792",
+                "findHighlightForeground": "#000000",
+                "foreground": "#000000",
+                "gutter": "#E5E5E5",
+                "gutterForeground": "#858585",
+                "inactiveSelection": "#9D550FAA",
+                "inactiveSelectionForeground": "#6ac4d6",
+                "invisibles": "#3B3A32",
+                "lineHighlight": "#2E2E2E22",
+                "selection": "#34A7BD",
+                "selectionForeground": "#FFFFFF",
+                "tagsOptions": "stippled_underline"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "settings": {
+                "foreground": "#A5A5A5"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "settings": {
+                "foreground": "#8F8634"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "settings": {
+                "foreground": "#7C4FCD"
+            }
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "settings": {
+                "foreground": "#7C4FCD"
+            }
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "settings": {
+                "foreground": "#7C4FCD"
+            }
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "settings": {
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "settings": {
+                "foreground": "#C70040"
+            }
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#C70040"
+            }
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#34A7BD"
+            }
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "settings": {
+                "fontStyle": "underline",
+                "foreground": "#427E00"
+            }
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "settings": {
+                "fontStyle": "italic underline",
+                "foreground": "#427E00"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#427E00"
+            }
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#CB6500"
+            }
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#C70040"
+            }
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#427E00"
+            }
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#34A7BD"
+            }
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#34A7BD"
+            }
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#34A7BD"
+            }
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable",
+            "settings": {
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "background": "#C70040",
+                "fontStyle": "",
+                "foreground": "#F8F8F0"
+            }
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "settings": {
+                "background": "#7C4FCD",
+                "foreground": "#F8F8F0"
+            }
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "settings": {
+                "foreground": "#8F8634"
+            }
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "settings": {
+                "foreground": "#C70040"
+            }
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "settings": {
+                "foreground": "#427E00"
+            }
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "settings": {
+                "foreground": "#8F8634"
+            }
+        }
+    ],
+    "uuid": "22808317-0a5a-4b87-baea-5aeee17bf295"
+};
+
+function dump_theme() {
+    extract_theme('Packages/ExportHtml/ColorSchemes/Print-Color.tmTheme');
+}
+</script>
+
+</head>
+<body class="code_page code_text"><pre class="code_page"><table cellspacing="0" cellpadding="0" class="code_page"><tbody><tr><td colspan="2" style="background: #FFFFFF"><div id="file_info"><span style="color: #000000">10/18/16 12:10:00 Untitled
+
+</span></div></td></tr><tr><td><table cellspacing="0" cellpadding="0" class="code_page"><tbody><tr><td valign="top" id="L_0_1" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;1&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_1">
+</div></td></tr><tr><td valign="top" id="L_0_2" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;2&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_2"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"></span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">class</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #427E00;">FindNumber</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">{</span>
+</div></td></tr><tr><td valign="top" id="L_0_3" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;3&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_3"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_4" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;4&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_4"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">Number</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #427E00;">findNumberDivisibleBy8</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">(</span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="italic real_text" style="background-color: #FFFFFF; color: #CB6500;">numberStart</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">)</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">{</span>
+</div></td></tr><tr><td valign="top" id="L_0_5" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;5&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_5"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_6" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;6&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_6"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">if</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (numberStart </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">==</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">) {</span>
+</div></td></tr><tr><td valign="top" id="L_0_7" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;7&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_7"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">return</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">null</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_8" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;8&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_8"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>
+</div></td></tr><tr><td valign="top" id="L_0_9" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;&nbsp;9&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_9"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">if</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (numberStart </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">&lt;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">) {</span>
+</div></td></tr><tr><td valign="top" id="L_0_10" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;10&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_10"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numberStart </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">Math</span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">.</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">abs(numberStart)</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_11" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;11&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_11"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>
+</div></td></tr><tr><td valign="top" id="L_0_12" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;12&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_12"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_13" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;13&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_13"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">Number</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> result </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">new</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">Number</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">()</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> result of program</span>
+</div></td></tr><tr><td valign="top" id="L_0_14" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;14&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_14"><span class="normal" style="background-color: #FFFFFF; color: #A5A5A5;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_15" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;15&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_15"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> index </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> index run in while</span>
+</div></td></tr><tr><td valign="top" id="L_0_16" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;16&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_16"><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"></span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> indexNumber1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">1</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> variable augment number 1</span>
+</div></td></tr><tr><td valign="top" id="L_0_17" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;17&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_17"><span class="normal" style="background-color: #FFFFFF; color: #A5A5A5;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_18" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;18&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_18"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">boolean</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> isFindNumber </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">false</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> variable check found number satisfy condition</span>
+</div></td></tr><tr><td valign="top" id="L_0_19" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;19&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_19"><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"></span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">boolean</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> numberNegative </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">false</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> variable check when number1 == 0</span>
+</div></td></tr><tr><td valign="top" id="L_0_20" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;20&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_20"><span class="normal" style="background-color: #FFFFFF; color: #A5A5A5;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_21" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;21&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_21"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> number run left number start</span>
+</div></td></tr><tr><td valign="top" id="L_0_22" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;22&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_22"><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"></span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number2 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;">//</span><span class="normal real_text" style="background-color: #FFFFFF; color: #A5A5A5;"> number run right number start</span>
+</div></td></tr><tr><td valign="top" id="L_0_23" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;23&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_23"><span class="normal" style="background-color: #FFFFFF; color: #A5A5A5;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_24" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;24&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_24"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">while</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (</span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">!</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">isFindNumber) {</span>
+</div></td></tr><tr><td valign="top" id="L_0_25" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;25&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_25"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_26" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;26&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_26"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">if</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (numberNegative) {</span>
+</div></td></tr><tr><td valign="top" id="L_0_27" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;27&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_27"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> indexNumber1</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_28" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;28&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_28"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indexNumber1</span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">++</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_29" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;29&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_29"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">else</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> {</span>
+</div></td></tr><tr><td valign="top" id="L_0_30" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;30&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_30"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> numberStart </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">-</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> index</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_31" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;31&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_31"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>
+</div></td></tr><tr><td valign="top" id="L_0_32" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;32&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_32"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number2 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> numberStart </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">+</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> index</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_33" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;33&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_33"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_34" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;34&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_34"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">if</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">==</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">) {</span>
+</div></td></tr><tr><td valign="top" id="L_0_35" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;35&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_35"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numberNegative </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">true</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_36" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;36&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_36"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>
+</div></td></tr><tr><td valign="top" id="L_0_37" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;37&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_37"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_38" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;38&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_38"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">if</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (checkCondition(number1, number2)) {</span>
+</div></td></tr><tr><td valign="top" id="L_0_39" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;39&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_39"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; result</span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">.</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number1</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_40" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;40&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_40"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; result</span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">.</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">number2 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number2</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_41" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;41&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_41"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isFindNumber </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">=</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">true</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_42" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;42&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_42"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">else</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> {</span>
+</div></td></tr><tr><td valign="top" id="L_0_43" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;43&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_43"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; index</span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">++</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_44" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;44&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_44"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>
+</div></td></tr><tr><td valign="top" id="L_0_45" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;45&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_45"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>
+</div></td></tr><tr><td valign="top" id="L_0_46" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;46&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_46"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">return</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> result</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_47" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;47&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_47"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">}</span>
+</div></td></tr><tr><td valign="top" id="L_0_48" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;48&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_48"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_49" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;49&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_49"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">boolean</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #427E00;">checkCondition</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">(</span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="italic real_text" style="background-color: #FFFFFF; color: #CB6500;">number1</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">, </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="italic real_text" style="background-color: #FFFFFF; color: #CB6500;">number2</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">)</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">{</span>
+</div></td></tr><tr><td valign="top" id="L_0_50" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;50&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_50"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_51" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;51&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_51"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">return</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> (number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">%</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">3</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">==</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">&amp;&amp;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number2 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">%</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">5</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">==</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span>
+</div></td></tr><tr><td valign="top" id="L_0_52" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;52&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_52"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">&amp;&amp;</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> ((number1 </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">+</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number2) </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">%</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">8</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">==</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #7C4FCD;">0</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">))</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_53" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;53&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_53"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">}</span>
+</div></td></tr><tr><td valign="top" id="L_0_54" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;54&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_54"><span class="normal" style="background-color: #FFFFFF; color: #000000;">&nbsp;</span>
+</div></td></tr><tr><td valign="top" id="L_0_55" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;55&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_55"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"></span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">static</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #C70040;">class</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #427E00;">Number</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">{</span>
+</div></td></tr><tr><td valign="top" id="L_0_56" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;56&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_56"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="italic real_text" style="background-color: #FFFFFF; color: #34A7BD;">int</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"> number1, number2</span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">;</span>
+</div></td></tr><tr><td valign="top" id="L_0_57" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;57&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_57"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">&nbsp;&nbsp;&nbsp; </span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">}</span>
+</div></td></tr><tr><td valign="top" id="L_0_58" class="code_text code_gutter" style="background: #E5E5E5"><span style="color: #858585;">&nbsp;58&nbsp;</span></td><td valign="top" class="code_text code_line" style="background-color: #FFFFFF;"><div id="C_0_58"><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;"></span><span class="normal real_text" style="background-color: #FFFFFF; color: #000000;">}</span>
+</div></td></tr></tbody></table></td></tr></tbody></table></pre><div id="toolbarhide"><div id="toolbar"><img onclick="toggle_plain_text();" alt="" title="Toggle Plain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AofFg8dF9eGSAAAAAxpVFh0Q29tbWVudAAAAAAAvK6ymQAAANRJREFUOMvdkTFOgkEQhResaeQScAsplIRGDgKttnsIOYIUm1hQa/HfQiMFcIBt9k/UTWa/sRkbspKfzviS7eZ7M/uec39WbdsOgU/gI6V0ebZBKeVeTaWUu7PgpmkugD3wZW8XQuh3NhCRuaoq8AisVVVF5LazAfBi0JWITMzsuROccx4b8O6cc977HrAFyDmPumxfHQf3EyjwcBKOMQ6ApL8ISDHGwanqljb4VLlsY5ctqrD99c3Cm1aamZn5q/e+V6vuxgb2tc5DCH3gYAuu3f/RNzmJ99G3cZ53AAAAAElFTkSuQmCC"><img onclick="toggle_gutter();" alt="" title="Toggle Gutter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AofFg8FBLseHgAAAAxpVFh0Q29tbWVudAAAAAAAvK6ymQAAAM5JREFUOMvdjzFqAlEQhuephZWNYEq9wJ4kt7C08AiyhWCXQI6xh5CtUqVJEbAU1kA6i92VzWPnmxR5gUUsfAQbf5himPm+YURumSzLetFQWZZj4Bn45DcHYFMUxfAqAbA1MwO+gHeA0L9cJfDeJ6q6yvO8LyKiqosgOKVp6qJf8t4nQfD9J42Kqi6D4DUabppmBhzNzNq2fYyC67p+AHbh+iYKrqpqAnwE+Ok/8Dr6b+AtwArsu6Wq8/P9wQXHTETEOdcTkWl3YGYjub/8ANrnvguZ++ozAAAAAElFTkSuQmCC"><img onclick="page_print();" alt="" title="Print" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AofFhAl8o8wSAAAAAxpVFh0Q29tbWVudAAAAAAAvK6ymQAAAQZJREFUOMulkzFSgjEUhL8X/xJ/iBegkAtQ6A08gIUehFthYykOw9BzBmwcaxGoZW1eZjIx/sC4TTJv8ja7mxfDIcmAAWDUIeDLzJQXm2w/AFZOkB8yoAU+gHtJ7yVJUnAlaS1pJOm6WN8kjSUtJQ1dLQChIvMATIEXXw9e3wMT4NnV/rKQsAcegAvgG9g5wcwv7OU51QgugSegD2yBO+DWmyLw+leINQXyW5VeoQj4qIIcW+CxPFwjSLKtEnAZOkGSSYruL3QMUxq0AERJUZKl5pV7bjsmMR+qHfAJ3DReDB4cwKLiv0R0S5Yy6ANz37ecgSZ7nui1zYm9G0B2wi+k63fyX/wA0b9vjF8iB3oAAAAASUVORK5CYII="><img onclick="dump_theme();" alt="" title="Download" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AofFhAWTV9RXgAAAAxpVFh0Q29tbWVudAAAAAAAvK6ymQAAAJtJREFUOMvdk9ENwyAQQ5+rDBA6QZbI/gN0h3YE2gXi/lykhABN1b9aQkh3+CEwiEK2BYyAyhbwlORtceCoEbgBqahnYI65C1CYr43eThd+1B8Ahkp0qXZZa8/2LlIFIG2i676DmDMwS8pDcZzW7tt4DbwOr8/2ZPthe3FbS6yZ4thfQdrmE5DP5g7kvLkCucdomtWDRJzUvvGqN6JK1cOooSjlAAAAAElFTkSuQmCC"></div></div>
+
+<script type="text/javascript">
+function page_print() {
+    var element = document.getElementById("toolbarhide");
+    if (!isNull(element)) {
+        element.style.display = "none";
+    }
+    if (window.print) {
+        window.print();
+    }
+    if (!isNull(element)) {
+        element.style.display = "block";
+    }
+}
+
+</script>
+
+<script type="text/javascript">
+var plain_text_clone = null;
+
+function toggle_plain_text() {
+    var lines = document.querySelectorAll("td.code_line"),
+        line_len = lines.length,
+        text = "",
+        plain_pre = document.querySelectorAll("pre.simple_code_page"),
+        orig_pre, pre, i, j, spans, span_len, span;
+    if (plain_pre.length > 0) {
+        document.body.removeChild(plain_pre[0]);
+        document.body.appendChild(plain_text_clone);
+        document.body.className = "code_page";
+    } else {
+        for (i = 0; i < line_len; i++) {
+            spans = lines[i].querySelectorAll("span.real_text");
+            span_len = spans.length;
+            for (j = 0; j < span_len; j++) {
+                span = spans[j];
+                if ("textContent" in span) {
+                    text += span.textContent;
+                } else {
+                    text += span.innerText;
+                }
+            }
+            text += "\n";
+        }
+        orig_pre = document.querySelectorAll("pre.code_page")[0];
+        plain_text_clone = orig_pre.cloneNode(true);
+        pre = document.createElement('pre');
+        pre.className = "simple_code_page";
+        pre.appendChild(document.createTextNode(text));
+        document.body.removeChild(orig_pre);
+        document.body.appendChild(pre);
+        document.body.className = "simple_code_page";
+    }
+}
+
+</script>
+
+<script type="text/javascript">
+var page_line_info = {
+        wrap:      false,
+        ranges:    null,
+        wrap_size: null,
+        tables:    null,
+        header:    null,
+        gutter:    false
+    };
+
+function wrap_code() {
+    var start, end, i, j, idx, el,
+        width = 0,
+        mode = null;
+    if (page_line_info.header) {
+        document.getElementById("file_info").style.width = page_line_info.wrap_size + "px";
+    }
+    for (i = 1; i <= page_line_info.tables; i++) {
+        idx = i - 1;
+        start = page_line_info.ranges[idx][0];
+        end = page_line_info.ranges[idx][1];
+        for(j = start; j < end; j++) {
+            if (isNull(mode)) {
+                mode = true;
+                if (page_line_info.gutter) {
+                    width = document.getElementById("L_" + idx + "_" + j).offsetWidth;
+                }
+            }
+            el = document.getElementById("C_" + idx + "_" + j);
+            el.style.width = (page_line_info.wrap_size - width) + "px";
+            el.className = "wrap";
+        }
+    }
+}
+
+function toggle_gutter() {
+    var i, j, rows, r, tbls, cells,
+        mode = null;
+    tbls  = document.getElementsByTagName('table');
+    for (i = 1; i <= page_line_info.tables; i++) {
+        rows = tbls[i].getElementsByTagName('tr');
+        r = rows.length;
+        for (j = 0; j < r; j++) {
+            cells = rows[j].getElementsByTagName('td');
+            if (isNull(mode)) {
+                if (page_line_info.gutter) {
+                    mode = 'none';
+                    page_line_info.gutter = false;
+                } else {
+                    mode = 'table-cell';
+                    page_line_info.gutter = true;
+                }
+            }
+            cells[0].style.display = mode;
+        }
+    }
+    if (page_line_info.wrap && !isNull(mode)) {
+        setTimeout(function() {wrap_code();}, 500);
+    }
+}
+
+function unwrap_code() {
+    var i, j, idx, start, end, el;
+    if (page_line_info.header) {
+        document.getElementById("file_info").style.width = "100%";
+    }
+    for (i = 1; i <= page_line_info.tables; i++) {
+        idx = i - 1;
+        start = page_line_info.ranges[idx][0];
+        end = page_line_info.ranges[idx][1];
+        for(j = start; j < end; j++) {
+            el = document.getElementById("C_" + idx + "_" + j);
+            el.style.width = "100%";
+            el.className = "";
+        }
+    }
+}
+
+function toggle_wrapping() {
+    if (page_line_info.wrap) {
+        page_line_info.wrap = false;
+        unwrap_code();
+    } else {
+        page_line_info.wrap = true;
+        wrap_code();
+    }
+}
+
+
+page_line_info.wrap      = false;
+page_line_info.ranges    = [[1,59]];
+page_line_info.wrap_size = 900;
+page_line_info.tables    = 1;
+page_line_info.header    = true;
+page_line_info.gutter    = true;
+</script>
+
+
+
+</body></html>
