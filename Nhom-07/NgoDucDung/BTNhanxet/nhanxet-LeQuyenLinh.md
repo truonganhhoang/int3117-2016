@@ -9,9 +9,9 @@ Nhận xét BT1
 Nhận xét BT2
     - Ổn:
     - Chưa ổn:
-    	- Chưa có báo cáo và thư mục BT2
+        - Chưa có báo cáo và thư mục BT2
 
 Nhận xét BT3
     - Ổn:
     - Chưa ổn:
-    	- Chưa có báo cáo và thư mục BT3
+        - Chưa có báo cáo và thư mục BT3
