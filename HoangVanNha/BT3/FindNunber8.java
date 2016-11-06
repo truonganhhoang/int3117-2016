@@ -1,9 +1,3 @@
-package findnumber;
-
-/**
- * Created by Nhahv on 10/3/2016.
- * <></>
- */
 public class FindNumber {
     public Number findNumberDivisibleBy8(int numberStart) {
 
@@ -37,7 +31,7 @@ public class FindNumber {
     boolean checkCondition(int number1, int number2) {
 
         return (number1 % 3 == 0 && number2 % 5 == 0
-            && ((number1 + number2) % 8 == 0));
+                && ((number1 + number2) % 8 == 0));
     }
 
     public static class Number {
