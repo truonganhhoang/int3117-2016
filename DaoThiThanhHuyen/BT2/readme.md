@@ -6,8 +6,7 @@ In dãy FizzBuzz từ 1 -> số giới hạn limit nhập từ bàn phím thỏa
 - Khi số chia hết cho cả 3 và 5 hoặc chia hết cho 7 thì in "FizzBuzz"
 - Trường hợp còn lại thì in ra chính số đó
 
-## Ví dụ:
-In dãy FizzBuzz từ 1-5<br>
+## Ví dụ: In dãy FizzBuzz từ 1-5<br>
 1 2 Fizz 4 Buzz
 
 ## Hướng giải quyết
