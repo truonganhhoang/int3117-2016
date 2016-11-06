@@ -24,7 +24,7 @@ public String checkTriangleType(double side1, double side2, double side3) {
 }
 
 ## Đồ thị chu trình  
-![Process] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/Process.PNG)  
+![Process] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/ProcessPath/Process.PNG)
 
 ## Kết quả test  
 
