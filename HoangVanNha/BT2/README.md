@@ -2,9 +2,9 @@ Bài tập 2:
     - Tuần 1:
         + Mô tả bài toán: bài toán yêu cầu nhập truyền vào 1 số nguyên dương N (N > 0)nếu nhập vào số nguyên âm (N < 0) thì chương trình sẽ tự động chuyển số nguyên âm đó về số nguyên dương N. 
         + Yêu cầu bài toán là tìm ra cặp số nguyên dương (Number) thỏa mãm điều kiện sau đây:
-        	- Số bên trái (number1) của sô nguyên dương N chia hết cho 3, số bên phải (number2) của số nguyên dương N chỉ hết cho 5 và tổng 2 số (number1 + number2) này phải chia hết cho 8 ((number1 %3 == 0) && number2 % 5 == 0 && (number1 + number2) % 2 =0).
+        	- Số bên trái (number1) của sô nguyên dương N chia hết cho 3, số bên phải (number2) của số nguyên dương N chỉ hết cho 5 và tổng 2 số (number1 + number2) này phải chia hết cho 8 ((number1 %3 == 0) && number2 % 5 == 0 && (number1 + number2) % 8 =0).
         	
-        	- Khi số bên trái bằng 0 thì ta sẽ không giảm số nguyên dương bên trái nữa mà bắt đầu tăng dần từ 0.
+        	- Khi số bên trái bằng 0 hoặc nhỏ hơn 0 mà vẫn chưa tìm được cặp số thích hợp thì chương trình trả về cặp số -1, -1
         	- Bài toán kết thúc khi và chỉ khi tìm được cặp số nguyên dương thỏa mãn điều kiện đề bài cho.
         + Kiểm thử MCDC
         	- Thuật toán với mỗi điểu kiện thì MCDC yêu cầu mệnh đề nguyên tử phải được kiểm tra với cả true và false
