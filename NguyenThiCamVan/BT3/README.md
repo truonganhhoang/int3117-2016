@@ -24,11 +24,11 @@ public String checkTriangleType(double side1, double side2, double side3) {
 }
 
 ## Đồ thị chu trình  
-![Process] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/ProcessPath/Process.PNG)
+![Process Path] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/ProcessPath/Process.PNG)
 
 ## Kết quả test  
 
-![test-result] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/test_result/TestResult.PNG)  
+![test-result] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/test_result/TestResult.PNG)
 
 ## Đo mức độ bao phủ  
 
