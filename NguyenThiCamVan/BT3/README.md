@@ -24,14 +24,14 @@ public String checkTriangleType(double side1, double side2, double side3) {
 }
 
 ## Đồ thị chu trình  
-![](int3117-2016/NguyenThiCamVan/BT3/đồ thị chu trình/Đồ thị chu trình.PNG)
+![](https://github.com/trieudh58/int3117-2016/NguyenThiCamVan/BT3/đồ thị chu trình/Đồ thị chu trình.PNG)
 ## Kết quả test  
 
-![test-result] (int3117-2016/NguyenThiCamVan/BT3/test_result/TestResult.PNG)  
+![test-result] (https://github.com/trieudh58/int3117-2016/NguyenThiCamVan/BT3/test_result/TestResult.PNG)  
 
 ## Đo mức độ bao phủ  
 
-![test-coverage] (int3117-2016/NguyenThiCamVan/BT3/test_coverage_result/TestCoverage.PNG)  
+![test-coverage] (https://github.com/trieudh58/int3117-2016/NguyenThiCamVan/BT3/test_coverage_result/TestCoverage.PNG)  
 
 ## Nhận xét, đối sánh kết quả nhận được khi áp dụng All-DU-Path và MCDC  
 * MCDC chặt chẽ hơn về bao phủ nhánh (branch), khi các điều kiện đơn chắc chắn sẽ được thực thi ít nhất một lần.  
