@@ -31,8 +31,15 @@ Chia thành 2 miền tương đương:
 	M1: miền giá trị nhỏ hơn 2 (ví dụ: 1)
  	M2: miền giá trị từ 2 -> vô cùng: chọn 2 giá trị 
 	(Ví dụ: 6, 7)
+#TEST CASE
+![](https://github.com/huyendtt58/int3117-2016/blob/master/LuongThiTrang/BT1/TestCase.PNG)
 
 #ĐỘ BAO PHỦ KIỂM THỬ
 
-97,4%
+![](https://github.com/truonganhhoang/int3117-2016/blob/master/LuongThiTrang/BT1/TestCoverage.PNG)
+
+#KẾT QUẢ TEST
+
+![](https://github.com/huyendtt58/int3117-2016/blob/master/LuongThiTrang/BT1/KetQuaTest.PNG)
+
 
