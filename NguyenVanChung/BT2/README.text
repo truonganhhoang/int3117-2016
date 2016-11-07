@@ -1,0 +1,6 @@
+
+Họ và tên: Nguyễn Văn Chung mã sv 13020614
+chương trình kiểm tra tài khoản đăng nhập với tên, mật khẩu và số chứng minh.
+chương trình có 1 vòng while và 2 lệnh if để so sánh các giá trị tên, mật khẩu và số chứng minh có khớp không.
+bài toán có 3 tham số để so sánh nên có 2^3 trường hợp
+và chạy test thử với 2 lần chạy vòng while
