@@ -6,10 +6,13 @@ Cách làm:
 -hàm kiemTra(int year): kiểm tra năm vừa nhập có phải là năm nhuận không
 
 Tiêu chuẩn MDCD
-year%400 | year%4 | year%100 | Kết quả
-      T  |    T   |    F     | T
-      T  |    T   |    T     | T
-      F  |    T   |    F     | T
-      F  |    T   |    T     | F
+Xét điều kiện if (year%4 == 0 && year%100 != 0) || (year%400 == 0)
 
-Ðộ bao phủ câu lênh: 89.7%
+
+|No.|  year%400 |  year%4 |  year%100 | Kết quả
+|---|-----------|---------|-----------|:-------:
+| 1 |      T    |      -  |       -   |    T
+| 2 |      F    |      T  |       F   |    T
+| 3 |      F    |      T  |       T   |    F
+| 4 |      F    |      F  |       -   |    F
+
