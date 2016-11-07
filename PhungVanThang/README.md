@@ -39,14 +39,14 @@
 	*C3:(not(a,b,c)==true)
 	*C4:(a==b)
 
-\#  | C1 | C2 | C3 | C4 |   output
+\#  | C1 | C2 | C3 | C4 |     | output
 ----|----|----|----|----|----|----|------------
-TC1 | T  | T  | -  | -  | -  | T |
-TC2 | T  | T  | -  | -  | -  | T |
-TC3 | T  |  F |  - | -  | -  | F |
-TC4 | F  | T  | -  | -  | -  | F |
-TC5 | T  | T  | F  | -  | -  | F |
-TC6 | T  | T  | T  | -  | -  | T |	
+TC1 | T  | T  | -  | -  | -  | T  
+TC2 | T  | T  | -  | -  | -  | T  
+TC3 | T  |  F |  - | -  | -  | F  
+TC4 | F  | T  | -  | -  | -  | F  
+TC5 | T  | T  | F  | -  | -  | F  
+TC6 | T  | T  | T  | -  | -  | T   	
 
 
 ##Sử dụng phương pháp kiểm thử biên mạnh:
