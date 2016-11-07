@@ -10,7 +10,7 @@
 
 ##### Chưa được
 - Mã nguồn: Còn nhiều xuống dòng thừa
-- Readme: Cách trình bày còn sơ sài. Có hình ảnh nhưng chưa đưa vào readme. Chưa nếu cách tiến hành kiểm thử, lập bảng cụ thể. Còn nhiều lỗi chính tả, sai tên thuật ngữ (biên mình ?)
+- Readme: Cách trình bày còn sơ sài. Có hình ảnh nhưng chưa đưa vào readme. Chưa nêu cách tiến hành kiểm thử, lập bảng cụ thể. Còn nhiều lỗi chính tả, sai tên thuật ngữ (biên mình ?)
 
 ### Bài tập 2
 
@@ -21,7 +21,7 @@
 - Readme: Có ảnh kết quả kiểm thử.
 
 #### Chưa được
-- Readme: Trình bày sơ sài. Có hình ảnh nhưng chưa đưa vào readme. Chưa nếu cách tiến hành kiểm thử, lập bảng cụ thể.
+- Readme: Trình bày sơ sài. Có hình ảnh nhưng chưa đưa vào readme. Chưa nêu cách tiến hành kiểm thử, lập bảng cụ thể.
 
 ### Bài tập 3
 
