@@ -37,7 +37,36 @@ All-DU-Path
 ?>
 
 Đường đi cho biến a: 
-	Đường đi		Ca kiểm thử
-	1-2-3-4-5-6		a = 5
-	1-2-3			a = 1000
-	1-2-3-4			a = 10
+	Đường đi		Ca kiểm thử		KQ mong đợi
+	1-2-3-4-5-6		a = 5			1
+	1-2-3			a = 1000		0
+	1-2-3-4			a = 10			0
+
+Test case:
+
+	/**
+     	* @covers Example::check
+     	*/
+    	public function testCheck5()
+    	{
+		$valTest = new Example();
+		$val = $valTest->check(5);
+        	$this->assertEquals(1, $val);
+    	}
+	/**
+     	* @covers Example::check
+     	*/
+	public function testCheck10(){
+		$valTest = new Example();
+		$val = $valTest->check(10);
+        	$this->assertEquals(0, $val);
+	}
+	
+	/**
+     	* @covers Example::check
+     	*/
+	public function testCheck1000(){
+		$valTest = new Example();
+		$val = $valTest->check(1000);
+        	$this->assertEquals(0, $val);
+	}
