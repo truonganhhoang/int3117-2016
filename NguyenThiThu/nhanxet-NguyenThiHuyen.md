@@ -1,5 +1,5 @@
-##Nhận xét bài tập của Nguyễn Thị Huyền
-#BT1  
+#Nhận xét bài tập của Nguyễn Thị Huyền
+##BT1  
 - Phần được:
 <ul>
 <li> Mã nguồn tốt </li>
@@ -9,8 +9,8 @@
 <ul>
 <li> Viết README chưa được đẹp </li>
 <li> File README ở dạng .txt cần chuyển sang .md </li>
-</ul>
-#BT2
+</ul>  
+##BT2  
 - Phần được:
 <ul>
 <li> Mã nguồn tốt </li>
@@ -20,8 +20,8 @@
 - Phần chưa được:
 <ul>
 <li> README hiển thị chưa chuẩn hình thức(xuống dòng)</li>
-</ul>
-#BT3
+</ul>  
+##BT3  
 - Phần được:
 <ul>
 <li> Đã áp dụng phương pháp all-Du-path </li>
