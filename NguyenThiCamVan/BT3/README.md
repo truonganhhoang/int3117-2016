@@ -24,7 +24,23 @@ public String checkTriangleType(double side1, double side2, double side3) {
 }
 
 ## Đồ thị chu trình  
-![Process Path] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/ProcessPath/Process.PNG)
+![Process Path] (https://github.com/trieudh58/int3117-2016/blob/master/NguyenThiCamVan/BT3/ProcessPath/Process.PNG)  
+
+### Luồng dữ liệu cho biến side1, side2, side3  
+
+All-DU-Path cho biến side1:  
+A-B-C-D-E-G  
+A-B-C-D-E-F  
+A-B-C-D-H  
+
+### Luồng dữ liệu cho biến baseCondition1, baseCondition2
+
+C-H  
+
+### Luồng dữ liệu cho biến condition1, condition2, condition3  
+
+D-E-G  
+D-E-F  
 
 ## Kết quả test  
 
