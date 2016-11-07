@@ -29,20 +29,26 @@
 ```
 
 ##Áp dụng tiêu chuẩn MCDC
-    *Phân tích:Bài toán là đưa các hệ số a,b,c
-    *Khi các bộ số được nhập ta sẽ lần lượt kiểm tra các kiểm thử
+    *Phân tích:Ta cùng xét chương trình trên với 2 lệnh if
+	*với lệnh if thứ nhất có tổ hợp 2 điều kiện con (a>=b )và (b>c)
+	*với lệnh if thứ 2 có điều kiện (not(a,b,c)==true)
+	*với lệnh if thứ 3 có điều kiện (a==b)
+    *Ta có bảng sau
+*C1:(a>=b )
+*C2:(b>c)
+*C3:(not(a,b,c)==true)
+*C4:(a==b)
 
-\#  | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 output
+\#  | C1 | C2 | C3 | C4 |   output
 ----|----|----|----|----|----|----|------------
-TC1 | T  | T  | F  | F  | -  | -  | 
-TC2 | T  | F  | T  | F  | -  | -  |
-TC3 | T  | F  | F  | T  | -  | -  | 
-TC4 | F  | -  | -  | -  | T  | F  | 
-TC5 | F  | -  | -  | -  | F  | T  | 
-TC6 | F  | -  | -  | -  | F  | F  | 
-TC7 | F  | -  | -  | -  | F  | F  | 
-TC8 | F  | -  | -  | -  | F  | F  | 
-	
+TC1 | T  | T  | -  | -  | -  | T
+TC2 | T  | T  | -  | -  | -  | T
+TC3 | T  |  F |  - | -  | -  | F
+TC4 | F  | T  | -  | -  | -  | F
+TC5 | T  | T  | F  | -  | -  | F
+TC6 | T  | T  | T  | -  | -  | T	
+
+
 ##Sử dụng phương pháp kiểm thử biên mạnh:
 	1.Khái quát được các trường hợp xảy ra.
 	2.Thời gian xử lý nhanh và chính xác.
@@ -118,11 +124,18 @@ TC8 | F  | -  | -  | -  | F  | F  |
 	}
 ```
 
-Bài tập tuần 4
+## Kết quả:
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/PhungVanThang/BT3/coverage.png)
 	Độ bao phủ: Sử dụng EclEmma Java Code Coverage 2.3.3 (Eclipse Tools)
 	Kết quả
-		-Test coverage detail (BT3/coverage.png/)
+		-Test coverage detail  BT3/BT3 - coverage.png
  Đường đi với tiêu chuẩn All-DU-Paths cho biến c
 1-2-4-5-7-8-9-10
 1-2-4-5-7-8-9-10-11
-(BT3/kiemtratamgiaca-all-du-paths.png/)
+BT3/BT3 - kiemtratamgiaca-all-du-paths.png
+![co_incode](https://github.com/ducanhk58uet/int3117-2016/blob/master/PhungVanThang/BT3/kiemtratamgiaca-all-du-paths.png)
+##Nhận xét: giữa All DU Path và MCDC có sự khác biệt về cách thực hiện qua đó có những hiệu quả khác nhau
+*Với MCDC tất cả các trường đều được test có nghĩa là khi đó tất cả các đường đi đều được bao phủ.
+	* Phải thực hiện nhiều ca kiểm thử để hoàn thành tiêu chuẩn này.
+* Với All DU Path thì tập trung vào test cho đường đi của một biến.
+	* Cần thực hiện các ca kiểm thử ít hơn với mục tiêu cụ thể.
