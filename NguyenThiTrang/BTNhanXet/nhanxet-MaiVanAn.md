@@ -15,7 +15,7 @@
   + Bài toán mạch lạc, rõ ràng
   + Các testcase về boundary và MCDC khá chi tiết, đầy đủ
 - Phần chưa được:
-  + Filer README.md cần trình bày mạch lạc hơn theo Markdown
+  + File README.md cần trình bày mạch lạc hơn theo chuẩn Markdown
   + Thiếu nhận xét dùng kĩ thuật kiểm thử nào thích hợp nhất
 
 ## Bài tập tuần 3
@@ -24,4 +24,4 @@
   + Các ca kiểm thử tương ứng được trình bày khoa học cùng đồ thị
   + File REAME.md trình bày đầy đủ các phần yêu cầu
 - Phần chưa được: 
-  + Chưa cập nhật code test cho du-path
+  + File README.md cần trình bày mạch lạc hơn theo chuẩn Markdown
