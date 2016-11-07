@@ -11,7 +11,10 @@
     + 2->3->4->5->7->8->10->11->13->14->17
 - All-du-paths với biến tg[]
     + 20->23->24->25->26->27->28->32
-    
+
+### Độ bao phủ
+![alt text] (https://github.com/HoangTuyetUET/int3117-2016/blob/master/HoangThiTuyet/BT3/DobaoPhu.png)
+
 ### So sánh giữa All-Du-Paths và MCDC
 - All-du-Paths tốn nhiều thời gian hơn, phức tạp với bài toán có nhiều biến.
 - MCDC tính chặt chẽ cao hơn, độ bao phủ cao hơn.

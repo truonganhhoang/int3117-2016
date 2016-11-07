@@ -1,10 +1,77 @@
 Bài tập 2:
+
+	- Mã nguồn chương trình
+
+	
+/**
+ * Created by Nhahv on 10/3/2016.
+ * <></>
+ */
+public class FindNumber {
+
+    public static void main(String[] args) {
+
+        FindNumber find = new FindNumber();
+        Number number = find.findNumberDivisibleBy8(1);
+        System.out.printf("Result : " + "number1 = " + number.number1 + ", number2 = " + number.number2);
+    }
+
+
+    public Number findNumberDivisibleBy8(int numberStart) {
+
+        if (numberStart == 0) {
+            return new Number(-1, -1);
+        }
+        if (numberStart < 0) {
+            numberStart = Math.abs(numberStart);
+        }
+
+        Number result = new Number(-1, -1); // result of program
+
+        int index = 1; // index run in while
+
+        while ((numberStart - index) > 0) {
+
+            int number1 = numberStart - index;
+            int number2 = numberStart + index;
+
+            if (checkCondition(number1, number2)) {
+                result.number1 = number1;
+                result.number2 = number2;
+                return result;
+            }
+            index++;
+
+        }
+        return result;
+    }
+
+    boolean checkCondition(int number1, int number2) {
+
+        return (number1 % 3 == 0 && number2 % 5 == 0
+                && ((number1 + number2) % 8 == 0));
+    }
+
+    public static class Number {
+        int number1, number2;
+
+        public Number(int number1, int number2) {
+            this.number1 = number1;
+            this.number2 = number2;
+        }
+    }
+}
+
+
+
+
+
     - Tuần 1:
         + Mô tả bài toán: bài toán yêu cầu nhập truyền vào 1 số nguyên dương N (N > 0)nếu nhập vào số nguyên âm (N < 0) thì chương trình sẽ tự động chuyển số nguyên âm đó về số nguyên dương N. 
         + Yêu cầu bài toán là tìm ra cặp số nguyên dương (Number) thỏa mãm điều kiện sau đây:
-        	- Số bên trái (number1) của sô nguyên dương N chia hết cho 3, số bên phải (number2) của số nguyên dương N chỉ hết cho 5 và tổng 2 số (number1 + number2) này phải chia hết cho 8 ((number1 %3 == 0) && number2 % 5 == 0 && (number1 + number2) % 2 =0).
+        	- Số bên trái (number1) của sô nguyên dương N chia hết cho 3, số bên phải (number2) của số nguyên dương N chỉ hết cho 5 và tổng 2 số (number1 + number2) này phải chia hết cho 8 ((number1 %3 == 0) && number2 % 5 == 0 && (number1 + number2) % 8 =0).
         	
-        	- Khi số bên trái bằng 0 thì ta sẽ không giảm số nguyên dương bên trái nữa mà bắt đầu tăng dần từ 0.
+        	- Khi số bên trái bằng 0 hoặc nhỏ hơn 0 mà vẫn chưa tìm được cặp số thích hợp thì chương trình trả về cặp số -1, -1
         	- Bài toán kết thúc khi và chỉ khi tìm được cặp số nguyên dương thỏa mãn điều kiện đề bài cho.
         + Kiểm thử MCDC
         	- Thuật toán với mỗi điểu kiện thì MCDC yêu cầu mệnh đề nguyên tử phải được kiểm tra với cả true và false

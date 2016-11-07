@@ -1,53 +1,46 @@
-﻿# KTPM2016
-Bài tập môn kiểm thử phần mềm 2016
+﻿# Bài tập tuần 7 - BT3
+Kiểm thử luồng dữ liệu: áp dụng tiêu chuẩn kiểm thử All-DU-Path
 
-## Thông tin
-```
-Họ và tên : Kiều Minh Đức 
-Mã sinh viên : 13020121
-```
-## Bài tập 3 :  Áp dụng tiêu chuẩn kiểm thử All-DU-Path
-
-### 1. Bài toán
-```
-   Chương trình được đánh số thứ tự như sau:
-1. initialize(n)   
-2. isValidate(n)
-	/*if ( isDivisibleBy4Number(n)&& !isDivisible100Number(n)|| isDivisible400Number(n)){
-			return true;			
-		}else{
-			return false;
-		}*/
-3.	isDivisibleBy4Number(n)
-	/*if ( number%4 == 0){
-			return true;
-		}else{
-			return false;
-		} */
-4.	isDivisible400Number(n)
-	/*if ( number%400 == 0){
-			return true;
-		}else{
-			return false;
-		}*/
-5.	isDivisible100Number(n)
-	/*if ( number%100 == 0){
-			return true;
-		}else{
-			return false;
-		}
-	}*/
-	
-6. False
-7. True
+## Hàm cần kiểm thử
+` Đếm số lượng của số "nhuận" ( số nhuận : tương tự như năm nhuận ) . Nếu kết quả là số chẵn thì trả về true hoặc ngược lại `
+```java
+public boolean isCountingEvenLeapNumber( int n ){
+    int count = 0 , i = 0;                                              // 1
+    while ( i  <= n ){                                                  // 2
+        if ( ( n % 4 == 0 ) && ( n % 100 != 0) || ( n % 400 == 0 ) ){   // 3
+            count++;                                                    // 4
+        }
+        i++;                                                            // 5
+    }
+    if ( count % 2 == 0){                                               // 6
+        return true;                                                    // 7
+    }else{
+        return false;                                                   // 8
+    }
+}
 ```
 
+## Đồ thị chu trình
+![flow-graph](http://i.imgur.com/f2VMGFj.png)
 
-### 2. So sánh và rút ra nhận xét về All-DU-Path và MCDC.
+## Xác định các đường đi DU và sinh các bộ kiểm thử tương ứng
+Biến `n`:
+   `1 (d) --> 2 (c) --> 3 (c)`
+   
+## Các ca kiểm thử tương ứng
+Cần 1 ca kiểm thử để bao phủ được DU-path :
 
+```java
+public void testCountingLeapNumber() {		
+		FindingLeapNumber findingLeapNumber = new FindingLeapNumber();
+		int a = 300;
+		assertEquals(true, findingLeapNumber.isCountingEvenLeapNumber(a));
+	}
 ```
-- MCDC: test tất cả các biểu thức condition và decicions của hàm isValidate.
-- All-Du-path: test tất cả các definition và các trường hợp sử dụng của biến n.
-```
-  
+## Kết quả kiểm thử (test) và bao phủ
 
+![bt3-coverage-summary](http://i.imgur.com/AG4BrgG.png)
+
+## So sánh kết quả khi áp dụng All-DU-Path và MCDC
+- MCDC chặt chẽ hơn về bao phủ nhánh (branch) .
+- All-DU-Path chặt chẽ hơn về giúp kiểm tra bao phủ dòng lệnh (statement).
