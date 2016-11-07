@@ -1,4 +1,4 @@
-﻿# BT3
+# BT3
 Áp dụng tiêu chuẩn ALL-DU-Path cho BT2
 # Chương trình
 <img src="https://github.com/chinhlv95/int3117-2016/blob/master/NguyenNgocTu/BT3/Image/funtion.png">
@@ -20,5 +20,4 @@
  + A-B-C-D-G-B-H-J-K
  + A-B-C-E-G-B-H-I-K
  + A-B-C-E-G-B-H-J-K
- + A-B-C-E-F-G-B-H-I-K
- + A-B-C-E-F-G-B-H-J-K
+ + A-B-C-E-F-G
