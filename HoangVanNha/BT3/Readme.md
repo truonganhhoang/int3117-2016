@@ -71,3 +71,7 @@ public class FindNumber {
  3: 4 - 7(use) - 8 (def)- 15(use) -17 (use)- 18 (use)- 20 (use) - 23
  4: 4 - 7 -  15 (use) -  17 (use)- 18 (use) -28
 
+* So sánh và rút ra nhận xét về All-DU-Path và MCDC
+
+- All-Du-Path cần ít test case hơn MCDC, các test case rõ ràng và ít cần phải suy luận hơn MCDC
+- Nhưng với các biểu thức điều kiện phức hợp thì dùng MCDC sẽ chặt chẽ hơn so với All-DU-Path
