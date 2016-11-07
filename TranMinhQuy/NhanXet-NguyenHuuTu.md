@@ -1,29 +1,29 @@
-# Nh?n x�t b�i t?p c?a **Nguy?n H?u T�**
+# Nhận xét bài tập của **Nguyễn Hữu Tú**
 
-## B�i t?p 1
-- ?n:
-    + B�o c�o ri�ng cho t?ng tu?n 1, 3, 4 d?y d?.
-    + `Readme` m� t? chi ti?t, ch?a c?: code, flow, c�c test case v� test coverage.
-    + M� t? b?i to�n r� r�ng, d? hi?u.
-    + Phuong ph�p test cung du?c tr�nh b�y chi ti?t.
-- Chua ?n:
-    + N�n d�nh k�m link c?a c�c Tool d� s? d?ng: JUnit Test, EclEmma Java Code Coverage 2.x.x, code2flow.
+## Bài tập 1
+- Ổn:
+    + Báo cáo riêng cho từng tuần 1, 3, 4 đầy đủ.
+    + `Readme` mô tả chi tiết, chứa cả: code, flow, các test case và test coverage.
+    + Mô tả bải toán rõ ràng, dễ hiểu.
+    + Phương pháp test cũng được trình bày chi tiết.
+- Chưa ổn:
+    + Nên đính kèm link của các Tool đã sử dụng: JUnit Test, EclEmma Java Code Coverage 2.x.x, code2flow.
  
-## B�i t?p 2
-- ?n:
-    + `Readme` vi?t t?t, d?y d? (code, test, test coverage), d�ng chu?n Markdown.
-    + Code c?a b�i to�n th?a m�n y�u c?u d?t ra: v�ng l?p, bi?u th?c di?u ki?n.
-    + �p d?ng d�ng ti�u chu?n MCDC.
-    + Test case d?y d?.
-- Chua ?n:
-    + Code style: t�n bi?n n�n d?t `dieuKien1` thay v� `DieuKien1`.
-    + T�n c?a unit test n�n r� r�ng hon thay v� `test0`, `test1`, ... .
+## Bài tập 2
+- Ổn:
+    + `Readme` viết tốt, đẩy đủ (code, test, test coverage), đúng chuẩn Markdown.
+    + Code của bài toán thỏa mãn yêu cầu đặt ra: vòng lặp, biểu thức điều kiện.
+    + Áp dụng đúng tiêu chuẩn MCDC.
+    + Test case đầy đủ.
+- Chưa ổn:
+    + Code style: tên biến nên đặt `dieuKien1` thay vì `DieuKien1`.
+    + Tên của unit test nên rõ ràng hơn thay vì `test0`, `test1`, ... .
 
-## B�i t?p 3
-- ?n:
-    + `Readme` vi?t t?t, d?y d? (code, test, test coverage), d�ng chu?n Markdown.
-    + Path cho t?ng bi?n d�ng, d?y d?.
-    + �?y d? c�c test cho m?i tru?ng h?p.
-    + Nh?n x�t v? 2 phuong ph�p test tuong d?i chu?n.
-- Chua ?n:
-    + T�n c?a unit test n�n r� r�ng hon thay v� `test0`, `test1`, ... (gi?ng BT2).
+## Bài tập 3
+- Ổn:
+    + `Readme` viết tốt, đẩy đủ (code, test, test coverage), đúng chuẩn Markdown.
+    + Path cho từng biến đúng, đầy đủ.
+    + Đầy đủ các test cho mỗi trường hợp.
+    + Nhận xét về 2 phương pháp test tương đối chuẩn.
+- Chưa ổn:
+    + Tên của unit test nên rõ ràng hơn thay vì `test0`, `test1`, ... (giống BT2).
