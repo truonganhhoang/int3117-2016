@@ -28,3 +28,8 @@
 ## Do bao phu
 
 <img src="https://github.com/chinhlv95/int3117-2016/blob/master/LuongVanChinh/BT2/images/diagram.jpg">
+
+## Nhan xet
+
+- All-Du-Path co so luong test-case bang voi MCDC,nhung các test case cua All-Du-Path it phai suy luan hon MCDC
+- Voi cac bieu thuc phuc tap thi dung MCDC se chat che hon.
