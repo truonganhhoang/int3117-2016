@@ -16,3 +16,4 @@ Xét điều kiện if (year%4 == 0 && year%100 != 0) || (year%400 == 0)
 | 3 |      F    |      T  |       T   |    F
 | 4 |      F    |      F  |       -   |    F
 
+(- : không quan tâm đến giá trị của ô đấy là True hay false )
