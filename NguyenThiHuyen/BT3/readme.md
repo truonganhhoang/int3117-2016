@@ -6,16 +6,15 @@ Cách làm:
 - hàm kiemTra(int year): kiểm tra năm vừa nhập có phải là năm nhuận không
 
 Áp dụng tiêu chuẩn All-DU-Path
--Luồng dữ liệu chung
 
+- Luồng dữ liệu chương trình
+![LuongDuLieu](https://github.com/huyendtt58/int3117-2016/blob/master/NguyenThiHuyen/BT3/images/Luongdulieuchung.PNG)
 
-
--Luồng dữ liệu cho biến year
-
+- Luồng dữ liệu cho biến year
+![Bien_year](https://github.com/huyendtt58/int3117-2016/blob/master/NguyenThiHuyen/BT3/images/Luongdulieuchobien_year.PNG)
 
 - Luồng dữ liệu cho biến flag
-
-
+![Bien_flag](https://github.com/huyendtt58/int3117-2016/blob/master/NguyenThiHuyen/BT3/images/Luongdulieuchobien_flag.PNG)
 
 - Luồng dữ liệu cho biến input
-
+![Bien_input](https://github.com/huyendtt58/int3117-2016/blob/master/NguyenThiHuyen/BT3/images/Luongdulieucobien_input.PNG)
