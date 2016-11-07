@@ -74,7 +74,7 @@ describe("Testing Calculate(minutes) function: Using Bourdary", function() {
 	        expect( calculate('1') ).toBe( 25600 );
 	        expect( calculate("200") ).toBe( 115000 );
 	        expect( calculate("49.9999") ).toBe( 54999.94 );
-	         expect( calculate(' 5') ).toBe( 28000 );
+	        expect( calculate(' 5') ).toBe( 28000 );
 	    });
 	});
     

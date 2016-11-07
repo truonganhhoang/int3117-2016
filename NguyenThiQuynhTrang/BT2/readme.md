@@ -1,3 +1,4 @@
+## 
 + chương trình cho phép kiểm tra password nhập vào có phải là password mạnh hay không.
 + nếu độ dài password nhỏ hơn 8 thì trả về fasle,
 + nếu password chứa các kí tự không thuộc 0-9,a-z, A-Z => trả về false
@@ -17,3 +18,22 @@
  - case 9 : độ dài password > 8 chỉ chứa các kí tự từ A-Z và 0-9 (không chứa kí tự a-z).
  - case 10 : độ dài password > 8 chỉ chứa các kí tự số (từ 0-9).
  - case 11 : test password hợp lệ có độ dài > 8 và chứa các kí tự nằm trong 3 khoảng trên.
+ 
+ ## test theo MCDC
+			Bảng MCDC
+ 
+ 	|C1	|i < length		|Output|
+	|___|_______________|______|
+	|___|C2 |C3 |C4 |C5 |______|
+TC1	|T	|-	|-	|-	|-	|F	   |
+TC2	|F	|T	|-	|-	|-	|F	   |
+TC3	|F	|F	|-	|-	|-	|T	   |
+						
+C1: (length < 8)
+C2: (!Character.isUpperCase(code) && !Character.isLowerCase(code) && !Character.isDigit(code))
+C3: (Character.isUpperCase(code))
+C4: (Character.isLowerCase(code))
+C5: (Character.isDigit(code))
+
+## test theo All_DU_Paths
+

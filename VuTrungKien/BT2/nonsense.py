@@ -1,7 +1,7 @@
 def is_x_more_dangerous_than_y(x, y, crazy_level):
     """This is a nonsense function.
         This is simple form:
-            if crazy_level > 0:
+            if abs(crazy_level) < 9000 or crazy_level > 0 and crazy_level % 2 == 0:
                 return x > y
             else:
                 return not (x > y)
@@ -16,7 +16,7 @@ def is_x_more_dangerous_than_y(x, y, crazy_level):
         is_crazy_level_even = crazy_level % 2 == 0
         is_crazy_level_positive = crazy_level > 0
 
-        if is_crazy_level_positive and is_crazy_level_even or is_crazy_level_normal:
+        if is_crazy_level_normal or is_crazy_level_positive and is_crazy_level_even:
             x_danger += crazy_level
             y_danger += crazy_level
         else:

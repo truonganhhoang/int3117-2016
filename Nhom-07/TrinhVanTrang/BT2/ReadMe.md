@@ -1,3 +1,4 @@
+#Bài tập kiểm thử phần mềm 2
 Họ tên : Trịnh Vân Trang
 Mssv: 13020453
 

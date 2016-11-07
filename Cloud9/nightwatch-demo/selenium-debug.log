@@ -1,0 +1,59 @@
+19:27:10.207 INFO - Launching a standalone Selenium Server
+19:27:10.238 INFO - Java: Oracle Corporation 24.111-b01
+19:27:10.238 INFO - OS: Linux 4.4.0-45-generic amd64
+19:27:10.250 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+19:27:10.312 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
+19:27:10.312 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
+19:27:10.313 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+19:27:10.313 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+19:27:10.314 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+registration capabilities Capabilities [{platform=MAC, browserName=safari, version=}] does not match the current platform LINUX
+19:27:10.314 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+19:27:10.315 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+19:27:10.365 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:27:10.365 INFO - Selenium Server is up and running
+19:27:10.613 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Google Test, marionette=true}]])
+19:27:10.625 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Google Test, marionette=true}]
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1477312032114	Marionette	INFO	Listening on port 37779
+1477312035059	Marionette	INFO	startBrowser c39a499d-3611-4521-917b-0e51d1ea1735
+19:27:15.549 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Google Test, marionette=true}]]
+19:27:15.567 INFO - Executing: [get: http://www.google.com])
+19:27:17.835 INFO - Done: [get: http://www.google.com]
+19:27:17.843 INFO - Executing: [find elements: By.cssSelector: body])
+19:27:17.870 INFO - Done: [find elements: By.cssSelector: body]
+19:27:17.875 INFO - Executing: [is displayed: 0 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: body]])
+19:27:17.890 INFO - Done: [is displayed: 0 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: body]]
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+19:27:17.898 INFO - Executing: [find element: By.cssSelector: input[type=text]])
+19:27:17.906 INFO - Done: [find element: By.cssSelector: input[type=text]]
+19:27:17.911 INFO - Executing: [send keys: 1 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: input[type=text]], [n, i, g, h, t, w, a, t, c, h]])
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+19:27:18.012 INFO - Done: [send keys: 1 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: input[type=text]], [n, i, g, h, t, w, a, t, c, h]]
+19:27:18.021 INFO - Executing: [find elements: By.cssSelector: button[name=btnG]])
+19:27:18.028 INFO - Done: [find elements: By.cssSelector: button[name=btnG]]
+19:27:18.033 INFO - Executing: [is displayed: 2 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: button[name=btnG]]])
+19:27:18.061 INFO - Done: [is displayed: 2 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: button[name=btnG]]]
+19:27:18.073 INFO - Executing: [find element: By.cssSelector: button[name=btnG]])
+19:27:18.082 INFO - Done: [find element: By.cssSelector: button[name=btnG]]
+19:27:18.085 INFO - Executing: [click: 2 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: button[name=btnG]]])
+19:27:18.159 INFO - Done: [click: 2 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: button[name=btnG]]]
+
+(firefox:10184): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+19:27:19.164 INFO - Executing: [find element: By.cssSelector: #main])
+19:27:19.174 INFO - Done: [find element: By.cssSelector: #main]
+19:27:19.177 INFO - Executing: [get text: 3 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: #main]])
+19:27:20.226 INFO - Done: [get text: 3 [[MarionetteDriver: firefox on LINUX (c39a499d-3611-4521-917b-0e51d1ea1735)] -> css selector: #main]]
+19:27:20.235 INFO - Executing: [delete session: 9d46b20d-3c31-4ebf-97f1-f2afec53593b])
+19:27:20.492 INFO - Done: [delete session: 9d46b20d-3c31-4ebf-97f1-f2afec53593b]
