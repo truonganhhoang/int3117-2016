@@ -12,7 +12,7 @@
 	- Một số test case vẫn đặt tên theo số thứ tự.
 
 # BT2
- *Ưu điểm:
+ * Ưu điểm:
 	- Mô tả bài toán chi tiết.
 	- Yêu cầu về độ phức tạp được đáp ứng.	
 	- Có đo Coverage.
@@ -21,7 +21,7 @@
 	- Chưa đủ các test case như đã tính trong file readme.md.
 
 # BT3
- *Ưu điểm:
+ * Ưu điểm:
 	- Có so sánh giữa tiêu chuẩn MCDC và All-DU-Path.
 	- Có đo coverage.
  * Nhược điểm:
