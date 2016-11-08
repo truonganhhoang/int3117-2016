@@ -1,5 +1,5 @@
 # Nhận xét bài tập Nguyễn Hồng Sơn
-Ngày 7 tháng 11 năm 2016 - Link bài tập: https://github.com/truonganhhoang/int3117-2016/tree/master/NguyenHongSon
+Ngày 7 tháng 11 năm 2016 (Update ngày 8 tháng 11 năm 2016 ) - Link bài tập: https://github.com/truonganhhoang/int3117-2016/tree/master/NguyenHongSon
 
 ## Bài tập 1:
   + README.md có mô tả về hàm cần kiểm thử và hàm kiểm thử.
@@ -11,7 +11,7 @@ Ngày 7 tháng 11 năm 2016 - Link bài tập: https://github.com/truonganhhoang
   + Nên để ảnh source code trong README.md để dễ đối chiếu với đồ thị chu trình.
   
 ## Bài tập 2:
-  + Đã giải thích cách sinh test case bằng phương pháp MCDC.
+  + Đã giải thích cách sinh test case bằng phương pháp MCDC.
   + Code đủ yêu cầu của Issues (ít nhất 1 while 2 if)
   + Chưa giải thích vì sao test coverage chưa đạt 100%.
   + README.md nên thêm source code để dễ đối chiếu.
