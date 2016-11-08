@@ -198,4 +198,119 @@ it("Sử dụng toBeNull", function() {
 });
 ```
 
-### Cách dùng các hàm before, after: (comming soon)
+### Cách dùng các hàm before, after:
+```javascript
+describe("Sử dụng before và after", function() {
+
+    beforeEach(function() {
+        //Hàm này được chạy NHIỀU LẦN vào đầu mỗi test case
+    });
+
+    afterEach(function() {
+        //Hàm này được chạy NHIỀU LẦN vào cuối mỗi test case
+    });
+
+    beforeAll(function() {
+        //Hàm này được chạy MỘT LẦN duy nhất trước khi chạy
+        //các test case trong describe này
+    });
+
+    afterAll(function() {
+        //Hàm này được chạy MỘT LẦN duy nhất sau khi chạy
+        //xong các test case trong describe này
+    });
+
+});
+```
+
+### Sử dụng spy, mock
+```javascript
+describe("Dùng spy", function() {
+    var person, eaten = null;
+
+    //Hàm này được chạy đầu mỗi test case
+    beforeEach(function() {
+        person = {
+            eat: function(value) {
+                eaten = value;
+            }
+        };
+
+        //Gắn spy vào để theo dõi hàm eat của object person
+        spyOn(person, 'eat');
+
+        person.eat('banana');
+    });
+
+    it("tracks that the spy was called", function() {
+        expect(person.eat).toHaveBeenCalled();
+    });
+
+    it("tracks all the arguments of its calls", function() {
+        expect(person.eat).toHaveBeenCalledWith('banana');
+    });
+
+    it("stops all execution on a function", function() {
+        //Spy sẽ chặn hàm eat, do đó giá trị eaten không được set
+        expect(eaten).toBeNull();
+    });
+});
+```
+
+Khi cài đặt spy bằng hàm spy on, hàm được gọi tới đã bị chặn. Để hàm không bị chặn, ta setup thêm callThrough sau câu spy on:
+````javascript
+describe("Dùng spy", function() {
+    var person, eaten = null;
+
+    //Hàm này được chạy đầu mỗi test case
+    beforeEach(function() {
+        person = {
+            eat: function(value) {
+                eaten = value;
+            }
+        };
+
+        //Gắn spy vào để theo dõi hàm eat của object person
+        // Ở đây dùng thêm callThrough
+        spyOn(person, 'eat').and.callThrough();
+
+        person.eat('banana');
+    });
+
+    it("Not stop execution on a function", function() {
+        //Spy không chặn hàm eat nữa
+        expect(eaten).toBe('banana');
+    });
+});
+```
+
+Trong trường hợp hàm eat chưa được viết xong thì sao? Trong quá trình code, điều này vẫn thường xảy ra. VD như module A phụ thuộc vào module B, nhưng module B chưa được viết xong. Để giải quyết trường hợp này, ta tạo 1 module B giả, tạm hoạt động như module B để cho module A gọi. Module B giả này được gọi là mock.
+Giả sử đối tượng person hàm foodEaten, nhưng viết chưa xong. Ta có thể dùng spy để làm mock, trả về giá trị cho hàm này:
+```javascript
+describe("Dùng spy", function() {
+    var person, eaten = null;
+
+    //Hàm này được chạy đầu mỗi test case
+    beforeEach(function() {
+        person = {
+            eat: function(value) {
+                eaten = value;
+            },
+            foodEaten: function(){
+                //Viết chưa xong
+            }
+        };
+
+        //Spy sẽ làm mock
+        //Giả kết quả trả về của hàm foodEaten
+        spyOn(person, 'foodEaten').and.callFake(function() {
+            return 'banana';
+        });;
+    });
+
+    it("stops all execution on a function", function() {
+        //Gọi kết quả lấy từ hàm mock
+        expect(person.foodEaten()).toBe('banana');
+    });
+});
+```
