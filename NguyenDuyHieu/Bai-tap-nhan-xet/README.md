@@ -11,12 +11,15 @@ Ngày 7 tháng 11 năm 2016 - Link bài tập: https://github.com/truonganhhoang
   + Nên để ảnh source code trong README.md để dễ đối chiếu với đồ thị chu trình.
   
 ## Bài tập 2:
-  + Hiểu sai phương pháp MCDC nên lấy nhầm các điều kiện ảnh hưởng độc lập tới kết quả.
-  + Test coverage chưa đạt 100% vì lý do trên.
-  + README.md có miêu tả về phương pháp MCDC nhưng nên thêm source code để dễ đối chiếu.
+  + Đã giải thích cách sinh test case bằng phương pháp MCDC.
+  + Code đủ yêu cầu của Issues (ít nhất 1 while 2 if)
+  + Chưa giải thích vì sao test coverage chưa đạt 100%.
+  + README.md nên thêm source code để dễ đối chiếu.
   
 ## Bài tập 3: 
   + README.md có đồ thị chu trình, có mô tả đường đi của các biến.
   + Chưa giải thích rõ ràng vì sao từ chu trình đó có thể sinh ra testcase.
   + Chưa có coverage của các testcases.
   + Source code trong file DemoChangePassword.java viết hàm boolean changePwd nhưng lại không sử dụng.
+
+#### Tổng kết lại: nộp bài tập đầy đủ, hiểu các phương pháp kiểm thử áp dụng, nhưng còn một số lỗi chưa khắc phục => 8/10
