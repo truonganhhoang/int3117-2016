@@ -2,13 +2,13 @@
 
 #### Bài tập 1
 
-##### Được
+#### Được
 - Bài toán: Đạt yêu cầu của bài tập.
 - Cách giải quyết: Sử dụng kiểm thử biên, đánh giá phù hợp bài toán.
 - Mã nguồn: Trình bày rõ ràng, theo chuẩn.
 - Readme: Có nêu cách tiến hành kiểm thử, lập bảng cụ thể.
 
-##### Chưa được
+#### Chưa được
 - Mã nguồn: Tên các test-case vẫn để `test1`, `test2`,...
 - Readme: Chưa có lý do lựa chọn phương pháp kiểm thử, không có kết quả độ bao phủ và đồ thị chương trình.
 
