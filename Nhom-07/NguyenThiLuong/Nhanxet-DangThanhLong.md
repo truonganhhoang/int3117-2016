@@ -1,6 +1,7 @@
 ﻿# Nhận xét bài tập của Đặng Thành Long
 
 ## Nhận xét bài tập 1
+Bài toán: Tìm giai thừa của một số
 - Ổn:
   + Readme rõ ràng, trình bày đầy đủ nội dung chi tiết của bài toán: yêu cầu bài toán, giải pháp, đồ thị, phương pháp và kết quả kiểm thử.
   + Mã nguồn đơn giản, dễ hiểu, chuẩn coding convention java.
