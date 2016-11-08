@@ -1,17 +1,16 @@
 /* tslint:disable:no-unused-variable */
-import { AppComponent } from './app.component';
+import { AppComponent }    from './app.component';
 import { BannerComponent } from './banner.component';
 import { DebugElement }    from '@angular/core';
 
-import { ComponentFixture,TestBed }      from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { By }           from '@angular/platform-browser';
+import { By }              from '@angular/platform-browser';
 
 let comp:    AppComponent;
 let fixture: ComponentFixture<AppComponent>;
 let de:      DebugElement;
 let el:      HTMLElement;
-////////  SPECS  /////////////
 
 /// Delete this
 describe('Smoke test', () => {
@@ -25,7 +24,6 @@ describe('AppComponent with TCB', function () {
     TestBed.configureTestingModule({declarations: [AppComponent]});
     fixture = TestBed.createComponent(AppComponent);
     comp = fixture.componentInstance;
-
   });
 
   it('should instantiate component', () => {
@@ -36,8 +34,7 @@ describe('AppComponent with TCB', function () {
     fixture.detectChanges();
 
     let h1 = fixture.debugElement.query(el => el.name === 'h1').nativeElement;  // it works
-
-        h1 = fixture.debugElement.query(By.css('h1')).nativeElement;            // preferred
+    h1 = fixture.debugElement.query(By.css('h1')).nativeElement;            // preferred
 
     expect(h1.innerText).toMatch(/angular app/i, '<h1> should say something about "Angular App"');
   });
@@ -45,7 +42,6 @@ describe('AppComponent with TCB', function () {
   it('should test test function', () => {
       expect(comp.test()).toBe(2, 'should return2');
   });    
-
 });
 
 describe('Banner Component', function () {
