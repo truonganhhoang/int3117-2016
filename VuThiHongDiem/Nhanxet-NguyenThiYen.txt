@@ -1,0 +1,17 @@
+BT1:
+Uu diem:
+-Ma nguon dung, chuan
+Nhuoc diem:
+-Do thi chu trinh ve bang tay, chua day du 
+BT2:
+Uu diem:
+-chuong trinh viet tot
+-Do muc do bao phu thanh cong
+-Code de doc
+Nhuoc diem:
+-Can them do thi cua chuong trinh
+-Lam sai yeu cau de bai(tim test dua vao MCDC)
+BT3:
+-Tot:+ ve so do khoi cho cac bien ro rang, dep, de hieu
+     + trinh bay co kem theo so giua cac dong lenh, de hieu
+
