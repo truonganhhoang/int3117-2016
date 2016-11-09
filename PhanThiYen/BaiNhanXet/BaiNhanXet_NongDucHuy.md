@@ -12,6 +12,7 @@
 2. Nhươc điểm
 
 - Bài tập tuần 3 có giải thích tại sao lựa chọn kỹ thuật thử nhưng nên chưa thêm phần code nâng cấp của tuần 1 vào.
+
 ----
 ##*BT2*
 
@@ -25,6 +26,7 @@
 2. Nhược điểm
 
 - Nên đánh số vào code bài toán thì cách tạo ca kiểm thử người xem sẽ dễ hiều hơn
+
 ----
 ##*BT3*
 
