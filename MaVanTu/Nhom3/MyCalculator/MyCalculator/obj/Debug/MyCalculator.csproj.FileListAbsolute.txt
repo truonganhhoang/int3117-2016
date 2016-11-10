@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2015\Projects\MyCalculator\MyCalculator\bin\Debug\MyCalculator.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyCalculator\MyCalculator\bin\Debug\MyCalculator.pdb
+c:\users\admin\documents\visual studio 2015\Projects\MyCalculator\MyCalculator\obj\Debug\MyCalculator.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\MyCalculator\MyCalculator\obj\Debug\MyCalculator.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyCalculator\MyCalculator\obj\Debug\MyCalculator.pdb
