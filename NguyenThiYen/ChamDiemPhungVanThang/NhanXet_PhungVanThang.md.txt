@@ -1,0 +1,21 @@
+Bài 1:
+Ýu ði?m:
+- M? ngu?n ðúng, code d? ð?c.
+- Có ?nh sõ ð? và tính ðý?c ð? bao ph?.
+Nhý?c ði?m:
+- Thi?u file README.md mô t? chi ti?t.
+- Các ca ki?m th? chýa ð?y ð?.
+- Sõ ð? v? b?ng tay và chýa chính xác l?m.
+BT2:
+Ýu ði?m:
+- Các ca ki?m th? khá ð?y ð?.
+- Ð? bao ph? 100%.
+Nhý?c ði?m:
+- Không tr?nh bày ph?n áp d?ng MCDC, file readme.md chýa mô t? chi ti?t bài toán.
+- C?u trúc chýõng tr?nh chýa ð?t yêu c?u:
+BT3:
+Ýu ði?m:
+- T?m ðý?c ðý?ng ði ALL-DU-paths.
+- Sõ ð? khá d? hi?u.
+Nhý?c ði?m:
+- Chýa t?m ðý?c h?t ðý?ng ði c?a các bi?n.
