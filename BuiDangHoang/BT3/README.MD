@@ -2,7 +2,7 @@
 
 ## Mô tả bài toán
 
-- Chương trình tìm số chia hết cho 3 và 5 hoặc 7 trong khoảng 0-1000
+- Chương trình kiểm số chia hết cho 2 và 3 hoặc 5 rồi tính tổng các số chia hết cho số đó trong khoảng 1-100
 
 ## Code
 
