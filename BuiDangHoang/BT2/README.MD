@@ -2,14 +2,14 @@
 
 ## Mô tả bài toán
 
-- Chương trình tìm số chia hết cho 3 và 5 hoặc 7 trong khoảng 0-1000
+- Chương trình kiểm tra một số chia hết cho 2 và 3 hoặc 5 rồi tính tổng các số chia hết cho số đó trong khoảng 0-100
 
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
-Biểu thức điều kiện: (%3=0 AND %5=0) OR %7=0
+Biểu thức điều kiện: (%2=0 AND %3=0) OR %5=0
 Không áp dụng MC/DC: Cần 2^3=8 ca kiểm thử tất cả.
 
-Test Case  | %3 = 0 | %5 = 0 | %7=0 | OUTPUT
+Test Case  | %2 = 0 | %3 = 0 | %5=0 | OUTPUT
 ------------- | ------------- | ------------- | ------------- | -------------
 1  | True | True | True | True
 2  | True | True | False | True
