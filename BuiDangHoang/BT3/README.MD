@@ -15,10 +15,11 @@
 
 ### All-DU-Path của number : 
 
-- 1,2,3(d),4,5(u),6,20,21
-- 1,2,3(d),4,5(u),7,8(u),9,10,11(c),12,13,14,15,16,20,21
-- 1,2,3(d),3,4,5(u),7,8(u),17,18,19,20,21
+- 1,2,3(d),4,5(u),6,20,21 ứng với number = 101
+- 1,2,3(d),4,5(u),7,8(u),9,10,11(c),12,13,14,15,16,20,21 ứng với number = 30
+- 1,2,3(d),3,4,5(u),7,8(u),17,18,19,20,21 ứng với number = 7
 
 ## Nhận xét
-- Cả All-DU-Path và MCDC đều cho độ bao phủ như nhau
-- Thực hiện All-Du-Path phức tạp hơn với những bài toán có nhiều biến
+- MCDC chặt chẽ hơn về bao phủ nhánh (branch), khi các điều kiện đơn chắc chắn sẽ được thực thi ít nhất một lần.
+- All-DU-Path giúp kiểm tra bao phủ dòng lệnh (statement) rất tốt, vì để sinh ra được các ca kiểm thử thì ta cần dựa vào đồ thị chu trình   của chương trình
+- All-DU-Path hỗ trợ kiểm tra cách các dòng dữ liệu chạy trong chương trình.
