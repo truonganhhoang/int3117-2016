@@ -19,10 +19,6 @@
 - 1,2,3(d),4,5(u),7,8(u),9,10,11(c),12,13,14,15,16,20,21
 - 1,2,3(d),3,4,5(u),7,8(u),17,18,19,20,21
 
-### All-DU-Path của sum : 
-
-- 1,2,3
-
 ## Nhận xét
 - Cả All-DU-Path và MCDC đều cho độ bao phủ như nhau
 - Thực hiện All-Du-Path phức tạp hơn với những bài toán có nhiều biến
