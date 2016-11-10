@@ -4,6 +4,32 @@
 
 - Chương trình kiểm tra một số chia hết cho 2 và 3 hoặc 5 rồi tính tổng các số chia hết cho số đó trong khoảng 0-100
 
+## Code 
+```java
+package main;
+public class TimSo {
+	public int specialCalculator(int number) {
+		int sum = 0;
+		if (number < 0 | number > 100) {
+			return 0;
+		} else {
+			if ((number % 2 == 0 & number % 3 == 0) | number % 5 == 0) {
+				int i = 0;
+				while (i < 100) {
+					if (i % number == 0) {
+						sum += i;
+					}
+					i++;
+				}
+				return sum;
+			}
+		}
+		return 0;
+	}
+}
+
+```
+
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
 Biểu thức điều kiện: (%2=0 AND %3=0) OR %5=0
