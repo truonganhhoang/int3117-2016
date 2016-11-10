@@ -50,7 +50,5 @@ Test Case  | %2 = 0 | %3 = 0 | %5=0 | OUTPUT
 
 ## Đo mức độ bao phủ
 
-Full 8 test case : 
-<img src="https://github.com/hoangbd58/int3117-2016/blob/master/BuiDangHoang/BT2/fullTestCase.png"/>
 4 Test case MC/DC:
 <img src="https://github.com/hoangbd58/int3117-2016/blob/master/BuiDangHoang/BT2/4TestCase.png"/>
