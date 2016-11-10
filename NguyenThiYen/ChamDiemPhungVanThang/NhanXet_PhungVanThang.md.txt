@@ -1,21 +1,22 @@
-Bài 1:
-İu ği?m:
-- M? ngu?n ğúng, code d? ğ?c.
-- Có ?nh sõ ğ? và tính ğı?c ğ? bao ph?.
-Nhı?c ği?m:
-- Thi?u file README.md mô t? chi ti?t.
-- Các ca ki?m th? chıa ğ?y ğ?.
-- Sõ ğ? v? b?ng tay và chıa chính xác l?m.
+BT1:
+Æ¯u Ä‘iá»ƒm:
+- MÃ£ nguá»“n Ä‘Ãºng, code dá»… Ä‘á»c.
+- CÃ³ áº£nh sÆ¡ Ä‘á»“ vÃ  tÃ­nh Ä‘Æ°á»£c Ä‘á»™ bao phá»§.
+NhÆ°á»£c Ä‘iá»ƒm:
+- Thiáº¿u file README.md mÃ´ táº£ chi tiáº¿t bÃ i toÃ¡n.
+- CÃ¡c ca kiá»ƒm thá»­ chÆ°a Ä‘áº§y Ä‘á»§.
 BT2:
-İu ği?m:
-- Các ca ki?m th? khá ğ?y ğ?.
-- Ğ? bao ph? 100%.
-Nhı?c ği?m:
-- Không tr?nh bày ph?n áp d?ng MCDC, file readme.md chıa mô t? chi ti?t bài toán.
-- C?u trúc chıõng tr?nh chıa ğ?t yêu c?u:
+Æ¯u Ä‘iá»ƒm:
+- CÃ¡c ca kiá»ƒm thá»­ khÃ¡ Ä‘áº§y Ä‘á»§.
+- Äá»™ bao phá»§ 100%.
+- ÄÃ£ Ã¡p dá»¥ng Ä‘Æ°á»£c tiÃªu chuáº©n MCDC
+- README.md mÃ´ táº£ khÃ¡ rÃµ rÃ ng..
+NhÆ°á»£c Ä‘iá»ƒm:
+- File readme.md khÃ´ng hiá»ƒn thá»‹ cÃ¡c testcase.
+- Cáº¥u trÃºc chÆ°Æ¡ng trÃ¬nh chÆ°a Ä‘áº¡t yÃªu cáº§u.
 BT3:
-İu ği?m:
-- T?m ğı?c ğı?ng ği ALL-DU-paths.
-- Sõ ğ? khá d? hi?u.
-Nhı?c ği?m:
-- Chıa t?m ğı?c h?t ğı?ng ği c?a các bi?n.
+Æ¯u Ä‘iá»ƒm:
+- TÃ¬m Ä‘Æ°á»£c Ä‘Æ°á»ng Ä‘i ALL-DU-paths.
+- SÆ¡ Ä‘á»“ Ä‘áº¹p, khÃ¡ dá»… hiá»ƒu.
+NhÆ°á»£c Ä‘iá»ƒm:
+- ChÆ°a tÃ¬m Ä‘Æ°á»£c háº¿t Ä‘Æ°á»ng Ä‘i cá»§a cÃ¡c biáº¿n.
