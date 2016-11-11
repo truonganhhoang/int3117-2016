@@ -13,4 +13,7 @@
   - Chưa trình bày sâu về TestBed
 
 ## Nhận xét về mã nguồn, tài liệu
-(Nhóm chưa cập nhật mã nguồn, tài liệu lên repo nên chưa kiểm tra được)
+Đầy đủ:
+- Mã nguồn
+- Hướng dẫn cài đặt và chạy mã nguồn
+- Slide trình bày
