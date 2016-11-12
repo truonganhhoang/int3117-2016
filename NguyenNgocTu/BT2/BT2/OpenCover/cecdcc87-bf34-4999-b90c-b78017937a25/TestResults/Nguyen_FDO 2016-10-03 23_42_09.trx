@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b272bbe0-db51-4d49-910a-771d1981d2ec" name="Nguyen@FDO 2016-10-03 23:42:09" runUser="FDO\Nguyen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2016-10-03T23:42:09.3045644+07:00" queuing="2016-10-03T23:42:09.3045644+07:00" start="2016-10-03T23:42:08.6661389+07:00" finish="2016-10-03T23:42:09.3946226+07:00" />
+  <TestSettings name="default" id="6bc572ff-be19-41dc-b24a-b320a31eb67b">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="Nguyen_FDO 2016-10-03 23_42_09" />
+    <Properties />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="735de200-4de1-4b24-b21d-5175e0e1a5fe" testId="c4c4e2c1-9092-96c0-0993-92a0f21c73ec" testName="ValidateTestC1TC2TC3T_1" computerName="FDO" duration="00:00:00.0287030" startTime="2016-10-03T23:42:08.6661389+07:00" endTime="2016-10-03T23:42:08.9103026+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="735de200-4de1-4b24-b21d-5175e0e1a5fe" />
+    <UnitTestResult executionId="5cd7251a-1340-44b8-ab0d-baa21e5c36d7" testId="f9450bdd-c636-c8eb-58da-f26a5276811e" testName="ValidateTestC1TC2TC3F_1" computerName="FDO" duration="00:00:00.0005613" startTime="2016-10-03T23:42:08.9203093+07:00" endTime="2016-10-03T23:42:08.9213139+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5cd7251a-1340-44b8-ab0d-baa21e5c36d7" />
+    <UnitTestResult executionId="a46bb86d-ac28-48ef-94ec-d7bfa4674a7b" testId="fd97f2ad-8c71-e807-7ec1-3bcee3fb9695" testName="ValidateTestC1TC2FC3F_1" computerName="FDO" duration="00:00:00.0004890" startTime="2016-10-03T23:42:08.9213139+07:00" endTime="2016-10-03T23:42:08.9223094+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a46bb86d-ac28-48ef-94ec-d7bfa4674a7b" />
+    <UnitTestResult executionId="64babdf2-f78d-4b5a-b705-78237347d63a" testId="1a51ec2e-8ee8-6eaf-1851-b734f614567b" testName="ValidateTestC1TC2FC3F_12" computerName="FDO" duration="00:00:00.0004061" startTime="2016-10-03T23:42:08.9223094+07:00" endTime="2016-10-03T23:42:08.9223094+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64babdf2-f78d-4b5a-b705-78237347d63a" />
+    <UnitTestResult executionId="3a6c3276-c907-40fd-9c26-24e938e6f41b" testId="170f0ba0-54cf-5f4a-2518-8d304560bc3e" testName="ValidateTestC1TC2TC3T_2" computerName="FDO" duration="00:00:00.0004010" startTime="2016-10-03T23:42:08.9223094+07:00" endTime="2016-10-03T23:42:08.9233120+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a6c3276-c907-40fd-9c26-24e938e6f41b" />
+    <UnitTestResult executionId="bd33bc1d-ad80-4099-a2e5-b14194f6949d" testId="db44bb07-061c-e723-60bc-90f463dce653" testName="ValidateTestC1TC2TC3F_2" computerName="FDO" duration="00:00:00.0004231" startTime="2016-10-03T23:42:08.9233120+07:00" endTime="2016-10-03T23:42:08.9243123+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd33bc1d-ad80-4099-a2e5-b14194f6949d" />
+    <UnitTestResult executionId="ba9194d9-dc5b-4d02-b27d-d51db0505137" testId="5bdd2161-ffeb-ea9b-dd01-e52b7b2a0ef2" testName="ValidateTestC1TC2FC3F_2" computerName="FDO" duration="00:00:00.0003552" startTime="2016-10-03T23:42:08.9243123+07:00" endTime="2016-10-03T23:42:08.9243123+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba9194d9-dc5b-4d02-b27d-d51db0505137" />
+    <UnitTestResult executionId="b05a5530-0b06-438b-ae8f-413eca2e9e14" testId="a64875a2-1645-0457-f8da-3f07c074f189" testName="ValidateTestC1TC2FC3F_22" computerName="FDO" duration="00:00:00.0003465" startTime="2016-10-03T23:42:08.9243123+07:00" endTime="2016-10-03T23:42:08.9253126+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b05a5530-0b06-438b-ae8f-413eca2e9e14" />
+    <UnitTestResult executionId="00f44ea6-197b-42a1-bcc5-db43b598bbbb" testId="e23e1f9b-62f8-4bc7-cf6a-02f1ab36d9d5" testName="ValidateTestC1TC2TC3T_3" computerName="FDO" duration="00:00:00.0003327" startTime="2016-10-03T23:42:08.9253126+07:00" endTime="2016-10-03T23:42:08.9253126+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00f44ea6-197b-42a1-bcc5-db43b598bbbb" />
+    <UnitTestResult executionId="233960bf-eee6-453b-94f1-d86c0e70833c" testId="c91e4f6e-6263-c17f-ea31-4b4927c9b967" testName="ValidateTestC1TC2TC3F_3" computerName="FDO" duration="00:00:00.0003556" startTime="2016-10-03T23:42:08.9323172+07:00" endTime="2016-10-03T23:42:08.9323172+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="233960bf-eee6-453b-94f1-d86c0e70833c" />
+    <UnitTestResult executionId="1c294039-9edf-4c1d-a895-d09206f0f05b" testId="159a859c-035b-8ae7-d5b8-a3d0c280cc32" testName="ValidateTestC1TC2FC3F_3" computerName="FDO" duration="00:00:00.0003189" startTime="2016-10-03T23:42:08.9323172+07:00" endTime="2016-10-03T23:42:08.9333175+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c294039-9edf-4c1d-a895-d09206f0f05b" />
+    <UnitTestResult executionId="45b0792e-4c70-461d-90f7-50c9e821c57f" testId="5374b5c1-ffee-e6de-40ad-4522e5d8a901" testName="ValidateTestC1TC2FC3F_32" computerName="FDO" duration="00:00:00.0003382" startTime="2016-10-03T23:42:08.9333175+07:00" endTime="2016-10-03T23:42:08.9333175+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45b0792e-4c70-461d-90f7-50c9e821c57f" />
+    <UnitTestResult executionId="f3ee0a03-cd28-407b-9452-df4a3dc85197" testId="fc1cc8f5-342e-a138-339c-52004176bc93" testName="ValidateTestC1FC2TC3F_1" computerName="FDO" duration="00:00:00.0003643" startTime="2016-10-03T23:42:08.9333175+07:00" endTime="2016-10-03T23:42:08.9343170+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3ee0a03-cd28-407b-9452-df4a3dc85197" />
+    <UnitTestResult executionId="d4ac6427-a55e-4bec-9376-876c4b1b30b8" testId="d54f626c-ef3b-109a-2490-df5f85d46447" testName="ValidateTestC1FC2FC3F_1" computerName="FDO" duration="00:00:00.0002865" startTime="2016-10-03T23:42:08.9343170+07:00" endTime="2016-10-03T23:42:08.9343170+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4ac6427-a55e-4bec-9376-876c4b1b30b8" />
+    <UnitTestResult executionId="ade0c2f7-0c59-4be9-917f-391e05793f87" testId="c8d4920e-270a-dcc5-9bb3-75200ea83e4f" testName="ValidateTestC1FC2FC3F_2" computerName="FDO" duration="00:00:00.0003939" startTime="2016-10-03T23:42:08.9343170+07:00" endTime="2016-10-03T23:42:08.9353176+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ade0c2f7-0c59-4be9-917f-391e05793f87" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ValidateTestC1TC2TC3T_1" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="c4c4e2c1-9092-96c0-0993-92a0f21c73ec">
+      <Execution id="735de200-4de1-4b24-b21d-5175e0e1a5fe" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2TC3T_1" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2TC3F_1" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="f9450bdd-c636-c8eb-58da-f26a5276811e">
+      <Execution id="5cd7251a-1340-44b8-ab0d-baa21e5c36d7" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2TC3F_1" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2FC3F_1" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="fd97f2ad-8c71-e807-7ec1-3bcee3fb9695">
+      <Execution id="a46bb86d-ac28-48ef-94ec-d7bfa4674a7b" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2FC3F_1" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2FC3F_12" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="1a51ec2e-8ee8-6eaf-1851-b734f614567b">
+      <Execution id="64babdf2-f78d-4b5a-b705-78237347d63a" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2FC3F_12" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2TC3T_2" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="170f0ba0-54cf-5f4a-2518-8d304560bc3e">
+      <Execution id="3a6c3276-c907-40fd-9c26-24e938e6f41b" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2TC3T_2" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2TC3F_2" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="db44bb07-061c-e723-60bc-90f463dce653">
+      <Execution id="bd33bc1d-ad80-4099-a2e5-b14194f6949d" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2TC3F_2" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2FC3F_2" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="5bdd2161-ffeb-ea9b-dd01-e52b7b2a0ef2">
+      <Execution id="ba9194d9-dc5b-4d02-b27d-d51db0505137" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2FC3F_2" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2FC3F_22" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="a64875a2-1645-0457-f8da-3f07c074f189">
+      <Execution id="b05a5530-0b06-438b-ae8f-413eca2e9e14" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2FC3F_22" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2TC3T_3" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="e23e1f9b-62f8-4bc7-cf6a-02f1ab36d9d5">
+      <Execution id="00f44ea6-197b-42a1-bcc5-db43b598bbbb" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2TC3T_3" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2TC3F_3" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="c91e4f6e-6263-c17f-ea31-4b4927c9b967">
+      <Execution id="233960bf-eee6-453b-94f1-d86c0e70833c" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2TC3F_3" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2FC3F_3" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="159a859c-035b-8ae7-d5b8-a3d0c280cc32">
+      <Execution id="1c294039-9edf-4c1d-a895-d09206f0f05b" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2FC3F_3" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1TC2FC3F_32" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="5374b5c1-ffee-e6de-40ad-4522e5d8a901">
+      <Execution id="45b0792e-4c70-461d-90f7-50c9e821c57f" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1TC2FC3F_32" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1FC2TC3F_1" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="fc1cc8f5-342e-a138-339c-52004176bc93">
+      <Execution id="f3ee0a03-cd28-407b-9452-df4a3dc85197" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1FC2TC3F_1" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1FC2FC3F_1" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="d54f626c-ef3b-109a-2490-df5f85d46447">
+      <Execution id="d4ac6427-a55e-4bec-9376-876c4b1b30b8" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1FC2FC3F_1" />
+    </UnitTest>
+    <UnitTest name="ValidateTestC1FC2FC3F_2" storage="c:\users\nguyen\documents\visual studio 2015\projects\bt2\testbt2\bin\debug\testbt2.dll" id="c8d4920e-270a-dcc5-9bb3-75200ea83e4f">
+      <Execution id="ade0c2f7-0c59-4be9-917f-391e05793f87" />
+      <TestMethod codeBase="C:\Users\Nguyen\Documents\Visual Studio 2015\Projects\BT2\TestBT2\bin\Debug\TestBT2.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="TestBT2.BT2Test" name="ValidateTestC1FC2FC3F_2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c4c4e2c1-9092-96c0-0993-92a0f21c73ec" executionId="735de200-4de1-4b24-b21d-5175e0e1a5fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f9450bdd-c636-c8eb-58da-f26a5276811e" executionId="5cd7251a-1340-44b8-ab0d-baa21e5c36d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd97f2ad-8c71-e807-7ec1-3bcee3fb9695" executionId="a46bb86d-ac28-48ef-94ec-d7bfa4674a7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a51ec2e-8ee8-6eaf-1851-b734f614567b" executionId="64babdf2-f78d-4b5a-b705-78237347d63a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="170f0ba0-54cf-5f4a-2518-8d304560bc3e" executionId="3a6c3276-c907-40fd-9c26-24e938e6f41b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db44bb07-061c-e723-60bc-90f463dce653" executionId="bd33bc1d-ad80-4099-a2e5-b14194f6949d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bdd2161-ffeb-ea9b-dd01-e52b7b2a0ef2" executionId="ba9194d9-dc5b-4d02-b27d-d51db0505137" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a64875a2-1645-0457-f8da-3f07c074f189" executionId="b05a5530-0b06-438b-ae8f-413eca2e9e14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e23e1f9b-62f8-4bc7-cf6a-02f1ab36d9d5" executionId="00f44ea6-197b-42a1-bcc5-db43b598bbbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c91e4f6e-6263-c17f-ea31-4b4927c9b967" executionId="233960bf-eee6-453b-94f1-d86c0e70833c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="159a859c-035b-8ae7-d5b8-a3d0c280cc32" executionId="1c294039-9edf-4c1d-a895-d09206f0f05b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5374b5c1-ffee-e6de-40ad-4522e5d8a901" executionId="45b0792e-4c70-461d-90f7-50c9e821c57f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc1cc8f5-342e-a138-339c-52004176bc93" executionId="f3ee0a03-cd28-407b-9452-df4a3dc85197" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d54f626c-ef3b-109a-2490-df5f85d46447" executionId="d4ac6427-a55e-4bec-9376-876c4b1b30b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8d4920e-270a-dcc5-9bb3-75200ea83e4f" executionId="ade0c2f7-0c59-4be9-917f-391e05793f87" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="15" executed="15" passed="15" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
