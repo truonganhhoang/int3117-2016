@@ -12,37 +12,23 @@ import main.TimSo;
 public class TestTimSo {
 	TimSo ts = new TimSo();
 	List<Integer> lst = new ArrayList<Integer>();
-	
+
 	@Test
-	public void kiemTraSo105() {
-		boolean n = ts.kiemTraSo(105);
-		assertEquals(true, n);
+	public void kiemTraSo30() {
+		int n = ts.specialCalculator(30);
+		assertEquals(180, n);
 	}
+
 	@Test
-	public void kiemTraSo15(){
-		boolean n = ts.kiemTraSo(15);
-		assertEquals(true, n);
+	public void kiemTraSo7() {
+		int n = ts.specialCalculator(7);
+		assertEquals(0, n);
 	}
+
 	@Test
-	public void kiemTraSo7(){
-		boolean n = ts.kiemTraSo(7);
-		assertEquals(true, n);
-	}
-	@Test
-	public void kiemTraSo1(){
-		boolean n = ts.kiemTraSo(1);
-		assertEquals(false, n);
-	}
-	
-	@Test
-	public void kiemTraSoAm1(){
-		boolean n = ts.kiemTraSo(-1);
-		assertEquals(false,n);
-	}
-	@Test
-	public void kiemtraSo1001(){
-		boolean n = ts.kiemTraSo(1001);
-		assertEquals(false, n);
+	public void kiemtraSo101() {
+		int n = ts.specialCalculator(101);
+		assertEquals(0, n);
 	}
 
 }
