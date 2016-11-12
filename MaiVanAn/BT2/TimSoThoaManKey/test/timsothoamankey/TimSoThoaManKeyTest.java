@@ -17,27 +17,26 @@ import static org.junit.Assert.*;
  * @author An
  */
 public class TimSoThoaManKeyTest {
-    
+
     public TimSoThoaManKeyTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
 
- 
     /**
      * Test of TimSo method, of class TimSoThoaManKey.
      */
@@ -49,6 +48,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoCanCucTieu() {
         long num = 69;
@@ -57,6 +57,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoGiua() {
         long num = 111;
@@ -65,6 +66,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoTrenGiua() {
         long num = 1000;
@@ -73,6 +75,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoCanCucDai() {
         long num = 10000;
@@ -81,6 +84,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoTFF() {
         long num = 100;
@@ -89,6 +93,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoFTF() {
         long num = 96;
@@ -97,6 +102,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoFFT() {
         long num = 92;
@@ -105,6 +111,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoTTT() {
         long num = 18;
@@ -113,6 +120,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoFTT() {
         long num = 18;
@@ -121,6 +129,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoTTF() {
         long num = 20;
@@ -129,6 +138,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoTFT() {
         long num = 15;
@@ -137,6 +147,7 @@ public class TimSoThoaManKeyTest {
         long result = TimSoThoaManKey.TimSo(num, key);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testTimSoFFF() {
         long num = 22;

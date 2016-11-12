@@ -39,7 +39,7 @@ public int TimNamNhuan(int nam) {
 | 7 |F			 |F			 |_ 		  |F       |
 | 8 |F           |F 		 |_			  |F       |
 
-
+- các giá trị "nam" thỏa mãn MCDC: nam = 1990, 2000, 2001, 2012.
 # Độ bao phủ
 
 ![Coverage](http://i.imgur.com/7dKSbjV.png)
