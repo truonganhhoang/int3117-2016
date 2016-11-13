@@ -4,7 +4,7 @@ Bài toán: Cho 3 số a,b,c nguyên dương tùy ý (a,b < 100). Nếu cả a v
 
 Code:
 
-![Test coverage detail](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/CoverageDetail.jpg)
+![Codel](https://github.com/hoangbd58/int3117-2016/blob/master/NguyenDuyHieu/BT2/img/Code.jpg)
 
 ## Bộ ca kiểm thử theo tiêu chuẩn MC/DC
 
