@@ -1,5 +1,7 @@
 # NHận xét bài tập Trần Văn Tú
 
+- Link xem bài : https://github.com/truonganhhoang/int3117-2016/tree/master/TranVanTu
+
 ## BT1
 
 - Không viết readme
