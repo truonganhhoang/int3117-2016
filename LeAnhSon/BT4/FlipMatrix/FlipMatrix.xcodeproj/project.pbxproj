@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACB883381DD9E5750027C3E7 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C1F1DD9DA00009C10E4 /* Matrix.swift */; };
+		ACB883391DD9E5790027C3E7 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C211DD9DA10009C10E4 /* ConsoleIO.swift */; };
+		ACB8833B1DDA12F90027C3E7 /* ConsoleIOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8833A1DDA12F90027C3E7 /* ConsoleIOTest.swift */; };
+		ACB8833C1DDA18710027C3E7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C0C1DD9D9C8009C10E4 /* main.swift */; };
+		ACE62C0D1DD9D9C8009C10E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C0C1DD9D9C8009C10E4 /* main.swift */; };
+		ACE62C1A1DD9D9DE009C10E4 /* FlipMatrixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C191DD9D9DE009C10E4 /* FlipMatrixTest.swift */; };
+		ACE62C201DD9DA00009C10E4 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C1F1DD9DA00009C10E4 /* Matrix.swift */; };
+		ACE62C221DD9DA10009C10E4 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C211DD9DA10009C10E4 /* ConsoleIO.swift */; };
+		ACE62C241DD9DAA1009C10E4 /* MatrixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE62C231DD9DAA1009C10E4 /* MatrixTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACE62C071DD9D9C8009C10E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ACB8833A1DDA12F90027C3E7 /* ConsoleIOTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleIOTest.swift; sourceTree = "<group>"; };
+		ACE62C091DD9D9C8009C10E4 /* FlipMatrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FlipMatrix; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE62C0C1DD9D9C8009C10E4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ACE62C171DD9D9DE009C10E4 /* FlipMatrixTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipMatrixTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE62C191DD9D9DE009C10E4 /* FlipMatrixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipMatrixTest.swift; sourceTree = "<group>"; };
+		ACE62C1B1DD9D9DE009C10E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE62C1F1DD9DA00009C10E4 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		ACE62C211DD9DA10009C10E4 /* ConsoleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		ACE62C231DD9DAA1009C10E4 /* MatrixTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE62C061DD9D9C8009C10E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE62C141DD9D9DE009C10E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACE62C001DD9D9C8009C10E4 = {
+			isa = PBXGroup;
+			children = (
+				ACE62C0B1DD9D9C8009C10E4 /* FlipMatrix */,
+				ACE62C181DD9D9DE009C10E4 /* FlipMatrixTest */,
+				ACE62C0A1DD9D9C8009C10E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE62C0A1DD9D9C8009C10E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE62C091DD9D9C8009C10E4 /* FlipMatrix */,
+				ACE62C171DD9D9DE009C10E4 /* FlipMatrixTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE62C0B1DD9D9C8009C10E4 /* FlipMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				ACE62C0C1DD9D9C8009C10E4 /* main.swift */,
+				ACE62C1F1DD9DA00009C10E4 /* Matrix.swift */,
+				ACE62C211DD9DA10009C10E4 /* ConsoleIO.swift */,
+			);
+			path = FlipMatrix;
+			sourceTree = "<group>";
+		};
+		ACE62C181DD9D9DE009C10E4 /* FlipMatrixTest */ = {
+			isa = PBXGroup;
+			children = (
+				ACE62C191DD9D9DE009C10E4 /* FlipMatrixTest.swift */,
+				ACE62C1B1DD9D9DE009C10E4 /* Info.plist */,
+				ACE62C231DD9DAA1009C10E4 /* MatrixTest.swift */,
+				ACB8833A1DDA12F90027C3E7 /* ConsoleIOTest.swift */,
+			);
+			path = FlipMatrixTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACE62C081DD9D9C8009C10E4 /* FlipMatrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE62C101DD9D9C8009C10E4 /* Build configuration list for PBXNativeTarget "FlipMatrix" */;
+			buildPhases = (
+				ACE62C051DD9D9C8009C10E4 /* Sources */,
+				ACE62C061DD9D9C8009C10E4 /* Frameworks */,
+				ACE62C071DD9D9C8009C10E4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipMatrix;
+			productName = FlipMatrix;
+			productReference = ACE62C091DD9D9C8009C10E4 /* FlipMatrix */;
+			productType = "com.apple.product-type.tool";
+		};
+		ACE62C161DD9D9DE009C10E4 /* FlipMatrixTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE62C1C1DD9D9DE009C10E4 /* Build configuration list for PBXNativeTarget "FlipMatrixTest" */;
+			buildPhases = (
+				ACE62C131DD9D9DE009C10E4 /* Sources */,
+				ACE62C141DD9D9DE009C10E4 /* Frameworks */,
+				ACE62C151DD9D9DE009C10E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipMatrixTest;
+			productName = FlipMatrixTest;
+			productReference = ACE62C171DD9D9DE009C10E4 /* FlipMatrixTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE62C011DD9D9C8009C10E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Anh Son Le";
+				TargetAttributes = {
+					ACE62C081DD9D9C8009C10E4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					ACE62C161DD9D9DE009C10E4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ACE62C041DD9D9C8009C10E4 /* Build configuration list for PBXProject "FlipMatrix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACE62C001DD9D9C8009C10E4;
+			productRefGroup = ACE62C0A1DD9D9C8009C10E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE62C081DD9D9C8009C10E4 /* FlipMatrix */,
+				ACE62C161DD9D9DE009C10E4 /* FlipMatrixTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE62C151DD9D9DE009C10E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE62C051DD9D9C8009C10E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE62C221DD9DA10009C10E4 /* ConsoleIO.swift in Sources */,
+				ACE62C201DD9DA00009C10E4 /* Matrix.swift in Sources */,
+				ACE62C0D1DD9D9C8009C10E4 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE62C131DD9D9DE009C10E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE62C241DD9DAA1009C10E4 /* MatrixTest.swift in Sources */,
+				ACB8833B1DDA12F90027C3E7 /* ConsoleIOTest.swift in Sources */,
+				ACB8833C1DDA18710027C3E7 /* main.swift in Sources */,
+				ACB883391DD9E5790027C3E7 /* ConsoleIO.swift in Sources */,
+				ACE62C1A1DD9D9DE009C10E4 /* FlipMatrixTest.swift in Sources */,
+				ACB883381DD9E5750027C3E7 /* Matrix.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ACE62C0E1DD9D9C8009C10E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACE62C0F1DD9D9C8009C10E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ACE62C111DD9D9C8009C10E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACE62C121DD9D9C8009C10E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ACE62C1D1DD9D9DE009C10E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlipMatrixTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BigDev.FlipMatrixTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACE62C1E1DD9D9DE009C10E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlipMatrixTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BigDev.FlipMatrixTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACE62C041DD9D9C8009C10E4 /* Build configuration list for PBXProject "FlipMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE62C0E1DD9D9C8009C10E4 /* Debug */,
+				ACE62C0F1DD9D9C8009C10E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE62C101DD9D9C8009C10E4 /* Build configuration list for PBXNativeTarget "FlipMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE62C111DD9D9C8009C10E4 /* Debug */,
+				ACE62C121DD9D9C8009C10E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE62C1C1DD9D9DE009C10E4 /* Build configuration list for PBXNativeTarget "FlipMatrixTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE62C1D1DD9D9DE009C10E4 /* Debug */,
+				ACE62C1E1DD9D9DE009C10E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACE62C011DD9D9C8009C10E4 /* Project object */;
+}
