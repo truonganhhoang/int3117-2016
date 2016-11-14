@@ -82,6 +82,7 @@ When we sum the values in the n x n submatrix in the upper-left quadrant, we get
     }
 ```
 ### Flowchart
+![alt tag](https://github.com/dungntm58/int3117-2016/blob/master/LeAnhSon/BT4/Resource/FlipSumChart.png)
 
 ### DU-Path
 du-path for i, j, result: 1, 2, 3, 4, 5, 6, 7, 8, 9.
