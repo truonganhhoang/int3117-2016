@@ -1,24 +1,43 @@
 BT1
+1. Ổn
 
-Phần được: 
-    - Mã nguồn tốt, đúng chuẩn. 
-    - Các unitTest tương đối tốt, đúng yêu cầu.
-    - Có sơ đồ khối.
-Phần chưa được: 
-    - chưa có file readme trình bày nội dung.
+Readme rõ ràng.
+SourceCode đúng chuẩn.
+Có áp dụng kỹ thuật kiểm thử biên, có nêu ưu điểm của kỹ thuật.
+Có sơ đồ khối.
+
+2. Chưa ổn
+
+Chưa có phần tính độ bao phủ.
+
 
 BT2
 
-Phần được: 
-    - Đã thay đổi bài toán phù hợp với yêu cầu của đề, mô tả bài toán đầy đủ.
-    - Mã nguồn tốt. 
-    - Các unitTest tương đối tốt, đúng yêu cầu.
-Phần chưa được: 
-    - chưa có file readme, chưa tính độ bao phủ. 
+1. Ổn
+
+File README.md trình bày tốt, dễ nhìn.
+SourceCode rõ ràng, dễ hiểu.
+Các unitTest tương đối tốt, đúng yêu cầu
+Có so sánh các ca kiểm thử đầy đủ và các ca kiểm thử sử dụng MCDC, có hình ảnh minh họa.
+Đã có phần tính độ bao phủ.
+
+2. Chưa ổn
+
+Chưa có TestCoverage.
 
 BT3
-Không có thư mục BT3
 
-Điểm : 6
+1. Ổn
+
+Có sơ đồ du-path cho các biến.
+SourceCode rõ ràng, dễ hiểu.
+Có so sánh All-DU-Path với MCDC
+
+2. Chưa ổn
+
+File README.md trình bày chưa rõ ràng, dễ nhìn.
+
+
+Điểm : 8
 
 Bài chấm điểm: https://github.com/truonganhhoang/int3117-2016/tree/master/TruongThiHongNhung
