@@ -5,3 +5,8 @@ NguyenTrongMinhDung/BT1/target/classes/com/robert/BT1/App.class
 NguyenTrongMinhDung/BT1/target/test-classes/com/robert/BT1/AppTest.class
 *.class
 *.db
+/DangThanhLong/BT1/target/
+/DangThanhLong/BT2/nbproject/
+/DangThanhLong/BT2/target/
+/DangThanhLong/BT3/nbproject/
+/DangThanhLong/BT3/target/
