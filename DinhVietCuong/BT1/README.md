@@ -14,29 +14,29 @@ Các trường hợp:
 
 - Mảng có 1 phần tử. Khóa tìm kiếm có giá trị 
 
-  	lớn hơn phần tử đó
+  lớn hơn phần tử đó
 
-  	nhỏ hơn phần tử đó
+  nhỏ hơn phần tử đó
 
-  	bằng đúng phần tử đó
+  bằng đúng phần tử đó
 
 - Mảng có nhiều hơn 1 phần tử.
+  
+  Trường hợp khóa tìm kiếm không có trong mảng: giá trị của khóa tìm kiếm:
 
-    Trường hợp khóa tìm kiếm không có trong mảng: giá trị của khóa tìm kiếm:
+ 	lớn hơn phần tử lớn nhất
+  
+  nhỏ hơn phần tử nhỏ nhất
 
-    	lớn hơn phần tử lớn nhất
-
-    	nhỏ hơn phần tử nhỏ nhất
-
-      nằm giữa giá trị lớn nhất và nhỏ nhất
+  nằm giữa giá trị lớn nhất và nhỏ nhất
 
   Trường hợp khóa tìm kiếm có trong mảng: giá trị của khóa tìm kiếm
 
-  	là phần tử lớn nhất (vị trí đầu tiên)
+ 	là phần tử lớn nhất (vị trí đầu tiên)
 
-    là phần tử nhỏ nhất (vị trí cuối cùng)
+  là phần tử nhỏ nhất (vị trí cuối cùng)
 
-    là phần tử bất kì
+  là phần tử bất kì
     
     
 
