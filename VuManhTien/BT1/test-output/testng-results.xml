@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61" started-at="2016-11-02T11:46:25Z" finished-at="2016-11-02T11:46:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61" started-at="2016-11-02T11:46:25Z" finished-at="2016-11-02T11:46:25Z">
+      <class name="testcode.TestEstimates">
+        <test-method status="PASS" signature="testTimSoUoc()[pri:0, instance:testcode.TestEstimates@b49626]" name="testTimSoUoc" duration-ms="20" started-at="2016-11-02T18:46:25Z" finished-at="2016-11-02T18:46:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTimSoUoc -->
+        <test-method status="PASS" signature="testTimSoUocAdvance()[pri:0, instance:testcode.TestEstimates@b49626]" name="testTimSoUocAdvance" duration-ms="4" started-at="2016-11-02T18:46:25Z" finished-at="2016-11-02T18:46:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTimSoUocAdvance -->
+      </class> <!-- testcode.TestEstimates -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

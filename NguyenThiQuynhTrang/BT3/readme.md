@@ -36,4 +36,6 @@ C4: (Character.isLowerCase(code))
 C5: (Character.isDigit(code))
 
 ## test theo All_DU_Paths
+github : https://github.com/ducanhk58uet/int3117-2016/blob/master/NguyenThiQuynhTrang/BT3/all_du_paths.png
+local : E:\int3117-2016\NguyenThiQuynhTrang\BT3
 
