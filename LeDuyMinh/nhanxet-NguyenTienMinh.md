@@ -5,7 +5,6 @@ Phần được:
 
 Phần chưa được:
 
- - Cần nêu rõ các bước áp dụng kiểm thử biên và lí do chọn phương pháp đó trong file readme.
  - Nên đo độ bao phủ bằng công cụ và chụp ảnh đưa vào file readme.
 
 **BT2**
@@ -24,8 +23,6 @@ Phần được:
 
 Phần chưa được:
 
- - Thiếu file readme.
  - Cần đưa phần các đường du-path và tính test case vào file readme.
- - Thiếu phần so sánh với phương pháp MCDC và nhận xét.
 
-**Điểm: 7**
+**Điểm: 8.5**

@@ -1,0 +1,23 @@
+﻿Nhận xét bài tập của Lương Thị Trang
+_BT1: Tốt, khá đầy đủ nội dung
+Được:
+    +) Readme rõ ràng
+    +) Code đúng
+    +) Có áp dụng kỹ thuật kiểm thử miền tương đương, nêu rõ lý do áp dụng kỹ thuật
+    +) Testcase có đủ các trường hợp
+     +) Có tính độ bao phủ, cả áp dụng cả đồ thị chương trình.
+Chưa được: Độ bao phủ chưa cao lắm
+_BT2:
+Được:
+     +) Readme trình bày tốt, dễ nhìn
+     +) Code đúng
+     +) Đầy đủ cho thấy sự khác nhau khi áp dụng kỹ thuật và không áp dụng kỹ thuật MCDC
+     +) Có cả các testcase
+Chưa được: Chưa tính độ bao phủ
+_BT3:
+Được: 
+      +) Code dễ hiểu
+      +)Có hình ảnh thể hiện các luồng dữ liệu rõ ràng
+Chưa được
+      +) Thiếu file readme
+=> Điểm: 8 điểm
