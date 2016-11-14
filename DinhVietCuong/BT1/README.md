@@ -10,53 +10,55 @@ Sử dụng phương pháp kiểm thử lớp tương đương vì:
 
 Các trường hợp:
 
-- Mảng không có phần tử nào.
+Mảng không có phần tử nào.
 
-- Mảng có 1 phần tử. Khóa tìm kiếm có giá trị 
+Mảng có 1 phần tử. Khóa tìm kiếm có giá trị 
 
-•	lớn hơn phần tử đó
+    lớn hơn phần tử đó
 
-•	nhỏ hơn phần tử đó
+    nhỏ hơn phần tử đó
 
-•	bằng đúng phần tử đó
+    bằng đúng phần tử đó
+  
+Mảng có nhiều hơn 1 phần tử.
+  
+  Trường hợp khóa tìm kiếm không có trong mảng: giá trị của khóa tìm kiếm:
 
-- Mảng có nhiều hơn 1 phần tử.
+ 	    lớn hơn phần tử lớn nhất
+  
+      nhỏ hơn phần tử nhỏ nhất
 
-Trường hợp khóa tìm kiếm không có trong mảng: giá trị của khóa tìm kiếm:
+      nằm giữa giá trị lớn nhất và nhỏ nhất
 
-•	lớn hơn phần tử lớn nhất
+  Trường hợp khóa tìm kiếm có trong mảng: giá trị của khóa tìm kiếm
 
-•	nhỏ hơn phần tử nhỏ nhất
+ 	    là phần tử lớn nhất (vị trí đầu tiên)
 
-•	nằm giữa giá trị lớn nhất và nhỏ nhất
+      là phần tử nhỏ nhất (vị trí cuối cùng)
 
-Trường hợp khóa tìm kiếm có trong mảng: giá trị của khóa tìm kiếm
+      là phần tử bất kì
+    
+    
 
-•	là phần tử lớn nhất (vị trí đầu tiên)
+       Số lượng phần tử        	Mảng  	          Khóa tìm kiếm	    Vị trí	Pass/Fail
 
-•	là phần tử nhỏ nhất (vị trí cuối cùng)
+       0	                      {}	              1	                0   	P
 
-•	là phần tử bất kì
+       1	                      {10}              3	                0	    P
 
-Số lượng phần tử        	Mảng  	Khóa tìm kiếm	    Vị trí	Pass/Fail
+       1	                      {10}	            20	              0   	P
 
-0	                  {}	1	0	P
+       1                       	{10}	            10	              1     P
 
-1	{10}	3	0	P
+       4                       	{10, 15, 20, 25}	5	                0	    P
 
-1	{10}	20	0	P
+       4	                      {10, 15, 20, 25}	30	              0	    P
 
-1	{10}	10	1	P
+       4	                      {10, 15, 20, 25}	22	              0	    P
 
-4	{10, 15, 20, 25}	5	0	P
+       4	                      {10, 15, 20, 25}	25	              4	    P
 
-4	{10, 15, 20, 25}	30	0	P
+       4                       	{10, 15, 20, 25}  10	              1	    P
 
-4	{10, 15, 20, 25}	22	0	P
-
-4	{10, 15, 20, 25}	25	4	P
-
-4	{10, 15, 20, 25}	10	1	P
-
-4	{10, 15, 20, 25}	15	2	P
+       4                       	{10, 15, 20, 25}	15	              2   	P
 
