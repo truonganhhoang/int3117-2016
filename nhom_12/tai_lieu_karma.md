@@ -33,34 +33,32 @@ Có 6 điều sẽ thuyết phục bạn sử dụng Karma cho dự án của m�
 - Trước tiên, bạn cần cài đặt Nodejs [Nodejs](https://nodejs.org/) và npm.
 - Karma và plugin:
 
->*// Install Karma:*
-	$ npm install karma --save-dev
-	
- > *//Install plugins that your project needs:*
-	$ npm install karma-jasmine karma-chrome-launcher --save-dev
+>	$ npm install karma --save-dev
 
->*// Run Karma:*
-	$ ./node_modules/karma/bin/karma start
-ádf
+>	$ npm install karma-jasmine karma-chrome-launcher --save-dev
+
+>	$ ./node_modules/karma/bin/karma start
+
 
 - Commandline Interface
->$ npm install -g karma-cli
+> $ npm install -g karma-cli
 
 ### II.2. Config
 - Tạo file config: Gõ lệnh `karma init karma-unit.conf.js` để tạo file cấu hình.
 - Cấu trúc chung cho một file config:
-> *// karma.conf.js*
-module.exports = function(config) {
-  config.set({
-    basePath: '../..',
-    frameworks: ['jasmine'],
-    //...
-  });
-};
+
+> module.exports = function(config) {
+>  config.set({
+>    basePath: '../..',
+>    frameworks: ['jasmine'],
+>    //...
+>  });
+> };
 
 - Chạy test:
-> *// Start Karma using your configuration:*
-$ karma start my.conf.js
+
+> $ karma start my.conf.js
+
 ### II.3. Thông số trong file config
 Các thông số chi tiết được viết rất rõ trong [Document](https://karma-runner.github.io/1.0/config/configuration-file.html) của Karma. Trong này, chỉ có một số thống số cơ bản đủ để bạn có thể cài đặt cho test của mình.
 
@@ -70,18 +68,12 @@ Các thông số chi tiết được viết rất rõ trong [Document](https://k
 
 #### autoWatch
 **Type**: Boolean
+
 **Default**: `true`
+
 **CLI**: `--auto-watch`, `--no-auto-watch`
+
 **Description**: Tự động phát hiện các file khi chúng có sự thay đổi.
-
-
-----------
-
-
-#### basePath
-**Type**: String
-**Default**: ''
-**Description**: The root path location that will be used to resolve all relative paths defined in files and exclude. If the basePath configuration is a relative path, then it will be resolved to the __dirname of the configuration file.
 
 
 ----------
@@ -89,7 +81,9 @@ Các thông số chi tiết được viết rất rõ trong [Document](https://k
 
 #### browserDisconnectTimeout
 **Type**: Number
+
 **Default**: 2000
+
 **Description**: Thời gian mà Karma chờ khi browser kết nối lại.
 
 
@@ -98,8 +92,11 @@ Các thông số chi tiết được viết rất rõ trong [Document](https://k
 
 #### browsers
 **Type**: Array
+
 **Default**: []
+
 **CLI**: `--browsers Chrome`, `Firefox`
+
 **Possible Values**:
 - Chrome (launcher comes installed with Karma)
 - ChromeCanary (launcher comes installed with Karma)
@@ -111,59 +108,114 @@ Các thông số chi tiết được viết rất rõ trong [Document](https://k
 
 **Description**: Danh sách các browser được chạy khi chạy Karma (http://localhost:9876/).
 
+----------
+
+
 #### colors
 **Type**: Boolean
+
 **Default**: `true`
+
 **CLI**: `--colors`, `--no-colors`
+
 **Description**: Hiển thị hoặc ẩn đi màu của output (reporters và logs).
+
+----------
+
 
 #### exclude
 **Type**: Array
+
 **Default**: []
+
 **Description**: Danh sách files/patterns Karma bỏ qua không duyệt.
+
+----------
+
 
 #### files
 **Type**: Array
+
 **Default**: []
+
 **Description**: Danh sách files/patterns Karma sẽ quét và tìm ra các Unit test, đồng thời nếu các file/patterns có sự thay đổi thì sẽ được Karma phát hiện.
+
+----------
+
 
 #### frameworks
 **Type**: Array
+
 **Default**: []
+
 **Description**: Danh sách các Framework mà bạn muốn sử dụng: Jasmine, Mocha, QUnit, ...
+
+----------
+
 
 #### hostname
 **Type**: String
+
 **Default**: 'localhost'
+
 **Description**: Hostname sử dụng khi chạy browser.
+
+----------
+
 
 #### port
 **Type**: Number
+
 **Default**: 9876
+
 **CLI**: `--port 9876`
+
 **Description**: Cổng mà web server lắng nghe.
+
+----------
+
 
 #### protocol
 **Type**: String
+
 **Default**: 'http:'
+
 **Possible Values**: `http:`, `https:`
+
 **Description**: Giao thức chạy trên Karma webserver.
+
+----------
+
 
 #### reporters
 **Type**: Array
+
 **Default**: ['progress']
+
 **CLI**: `--reporters progress`, `growl`
+
 **Possible Values**: `dots`, `progress`
+
 **Description**: Danh sách các reporter được sử dụng.
+
+----------
+
 
 #### restartOnFileChange
 **Type**: Boolean
+
 **Default**: false
+
 **Description**: Khi Karma phát hiện các file trong project có sự thay đổi, `true` thì nó sẽ tự động khởi động lại việc chạy test, còn `false` thì ngược lại.
+
+----------
+
 
 #### retryLimit
 **Type**: Number
+
 **Default**: 2
+
 **Description**:  Khi browser bị crash, Karma sẽ khởi động lại browser đó, `retryLimit` quy định số lần khởi động lại đó.
 
 ## III. Demo
