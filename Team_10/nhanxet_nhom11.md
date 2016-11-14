@@ -11,7 +11,7 @@
 	* Web phản hồi, độ phân giải trên các thiết bị
 	
 ##Nhận xét:
-	* Có chuẩn bị đầy đủ về nội dung
-	* Slide ngắn gọn, dễ nhìn đầy đủ ý
-	* Demo đầy đủ 3 chức năng giới thiệu
-	* Có hướng dẫn cài đặt và chạy thử
+* Có chuẩn bị đầy đủ về nội dung
+* Slide ngắn gọn, dễ nhìn đầy đủ ý
+* Demo đầy đủ 3 chức năng giới thiệu
+* Có hướng dẫn cài đặt và chạy thử
