@@ -20,10 +20,3 @@
 
 - Update Money result
 ![alt tag](https://github.com/dungntm58/int3117-2016/blob/master/LeAnhSon/BT2/Resource/bankCaculatorUpdateMoney.png)
-
-## Improve test case with du-path in updateMoney function
-
-![alt tag](https://github.com/dungntm58/int3117-2016/blob/master/LeAnhSon/BT3/Resource/bankCaculatorDUPath.png)
-
-- Du-path: 1-2-3-7
-           1-2-3-4-5-6-7
