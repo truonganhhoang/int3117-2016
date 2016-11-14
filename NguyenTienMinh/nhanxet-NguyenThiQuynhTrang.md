@@ -1,5 +1,5 @@
 # Nhận xét bài tập về nhà bạn Nguyễn Thị Quỳnh Trang
-[Nguồn](https://github.com/truonganhhoang/int3117-2016/tree/master/NguyenThiQuynhTrang)
+[Nguồn bài tập](https://github.com/truonganhhoang/int3117-2016/tree/master/NguyenThiQuynhTrang)
 
 ##Bài 1:
 ###Ưu điểm:
