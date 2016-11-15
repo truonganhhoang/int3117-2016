@@ -80,7 +80,7 @@ public class FindNumber {
 
 ## Hình ảnh
 
-- ![alt text](https://raw.githubusercontent.com/truonganhhoang/int3117-2016/master/HoangVanNha/BT2/image/Graph-BT2.png "Source Code Graph")
+- ![alt text](https://raw.githubusercontent.com/truonganhhoang/int3117-2016/master/HoangVanNha/BT2/image/Graph-BT2.png "Image Graph")
 -  ![alt text](https://raw.githubusercontent.com/truonganhhoang/int3117-2016/master/HoangVanNha/BT2/image/Coverage-1%20(2).png "Image coverage 1")
 
 -  ![alt text](https://raw.githubusercontent.com/truonganhhoang/int3117-2016/master/HoangVanNha/BT2/image/Coverage-2%20(2).png "Image coverage 2")
