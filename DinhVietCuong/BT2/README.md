@@ -34,7 +34,7 @@ Trong else có lệnh while và vòng if thứ 2:
 
 if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122))
 
-	(C)	          (D)               (E)	           (F)
+		(C)	          (D)               (E)	           (F)
 
 Các trường hợp:
 
