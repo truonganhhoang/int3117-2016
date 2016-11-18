@@ -41,15 +41,15 @@ Trường hợp khóa tìm kiếm có trong mảng: giá trị của khóa tìm 
 Bảng kết quả kiểm thử   
 
 
-      Số lượng phần tử     	Mảng  	          Khóa tìm kiếm	    Vị trí	Pass/Fail
+      Số lượng phần tử    	Mảng  	          Khóa tìm kiếm	    Vị trí	Pass/Fail
 
       0	                    {}	               1	                0   	P
 
       1	                    {10}               3	                0	    P
 
-      1	                    {10}	           20	                0   	P
+      1	                    {10}	             20	                0   	P
 
-      1                     {10}	           10	                1       P
+      1                     {10}	             10	                1     P
 
       4                     {10, 15, 20, 25}   5	                0	    P
 
