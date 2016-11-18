@@ -68,9 +68,9 @@ Các trường hợp:
 
 	14				F	F	T	F		F
 
-	15			F	T	F	F		F	=> trường hợp này không xảy ra
+	15				F	T	F	F		F	=> trường hợp này không xảy ra
 
-	16			F	F	F	F		F 	=> trường hợp này không xảy ra
+	16				F	F	F	F		F 	=> trường hợp này không xảy ra
 
 => ta tính được các test case:
 
