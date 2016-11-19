@@ -1,1 +1,2 @@
-
+- [ ] Demo checklist 1
+- [ ] Demo checklist 2
