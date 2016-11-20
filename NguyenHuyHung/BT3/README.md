@@ -78,3 +78,10 @@
 ## Độ bao phủ:
 
 ![Test result](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT3/image/converage.JPG)
+## Nhận xét, so sánh về All-DU-Path và MCDC
+
+- MCDC đảm bảo thực hiện tất cả các điều kiện đơn vì thế nó chặt chẽ hơn về bao phủ nhánh (branch).
+- All-DU-Path dựa vào đồ thị chu trình để tạo các ca kiểm thử vì thế nó hỗ tợ kiểm tra bao phủ dòng lệnh rất tốt.
+- Với bao phủ nhánh, All-DU-Path không chặt chẽ bằng MCDC.
+- All-DU-Path giúp chúng ta kiểm tra dòng dữ liệu.
+
