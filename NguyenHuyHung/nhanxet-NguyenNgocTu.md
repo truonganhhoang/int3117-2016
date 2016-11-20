@@ -11,6 +11,7 @@
   + Cấu trúc thư mục khá phức tạp nên loại bỏ phần không cần thiết và có mô tả cho người khác tiện theo dõi.
   + Nên để báo cáo theo từng tuần để tiện theo dõi, so sánh. (bài tập 1 có 3 tuần.)
   + Thêm code tại readme để người xem tiện theo dõi hơn.
+  + Chưa có giới thiệu về các công nghệ được sử dụng
 
 ## Nhận xét BT2
 - Ổn:
