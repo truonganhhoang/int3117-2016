@@ -36,7 +36,7 @@
 ```
 
 ## Đồ thị chu trình:
-![Diagram](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT3/image/diagram.jpg)
+![Diagram](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT3/image/diagram.JPG)
 
 ## Xác định đường đi DU và các ca kiểm thử tương ứng:
 
@@ -73,8 +73,8 @@
 
 ## Kết quả Test
 
-![Test result](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT3/image/result.jpg)
+![Test result](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT3/image/result.JPG)
 
 ## Độ bao phủ:
 
-![Test result](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT2/image/converage.jpg)
+![Test result](https://github.com/hungnh58/int3117-2016/blob/master/NguyenHuyHung/BT3/image/converage.JPG)
