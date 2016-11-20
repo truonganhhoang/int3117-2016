@@ -58,6 +58,7 @@
  
 * Biến conferred:
   + `B --> C (p,c) --> D (c) --> E (p,c) --> F (d,c) --> H (p,c) --> I (d) --> K:`
+  + `B --> C (p,c) --> D (c) --> E (p,c) --> K:`
   Ca kiểm thử cho chu trình của conferred:
   ```java
   @Test
