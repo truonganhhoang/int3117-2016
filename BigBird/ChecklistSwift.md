@@ -711,4 +711,172 @@ launch(&rocket)
 let tuples = zip(a, b)  // feels natural as a free function (symmetry)
 let value = max(x,y,z)  // another free function that feels natural
 ```
-
+## Quản lý bộ nhớ
+Code (kể cả code không phải sản phẩm, code demo để hướng dẫn) không nên tạo ra chu trình tham chiếu. Phân tích biểu đồ đối tượng của bạn và ngăn chặn chu trình mạnh  bằng tham chiếu `weak` và `unowned` . Ngoài ra, sử dụng các kiểu giá trị (`struct`, `enum`) để giải thoát chu trình khép kín.
+### Mở rộng thời gian sống của đối tượng
+Mở rộng thời gian sống của đối tượng sử dụng `[weak self]` và `guard let strongSelf = self else { return }`. `[weak self]` được khuyến khích hơn `[unowned self]` khi không chắc chắn về `self` còn sống ngoài closure hay không. Rõ ràng mở rộng thời gian sống được ưa chuộng hơn lựa chọn unwrap.
+**Preferred**
+```swift
+resource.request().onComplete { [weak self] response in
+  guard let strongSelf = self else { return }
+  let model = strongSelf.updateModel(response)
+  strongSelf.updateUI(model)
+}
+```
+**Not Preferred**
+```swift
+// might crash if self is released before response returns
+resource.request().onComplete { [unowned self] response in
+  let model = self.updateModel(response)
+  self.updateUI(model)
+}
+```
+**Not Preferred**
+```swift
+// deallocate could happen between updating the model and updating UI
+resource.request().onComplete { [weak self] response in
+  let model = self?.updateModel(response)
+  self?.updateUI(model)
+}
+```
+## Mức truy cập
+Chú thích điều khiển truy cập đầy đủ trong hướng dẫn có thể làm phân tâm chủ đề chính và không được yêu cầu. Sử dụng `private` một cách thích hợp, tuy nhiên, nên thêm sự rõ ràng và khuyến khích sự đóng gói. Sử dụng `private` như là sự xác định tính chất hang đầu. Điều duy nhất cần chú ý đó là nó nên được dùng trước các điều khiển truy cập như là `static` hoặc các thuộc tính như `@IBAction` và `@IBOutlet`.
+**Preferred:**
+```swift
+class TimeMachine { 
+  private dynamic lazy var fluxCapacitor = FluxCapacitor()
+}
+```
+**Not Preferred:**
+```swift
+class TimeMachine { 
+  lazy dynamic private var fluxCapacitor = FluxCapacitor()
+}
+```
+## Điều khiển luồng
+Khuyến khích dùng kiểu for-in của vòng lặp for hơn là kiểu while-condition-increment.
+**Preferred:**
+```swift
+for _ in 0..<3 {
+  print("Hello three times")
+}
+ 
+for (index, person) in attendeeList.enumerate() {
+  print("\(person) is at position #\(index)")
+}
+ 
+for index in 0.stride(to: items.count, by: 2) {
+  print(index)
+}
+ 
+for index in (0...3).reverse() {
+  print(index)
+}
+```
+**Not Preferred:**
+```swift
+var i = 0
+while i < 3 {
+  print("Hello three times")
+  i += 1
+}
+ 
+ 
+var i = 0
+while i < attendeeList.count {
+  let person = attendeeList[i]
+  print("\(person) is at position #\(i)")
+  i += 1
+}
+```
+## Con đường vàng (Golden Path)
+Khi code với các câu điều kiện, khoảng lề bên trái code được gọi là “con đường vàng” hoặc “con đường hạnh phúc”. Nó có nghĩa là không nên lồng câu lệnh `if`. Nhiều lệnh `return` thì OK.
+Câu lệnh `guard` được xây dựng để xử lí điều này.
+**Preferred:**
+```swift
+func computeFFT(context: Context?, inputData: InputData?) throws -> Frequencies {
+ 
+  guard let context = context else { throw FFTError.noContext }
+  guard let inputData = inputData else { throw FFTError.noInputData }
+ 
+  // use context and input to compute the frequencies
+ 
+  return frequencies
+}
+```
+**Not Preferred:**
+```swift
+func computeFFT(context: Context?, inputData: InputData?) throws -> Frequencies {
+ 
+  if let context = context {
+	if let inputData = inputData {
+  	// use context and input to compute the frequencies
+ 
+  	return frequencies
+	}
+	else {
+  	throw FFTError.noInputData
+	}
+  }
+  else {
+	throw FFTError.noContext
+  }
+}
+```
+Khi nhiều lựa chọn không được bao bọc bởi guard or if let, tối thiểu hóa sự lồng nhau bằng cách sử dụng phiên bản phức tạp  nếu có thể. Ví dụ:
+**Preferred:**
+```swift
+guard let number1 = number1, number2 = number2, number3 = number3 else { fatalError("impossible") }
+// do something with numbers
+```
+**Not Preferred:**
+```swift
+if let number1 = number1 {
+  if let number2 = number2 {
+	if let number3 = number3 {
+  	// do something with numbers
+	}
+	else {
+  	fatalError("impossible")
+	}
+  }
+  else {
+	fatalError("impossible")
+  }
+}
+else {
+  fatalError("impossible")
+}
+```
+## Bảo vệ khi bị fail
+Các câu lệnh bảo vệ được yêu cầu để thoát ra ngoài bằng một số cách. Thông thường, nó là một dòng lệnh đơn giản như là `return`, `throw`, `break`, `continue` và `fatalError()`. Một khối lệnh lớn sẽ được bỏ qua. Nếu cleanup code được yêu cầu để có nhiều điểm thoát ra, ta sẽ xem xét sử dụng một khối `defer` để bỏ qua code bị trùng lặp.
+## Dấu chấm phẩy
+Swift không yêu cầu dấu chấm phẩy sau mỗi dòng lệnh. Chúng chỉ được yêu cầu nếu bạn muốn kết hợp nhiều câu lệnh trong một dòng.
+ 
+Không khuyến khích viết nhiều câu lệnh trên cùng một dòng được ngăn cách bởi dấu chấm phẩy.
+ 
+Ngoại lệ duy nhất của luật này là cấu trúc `for-conditional-increment`, cấu trúc này bắt buộc phải có dấu chấm phẩy. Tuy nhiên, cấu trúc `for-in` có thể cũng được sử dụng nếu có thể.
+ 
+**Preferred:**
+```swift
+let swift = "not a scripting language"
+```
+**Not Preferred:**
+```swift
+let swift = "not a scripting language";
+```
+***NOTE:*** Swift rất khác so với JavaScript, khi mà bỏ qua dấu chấm phẩy  thông thường được xem là không an toàn.
+## Dấu ngoặc đơn
+Dấu ngoặc đơn bao bọc các câu điều kiện không được khuyến khích và nên được bỏ qua.
+**Preferred:**
+```swift
+if name == "Hello" {
+  print("World")
+}
+```
+**Not Preferred:**
+```swift
+if (name == "Hello") {
+  print("World")
+}
+```
