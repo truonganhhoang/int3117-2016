@@ -1,36 +1,36 @@
-*Translated from https://github.com/airbnb/javascript/blob/master/react/README.md
+*Translated from https://github.com/airbnb/javascript/blob/master/react/README.md*
 
 # Airbnb React/JSX Style Guide
 
-*A mostly reasonable approach to React and JSX*
+*Một phương cách tiếp cận hợp lý nhất với React và JSX*
 
 ## Table of Contents
 
-  1. [Basic Rules](#basic-rules)
-  1. [Class vs `React.createClass` vs stateless](#class-vs-reactcreateclass-vs-stateless)
-  1. [Naming](#naming)
-  1. [Declaration](#declaration)
-  1. [Alignment](#alignment)
-  1. [Quotes](#quotes)
-  1. [Spacing](#spacing)
+  1. [Nguyên tắc cơ bản](#nguyên-tắc-cơ-bản)
+  1. [Lớp vs `React.createClass` vs Phi trạng thái](#lớp-vs-reactcreateclass-vs-phi-trạng-thái)
+  1. [Quy tắc đặt tên](#quy-tắc-đặt-tên)
+  1. [Khai báo](#khai-báo)
+  1. [Căn chỉnh](#căn-chỉnh)
+  1. [Dấu ngoặc kép](#dấu-ngoặc-kép)
+  1. [Sự cách khoảng](#sự-cách-khoảng)
   1. [Props](#props)
   1. [Refs](#refs)
-  1. [Parentheses](#parentheses)
+  1. [Dấu ngoặc đơn](#dấu-ngoặc-đơn)
   1. [Tags](#tags)
-  1. [Methods](#methods)
-  1. [Ordering](#ordering)
+  1. [Phương thức](#phương-thức)
+  1. [Thứ tự phương thức](#thứ-tự-phương-thức)
   1. [`isMounted`](#ismounted)
 
-## Basic Rules
+## Nguyên tắc cơ bản
 
-  - Only include one React component per file.
-    - However, multiple [Stateless, or Pure, Components](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions) are allowed per file. eslint: [`react/no-multi-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless).
-  - Always use JSX syntax.
-  - Do not use `React.createElement` unless you're initializing the app from a file that is not JSX.
+  - Chỉ bao gồm một thành phân React trong mỗi file
+    - Tuy nhiên, nhiều [Stateless, or Pure, Components](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions) có thể được bao gồm trong cùng một file. eslint: [`react/no-multi-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless).
+  - Luôn luôn sử cú pháp của JSX.
+  - Đừng sử dụng `React.createElement` trừ khi bạn đang khởi tạo ứng dụng từ một file không phải là JSX.
 
-## Class vs `React.createClass` vs stateless
+## Lớp vs `React.createClass` vs Phi trạng thái
 
-  - If you have internal state and/or refs, prefer `class extends React.Component` over `React.createClass` unless you have a very good reason to use mixins. eslint: [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md) [`react/prefer-stateless-function`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md)
+  - Nếu bạn có state (trạng thái) cục bộ và/hoặc refs (trả về một tham chiếu đến các thành phần DOM), ưu tiên `class extends React.Component` hơn `React.createClass` trừ khi bạn có lí do phù hợp để sử dụng mixins. eslint: [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md) [`react/prefer-stateless-function`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md)
 
     ```jsx
     // bad
@@ -50,7 +50,7 @@
     }
     ```
 
-    And if you don't have state or refs, prefer normal functions (not arrow functions) over classes:
+    Và nếu bạn không quản lý trạng thái hay refs, thì hãy ưu tiên các hàm thông thường (không phải hàm con trỏ) hơn các lớp:
 
     ```jsx
     // bad
@@ -71,11 +71,11 @@
     }
     ```
 
-## Naming
+## Quy tắc đặt tên
 
-  - **Extensions**: Use `.jsx` extension for React components.
-  - **Filename**: Use PascalCase for filenames. E.g., `ReservationCard.jsx`.
-  - **Reference Naming**: Use PascalCase for React components and camelCase for their instances. eslint: [`react/jsx-pascal-case`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
+  - **Phần mở rộng**: Dùng `.jsx` cho các thành phân của React.
+  - **Tên tệp**: áp dụng PascalCase cho tên tệp. E.g., `ReservationCard.jsx`.
+  - **Đặt tên cho tham chiêu**: áp dụng PascalCase cho tên các thành phần React và camelCase cho tên thực thể của chúng. eslint: [`react/jsx-pascal-case`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
 
     ```jsx
     // bad
@@ -91,7 +91,7 @@
     const reservationItem = <ReservationCard />;
     ```
 
-  - **Component Naming**: Use the filename as the component name. For example, `ReservationCard.jsx` should have a reference name of `ReservationCard`. However, for root components of a directory, use `index.jsx` as the filename and use the directory name as the component name:
+  - **Đặt tên thành phần**: sử dụng tên file như là tên của thành phần. Ví dụ, `ReservationCard.jsx` nên có tên tham chiếu là tên của `ReservationCard`. Tuy nhiên, với các thành phần gốc của thư mục, sử dụng `index.jsx` như tên file và sử dụng tên thư mục như tên của thành phần:
 
     ```jsx
     // bad
@@ -103,9 +103,9 @@
     // good
     import Footer from './Footer';
     ```
-  - **Higher-order Component Naming**: Use a composite of the higher-order component's name and the passed-in component's name as the `displayName` on the generated component. For example, the higher-order component `withFoo()`, when passed a component `Bar` should produce a component with a `displayName` of `withFoo(Bar)`.
+  - **Đặt tên thành phần có thứ tự ưu tiên cao hơn**: Sử dụng sự kết hợp của tên thành phần có thứ tự ưu tiên cao hơn và tên của thành phần được truyền vào như `displayName` ở thành phần được tạo. Ví dụ, Thành phần ưu tiên `withFoo()`, khi truyền một thành phần `Bar` nên tạo ra một thành phần với `displayName` của `withFoo(Bar)`.
 
-  > Why? A component's `displayName` may be used by developer tools or in error messages, and having a value that clearly expresses this relationship helps people understand what is happening.
+  > Tại sao? Vì `displayName` của một thành phần có thể được dùng bởi các công cụ phát triên hoặc các tin nhắn báo lỗi, và có một giá trị mà biểu đạt rõ ràng rằng mỗi quan hệ này giúp người dùng hiểu điều gì đang diễn ra.
 
     ```jsx
     // bad
@@ -130,9 +130,9 @@
     }
     ```
 
-  - **Props Naming**: Avoid using DOM component prop names for different purposes.
+  - **Đặt tên Props**: Props được sử dụng khi người dùng cần lưu trữ dữ liệu chỉ để đọc, không thể cập nhật thay đổi. Tránh sử dụng các tên prop của thành phần DOM cho các mục đích khác nhau.
 
-  > Why? People expect props like `style` and `className` to mean one specific thing. Varying this API for a subset of your app makes the code less readable and less maintainable, and may cause bugs.
+  > Tại sao? Chúng ta kỳ vong prop như `style` và `className` để định nghĩa một thứ cụ thể. Biến đối API này cho một tập con của ứng dụng khiến cho các đoạn mã khó đọc và giảm khả năng duy trì, và có thể gây ra các lỗi.
 
     ```jsx
     // bad
@@ -142,9 +142,9 @@
     <MyComponent variant="fancy" />
     ```
 
-## Declaration
+## Khai báo
 
-  - Do not use `displayName` for naming components. Instead, name the component by reference.
+  - Không sử dụng `displayName` cho việc đặt tên thành phần. Thay vào đó, đặt tên thành phần bằng tham chiếu.
 
     ```jsx
     // bad
@@ -158,9 +158,9 @@
     }
     ```
 
-## Alignment
+## Căn chỉnh
 
-  - Follow these alignment styles for JSX syntax. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
+  - Tuân theo phương cách căn chỉnh này cho cú pháp của JSX. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
     ```jsx
     // bad
@@ -185,11 +185,11 @@
     </Foo>
     ```
 
-## Quotes
+## Dấu ngoặc kép
 
-  - Always use double quotes (`"`) for JSX attributes, but single quotes (`'`) for all other JS. eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
+  - Luôn luôn dùng dấu ngoặc kép (`"`) cho các biến JSX, dấu ngoặc đơn (`'`) cho tất cả các trường hợp khác của JS. eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
 
-  > Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.
+  > Tại sao? Biến HTML thông thưỡng cũng sử dụng dấu ngoặc kép thay cho ngoặc đơn, vì thế biến của JSX cũng áp dụng quy ước này.
 
     ```jsx
     // bad
@@ -205,9 +205,9 @@
     <Foo style={{ left: '20px' }} />
     ```
 
-## Spacing
+## Sự cách khoảng
 
-  - Always include a single space in your self-closing tag. eslint: [`no-multi-spaces`](http://eslint.org/docs/rules/no-multi-spaces), [`react/jsx-space-before-closing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md)
+  - Luôn luôn bao hàm dấu cách đơn trong các thẻ tự đóng. eslint: [`no-multi-spaces`](http://eslint.org/docs/rules/no-multi-spaces), [`react/jsx-space-before-closing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md)
 
     ```jsx
     // bad
@@ -224,7 +224,7 @@
     <Foo />
     ```
 
-  - Do not pad JSX curly braces with spaces. eslint: [`react/jsx-curly-spacing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md)
+  - Không nên thêm khoảng cách bên trong dấu ngoặc nhọn. eslint: [`react/jsx-curly-spacing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md)
 
     ```jsx
     // bad
@@ -236,7 +236,7 @@
 
 ## Props
 
-  - Always use camelCase for prop names.
+  - Luôn luôn áp dụng camelCase cho đặt tên prop.
 
     ```jsx
     // bad
@@ -252,7 +252,7 @@
     />
     ```
 
-  - Omit the value of the prop when it is explicitly `true`. eslint: [`react/jsx-boolean-value`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md)
+  - Lược bỏ giá trị của prop khi giá trị của prop rõ ràng là `true`. eslint: [`react/jsx-boolean-value`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md)
 
     ```jsx
     // bad
@@ -266,7 +266,7 @@
     />
     ```
 
-  - Always include an `alt` prop on `<img>` tags. If the image is presentational, `alt` can be an empty string or the `<img>` must have `role="presentation"`. eslint: [`jsx-a11y/img-has-alt`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-has-alt.md)
+  - Luôn luôn bao gồm thuộc tính `alt` vào thẻ `<img>`. Nếu hình ảnh được biểu diễn, `alt` có thể là chuỗi trống hoặc `<img>` phải có `role="presentation"`. eslint: [`jsx-a11y/img-has-alt`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-has-alt.md)
 
     ```jsx
     // bad
@@ -282,9 +282,9 @@
     <img src="hello.jpg" role="presentation" />
     ```
 
-  - Do not use words like "image", "photo", or "picture" in `<img>` `alt` props. eslint: [`jsx-a11y/img-redundant-alt`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md)
+  - Không sử dụng các từ như "image", "photo", hoặc "picture" trong thuộc tính `alt`. eslint: [`jsx-a11y/img-redundant-alt`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md)
 
-  > Why? Screenreaders already announce `img` elements as images, so there is no need to include this information in the alt text.
+  > Tại sao? Trình đọc màn hình đã công bố `img` được coi là images, do đó không cần bao hàm thông tin trên vào `alt`.
 
     ```jsx
     // bad
@@ -294,7 +294,7 @@
     <img src="hello.jpg" alt="Me waving hello" />
     ```
 
-  - Use only valid, non-abstract [ARIA roles](https://www.w3.org/TR/wai-aria/roles#role_definitions). eslint: [`jsx-a11y/aria-role`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md)
+  - Sử dụng hợp lệ, không tóm tắt [ARIA roles](https://www.w3.org/TR/wai-aria/roles#role_definitions). eslint: [`jsx-a11y/aria-role`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md)
 
     ```jsx
     // bad - not an ARIA role
@@ -307,9 +307,9 @@
     <div role="button" />
     ```
 
-  - Do not use `accessKey` on elements. eslint: [`jsx-a11y/no-access-key`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md)
+  - Không sử dụng `accessKey` trên các element. eslint: [`jsx-a11y/no-access-key`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md)
 
-  > Why? Inconsistencies between keyboard shortcuts and keyboard commands used by people using screenreaders and keyboards complicate accessibility.
+  > Tại sao? Mâu thuẫn giữa các phím tắt và lệnh bàn phím được sử dụng bởi người sửng dụng trình đọc màn hình và bàn phím làm phức tạp khả năng tiếp cận.
 
   ```jsx
   // bad
@@ -319,7 +319,7 @@
   <div />
   ```
 
-  - Avoid using an array index as `key` prop, prefer a unique ID. ([why?](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318))
+  - Tránh sử dụng  mảng index là thuộc tính `key, ưu tiên một mã ID độc nhất. ([why?](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318))
 
   ```jsx
   // bad
@@ -339,9 +339,9 @@
   ))}
   ```
 
-  - Always define explicit defaultProps for all non-required props.
+  - Luôn định nghĩa rõ ràng `defaultProps` cho tất cả các props không bắt buộc.
 
-  > Why? propTypes are a form of documentation, and providing defaultProps means the reader of your code doesn’t have to assume as much. In addition, it can mean that your code can omit certain type checks.
+  > Tại sao? propTypes là một mẫu của tài liệu, và việc cung cấp defaultProps nghĩa là người đọc mã của bạn không phải giả định quá nhiều. Hơn nữa, nó có thể hàm ý rằng mã của bạn có thể lược bỏ các kiểu kiểm tra cụ thể. 
 
   ```jsx
   // bad
@@ -370,7 +370,7 @@
 
 ## Refs
 
-  - Always use ref callbacks. eslint: [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
+  - Luôn luôn sử dụng ref callbacks. eslint: [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
 
     ```jsx
     // bad
@@ -384,9 +384,9 @@
     />
     ```
 
-## Parentheses
+## Dấu ngoặc đơn
 
-  - Wrap JSX tags in parentheses when they span more than one line. eslint: [`react/wrap-multilines`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md)
+  - Đóng gói các thẻ JSX trong dấu ngoặc đơn khi chúng được viết nối nhau nhiều hơn một dòng. eslint: [`react/wrap-multilines`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md)
 
     ```jsx
     // bad
@@ -414,7 +414,7 @@
 
 ## Tags
 
-  - Always self-close tags that have no children. eslint: [`react/self-closing-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
+  - Luôn luôn để thẻ tự đóng nếu không có thẻ con. eslint: [`react/self-closing-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
 
     ```jsx
     // bad
@@ -424,7 +424,7 @@
     <Foo className="stuff" />
     ```
 
-  - If your component has multi-line properties, close its tag on a new line. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
+  - Nếu thành phần có các thuộc tính phải viết trên nhiều dòng, đóng thẻ ở một dòng mới. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
     ```jsx
     // bad
@@ -439,7 +439,7 @@
     />
     ```
 
-## Methods
+## Phương thức
 
   - Use arrow functions to close over local variables.
 
