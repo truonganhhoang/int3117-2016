@@ -83,20 +83,24 @@ Giống như những hướng dẫn về phong cách lập trình khác, các v�
   - [ ] 6.1 Quy định chung cho tất cả định danh
   - Định danh chỉ sử dụng ký tự trong ASCII chữ và chữ số, and, trong một số trường hợp nêu dưới đây, gạch dưới và rất it khi sử dụng kí hiệu đô la (khi có yêu cầu của Framework như Angular).
   - Một tên cần mô tả tốt chức năng, ý nghĩa của nó. Bạn đừng quá để tâm đến việc tiết kiệm không gian, ngắn gón vì việc thể hiện được ý nghĩa của tên là quan trọng hơn khi nó giúp một người đọc mới nhanh chóng hiểu được code của bạn. Không sử dụng các chữ viết tắt không rõ ràng hoặc không quen thuộc với những người ngoài dự án, không viết tắt bằng cách xóa bớt chữ trong một từ.
-  'priceCountReader      // không viết tắt.
+```javascript
+   priceCountReader      // không viết tắt.
    numErrors             // "num" là một quy ước phổ biến.
    numDnsConnections     //  Mọi người đều biết viết tắn của DNS.'
+```
    Không hợp lệ:
    
 ```javascript
-   n                     // Meaningless.
-   nErr                  // Ambiguous abbreviation.
-   nCompConns            // Ambiguous abbreviation.
-   wgcConnections        // Only your group knows what this stands for.
-   pcReader              // Lots of things can be abbreviated "pc".
-   cstmrId               // Deletes internal letters.
-   kSecondsPerDay        // Do not use Hungarian notation.
+   n                     // Vô nghĩa.
+   nErr                  // Viết tắt không rõ ràng.
+   nCompConns            // Viết tắt không rõ ràng.
+   wgcConnections        // Chỉ những người trong nhóm mới có thể hiểu.
+   pcReader              // Rất nhiều thứ có thể được viết tắt la "pc".
+   cstmrId               // Xóa một số kí tự trong từ.
+   kSecondsPerDay        // Không sử dụng kí hiệu.
 ```
+
+  - [ ] 6.2 Quy đinh theo loại định danh
 
 
 
