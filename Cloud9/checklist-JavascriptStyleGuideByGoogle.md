@@ -87,7 +87,8 @@ Giống như những hướng dẫn về phong cách lập trình khác, các v�
    numErrors             // "num" là một quy ước phổ biến.
    numDnsConnections     //  Mọi người đều biết viết tắn của DNS.'
    Không hợp lệ:
-   ```javascript
+   
+```javascript
    n                     // Meaningless.
    nErr                  // Ambiguous abbreviation.
    nCompConns            // Ambiguous abbreviation.
@@ -95,7 +96,7 @@ Giống như những hướng dẫn về phong cách lập trình khác, các v�
    pcReader              // Lots of things can be abbreviated "pc".
    cstmrId               // Deletes internal letters.
    kSecondsPerDay        // Do not use Hungarian notation.
-   ```
+```
 
 
 
