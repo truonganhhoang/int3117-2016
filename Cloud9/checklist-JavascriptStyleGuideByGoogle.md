@@ -70,7 +70,7 @@ Tài liệu này định nghĩa hoàn chỉnh các tiêu chuẩn mã hoá của 
 Giống như những hướng dẫn về phong cách lập trình khác, các vấn đề bao quát không chỉ là vấn đề thẩm mĩ định dạng mà còn nằm ở quy ước và tiêu chuẩn mã hoá. Tuy nhiên, tài liệu này tập trung chủ yếu vào các tiêu chuẩn bất di bất dịch mà chúng ta theo đuổi ở bậc đại học và tránh đưa ra những lời tư vấn không rõ ràng hoặc không khả thi (dù là con người hay công cụ).
 
   - [ ] 1.1 Chú thích thuật ngữ
-Trong tài liệu này, trừ trường hợp làm rõ, ta quy ước:
+  - Trong tài liệu này, trừ trường hợp làm rõ, ta quy ước:
     -	Những thuật ngữ nhận xét luôn để cập tới sự bổ sung nhận xét. Chúng tôi không sử dụng những bình luận cụm từ tham khảo, thay vì sử dụng thuật ngữ chung “JSDoc” cho cả chú thích văn bản thô lẫn thuật ngữ máy tính trong /**… */.
     -	Hướng dẫn Style này sử dụng thuật ngữ RFC 2119 khi sử dụng các cụm từ phải, không được, nên, không nên và có thể. Các thuật ngữ ưa thích và cần tránh tương ứng lần lượt với nên và không nên. Các câu lệnh khai báo không điều kiện là quy tắc phải được thoả mãn.
     -	Các ghi chú khác sẽ thỉnh thoảng được xuất hiện trong tài liệu
