@@ -4,7 +4,7 @@
 
 *Một phương cách tiếp cận hợp lý nhất với React và JSX*
 
-## Table of Contents
+## Nội dung
 
   1. [Nguyên tắc cơ bản](#nguyên-tắc-cơ-bản)
   1. [Lớp vs `React.createClass` vs Phi trạng thái](#lớp-vs-reactcreateclass-vs-phi-trạng-thái)
@@ -441,7 +441,7 @@
 
 ## Phương thức
 
-  - Use arrow functions to close over local variables.
+  - Sử dụng hàm trỏ để đóng các biến địa phương.
 
     ```jsx
     function ItemList(props) {
@@ -458,9 +458,9 @@
     }
     ```
 
-  - Bind event handlers for the render method in the constructor. eslint: [`react/jsx-no-bind`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
+  - Nối các xử lý sự kiện cho phương thức `render` trong `contructor`. eslint: [`react/jsx-no-bind`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
 
-  > Why? A bind call in the render path creates a brand new function on every single render.
+  > Tại sao? Một cuộc gọi nối trong đường dẫn render tạo một phương thức có nhãn mới lên mội render đơn.
 
     ```jsx
     // bad
@@ -492,8 +492,8 @@
     }
     ```
 
-  - Do not use underscore prefix for internal methods of a React component.
-  > Why? Underscore prefixes are sometimes used as a convention in other languages to denote privacy. But, unlike those languages, there is no native support for privacy in JavaScript, everything is public. Regardless of your intentions, adding underscore prefixes to your properties does not actually make them private, and any property (underscore-prefixed or not) should be treated as being public. See issues [#1024](https://github.com/airbnb/javascript/issues/1024), and [#490](https://github.com/airbnb/javascript/issues/490) for a more in-depth discussion.
+  - Không sử dụng tiền tố dấu gạch chân dưới cho các phương thức cục bộ của một thành phần React.
+  > Tại sao? Tiền tố gạch chân dưới đôi khi được dùng như một quy ước trong ngôn ngữ khác để biểu thị sự riêng tư. Nhưng, không như những ngôn ngữ khác, không có một sự hỗ trợ tự nhiên nào trong Javascript, mọi thứ đều là công khai. Không như ý định của bạn, việc thêm các tiền tố dầu gạch dưới không thực sự làm chúng trở thành riêng tư, và bấy kỳ thuộc tính (có hoặc không có tiền tố gạch chân dưới) nên được sử dụng một cách công khai. Xem thêm tại [#1024](https://github.com/airbnb/javascript/issues/1024), và [#490 (https://github.com/airbnb/javascript/issues/490) để hiểu chi tiết hơn.
 
     ```jsx
     // bad
@@ -515,7 +515,7 @@
     }
     ```
 
-  - Be sure to return a value in your `render` methods. eslint: [`react/require-render-return`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md)
+  - Đảm bảo rằng có trả về giá trị trong phương thức `render`. eslint: [`react/require-render-return`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md)
 
     ```jsx
     // bad
@@ -529,11 +529,11 @@
     }
     ```
 
-## Ordering
+## Thứ tự phương thức
 
-  - Ordering for `class extends React.Component`:
+  - Thứ tự cho `class extends React.Component`:
 
-  1. optional `static` methods
+  1. Phương thức tùy chọn `static`
   1. `constructor`
   1. `getChildContext`
   1. `componentWillMount`
@@ -543,12 +543,12 @@
   1. `componentWillUpdate`
   1. `componentDidUpdate`
   1. `componentWillUnmount`
-  1. *clickHandlers or eventHandlers* like `onClickSubmit()` or `onChangeDescription()`
-  1. *getter methods for `render`* like `getSelectReason()` or `getFooterContent()`
-  1. *optional render methods* like `renderNavigation()` or `renderProfilePicture()`
+  1. *clickHandlers hoặc eventHandlers* như `onClickSubmit()` hoặc `onChangeDescription()`
+  1. *các phương thức get cho `render`* như `getSelectReason()` hoặc `getFooterContent()`
+  1. *các phương thức render tùy chọn* like `renderNavigation()` hoặc `renderProfilePicture()`
   1. `render`
 
-  - How to define `propTypes`, `defaultProps`, `contextTypes`, etc...
+  - Cách định nghĩa `propTypes`, `defaultProps`, `contextTypes`,...
 
     ```jsx
     import React, { PropTypes } from 'react';
@@ -579,7 +579,7 @@
     export default Link;
     ```
 
-  - Ordering for `React.createClass`: eslint: [`react/sort-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md)
+  - Thứ tự cho `React.createClass`: eslint: [`react/sort-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md)
 
   1. `displayName`
   1. `propTypes`
@@ -598,22 +598,22 @@
   1. `componentWillUpdate`
   1. `componentDidUpdate`
   1. `componentWillUnmount`
-  1. *clickHandlers or eventHandlers* like `onClickSubmit()` or `onChangeDescription()`
-  1. *getter methods for `render`* like `getSelectReason()` or `getFooterContent()`
-  1. *optional render methods* like `renderNavigation()` or `renderProfilePicture()`
+  1. *clickHandlers hoặc eventHandlers* như `onClickSubmit()` hoặc `onChangeDescription()`
+  1. *các phương thức get cho `render`* như `getSelectReason()` hoặc `getFooterContent()`
+  1. *các phương thức render tùy chọn* like `renderNavigation()` hoặc `renderProfilePicture()`
   1. `render`
 
 ## `isMounted`
 
-  - Do not use `isMounted`. eslint: [`react/no-is-mounted`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md)
+  - Không sử dụng `isMounted`. eslint: [`react/no-is-mounted`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md)
 
-  > Why? [`isMounted` is an anti-pattern][anti-pattern], is not available when using ES6 classes, and is on its way to being officially deprecated.
+  > Tại sao? [`isMounted` không tuân theo mẫu][anti-pattern], nó không được sử dụng khi dùng các lớp ES6, và đang trong quá trình chính thức bị bác bỏ.
 
   [anti-pattern]: https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html
 
-## Translation
+## Bản dịch
 
-  This JSX/React style guide is also available in other languages:
+  Tài liệu JSX/React style guide này cũnd đã được dịch ở cho các ngôn ngữ khác:
 
   - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: [JasonBoy/javascript](https://github.com/JasonBoy/javascript/tree/master/react)
   - ![pl](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png) **Polish**: [pietraszekl/javascript](https://github.com/pietraszekl/javascript/tree/master/react)
@@ -621,4 +621,4 @@
   - ![Br](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Portuguese**: [ronal2do/javascript](https://github.com/ronal2do/airbnb-react-styleguide)
   - ![jp](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanese**: [mitsuruog/javascript-style-guide](https://github.com/mitsuruog/javascript-style-guide/tree/master/react)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ quay trở lại đầu trang](#nội-dung)**
