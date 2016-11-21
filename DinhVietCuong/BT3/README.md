@@ -2,39 +2,39 @@
 
 Hàm cần kiểm thử:
 
-1 public int countLetter(String str) {
+    1 public int countLetter(String str) {
 
-2		int result = 0;
+    2		int result = 0;
 
-3		if (str == null || str.length() == 0) {
+    3		if (str == null || str.length() == 0) {
 
-4			return -1;
+    4			return -1;
 
-5		} else {
+    5		} else {
 
-6			while (str.length() != 0) {
+    6			while (str.length() != 0) {
 
-7				int i = 0;
+    7				int i = 0;
 
-8				char letter = str.charAt(i);
+    8				char letter = str.charAt(i);
 
-9				if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122)) {
+    9				if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122)) {
 
-10					result++;
+    10					result++;
 
-11				}
+    11				}
 
-12				str = str.substring(i + 1);
+    12				str = str.substring(i + 1);
 
-13				i++;				
+    13				i++;				
 
-14			}
+    14			}
 
-15		}
+    15		}
 
-16		return result;
+    16		return result;
 
-17	}
+    17	}
 
 
 All-DU-Paths của biến str: 

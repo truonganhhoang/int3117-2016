@@ -6,17 +6,19 @@ Tính toán ca kiểm thử với MC/DC
 
 Với vòng if thứ nhất: if (str == null || str.length() == 0) ta có bảng các giá trị:
 
-				(A)	        (B)
+                              (A)	        (B)
+			      
+Theo MCDC có bảng kết quả:
 
-Trường hợp	A	B	Result
+	Trường hợp		A	B	Result
 
-1	        T	F	T
+	1	        	T	F	T
 
-2        	F	T	T
+	2        		F	T	T
 
-3        	F	F	F
+	3        		F	F	F
 
-4        	T	T	T => trường hợp này không xảy ra
+	4        		T	T	T  	=> trường hợp này không xảy ra
 
 => ta có các test case:
 
@@ -32,43 +34,43 @@ Trong else có lệnh while và vòng if thứ 2:
 
 if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122))
 
-	(C)	          (D)               (E)	           (F)
+		(C)	          (D)               (E)	           (F)
 
 Các trường hợp:
 
-Trường hợp	C	D	E	F	Result
+	Trường hợp		C	D	E	F		Result
 
-1	        T	T	T	T	T	=> trường hợp này không xảy ra
+	1	       		T	T	T	T		T	=> trường hợp này không xảy ra
 
-2	        T	T	T	F	T
+	2	        	T	T	T	F		T
 
-3	        T	T	F	T	T
+	3	        	T	T	F	T		T	=> trường hợp này không xảy ra
 
-4	        T	F	T	T	T
+	4	        	T	F	T	T		T
 
-5		T	T	F	F	T
+	5				T	T	F	F		T
 
-6		T	F	T	F	F
+	6				T	F	T	F		F
 
-7		T	F	F	T	F	
+	7				T	F	F	T		F	
 
-8	        T	F	F	F	F	
+	8	       		T	F	F	F		F	=> trường hợp này không xảy ra
 
-9		F	T	T	T	T
+	9				F	T	T	T		T
 
-10	      	F	T	T	F	F
+	10	      		F	T	T	F		F
 
-11	      	F	T	F	T	F
+	11	      		F	T	F	T		F	=> trường hợp này không xảy ra
 
-12	      	F	F	T	T	T
+	12	      		F	F	T	T		T
 
-13	       	F	T	F	F	F
+	13	       		F	T	F	F		F
 
-14		F	F	T	F	F
+	14				F	F	T	F		F
 
-15		F	T	F	F	F
+	15				F	T	F	F		F	=> trường hợp này không xảy ra
 
-16		F	F	F	F	F => trường hợp không xảy ra
+	16				F	F	F	F		F 	=> trường hợp này không xảy ra
 
 => ta tính được các test case:
 
