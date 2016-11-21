@@ -65,7 +65,8 @@
   * 9.3	Các Tool liên quan
 
 ## 1. Giới thiệu
-  - [] 1.1 Chú thích thuật ngữ
+
+  - [ ] 1.1 Chú thích thuật ngữ
 
 
 
