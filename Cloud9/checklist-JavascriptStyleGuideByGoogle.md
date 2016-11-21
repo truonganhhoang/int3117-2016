@@ -78,6 +78,24 @@ Giống như những hướng dẫn về phong cách lập trình khác, các v�
   - [ ] 1.2 Chú thích hướng dẫn
   - Các code ví dụ trong tài liệu này là không theo chuẩn. Trong các ví dụ thuộc Google Stule, chúng có thể không minh hoạ kiểu cách duy nhất để biểu diễn code. Các lựa chọn định dạng tuỳ chọn thực hiện trong ví dụ không được thực thi như các quy tắc.
 
+## 6. Đặt tên
+
+  - [ ] 6.1 Quy định chung cho tất cả định danh
+  - Định danh chỉ sử dụng ký tự trong ASCII chữ và chữ số, and, trong một số trường hợp nêu dưới đây, gạch dưới và rất it khi sử dụng kí hiệu đô la (khi có yêu cầu của Framework như Angular).
+  - Một tên cần mô tả tốt chức năng, ý nghĩa của nó. Bạn đừng quá để tâm đến việc tiết kiệm không gian, ngắn gón vì việc thể hiện được ý nghĩa của tên là quan trọng hơn khi nó giúp một người đọc mới nhanh chóng hiểu được code của bạn. Không sử dụng các chữ viết tắt không rõ ràng hoặc không quen thuộc với những người ngoài dự án, không viết tắt bằng cách xóa bớt chữ trong một từ.
+  'priceCountReader      // không viết tắt.
+   numErrors             // "num" là một quy ước phổ biến.
+   numDnsConnections     //  Mọi người đều biết viết tắn của DNS.'
+   Không hợp lệ:
+   ```javascript
+   n                     // Meaningless.
+   nErr                  // Ambiguous abbreviation.
+   nCompConns            // Ambiguous abbreviation.
+   wgcConnections        // Only your group knows what this stands for.
+   pcReader              // Lots of things can be abbreviated "pc".
+   cstmrId               // Deletes internal letters.
+   kSecondsPerDay        // Do not use Hungarian notation.
+   ```
 
 
 
