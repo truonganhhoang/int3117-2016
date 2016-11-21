@@ -2,18 +2,18 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestClass {
-	Class cl = new Class();
+public class TestBaiTap3 {
+	BaiTap3 cl = new BaiTap3();
 
 	// voi bien i
 	@Test
-	public void testCase0() {
+	public void testVariableI() {
 		assertEquals(false, cl.ham(456));
 	}
 
 	// voi bien tong va result
 	@Test
-	public void testCase1() {
+	public void testVariableTongAndResult() {
 		assertEquals(true, cl.ham(45678));
 	}
 
