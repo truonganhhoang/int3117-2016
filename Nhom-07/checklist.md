@@ -460,7 +460,7 @@
 
   - Nối các xử lý sự kiện cho phương thức `render` trong `contructor`. eslint: [`react/jsx-no-bind`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
 
-  > Tại sao? Một cuộc gọi nối trong đường dẫn render tạo một phương thức có nhãn mới lên mội render đơn.
+  > Tại sao? Một cuộc gọi nối trong đường dẫn render tạo một phương thức có nhãn mới lên mỗi render.
 
     ```jsx
     // bad
@@ -493,7 +493,7 @@
     ```
 
   - Không sử dụng tiền tố dấu gạch chân dưới cho các phương thức cục bộ của một thành phần React.
-  > Tại sao? Tiền tố gạch chân dưới đôi khi được dùng như một quy ước trong ngôn ngữ khác để biểu thị sự riêng tư. Nhưng, không như những ngôn ngữ khác, không có một sự hỗ trợ tự nhiên nào trong Javascript, mọi thứ đều là công khai. Không như ý định của bạn, việc thêm các tiền tố dầu gạch dưới không thực sự làm chúng trở thành riêng tư, và bấy kỳ thuộc tính (có hoặc không có tiền tố gạch chân dưới) nên được sử dụng một cách công khai. Xem thêm tại [#1024](https://github.com/airbnb/javascript/issues/1024), và [#490 (https://github.com/airbnb/javascript/issues/490) để hiểu chi tiết hơn.
+  > Tại sao? Tiền tố gạch chân dưới đôi khi được dùng như một quy ước trong ngôn ngữ khác để biểu thị sự riêng tư. Nhưng, không như những ngôn ngữ khác, không có một sự hỗ trợ sẵn có nào trong Javascript, mọi thứ đều là công khai. Không như ý định của bạn, việc thêm các tiền tố dầu gạch dưới không thực sự làm chúng trở thành riêng tư, và bấy kỳ thuộc tính (có hoặc không có tiền tố gạch chân dưới) nên được sử dụng một cách công khai. Xem thêm tại [#1024](https://github.com/airbnb/javascript/issues/1024), và [#490 (https://github.com/airbnb/javascript/issues/490) để hiểu chi tiết hơn.
 
     ```jsx
     // bad
@@ -611,9 +611,9 @@
 
   [anti-pattern]: https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html
 
-## Bản dịch
+## Các bản dịch
 
-  Tài liệu JSX/React style guide này cũnd đã được dịch ở cho các ngôn ngữ khác:
+  Tài liệu JSX/React style guide này cũng đã được dịch ở cho các ngôn ngữ khác:
 
   - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: [JasonBoy/javascript](https://github.com/JasonBoy/javascript/tree/master/react)
   - ![pl](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png) **Polish**: [pietraszekl/javascript](https://github.com/pietraszekl/javascript/tree/master/react)
