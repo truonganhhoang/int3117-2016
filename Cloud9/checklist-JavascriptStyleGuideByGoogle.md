@@ -3,8 +3,8 @@
 ## Mục lục
 
 
-1 Giới thiệu
-1.1	Thuật ngữ chú thích
+* 1 Giới thiệu
+* 1.1	Thuật ngữ chú thích
 1.2	Hướng dẫn chú thích
 2	Tập tin mã nguồn cơ bản
 2.1	Tên thư mục
