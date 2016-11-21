@@ -28,17 +28,31 @@ Hướng giải quyết:
 	  Ca kiểm thử 6: Giá trị đầu vào là số âm cụ thể là -2-> trả về kết quả false.
 	  
 - 7 Áp dụng tiêu chuẩn MCDC
+
 -Áp dụng tiêu chuẩn MCDC
+
 -Xét điều kiện:
+
 if((m<2) && (m!=2) || (m%2==0))
+
 if(m==2 || m==3)
+
 Ta có bảng sau:
+
 | No. | m<2 | m!=2 | m%2 | m==2 | m==3 | Kết quả |
+
 |-----|-----|-----:|-----|------|------|---------|
+
 | 1   | T   | T    | F   | -    | -    | F       |
+
 | 2   | F   | F    | T   | -    | -    | F       |
+
 | 3   | F   | T    | T   | -    | -    | T       |
+
 | 4   | T   | F    | F   | -    | -    | T       |
+
 | 5   | -   | -    | -   | F    | F    | F       |
+
 | 6   | -   | -    | -   | T    | F    | T       |
+
 | 7   | -   | -    | -   | F    | T    | T       |
