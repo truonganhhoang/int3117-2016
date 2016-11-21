@@ -66,6 +66,9 @@
 
 ## 1. Giới thiệu
 
+Tài liệu này phục vụ như định nghĩa hoàn chỉnh các tiêu chuẩn mã hoá của Google cho mã nguồn trong ngôn ngữ lập trình Java Script. Một tập tin mã nguồn JavaScript được mô tả như Google Style khi và chỉ khi nó tuân thủ những quy tắc trong tài liệu này.
+Giống như những hướng dẫn phong cách lập trình khác, các vấn đề bao quát không chỉ là vấn đề thẩm mĩ định dạng mà còn nằm ở quy ước và tiêu chuẩn mã hoá. Tuy nhiên, tài liệu này tập trung chủ yếu vào các tiêu chuẩn bất di bất dịch mà chúng ta theo đuổi ở bậc đại học và tránh đưa ra những lời tư vấn không rõ ràng hoặc không thực thi (dù là con người hay công cụ).
+
   - [ ] 1.1 Chú thích thuật ngữ
 
 
