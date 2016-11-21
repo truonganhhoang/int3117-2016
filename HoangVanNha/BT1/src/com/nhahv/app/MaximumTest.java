@@ -12,14 +12,11 @@ import static org.junit.Assert.*;
  * <></>
  */
 public class MaximumTest {
-
     private Maximum maximum = new Maximum();
-
+    
     @org.junit.Test
     public void main() throws Exception {
-
     }
-
 
     // kiểm thử biên
     // kiểm thử biên mạnh
@@ -79,7 +76,6 @@ public class MaximumTest {
     }
 
     /* Kiểm thử biên mạnh*/
-
     @Test
     public void TestFuncWithValueMaxAdd1() {
         List<Integer> listTest = new ArrayList<>();
@@ -90,7 +86,6 @@ public class MaximumTest {
     }
 
      /* Kiểm thử biên mạnh*/
-
     @Test
     public void TestFuncWithValueMinSub1() {
         List<Integer> listTest = new ArrayList<>();
@@ -99,7 +94,6 @@ public class MaximumTest {
         listTest.add(x);
         assertEquals(0, maximum.maxOfList(listTest));
     }
-
 
     // chương trình cũ
     @Test
@@ -111,7 +105,6 @@ public class MaximumTest {
         listTest.add(30);
         listTest.add(2);
         listTest.add(1);
-
         assertEquals(30, maximum.maxOfList(listTest));
     }
 
@@ -124,7 +117,6 @@ public class MaximumTest {
         listTest.add(-30);
         listTest.add(2);
         listTest.add(1);
-
         assertEquals(10, maximum.maxOfList(listTest));
     }
 
@@ -138,7 +130,6 @@ public class MaximumTest {
         listTest.add(-30);
         listTest.add(2);
         listTest.add(1);
-
         assertEquals(2, maximum.maxOfList(listTest));
     }
 }
