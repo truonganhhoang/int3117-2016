@@ -403,3 +403,312 @@ final class Box<T> {
   }
 }
 ```
+
+## Định nghĩa hàm
+
+Đặt định nghĩa hàm trong một dòng cùng với mở ngoặc:
+
+```swift
+func reticulateSplines(spline: [Double]) -> Bool {
+  // reticulate code goes here
+}
+```
+
+
+Với hàm có định nghĩa dài, thêm xuống dòng tại điểm phù hợp và thêm thụt dòng phụ trên dòng vừa tách ra:
+
+```swift
+func reticulateSplines(spline: [Double], adjustmentFactor: Double,
+    translateConstant: Int, comment: String) -> Bool {
+  // reticulate code goes here
+}
+```
+
+## Biểu thức closure
+
+
+Sử dụng cú pháp trailing closure chỉ khi có một biểu thức đơn closure đóng vai trò là tham số ở cuối danh sách đối số. Trong trường hợp nhiều tham số closure, gắn nhãn những tham số closure
+
+**Preferred:**
+```swift
+UIView.animateWithDuration(1.0) {
+  self.myView.alpha = 0
+}
+
+UIView.animateWithDuration(1.0,
+  animations: {
+    self.myView.alpha = 0
+  },
+  completion: { finished in
+    self.myView.removeFromSuperview()
+  }
+)
+```
+
+**Not Preferred:**
+```swift
+UIView.animateWithDuration(1.0, animations: {
+  self.myView.alpha = 0
+})
+
+UIView.animateWithDuration(1.0,
+  animations: {
+    self.myView.alpha = 0
+  }) { f in
+    self.myView.removeFromSuperview()
+}
+```
+
+
+Với những biểu thức closure đơn trong khi rõ ràng về ngữ cảnh thì sử dụng kiểu không tường minh như sau:
+
+```swift
+attendeeList.sort { a, b in
+  a > b
+}
+```
+
+
+Các phương thức ràng buộc sử dụng trailing closure nên rõ ràng và dễ đọc. Quyết định khoảng cách, dấu xuống dòng và sử dụng tên đối số ẩn danh tùy theo tác giả. Ví dụ:
+
+```swift
+let value = numbers.map { $0 * 2 }.filter { $0 % 3 == 0 }.indexOf(90)
+
+let value = numbers
+   .map {$0 * 2}
+   .filter {$0 > 50}
+   .map {$0 + 10}
+```
+
+## Kiểu (Types)
+
+
+Luôn luôn sử dụng kiểu dữ liệu tự nhiên nếu có thể. Swift có cầu nối tới Objective-C, vậy nên bạn có thể sử dụng đầy đủ các phương thức cần thiết
+
+**Preferred:**
+```swift
+let width = 120.0                                    // Double
+let widthString = (width as NSNumber).stringValue    // String
+```
+
+**Not Preferred:**
+```swift
+let width: NSNumber = 120.0                          // NSNumber
+let widthString: NSString = width.stringValue        // NSString
+```
+
+
+Trong code Sprite Kit, sử dụng `CGFloat` nếu việc này làm code trở nên cô đọng hơn bằng cách tránh nhiều lần chuyển đổi
+
+### Hằng số (Constants)
+
+
+Hằng số được định nghĩa bẳng việc sử dụng từ khóa `let`, và từ khóa `var` dành cho các biến. Luôn luôn sử dụng `let` thay vì `var` nếu giá trị của biến không bị thay đổi
+
+
+**Tip:** Một kỹ thuật tốt là định nghĩa mọi thứ bằng cách sử dụng `let` và chỉ đổi thành `var` khi trình biên dịch yêu cầu!
+
+
+Bạn có thể định nghĩa hằng số trên một kiểu hơn việc sử dụng thực thể của kiểu đó bằng việc sử dụng thuộc tính. Để biểu thị một thuộc tính của kiểu như một hằng số chỉ cần dùng `static let`. Thuộc tính kiểu biểu thị trong cách này nhìn chung khuyến khích hơn sử dụng hằng toàn cục bởi chúng dễ dàng phân biệt với thuộc tính thực thể. Ví dụ:
+
+**Preferred:**
+```swift
+enum Math {
+  static let e  = 2.718281828459045235360287
+  static let pi = 3.141592653589793238462643
+}
+
+radius * Math.pi * 2 // circumference
+
+```
+**Note:** Lợi ích của việc sử dụng case-less enumeration là nó không thể khởi tạo và hoạt động như một namspace thuần
+
+**Not Preferred:**
+```swift
+let e  = 2.718281828459045235360287  // pollutes global namespace
+let pi = 3.141592653589793238462643
+
+radius * pi * 2 // is pi instance data or a global constant?
+```
+
+### Phương thức static và biến kiểu thuộc tính
+
+
+Phương thức static và thuộc tính kiểu hoạt động tương tự như hàm toàn cục và biến toàn cục và nên được sử dụng hạn chế, Chúng hữu dụng khi tính năng là mục tiêu cho một kiểu đặc trưng hoặc khi bộ chuyển đổi Objective-C yêu cầu
+
+### Tùy chọn (Optionals)
+
+
+Định nghĩa biến và hàm trả về kiểu tùy chọn với `?` khi giá trị `nil` có thể được chấp nhận.
+
+
+Sử dụng kiểu unwrapped hoàn toàn chỉ bằng `!` cho biến thực thế mà bạn biết chắc sẽ được khởi tạo sau khi sử dụng, như subviews được cài đặt trong ‘viewDidLoad`.
+
+
+Khi truy cập một biến giá trị optional, sử dụng ràng buộc optional khi giá trị chỉ truy cập một lần hoặc khi nhiều tùy chọn optionals liên tiếp nhau:
+
+```swift
+self.textContainer?.textLabel?.setNeedsDisplay()
+```
+
+
+Sử dụng optional binding khi việc unwrap thuận lợi hơn và sử dụng đa toán tử
+
+```swift
+if let textContainer = self.textContainer {
+  // do many things with textContainer
+}
+```
+
+
+Khi đặt tên cho thuộc tính và biến tùy chọn, tránh tên kiểu `optionalString` hoặc `maybeView`
+
+
+Với optional binding, che giấu tên gốc khi việc đó thích hợp hơn việc sử dụng tên kiểu `unwrappedView` hoặc `actualLabel`.
+
+**Preferred:**
+```swift
+var subview: UIView?
+var volume: Double?
+
+// later on...
+if let subview = subview, volume = volume {
+  // do something with unwrapped subview and volume
+}
+```
+
+**Not Preferred:**
+```swift
+var optionalSubview: UIView?
+var volume: Double?
+
+if let unwrappedSubview = optionalSubview {
+  if let realVolume = volume {
+    // do something with unwrappedSubview and realVolume
+  }
+}
+```
+
+### Khởi tạo struct
+
+
+Sử dụng khởi tạo struct tự nhiên hơn việc sử dụng thừa kế khởi tạo CGGeometry
+
+**Preferred:**
+```swift
+let bounds = CGRect(x: 40, y: 20, width: 120, height: 80)
+let centerPoint = CGPoint(x: 96, y: 42)
+```
+
+**Not Preferred:**
+```swift
+let bounds = CGRectMake(40, 20, 120, 80)
+let centerPoint = CGPointMake(96, 42)
+```
+
+Sử dụng hằng có trong struct `CGRect.infinite`, `CGRect.null`, … hơn việc sử dụng hằng toàn cục `CGRectInfinite`, `CGRectNull`,.. Với biến đang tồn tại, bạn có thể sử dụng dạng rút gọn `.zero`.
+
+### Khởi tạo Lazy
+
+Sử dụng khởi tạo lazy cho việc kiểm soát vòng đời đối tượng tốt hơn. Đây là việc đúng cho `UIViewController` tải views nhanh chóng. Bạn có thể sử dụng một closure `{ }()` hoặc gọi phương thức riêng tư. Ví dụ:
+
+```swift
+lazy var locationManager: CLLocationManager = self.makeLocationManager()
+
+private func makeLocationManager() -> CLLocationManager {
+  let manager = CLLocationManager()
+  manager.desiredAccuracy = kCLLocationAccuracyBest
+  manager.delegate = self
+  manager.requestAlwaysAuthorization()
+  return manager
+}
+```
+
+**Notes:**
+  - `[unowned self]` is not required here. A retain cycle is not created.
+  - Location manager has a side-effect for popping up UI to ask the user for permission so fine grain control makes sense here.
+
+
+### Kiểu tự động
+
+
+Sử dụng lệnh cô đọng và cho trình biên dịch tự hiểu kiểu của hằng và biến của thực thể đơn lẻ. Kiểu tự động cũng thích hợp cho mảng và dictionary nhỏ (không rỗng). Khi cần thiết, đặc tả kiểu đặc tả như `CGFloat` hay `Int16`.
+
+**Preferred:**
+```swift
+let message = "Click the button"
+let currentBounds = computeViewBounds()
+var names = ["Mic", "Sam", "Christine"]
+let maximumWidth: CGFloat = 106.5
+```
+
+**Not Preferred:**
+```swift
+let message: String = "Click the button"
+let currentBounds: CGRect = computeViewBounds()
+let names = [String]()
+```
+
+#### Kiểu chú thích cho mảng và dictionary rỗng
+
+
+Với mảng và dictionary rỗng, sử dụng kiểu chú thích.
+
+**Preferred:**
+```swift
+var names: [String] = []
+var lookup: [String: Int] = [:]
+```
+
+**Not Preferred:**
+```swift
+var names = [String]()
+var lookup = [String: Int]()
+```
+
+**NOTE**: Theo hướng dẫn này, việc chọn tên mô tả còn quan trọng hơn các mục trước đó
+
+
+### Syntactic Sugar
+
+Sử dụng phiên bản rút gọn cho định nghĩa kiểu hơn việc sử dụng cú pháp trừu tượng đầy đủ
+**Preferred:**
+```swift
+var deviceModels: [String]
+var employees: [Int: String]
+var faxNumber: Int?
+```
+
+**Not Preferred:**
+```swift
+var deviceModels: Array<String>
+var employees: Dictionary<Int, String>
+var faxNumber: Optional<Int>
+```
+
+## Hàm và phương thức
+
+
+Hàm tự do, không gắn với bất kỳ lớp, kiểu nào, nên sử dụng hạn chế. Khi có thể, nên sử dụng một phương thức thay vì hàm tự do. Điều này đảm bảo cho tính dễ đọc và dễ truy tìm.
+
+
+Hàm tự do thích hợp khi chúng không liên kết với bất kỳ kiểu hay thực thể riêng nào
+
+**Preferred**
+```swift
+let sorted = items.mergeSort()  // easily discoverable
+rocket.launch()  // clearly acts on the model
+```
+
+**Not Preferred**
+```swift
+let sorted = mergeSort(items)  // hard to discover
+launch(&rocket)
+```
+
+**Free Function Exceptions**
+```swift
+let tuples = zip(a, b)  // feels natural as a free function (symmetry)
+let value = max(x,y,z)  // another free function that feels natural
+```
+
