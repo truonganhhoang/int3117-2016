@@ -1,40 +1,40 @@
 # Google JavaScript Style Guide
 
 ## Mục lục
-1 Giới thiệu
-1.1	Thuật ngữ chú thích
-1.2	Hướng dẫn chú thích
-2	Tập tin mã nguồn cơ bản
-2.1	Tên thư mục
-2.2	Mã hoá thư mục: UTF – 8
-2.3	Các kí tự đặc biệt
-3	Cấu trúc tập tin mã nguồn
-3.1	Giấy phép hoặc bản quyền thông tin (Nếu có)
-3.2	@fileoverview JSDoc (Nếu có)
-3.3	Câu lệnh goog.module
-3.4	Các câu lệnh goog.require
-3.5	Hệ thống xử lí tập tin
-4	Định dạng
-4.1	Các dấu ngoặc
-4.2	Lùi dòng: +2 khoảng cách
-4.3	Các câu lệnh
-4.4	 Giới hạn cột: 80
-4.5	Xuống dòng
-4.6	Khoảng trắng
-4.7	Nhóm dấu ngoặc đơn: Khuyến cáo
-4.8	Các Bình Luận
-5	Các đặc trưng ngôn ngữ
-5.1	Khai báo biến cục bộ
-5.2	Mảng kí tự
-5.3	Đối tượng kí tự
-5.4	Các lớp
-5.5	Các Hàm
-5.6	Chuỗi kí tự
-5.7	Số kí tự
-5.8	Cấu trúc điều khiển
-5.9	This
-5.10	Tính năng không cho phép
-6	Đặt tên
+  1 Giới thiệu
+  1.1	Thuật ngữ chú thích
+  1.2	Hướng dẫn chú thích
+  2	Tập tin mã nguồn cơ bản
+  2.1	Tên thư mục
+  2.2	Mã hoá thư mục: UTF – 8
+  2.3	Các kí tự đặc biệt
+  3	Cấu trúc tập tin mã nguồn
+  3.1	Giấy phép hoặc bản quyền thông tin (Nếu có)
+  3.2	@fileoverview JSDoc (Nếu có)
+  3.3	Câu lệnh goog.module
+  3.4	Các câu lệnh goog.require
+  3.5	Hệ thống xử lí tập tin
+  4	Định dạng
+  4.1	Các dấu ngoặc
+  4.2	Lùi dòng: +2 khoảng cách
+  4.3	Các câu lệnh
+  4.4	 Giới hạn cột: 80
+  4.5	Xuống dòng
+  4.6	Khoảng trắng
+  4.7	Nhóm dấu ngoặc đơn: Khuyến cáo
+  4.8	Các Bình Luận
+  5	Các đặc trưng ngôn ngữ
+  5.1	Khai báo biến cục bộ
+  5.2	Mảng kí tự
+  5.3	Đối tượng kí tự
+  5.4	Các lớp
+  5.5	Các Hàm
+  5.6	Chuỗi kí tự
+  5.7	Số kí tự
+  5.8	Cấu trúc điều khiển
+  5.9	This
+  5.10	Tính năng không cho phép
+ 6	Đặt tên
 6.1	Quy định chung cho 
 6.2	ád
 6.3	Camel Case: Được xác định
