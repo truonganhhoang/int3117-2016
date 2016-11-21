@@ -1,8 +1,8 @@
 
-public class Class {
+public class BaiTap3 {
 	// Cho mot so nguyen co it nhat 5 chu so.
 	// Tra ve true neu: tong cac chu so la so chan va chia het cho 3 hoac 5.
-	public boolean ham(int n) {
+	public boolean kiemTraTongCacChuSo(int n) {
 		int tong = 0;
 		int i = 0;
 		while (n > 0) {

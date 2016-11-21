@@ -2,12 +2,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestClass {
-	Class cl = new Class();
+public class TestBaiTap2 {
+	BaiTap2 cl = new BaiTap2();
 
 	// N co so chu so nho hon 5
 	@Test
-	public void testCase0() {
+	public void testNLess5() {
 		assertEquals(false, cl.ham(456));
 	}
 
