@@ -1,4 +1,5 @@
 # Google JavaScript Style Guide
+Bài viết được dịch từ: https://google.github.io/styleguide/jsguide.html
 
 ## Mục lục
 
@@ -40,29 +41,6 @@
   * 6.1	Quy định chung cho tất cả định danh
   * 6.2	Quy định theo loại định danh
   * 6.3	Camel Case: Được xác định
-* 7.	JSDoc
-  * 7.1	Dạng tổng quát
-  * 7.2	Markdown
-  * 7.3	Các thẻ (tag) Jsdoc
-  * 7.4	Xuống dòng
-  * 7.5	Chú thích tại top/file level
-  * 7.6	Chú thích lớp
-  * 7.7	Chú thích Enum và Typedef
-  * 7.8	Chú thích phương thức và hàm
-  * 7.9 Chú thích theo đặc tính
-  * 7.10 Loại chú thích
-  * 7.11 Chú thích
-* 8.	Nguyên tắc, chính sách
-  * 8.1	Các vấn đề không nói tới bởi Google Style: Nhất quán
-  * 8.2	Cảnh báo trình biên dịch
-  * 8.3	Deprecation
-  * 8.4	Code không nằm trong Google Style
-  * 8.5	Quy tắc Style cục bộ
-  * 8.6	tạo mã: Được miễn
-* 9.	Phụ Lục
-  * 9.1	Tag Tham Khảo
-  * 9.2	Những quy tắc kiểu thường bị hiểu lầm
-  * 9.3	Các Tool liên quan
 
 ## 1.	Giới thiệu
 
