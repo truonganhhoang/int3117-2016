@@ -112,6 +112,7 @@ Bên cạnh các chuỗi nhiều dòng kết thúc, các kí tự ASCII theo chi
 Đối với các kĩ tự không phải ASCII còn lại, hoặc là kí tự Unicode có thực (Ví dụ ∞) hoặc kí tự hex tương đương hoặc kí tự Unicode dừng (ví dụ \ u221e) được sử dụng, chúng chỉ tuỳ thuộc vào mục đích để làm code dễ hiểu và dễ học hơn.
 
 Mẹo: Trong các kí tự Unicode dừng, và đôi khi ngay cả các kí tự Unicode thực được sử dụng, một chú thích có thể rất hữu ích.
+
  
 Mẹo: Đừng bao giờ làm Code của bạn dễ đọc hơn bởi đơn giản một số chương trình có thể xử lí mã phi ASCII chuẩn xác. Nếu điều đó xảy ra, chương trình sẽ bị lỗi và phải chỉnh sửa.
 
@@ -138,7 +139,15 @@ Nếu giấy phép hoặc bản quyền thông tin thuộc về file, chúng s�
 
 Tất cả các tập tin phải khai báo chính xác một tên goog.module ở trên dòng đơn duy nhất: các dòng chứa khai báo goog.module phải không được xuống dòng và đo đó có một ngoại lệ với giới hạn 80 kí tự trên 1 cột.
 Ví dụ:
- 
+
+```javascript
+goog.module('my.test.helpers');
+goog.module.declareLegacyNamespace();
+goog.setTestOnly();
+```
+
+
+
 #### 3.3.1	goog.module.declareLegacyNamespace
 
 goog.module.declareLegacyNamespace tồn tại để dễ dàng chuyển đổi tên miền không gian truyền thống nhưng đi kèm với một số hạn chế khi đặt tên. Như tên của Module con phải được tạo sau parent namespace, tên này không phải là tên con hoặc tên cha goog.module (Ví dụ goog.module('parent'); và goog.module(‘parent.child'); không thể tồn tại cả hai, cũng không thể tồn tại goog.module('parent'); và goog.module('parent.child.grandchild');).
@@ -157,6 +166,31 @@ Các dòng được sắp xếp thông qua thứ tự ASCII chuẩn của toàn 
 
 Mẹo: Không cần ghi nhớ thứ tự này và thực thi chúng bằng tay. Bạn có thể dựa vào IDE hoặc thậm chí sép xếp nhập một cách tự động.
 Nếu một bí danh hoặc tên module dài sẽ khiến một dòng vượt quá giới hạn 80 cột, nó không được bao bọc: dòng goog.require là một ngoại lệ đối với giới hạn 80 cột.
+Ví dụ:
+
+```javascript
+const MyClass = goog.require('some.package.MyClass');
+const NsMyClass = goog.require('other.ns.MyClass');
+const googAsserts = goog.require('goog.asserts');
+const testingAsserts = goog.require('goog.testing.asserts');
+const than80columns = goog.require('pretend.this.is.longer.than80columns');
+const {clear, forEach, map} = goog.require('goog.array');
+```
+
+Trường hợp vi phạm
+
+```javascript
+const randomName = goog.require('something.else'); // name must match
+
+const {clear, forEach, map} = // don't break lines
+    goog.require('goog.array');
+
+function someFunction() {
+  const alias = goog.require('my.long.name.alias'); // must be at top level
+  // …
+}
+```
+
   
 ### 3.5	Hoàn tất một tập tin
 
@@ -172,9 +206,23 @@ Mẹo: Sử dụng Clang- Format. Cộng đồng JavaScript đã nỗ lực đ�
 #### 4.1.1	Dấu Ngoặc được sử dụng cho những cấu trúc điều khiển
 
 Những dấu ngoặc cần thiết cho tất cả các cấu trúc điều khiển (if, else, for, do, while,…) kể cả trong thân chỉ chưa đúng 1 câu lệnh duy nhất. Câu lệnh đầu tiên của khối lệnh khác rỗng phải bắt đầu bằng dấu ngoặc. 
+
+Trường hợp vi phạm
+```javascripts
+if (someVeryLongCondition())
+  doSomething();
+
+for (let i = 0; i < foo.length; i++) bar(foo[i]);
+```
+
  
 Ngoại lệ: Thông thường nếu câu lệnh có thể phù hợp trên một dòng duy nhất không đóng, chúng có thể không cần dấu ngoặc để cải thiện khả năng đọc. Đây là trường hợp duy nhất cấu trúc điều khiển bỏ qua dấu ngoặc để xuống dòng.
  
+```javascript
+if (shortCondition()) return;
+```
+
+
 #### 4.1.2	Chuẩn K&R style của khối lệnh khác rỗng
 
 Các dấu ngoặc theo Kernighan và Richie style (“Egyptian brackets) cho khối lệnh không rỗng và khối lệnh tương đồng được xây dựng:
@@ -183,10 +231,52 @@ Các dấu ngoặc theo Kernighan và Richie style (“Egyptian brackets) cho kh
 -	Xuống dòng sau khi sử dụng dấu ngoặc mở
 -	Xuống dòng sau khi sử dụng dấu ngoặc đóng
 -	Xuống dòng trước khi sử dụng dấu ngoặc đóng nếu dấu ngoặc chấm dứt một câu lệnh hoặc thân hàm hoặc câu lệnh Class hoặc một Class. Đặc biệt, không xuống dòng sau dấu ngoặc nếu đằng sau nó có: else, catch, while, hoặc dấu phẩy, dấu chấm phẩy hoặc dấu ngoặc phải.
+
+Ví dụ:
+
+```javascript
+class InnerClass {
+  constructor() {}
+
+  /** @param {number} foo */
+  method(foo) {
+    if (condition(foo)) {
+      try {
+        // Note: this might fail.
+        something();
+      } catch (err) {
+        recover();
+      }
+    }
+  }
+}
+```
  
 #### 4.1.3: Rút gọn khối lệnh rỗng
 
 Một khối lệnh rỗng hoặc cấu trúc Block-like  có thể đóng ngay lập tức sau khi mở với không có kí tự, khoảng trắng hoặc ngắt dòng (như {}), trừ khi nó là một phần của câu lệnh đa khối (nhiều khối lệnh).
+
+Ví dụ:
+
+```javascript
+function doNothing() {}
+```
+
+Trường hợp vi phạm:
+
+```javascript
+if (condition) {
+  // …
+} else if (otherCondition) {} else {
+  // …
+}
+
+try {
+  // …
+} catch (e) {}
+```
+
+
  
 ### 4.2: Lùi đầu dòng khối lệnh: + 2 khoảng trắng
 
@@ -195,26 +285,136 @@ Mỗi lần mỗi khối lệnh hoặc cấu trúc Block-like được mở, cá
 #### 4.2.1 Mảng kí tự: Block-like không bắt buộc
 
 Bất kì mảng kí tự nào đều có thể không bắt buộc định dạng nếu chung là cấu trúc Block-like. Ví dụ, tất cả các mảng sau đây đều hợp lệ. 
+
+```javascript
+const a = [
+  0, 1, 2,
+];
+
+const b =
+    [0, 1, 2];
+```
+
+```javascript
+const c = [0, 1, 2];
+
+someMethod(foo, [
+  0,
+  1,
+  2,
+], bar);
+```
+
  
 #### 4.2.2 Đối tượng kí tự đơn: Block-like không bắt buộc
 
 Bất cứ đối tượng kí tự đơn có thể không bắt buộc nếu chung là cấu trúc Block-like. Ví dụ như: 
- 
+
+```javascript
+const a = {
+  a: 0, b: 1
+};
+
+const b =
+    {a: 0, b: 1};
+```
+
+```javascript
+const c = {a: 0, b: 1};
+
+someMethod(foo, {
+  a: 0,
+  b: 1,
+}, bar);
+```
+
+
 #### 4.2.3 Lớp kí tự đơn
 
 Lớp kí tự đơn (Dù khai báo hay là biểu thức) được thụt vào như một khối. Không được dùng dấu phẩy sau những phương thức hoặc một dấu chấm phẩy sau khi đóng ngoặc của khai báo lớp.
- 
+
+Ví dụ:
+
+```javascript
+class Foo {
+  constructor() {
+    /** @type {number} */
+    this.x = 42;
+  }
+
+  /** @return {number} */
+  method() {
+    return this.x;
+  }
+}
+Foo.Empty = class {};
+```
+
+```javascript
+foo.Bar = class extends Foo {
+  /** @override */
+  method() {
+    return super.method() / 2;
+  }
+};
+
+/** @interface */
+class Frobnicator {
+  /** @param {string} message */
+  frobnicate(message) {}
+}
+```
+
+
 #### 4.2.4 Biểu thức hàm
 
 Khi khai báo hàm ẩn danh trong danh sách các đối số của một hàm gọi, thân của hàm được thụt hơn 2 khoảng trống so với sự thụt đầu dòng trước.
+```javascript
+prefix.something.reallyLongFunctionName('whatever', (a1, a2) => {
+  // Indent the function body +2 relative to indentation depth
+  // of the 'prefix' statement one line above.
+  if (a1.equals(a2)) {
+    someOtherLongFunctionName(a1);
+  } else {
+    andNowForSomethingCompletelyDifferent(a2.parrot);
+  }
+});
+
+some.reallyLongFunctionCall(arg1, arg2, arg3)
+    .thatsWrapped()
+    .then((result) => {
+      // Indent the function body +2 relative to the indentation depth
+      // of the '.then()' call.
+      if (result) {
+        result.use();
+      }
+    });
+```
+
  
 #### 4.2.5 Câu lệnh Switch
 
 Như bất kì khối lệnh khác, nội dung của khối lệnh Switch được thụt đầu dòng + 2 khoảng trắng.
 Sau một lệnh Switch, một dòng mới xuất hiện, thụt đầu dòng thêm 2 khoảng trắng, chuẩn chỉnh như một khối lệnh mở ra. Một khối lệnh rõ ràng có thể được sử dụng nếu được yêu cầu bằng xác định phạm vi từ vựng (Lexical Scoping). Câu lệnh Switch trả về những dòng lệnh thụt đầu dòng trước, cho đến khi kết thúc. 
 Một dòng trống là không bắt buộc giữa câu lệnh Break và case trước đó.
- 
-### 4.2	Các câu lệnh
+Ví dụ:
+
+```javascript
+switch (animal) {
+  case Animal.BANDERSNATCH:
+    handleBandersnatch();
+    break;
+
+  case Animal.JABBERWOCK:
+    handleJabberwock();
+    break;
+
+  default:
+    throw new Error('Unknown animal');
+}
+```
+
+### 4.3	Các câu lệnh
 
 #### 4.3.1 Một câu lệnh trên một dòng
 
@@ -231,15 +431,30 @@ Code JavaScript tối đa số lượng kí tự trong cột là 80. Ngoại tr�
 ### 4.5	Xuống dòng
 
 Ghi chú thuật ngữ: Xuống dòng được định nghĩa là bẻ vỡ một biểu thức đơn thành nhiều dòng.
-There is no comprehensive, deterministic formula showing exactly how to line-wrap in every situation. Very often there are several valid ways to line-wrap the same piece of code.
+Không có công thức hay quy tắc nào cho việc xuống dòng, tuy nhiên vẫn có một số quy ước chính xác nhất định dành cho công việc xuống dòng.
 Lưu ý: Trong khi các nguyên nhân điển hình cho xuống dòng để tránh hiện tượng tràn giới hạn cột, thậm chí code có thể phù hợp với giới hạn cột cho xuống dòng.
 
-### 4.5.1	Địa chỉ sử dụng Break
+### 4.5.1	Khi nào thì xuống dòng
 Nhiệm vụ chính của xuống dòng là luôn dừng ở mức độ cú pháp cao hơn.
 
 -	Khi một dòng được kết thúc bởi toán tử break thông qua các dấu hiệu. Điều này không áp dụng với dấu chấm (.) bởi nó không phải là toán tử.
 -	Tên một phương thức hoặc constructor được gắn liền với dấu mở ngoặc (() theo trước nó.
 -	Một dấu (,) gắn liền với các mã thông báo trước đó.
+
+Hợp lệ
+```javascript
+this.foo =
+    foo(
+        firstArg,
+        1 + someLongFunctionName());
+```
+
+Không hợp lệ
+
+```javascript
+this.foo = foo(firstArg, 1 +
+    someLongFunctionName());
+```
 
 ### 4.5.2	Các khối tiếp theo tăng ít nhất 4 khoảng trắng
 
@@ -279,21 +494,73 @@ Vượt qua những yêu cầu của ngôn ngữ cũng như các quy tắc style
 Tất cả các code phải tuân theo quy tắc hình chữ nhật
 Quy tắc hình chữ nhật: Khi một file nguồn được định dạng, mỗi cây con được sở hữu biên hình chữ nhật của nó, bao gồm tất cả văn bản của cây con và không chứa văn bản của cây con khác.
 Chúng có nghĩa là gì? Lấy một ví dụ được định dạng dưới đây và vẽ một hình chữ nhật: x / CurrentEstimate.
- 
+
+```javascript
+currentEstimate =
+        (currentEstimate + x / currentEstimate)
+            / 2.0f;
+```
+
 Nếu đúng thì ổn nhưng với các ví dụ định dạng sai, không có hình chữ nhật nào cả, chỉ có duy nhất biểu thức diễn tả. Quá tồi tệ.
+
+```javascript
+currentEstimate = (currentEstimate + x
+        / currentEstimate) / 2.0f;
+```
  
 Trong ví dụ được định dạng tốt, mỗi cây con đều sở hữu hình chữ nhật của mình. Ví dụ như ở phía bên phải của assignments đều sở hữu hình nhật cũng được định dạng giống ví dụ chuẩn, tuy nhiên ở cây khác thì không có. Điều này tăng cường khả năng đọc bởi cấu trúc chương trình được thiết kế một cách hợp lí.
 
-#### 4.6.4	Chú thích theo chiều Ngang: Không khuyến khích
+#### 4.6.4	Chú thích theo chiều Ngang: Không khuyến khích sử dụng
 
 Chú Thích Thuật Ngữ: Chú thích theo chiều ngang là hành vi thêm một số biến của không gian bổ sung vào trong Code với mục tiêu làm mã thông báo xuất hiện trực tiếp ngay bên dưới những mã thông báo khác ở dòng code trước.
 Hành vi này được cho phép nhưng không được khuyến khích bởi Google Style. Nó thậm chí không cần thiết để duy trì các liên kết theo chiều ngang nơi mà nó được sử dụng.
-Dưới đây là một ví dụ không có chú thích theo chiều ngang và một ví dụ chú thích theo chiều ngang.
+Dưới đây là một ví dụ không có chú thích theo chiều ngang và một ví dụ chú thích theo chiều ngang. Tất cả đều được phép sử dụng nhưng đoạn code sau không khuyến khích làm theo.
+
+```javascript
+{
+  tiny: 42, // this is great
+  longer: 435, // this too
+};
+
+{
+  tiny:   42,  // permitted, but future edits
+  longer: 435, // may leave it unaligned
+};
+```
+
  
 #### 4.6.5	Chú thích hàm
 
 Tốt nhất người dùng nên đặt chú thích hàm cùng một dòng với tên hàm. Nếu làm như vậy sẽ vượt quá giới hạn 80 từ trên một cột, các đối số phải được xuống dòng nhằm mục đích dễ đọc. Để tiết kiệm không gian, bạn có xuống dòng lúc gần 80 kí tự càng tốt hoặc đưa từng chú thích trên một dòng riêng để nâng cao khả năng đọc code. Thụt đầu dòng nên lùi vào 4 khoảng trắng. Căn chỉnh dấu ngoặc đơn là được phép nhưng không khuyến khích (đã có quy tắc). Dưới đây là những mẫu chung nhất cho chú thích xuống dòng.
- 
+
+```javascript
+// Arguments start on a new line, indented four spaces. Preferred when the
+// arguments don't fit on the same line with the function name (or the keyword
+// "function") but fit entirely on the second line. Works with very long
+// function names, survives renaming without reindenting, low on space.
+doSomething(
+    descriptiveArgumentOne, descriptiveArgumentTwo, descriptiveArgumentThree) {
+  // …
+}
+
+// If the argument list is longer, wrap at 80. Uses less vertical space,
+// but violates the rectangle rule and is thus not recommended.
+doSomething(veryDescriptiveArgumentNumberOne, veryDescriptiveArgumentTwo,
+    tableModelEventHandlerProxy, artichokeDescriptorAdapterIterator) {
+  // …
+}
+
+// Four-space, one argument per line.  Works with long function names,
+// survives renaming, and emphasizes each argument.
+doSomething(
+    veryDescriptiveArgumentNumberOne,
+    veryDescriptiveArgumentTwo,
+    tableModelEventHandlerProxy,
+    artichokeDescriptorAdapterIterator) {
+  // …
+}
+```
+
 ### 4.7	Nhóm ngoặc đơn: Đề xuất sử dụng
 
 Nhóm ngoặc đơn tuỳ theo mỗi người chỉ được bỏ qua khi người viết code và người đọc hoặc khách hàng đồng ý rằng tất cả mọi người không bị hiểu sai khi không có nó nhằm mục đích đọc hiểu code dễ dàng hơn. 
@@ -307,9 +574,33 @@ Phần này đề cập đến chú thích cài đặt. JSDoc sẽ được gi�
 #### 4.8.1	Style của khối lệnh chú thích
 
 Khối lệnh chú thích được thụt đầu dòng đúng bằng các code xung quanh tương đương. Chúng có thể được đưa vào trong / * ... * / hoặc // -. Đối với nhiều dòng chú thích /* … */, các dòng sau phải bắt đầu bằng dấu * để phù hợp với các dòng trên đó. Tên tham số sẽ xuất hiện sau giá trị bất cứ khi nào tên giá trị và phương thức không truyền đầy đủ ý nghĩa.
+
+```javascript
+/*
+ * This is
+ * okay.
+ */
+
+// And so
+// is this.
+
+/* This is fine, too. */
+
+someFunction(obviousParam, true /* shouldRender */, 'hello' /* name */);
+```
  
 Chú thích không được đính kèm với bất cứ dấu hoa thị hoặc kí tự nào khác.
 Không sử dụng JSDoc (/** … */) cho bất cứ chú thích thể hiện nào ở phía trên.
+
+```javascript
+TODO(username): comment
+TODO(b/buganizer_id): comment
+```
+
+```javascript
+TODO(tashana): Remove this code after the UrlTable2 has been checked in.
+TODO(b/6002235): remove the "Last visitors" feature
+```
  
 ## 5.	Tính năng ngôn ngữ
 
@@ -333,19 +624,53 @@ Các biến địa phương không có thói quen khai báo ở đầu khối l�
 
 Chú thích loại JSDoc có thể được thêm vào trên dòng khai báo hoặc trực tiếp trước tên biến.
 Ví dụ: 
- 
+
+```javascript
+const /** !Array<number> */ data = [];
+
+/** @type {!Array<number>} */
+const data = [];
+```
+
 ### 5.2	Mảng Kí Tự
 
 #### 5.2.1	Sử dụng dấu phẩy ở đuôi
 Bao gồm một dấu phẩy đuôi bất cứ khi nào ngắt dòng giữa phần tử cuối cùng và dấu ngoặc đóng.
- 
+
+Ví dụ:
+
+```javascript
+const values = [
+  'first value',
+  'second value',
+];
+```
+
+
 #### 5.2.2	Không sử dụng mảng khởi tạo
 Hàm khởi tạo dễ bị lỗi nếu các đối số được thêm vào hoặc xoá bỏ. Sử dụng một phần tử đơn để thay thế.
-Như thế này là sai: 
+
+Trường hợp vi phạm:
+
+```javascript
+const a1 = new Array(x1, x2, x3);
+const a2 = new Array(x1, x2);
+const a3 = new Array(x1);
+const a4 = new Array();
+```
+
  
 Tóm lại điều này hoạt động tương đối ổn, ngoại trừ trường hợp thứ 3: nếu x1 là một số nguyên còn a3 là một mảng có kích thước x1 thì tất cả phần tử đều không xác định. Nếu x1 là số khác bất kì thì một ngoại lệ sẽ được ném ra và nếu nó là bất cứ phần tử nào khác thì a3 sẽ là mảng 1 phần tử.
-Vì vậy, hãy viết
- 
+
+Vì vậy, hãy viết:
+
+```javascript
+const a1 = [x1, x2, x3];
+const a2 = [x1, x2];
+const a3 = [x1];
+const a4 = [];
+```
+
 Phân bổ rõ ràng chiều dài của một mảng sử dụng new Array (length) được phép khi thích hợp.
 
 #### 5.2.3	Phần tử không phải là số
@@ -353,13 +678,40 @@ Không định nghĩa hoặc sử dụng phần tử không phải số trên m�
 
 #### 5.2.4	Destructuring
 Mảng kí tự có thể được sử dụng ở phía bên trái của một phép gán thể thể hiện Destructuring. Yếu tố cuối cùng bao gồm (Không khoảng trống giữa … và tên biến). Phần tử nên được bỏ qua nếu chúng không được sử dụng.
- 
+
+```javascript
+const [a, b, c, ...rest] = generateResults();
+let [, b,, d] = someArray;
+```
+
 Destructuring có thể được sử dụng cho các hàm tham số (Lưu ý rằng một tên tham số là cần thiết nhưng bỏ qua). Luôn phải ghi rõ [] là giá trị mặc định nếu tham số mảng Destructuring là không bắt buộc và cung cấp giá trị mặc định ở phía bên trái.
  
-Không phù hợp: 
- 
+```javascript
+const [a, b, c, ...rest] = generateResults();
+let [, b,, d] = someArray;
+```
+
+```javascript
+/** @param {!Array<number>=} param1 */
+function optionalDestructuring([a = 4, b = 2] = []) { … };
+```
+
+Trường hợp vi phạm:
+
+```javascript
+function badDestructuring([a, b] = [4, 2]) { … };
+```
+
+
 #### 5.2.5	Spread operator
 Mảng Kí Tự có thể bao gồm Spread Operator (…) để san bằng các phần tử ra khỏi một hoặc nhiều iterables khác. Spead Operator nên được sử dụng thay vì các cấu trúc bất tiện với Array.prototype. Không có khoảng trắng sau dấu …
+
+Ví dụ:
+
+```javascript
+[...foo]   // preferred over Array.prototype.slice.call(foo)
+[...foo, ...bar]   // preferred over foo.concat(bar)
+```
  
 ### 5.3	Đối tượng kí tự
 
@@ -372,6 +724,13 @@ Trong khi Object không có những rắc rối tương tự như mảng, nó v�
 #### 5.3.3: Không được pha trộn từ khoá trích dẫn và không trích dẫn
 Đối tượng kí tự có thể đại diện một trong hai cấu trúc (với từ khoá không trích dẫn và/hoặc kí hiệu). Không pha lẫn các từ khoá này với đối tượng kí tự.
 Trường hợp vi phạm:
+
+```javascript
+{
+  a: 42, // struct-style unquoted key
+  'b': 43, // dict-style quoted key
+}
+```
  
 #### 5.3.4: Tên thuộc tính ước tính
 Tên thuộc tính ước tính (Ví dụ {['key' + foo()]: 42}) được cho phép và được coi là ….
@@ -379,27 +738,105 @@ Tên thuộc tính ước tính (Ví dụ {['key' + foo()]: 42}) được cho ph
 #### 5.3.5: Phương thức shorthand
 Các phương thức có thể được xác định trên đối tượng đơn sử dụng phương thức shorthand ({method() {… }}) ở vị trí sau dấu hai chấm theo sau bởi một hàm hoặc hàm mũi tên đơn.
 Ví dụ: 
- 
+
+```javascript
+return {
+  stuff: 'candy',
+  method() {
+    return this.stuff;  // Returns 'candy'
+  },
+};
+```
+
 Lưu ý rằng this trong phương thức shorthand hoặc hàm dùng để chỉ chính các đối tượng đơn.
+
+```javascript
+class {
+  getObjectLiteral() {
+    this.stuff = 'fruit';
+    return {
+      stuff: 'candy',
+      method: () => this.stuff,  // Returns 'fruit'
+    };
+  }
+}
+```
+
  
 #### 5.3.6	Đặc tính Shorthand
 Đặc tính Shorthand được cho phép trong đối tượng kí tự
 Ví dụ:
- 
+
+```javascript
+const foo = 1;
+const bar = 2;
+const obj = {
+  foo,
+  bar,
+  method() { return this.foo + this.bar; },
+};
+assertEquals(3, obj.method());
+```
 
 #### 5.3.7	Destructuring
 Khuôn mẫu đối tượng destructuring có thể được sử dụng ở phía trái của một phép gán để thực hiện destructuring và giải nén nhiều giá trị từ một đối tượng duy nhất.
 Đối tượng bị phá huỷ cũng có thể được sử dụng như hàm tham số nhưng càng giữ được càng lâu càng tốt….
 Ví dụ: 
- 
-Trường hợp vi phạm
+
+```javascript
+/**
+ * @param {string} ordinary
+ * @param {{num: (number|undefined), str: (string|undefined)}=} param1
+ *     num: The number of times to do something.
+ *     str: A string to do stuff to.
+ */
+function destructured(ordinary, {num, str = 'some default'} = {})
+```
+
+
+Trường hợp vi phạm:
+
+```javascript
+/** @param {{x: {num: (number|undefined), str: (string|undefined)}}} param1 */
+function nestedTooDeeply({x: {num, str}}) {};
+/** @param {{num: (number|undefined), str: (string|undefined)}=} param1 */
+function nonShorthandProperty({num: a, str: b} = {}) {};
+/** @param {{a: number, b: number}} param1 */
+function computedKey({a, b, [a + b]: c}) {};
+/** @param {{a: number, b: string}=} param1 */
+function nontrivialDefault({a, b} = {a: 2, b: 4}) {};
+```
+
  
 Destructuring cũng có thể sử dụng cho câu lệnh goog.require và trong trường hợp không thể xuống dòng.
 
 #### 5.3.8	Enums
 Sự liệt kê được định nghĩa bởi thêm chú thích @enum đến một đối tượng kí tự. Thuộc tính bổ sung có thể không được thêm vào một enum sau khi nó được định nghĩa. Enums phải là đại lượng không đổi và tất cả các giá trị của Enums cũng phải bất biến.
 
- 
+```javascript
+/**
+ * Supported temperature scales.
+ * @enum {string}
+ */
+const TemperatureScale = {
+  CELSIUS: 'celsius',
+  FAHRENHEIT: 'fahrenheit',
+};
+
+/**
+ * An enum with two options.
+ * @enum {number}
+ */
+const Option = {
+  /** The option used shall have been the first. */
+  FIRST_OPTION: 1,
+  /** The second among two options. */
+  SECOND_OPTION: 2,
+};
+```
+
+
+
 ### 5.4	Lớp
 
 #### 5.4.1 Hàm khởi tạo
@@ -409,6 +846,15 @@ Hàm khởi tạo không bắt buộc với lớp cụ thể và khi hiện di�
 #### 5.4.2 Trường
 
 Đặt tất cả trường của một đối tượng cụ thể(Tức là tất cả đặc tính ngoài các phương thức) trong hàm khởi tạo. Chú thích các trường không bao giờ được gán lại với @const. Trường Private phải được chú thích với @private và tên của chúng phải được kết thúc bằng dấu gạch dưới. Các trường không bao giờ được đặt trong lớp cụ thể prototype
+
+```javascript
+class Foo {
+  constructor() {
+    /** @private @const {!Bar} */
+    this.bar_ = computeBar();
+  }
+}
+```
 
 #### 5.4.3 Thuộc tính Computed
 
