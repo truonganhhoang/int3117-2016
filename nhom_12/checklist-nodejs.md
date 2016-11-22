@@ -13,7 +13,6 @@
 
 
 ##1. Tránh xa 'this' và 'new'
-https://github.com/minhnt58/int3117-2016/tree/master/nhom_12
 Vì lập trình với Node không tránh khỏi việc phải thực hiện nhiều callbacks lồng nhau, hàm này gọi hàm kia theo quan hệ phân cấp; bạn nên đảm bảo rằng các hàm dễ dàng được sử dụng khi được đặt vào những ngữ cảnh khác nhau. 
 
 ```
