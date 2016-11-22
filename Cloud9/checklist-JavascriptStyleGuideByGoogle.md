@@ -64,141 +64,218 @@
   * 9.2	Những quy tắc kiểu thường bị hiểu lầm
   * 9.3	Các Tool liên quan
 
-1.	Giới thiệu
+## 1.	Giới thiệu
+
 Tài liệu này phục vụ như định nghĩa hoàn chỉnh các tiêu chuẩn mã hoá của Google cho mã nguồn trong ngôn ngữ lập trình Java Script. Một tập tin mã nguồn JavaScript được mô tả như Google Style khi và chỉ khi nó tuân thủ những quy tắc trong tài liệu này.
+
 Giống như những hướng dẫn phong cách lập trình khác, các vấn đề bao quát không chỉ là vấn đề thẩm mĩ định dạng mà còn nằm ở quy ước và tiêu chuẩn mã hoá. Tuy nhiên, tài liệu này tập trung chủ yếu vào các tiêu chuẩn bất di bất dịch mà chúng ta theo đuổi ở bậc đại học và tránh đưa ra những lời tư vấn không rõ ràng hoặc không thực thi (dù là con người hay công cụ).
-1.1	Thuật ngữ chú thích
+### 1.1	Thuật ngữ chú thích
+
 Trong tài liệu này, trừ trường hợp làm rõ, ta quy ước:
+
 -	Những thuật ngữ chú thích luôn để cập tới sự bổ sung chú thích. Chúng tôi không sử dụng những chú thích cụm từ tham khảo, thay vì sử dụng thuật ngữ chung “JSDoc” cho cả chú thích văn bản thô lẫn thuật ngữ máy tính trong /**… */.
+
 -	Hướng dẫn Style này sử dụng thuật ngữ RFC 2119 khi sử dụng các cụm từ phải, không được, nên, không nên và có thể. Các thuật ngữ ưa thích và cần tránh tương ứng lần lượt với nên và không nên. Các câu lệnh khai báo không điều kiện là quy tắc phải được thoả mãn.
+
 -	Các ghi chú khác sẽ thỉnh thoảng được xuất hiện trong tài liệu
-1.2	Hướng dẫn chú thích
+
+### 1.2	Hướng dẫn chú thích
+
 Code ví dụ trong tài liệu này là không quy chuẩn. Đó trong các ví dụ thuộc Google Style, chúng có thể không minh hoạ kiểu cách duy nhất để biểu diễn code. Các lựa chọn định dạng không bắt buộc thực hiện trong ví dụ không được thực thi như các quy tắc.
-2.	Tập tin mã nguồn cơ bản
-2.1	Tên tập tin
+
+## 2.	Tập tin mã nguồn cơ bản
+
+### 2.1	Tên tập tin
+
 Tên tập tin phải chứa các kí tự thường và có thể chứa dấu gạch dưới (_) hoặc gạch ngang (-) nhưng không có dấm chấm câu thêm vào. Thực hiện theo các quy ước mà project của bạn sẽ sử dụng. Đuôi File phải chứa .js.
-2.2	Mã hoá File: UTF -8 
+
+### 2.2	Mã hoá File: UTF -8 
+
 Tập tin mã nguồn được mã hoá trên UTF-8
-2.3	Kí tự đặc biệt
-2.3.1	Kí tự khoảng trắng
+
+### 2.3	Kí tự đặc biệt
+
+#### 2.3.1	Kí tự khoảng trắng
+
 Bên cạnh các chuỗi nhiều dòng kết thúc, các kí tự ASCII theo chiều ngang (0x20) chỉ là các kí tự khoảng trắng xuất hiện bất cứ nơi đâu trong file nguồn. Điều này có ý nghĩa rằng:
+
 -	Tất cả các ký tự khoảng trắng khác trong chuỗi sẽ bị biến mất.
+
 -	Kí tự Tab không được sử dụng để thụt đầu dòng.
-2.3.2	Các kí tự dừng đặc biệt
+
+### 2.3.2	Các kí tự dừng đặc biệt
+
 Đối với bất cứ kí tự nào nằm trong nhóm kí tự dừng (\, \”, \\, \ b, \ f \ n, \ r, \ t \ v), chuỗi được sử dụng hơn là thuộc số … (e.g \x0a, \u000a, or \u{a}). Những kí tự dừng bát phân không bao giờ được sử dụng.
-2.3.3	Kí tự không thuộc mã ASCII
+
+### 2.3.3	Kí tự không thuộc mã ASCII
+
 Đối với các kĩ tự không phải ASCII còn lại, hoặc là kí tự Unicode có thực (Ví dụ ∞) hoặc kí tự hex tương đương hoặc kí tự Unicode dừng (ví dụ \ u221e) được sử dụng, chúng chỉ tuỳ thuộc vào mục đích để làm code dễ hiểu và dễ học hơn.
+
 Mẹo: Trong các kí tự Unicode dừng, và đôi khi ngay cả các kí tự Unicode thực được sử dụng, một chú thích có thể rất hữu ích.
  
 Mẹo: Đừng bao giờ làm Code của bạn dễ đọc hơn bởi đơn giản một số chương trình có thể xử lí mã phi ASCII chuẩn xác. Nếu điều đó xảy ra, chương trình sẽ bị lỗi và phải chỉnh sửa.
-3.	Cấu trúc tập tin nguồn
+
+## 3.	Cấu trúc tập tin nguồn
+
 Một tập tin nguồn bao gồm những yếu tố theo thứ tự sau:
 1.	Giấy phép hoặc bản quyền thông tin (Nếu có)
 2.	@fileoverview JSDoc (Nếu có)
 3.	Một câu lệnh goog.module
 4.	Các câu lệnh Goog.require 
 5.	Hệ thống xử lí file
+
 Mỗi phần có thể được tách bằng một dòng khoảng trống, ngoại trừ hệ thống xử lí file, chúng có thể có 1 hoặc 2 khoảng trống.
-3.1	Giấy phép hoặc bản quyền thông tin (Nếu có)
+
+### 3.1	Giấy phép hoặc bản quyền thông tin (Nếu có)
+
 Nếu giấy phép hoặc bản quyền thông tin thuộc về file, chúng sẽ thuộc về đây.
-3.2	@fileoverview JSDoc (Nếu có)
+
+### 3.2	@fileoverview JSDoc (Nếu có)
+
 Đọc 7.5 (Chú giải 5 cấp độ đầu) để hiểu rõ nội dung quy tắc.
-3.3	Một câu lệnh goog.module
+
+### 3.3	Một câu lệnh goog.module
+
 Tất cả các tập tin phải khai báo chính xác một tên goog.module ở trên dòng đơn duy nhất: các dòng chứa khai báo goog.module phải không được xuống dòng và đo đó có một ngoại lệ với giới hạn 80 kí tự trên 1 cột.
 Ví dụ:
  
-3.3.1	goog.module.declareLegacyNamespace
+#### 3.3.1	goog.module.declareLegacyNamespace
+
 goog.module.declareLegacyNamespace tồn tại để dễ dàng chuyển đổi tên miền không gian truyền thống nhưng đi kèm với một số hạn chế khi đặt tên. Như tên của Module con phải được tạo sau parent namespace, tên này không phải là tên con hoặc tên cha goog.module (Ví dụ goog.module('parent'); và goog.module(‘parent.child'); không thể tồn tại cả hai, cũng không thể tồn tại goog.module('parent'); và goog.module('parent.child.grandchild');).
-3.3.2	Những Module ES6
+
+#### 3.3.2	Những Module ES6
+
 Không sử dụng những Module ES6 (chính xác là từ khoá nhập và xuất) như các ngữ nghĩa nếu chưa được hoàn thành trước đó. Lưu ý rằng chính sách này sẽ được xem xét lại ngữ nghĩa một lần như tiêu chuẩn đầy đủ.
-3.4	Các câu lênh goog.require
-Lệnh nhập được thực thi với các câu lệnh goog.require, được nhóm lại với nhau ngay lập tức thông qua khai báo module. Mỗi goog.require được gán cho một biệt hiệu không đổi duy nhất hoặc cấu trúc phá huỷ khác thành vài biệt hiệu không đổi. Những biệt hiệu là cách duy nhất để hướng tới phụ thuộc yêu cầu, dù ở trong code hoặc các chú thích khác: Thên đầy đủ không bao giờ sử dụng ngoại trừ đối số tới google.require. Nếu một Module chỉ được thêm vào cho các thành phần phụ của nó, việc chuyển đổi có thể bỏ qua nhưng tên đầy đủ có thể không xuất hiện bất cứ nơi nào trong File. Tên biệt hiệu phải phù hợp với thành phần dấu chấm độc lập cuối cùng của module được thêm vào khi có thể, mặc dù thành phần bổ sung có thể chứa đựng (với các lớp vỏ phù hợp mà lớp vỏ của biệt hiệu vẫn xác định chính xác loại của nó) nếu cần thiết để làm thành ngữ nghĩa, hoặc nếu nó cải thiện khả năng đọc một cách đáng kể. Câu lệnh goog.require có thể không xuất hiện bất cứ nơi nào trong tập tin.
+
+### 3.4	Các câu lênh goog.require
+
+Lệnh nhập được thực thi với các câu lệnh goog.require, được nhóm lại với nhau ngay lập tức thông qua khai báo module. Mỗi goog.require được gán cho một biệt hiệu không đổi duy nhất hoặc cấu trúc phá huỷ khác thành vài biệt hiệu không đổi. Những biệt hiệu là cách duy nhất để hướng tới phụ thuộc yêu cầu, dù ở trong code hoặc các chú thích khác: Thên đầy đủ không bao giờ sử dụng ngoại trừ đối số tới google.require. 
+
+Nếu một Module chỉ được thêm vào cho các thành phần phụ của nó, việc chuyển đổi có thể bỏ qua nhưng tên đầy đủ có thể không xuất hiện bất cứ nơi nào trong File. Tên biệt hiệu phải phù hợp với thành phần dấu chấm độc lập cuối cùng của module được thêm vào khi có thể, mặc dù thành phần bổ sung có thể chứa đựng (với các lớp vỏ phù hợp mà lớp vỏ của biệt hiệu vẫn xác định chính xác loại của nó) nếu cần thiết để làm thành ngữ nghĩa, hoặc nếu nó cải thiện khả năng đọc một cách đáng kể. Câu lệnh goog.require có thể không xuất hiện bất cứ nơi nào trong tập tin.
+
 Các dòng được sắp xếp thông qua thứ tự ASCII chuẩn của toàn bộ dòng, với chữ hoa, sau đó tới chữ thường, sau đó đến dấu ngoặc mở. Các biệt hiệu trong một biểu thức huỷ đều được sắp xếp theo cùng một cách.
+
 Mẹo: Không cần ghi nhớ thứ tự này và thực thi chúng bằng tay. Bạn có thể dựa vào IDE hoặc thậm chí sép xếp nhập một cách tự động.
 Nếu một bí danh hoặc tên module dài sẽ khiến một dòng vượt quá giới hạn 80 cột, nó không được bao bọc: dòng goog.require là một ngoại lệ đối với giới hạn 80 cột.
- 
- 
-3.5	Hoàn tất một tập tin
+  
+### 3.5	Hoàn tất một tập tin
+
 Sự thực thi thực theo sau thông tin lệ thuộc được khai báo cách nhau ít nhất một dòng trống. Nó có thể bao gồm rất nhiều khai báo module toàn cục (Hằng, biến, lớp, hàm,…) như các biểu tượng xuất.
-4.	Định dạng
+
+## 4.	Định dạng
+
 Thuật ngữ ghi chú: Cấu trúc khối tương đồng (Block-like) đề cập tới thân của một lớp, hàm, phương pháp hoặc khối ngoặc phân định của code. Lưu ý rằng, bởi Mảng kí tự 5.2 và đối tượng kí tự 5.3, các mảng hoặc các đối tượng kí tự có thể được không bắt buộc để xử lí nếu nó là cấu trúc Block-like.
 Mẹo: Sử dụng Clang- Format. Cộng đồng JavaScript đã nỗ lực đầu tư để đảm bảo Clang-Format
-4.1	Dấu Ngoặc
-4.1.1	Dấu Ngoặc được sử dụng cho những cấu trúc điều khiển
+
+### 4.1	Dấu Ngoặc
+
+#### 4.1.1	Dấu Ngoặc được sử dụng cho những cấu trúc điều khiển
+
 Những dấu ngoặc cần thiết cho tất cả các cấu trúc điều khiển (if, else, for, do, while,…) kể cả trong thân chỉ chưa đúng 1 câu lệnh duy nhất. Câu lệnh đầu tiên của khối lệnh khác rỗng phải bắt đầu bằng dấu ngoặc. 
  
 Ngoại lệ: Thông thường nếu câu lệnh có thể phù hợp trên một dòng duy nhất không đóng, chúng có thể không cần dấu ngoặc để cải thiện khả năng đọc. Đây là trường hợp duy nhất cấu trúc điều khiển bỏ qua dấu ngoặc để xuống dòng.
  
-4.1.2	Chuẩn K&R style của khối lệnh khác rỗng
+#### 4.1.2	Chuẩn K&R style của khối lệnh khác rỗng
+
 Các dấu ngoặc theo Kernighan và Richie style (“Egyptian brackets) cho khối lệnh không rỗng và khối lệnh tương đồng được xây dựng:
+
 -	Không có xuống dòng trước dấu ngoặc mở đầu
 -	Xuống dòng sau khi sử dụng dấu ngoặc mở
 -	Xuống dòng sau khi sử dụng dấu ngoặc đóng
 -	Xuống dòng trước khi sử dụng dấu ngoặc đóng nếu dấu ngoặc chấm dứt một câu lệnh hoặc thân hàm hoặc câu lệnh Class hoặc một Class. Đặc biệt, không xuống dòng sau dấu ngoặc nếu đằng sau nó có: else, catch, while, hoặc dấu phẩy, dấu chấm phẩy hoặc dấu ngoặc phải.
  
-4.1.3: Rút gọn khối lệnh rỗng
+#### 4.1.3: Rút gọn khối lệnh rỗng
+
 Một khối lệnh rỗng hoặc cấu trúc Block-like  có thể đóng ngay lập tức sau khi mở với không có kí tự, khoảng trắng hoặc ngắt dòng (như {}), trừ khi nó là một phần của câu lệnh đa khối (nhiều khối lệnh).
  
-4.2: Lùi đầu dòng khối lệnh: + 2 khoảng trắng
+### 4.2: Lùi đầu dòng khối lệnh: + 2 khoảng trắng
+
 Mỗi lần mỗi khối lệnh hoặc cấu trúc Block-like được mở, các dòng thụt lùi bởi 2 khoảng trắng. Khi khối lệnh kết thúc, sự thụt đầu dòng trở về với mức thụt trước. Các cấp độ thụt đầu dòng áp dụng cho cả mã và chú thích trong suốt khối lệnh.
-4.2.1 Mảng kí tự: Block-like không bắt buộc
+
+#### 4.2.1 Mảng kí tự: Block-like không bắt buộc
+
 Bất kì mảng kí tự nào đều có thể không bắt buộc định dạng nếu chung là cấu trúc Block-like. Ví dụ, tất cả các mảng sau đây đều hợp lệ. 
  
-4.2.2 Đối tượng kí tự đơn: Block-like không bắt buộc
+#### 4.2.2 Đối tượng kí tự đơn: Block-like không bắt buộc
+
 Bất cứ đối tượng kí tự đơn có thể không bắt buộc nếu chung là cấu trúc Block-like. Ví dụ như: 
  
-4.2.3 Lớp kí tự đơn
+#### 4.2.3 Lớp kí tự đơn
+
 Lớp kí tự đơn (Dù khai báo hay là biểu thức) được thụt vào như một khối. Không được dùng dấu phẩy sau những phương thức hoặc một dấu chấm phẩy sau khi đóng ngoặc của khai báo lớp.
  
-4.2.4 Biểu thức hàm
+#### 4.2.4 Biểu thức hàm
+
 Khi khai báo hàm ẩn danh trong danh sách các đối số của một hàm gọi, thân của hàm được thụt hơn 2 khoảng trống so với sự thụt đầu dòng trước.
  
-4.2.5 Câu lệnh Switch
+#### 4.2.5 Câu lệnh Switch
+
 Như bất kì khối lệnh khác, nội dung của khối lệnh Switch được thụt đầu dòng + 2 khoảng trắng.
 Sau một lệnh Switch, một dòng mới xuất hiện, thụt đầu dòng thêm 2 khoảng trắng, chuẩn chỉnh như một khối lệnh mở ra. Một khối lệnh rõ ràng có thể được sử dụng nếu được yêu cầu bằng xác định phạm vi từ vựng (Lexical Scoping). Câu lệnh Switch trả về những dòng lệnh thụt đầu dòng trước, cho đến khi kết thúc. 
 Một dòng trống là không bắt buộc giữa câu lệnh Break và case trước đó.
  
-4.2	Các câu lệnh
-4.3.1 Một câu lệnh trên một dòng
+### 4.2	Các câu lệnh
+
+#### 4.3.1 Một câu lệnh trên một dòng
+
 Mỗi câu lệnh được kết thúc và nối tiếp sau khi xuống dòng.
-4.3.2 Phải có dấu chấm phẩy
+
+#### 4.3.2 Phải có dấu chấm phẩy
+
 Mỗi câu lệnh phải kết thúc bằng dấu chấm phẩy. 
-4.4	Giới hạn số lượng kí tự trong cột: 80
+
+### 4.4	Giới hạn số lượng kí tự trong cột: 80
+
 Code JavaScript tối đa số lượng kí tự trong cột là 80. Ngoại trừ các lưu ý dưới đây, bất cứ những dòng nào vượt qua giới hạn này phải được xuống dòng, giống như mục 4.5 dưới đây.
-4.5	Xuống dòng
+
+### 4.5	Xuống dòng
+
 Ghi chú thuật ngữ: Xuống dòng được định nghĩa là bẻ vỡ một biểu thức đơn thành nhiều dòng.
 There is no comprehensive, deterministic formula showing exactly how to line-wrap in every situation. Very often there are several valid ways to line-wrap the same piece of code.
 Lưu ý: Trong khi các nguyên nhân điển hình cho xuống dòng để tránh hiện tượng tràn giới hạn cột, thậm chí code có thể phù hợp với giới hạn cột cho xuống dòng.
-4.5.1	Địa chỉ sử dụng Break
+
+### 4.5.1	Địa chỉ sử dụng Break
 Nhiệm vụ chính của xuống dòng là luôn dừng ở mức độ cú pháp cao hơn.
--	Khi một dòng được kết thúc bởi toán tử break thông qua các dấu hiệu
-Điều này không áp dụng với dấu chấm (.) bởi nó không phải là toán tử.
+
+-	Khi một dòng được kết thúc bởi toán tử break thông qua các dấu hiệu. Điều này không áp dụng với dấu chấm (.) bởi nó không phải là toán tử.
 -	Tên một phương thức hoặc constructor được gắn liền với dấu mở ngoặc (() theo trước nó.
 -	Một dấu (,) gắn liền với các mã thông báo trước đó.
-4.5.2	Các khối tiếp theo tăng ít nhất 4 khoảng trắng
+
+### 4.5.2	Các khối tiếp theo tăng ít nhất 4 khoảng trắng
+
 Khi xuống dòng, mỗi dòng từ chữ cái đầu tiên được thụt vào ít nhất 4 khoảng trắng so với dòng gốc chuẩn, trừ khi nó rơi vào quy tắc thụt đầu dòng như đã đền cập trên đây.
 Khi có nhiều dòng tiếp nối nhau, thụt đầu dòng có thể vượt quá 4 nếu hợp lí. Tóm lại, dòng tiếp tục được thụt lùi với cấp số nhân của 4, trừ khi 2 dòng code có giá trị tương đương nhau thì chúng ngang dòng với nhau.
-4.6	Khoảng Trắng
-4.6.1	Khoảng trắng theo chiều dọc
+
+### 4.6	Khoảng Trắng
+
+#### 4.6.1	Khoảng trắng theo chiều dọc
+
 Một dòng trông duy nhất sẽ xuất hiện khi:
+
 -	Giữa nhiều phương thức liên tiếp nhau trong một lớp hoặc đối tượng đơn.
 + Ngoại lệ: Một khoảng trống giữa hai định nghĩa các thuộc tính trong thuộc tính đơn (Không có code giữa chúng) là tùy chọn. Dòng này được sử dụng khi cần thiết để tạo sự logic giữa nhóm của các trường.
 -	Bên trong các phương thức, một cách đơn giản để tạo ra sự logic giữa các câu lệnh. Dòng bỏ trống giữa dòng đầu và dòng cuối trong một hàm là không được phép. 
 -	Có thể tùy chọn có hoặc không giữa đầu hoặc cuối của một phương thức trong một lớp hoặc các đối tượng đơn.
 -	Nếu được yêu cầu bởi các Section khác trong thư mục(Ví dụ như 3.4 goog.require statements)
-4.6.2	Khoảng trắng theo chiều ngang
+
+#### 4.6.2	Khoảng trắng theo chiều ngang
+
 Sử dụng khoảng trắng theo chiều ngang phụ thuộc vào vị trí và thường được chia thành 3 loại lớn: phần đầu (Bắt đầu một dòng), phần sau (Phần cuối một dòng) và phần thân. Khoảng trắng phía đầu (Tức thụt đầu dòng) được gửi ở một nơi khác. Khoảng trắng phần thân tuyệt đối bị cấm.
+
 Vượt qua những yêu cầu của ngôn ngữ cũng như các quy tắc style khác, khoảng trắng giữa các chữ cái, chú thích, JSDoc, không gian nội bộ đơn ASCII được xuất hiện trong những nhiều kiện song.
+
 -	Tách bất cứ từ riêng (Ví dụ như if, for hoặc catch) từ một dấu ngoặc mở (() theo sau nó trên dòng.
 -	Tách bất cứ từ riêng (ví dụ như else hoặc catch) từ dấu ngoặc nhọn đóng (}) trước đó trong hàng.
 -	Sau dấu ngoặc ngoặc nhọn mở với 2 điều kiện sau:
-+ Trước một dấu là đối tượng kí tự, đối số đầu tiên của một hàm hoặc các phần tử đầu tiên trong mảng chữ (Ví dụ: foo({a: [{c: d}]}))
-+ Trên 1 Template mở rộng vì nó bị cấm bởi ngôn ngữ (e.g. abc${1 + 2}def).
+  + Trước một dấu là đối tượng kí tự, đối số đầu tiên của một hàm hoặc các phần tử đầu tiên trong mảng chữ (Ví dụ: foo({a: [{c: d}]}))
+  + Trên 1 Template mở rộng vì nó bị cấm bởi ngôn ngữ (e.g. abc${1 + 2}def).
 -	Sau một dấu phẩy (,) hoặc dấu chấm phẩy (;) Lưu ý rằng nhiều khoảng trống không được phép sau những kí tự này (Chỉ 1 thôi).
 -	Sau dấu hai chấm (:) trong một đối tượng chữ cái.
 -	Ở cả hai phía của dấu (//) để bắt đầu một Chú thích kết thúc dòng. Ở đây, nhiều khoảng trắng được cho phép nhưng không khuyến khích.
 -	Sau khi mở kí tự chú thích JSDoc và cả ở hai phía của những kí tự đóng (Ví dụ cho khai báp kiểu dạng ngắn hoặc dạng Casts: this.foo = /** @type {number} */ (bar) hoặc hàm (/** string */ foo) {)..
-4.6.3	Quy tắc hình chữ nhật
+
+#### 4.6.3	Quy tắc hình chữ nhật
+
 Tất cả các code phải tuân theo quy tắc hình chữ nhật
 Quy tắc hình chữ nhật: Khi một file nguồn được định dạng, mỗi cây con được sở hữu biên hình chữ nhật của nó, bao gồm tất cả văn bản của cây con và không chứa văn bản của cây con khác.
 Chúng có nghĩa là gì? Lấy một ví dụ được định dạng dưới đây và vẽ một hình chữ nhật: x / CurrentEstimate.
@@ -206,47 +283,63 @@ Chúng có nghĩa là gì? Lấy một ví dụ được định dạng dưới 
 Nếu đúng thì ổn nhưng với các ví dụ định dạng sai, không có hình chữ nhật nào cả, chỉ có duy nhất biểu thức diễn tả. Quá tồi tệ.
  
 Trong ví dụ được định dạng tốt, mỗi cây con đều sở hữu hình chữ nhật của mình. Ví dụ như ở phía bên phải của assignments đều sở hữu hình nhật cũng được định dạng giống ví dụ chuẩn, tuy nhiên ở cây khác thì không có. Điều này tăng cường khả năng đọc bởi cấu trúc chương trình được thiết kế một cách hợp lí.
-4.6.4	Chú thích theo chiều Ngang: Không khuyến khích
+
+#### 4.6.4	Chú thích theo chiều Ngang: Không khuyến khích
+
 Chú Thích Thuật Ngữ: Chú thích theo chiều ngang là hành vi thêm một số biến của không gian bổ sung vào trong Code với mục tiêu làm mã thông báo xuất hiện trực tiếp ngay bên dưới những mã thông báo khác ở dòng code trước.
 Hành vi này được cho phép nhưng không được khuyến khích bởi Google Style. Nó thậm chí không cần thiết để duy trì các liên kết theo chiều ngang nơi mà nó được sử dụng.
 Dưới đây là một ví dụ không có chú thích theo chiều ngang và một ví dụ chú thích theo chiều ngang.
  
-4.6.5	Chú thích hàm
+#### 4.6.5	Chú thích hàm
+
 Tốt nhất người dùng nên đặt chú thích hàm cùng một dòng với tên hàm. Nếu làm như vậy sẽ vượt quá giới hạn 80 từ trên một cột, các đối số phải được xuống dòng nhằm mục đích dễ đọc. Để tiết kiệm không gian, bạn có xuống dòng lúc gần 80 kí tự càng tốt hoặc đưa từng chú thích trên một dòng riêng để nâng cao khả năng đọc code. Thụt đầu dòng nên lùi vào 4 khoảng trắng. Căn chỉnh dấu ngoặc đơn là được phép nhưng không khuyến khích (đã có quy tắc). Dưới đây là những mẫu chung nhất cho chú thích xuống dòng.
  
-4.7	Nhóm ngoặc đơn: Đề xuất sử dụng
+### 4.7	Nhóm ngoặc đơn: Đề xuất sử dụng
+
 Nhóm ngoặc đơn tuỳ theo mỗi người chỉ được bỏ qua khi người viết code và người đọc hoặc khách hàng đồng ý rằng tất cả mọi người không bị hiểu sai khi không có nó nhằm mục đích đọc hiểu code dễ dàng hơn. 
 Không sử dụng dấu ngoặc đơn không cần thiết xung quanh toàn bộ các biểu thức sau đây: delete, typeof, void, return, throw, case, in, or of.
 Dấu ngoặc đơn yêu cầu cho kiểu casts này: /** @type {!Foo} */ (foo)
-4.8	Chú thích
+
+### 4.8	Chú thích
+
 Phần này đề cập đến chú thích cài đặt. JSDoc sẽ được giải quyết trong phần 7.
-4.8.1	Style của khối lệnh chú thích
+
+#### 4.8.1	Style của khối lệnh chú thích
+
 Khối lệnh chú thích được thụt đầu dòng đúng bằng các code xung quanh tương đương. Chúng có thể được đưa vào trong / * ... * / hoặc // -. Đối với nhiều dòng chú thích /* … */, các dòng sau phải bắt đầu bằng dấu * để phù hợp với các dòng trên đó. Tên tham số sẽ xuất hiện sau giá trị bất cứ khi nào tên giá trị và phương thức không truyền đầy đủ ý nghĩa.
  
 Chú thích không được đính kèm với bất cứ dấu hoa thị hoặc kí tự nào khác.
 Không sử dụng JSDoc (/** … */) cho bất cứ chú thích thể hiện nào ở phía trên.
  
-5.	Tính năng ngôn ngữ
+## 5.	Tính năng ngôn ngữ
 
 JavaScript bao gồm nhiều tính năng mập mờ, không rõ ràng (thậm chí cả nguy hiểm). Phần này mô tả những tính năng có thể hoặc không thể sử dụng kèm một số ràng buộc thêm về JavaScript.
-5.1	Khai Báo Biến Địa Phương
-5.1.1	Sử dụng Hằng và Gán
+
+### 5.1	Khai Báo Biến Địa Phương
+
+#### 5.1.1	Sử dụng Hằng và Gán
 
 Khai báo tất cả các biến cục bộ với Hằng hoặc phép gán. Sử dụng hằng như mặc định, trừ khi một biến số cần được gán lại. Các từ khoá Var không được phép sử dụng.
-5.1.2	Mỗi giá trị một khai báo
+
+#### 5.1.2	Mỗi giá trị một khai báo
+
 Mỗi khai báo biến địa phương được khai báo một giá trị duy nhất, ví dụ như gán a = 1, b = 2; không được phép sử dụng.
-5.1.3	Khai báo khi cần thiết, khởi tạo càng sớm càng tốt
+
+#### 5.1.3	Khai báo khi cần thiết, khởi tạo càng sớm càng tốt
+
 Các biến địa phương không có thói quen khai báo ở đầu khối lệnh hoặc cấu trúc Block-like. Thay vào đó, biến cục bộ được khi báo gần điểm đầu tiên xuất hiện để thực hiện chức năng đầu tiên nhằm tiết kiệm phạm vi.
-5.1.4	Khai báo các loại biến khi cần thiết
+
+#### 5.1.4	Khai báo các loại biến khi cần thiết
+
 Chú thích loại JSDoc có thể được thêm vào trên dòng khai báo hoặc trực tiếp trước tên biến.
 Ví dụ: 
  
-5.2	Mảng Kí Tự
+### 5.2	Mảng Kí Tự
 
-5.2.1	Sử dụng dấu phẩy ở đuôi
+#### 5.2.1	Sử dụng dấu phẩy ở đuôi
 Bao gồm một dấu phẩy đuôi bất cứ khi nào ngắt dòng giữa phần tử cuối cùng và dấu ngoặc đóng.
  
-5.2.2	Không sử dụng mảng khởi tạo
+#### 5.2.2	Không sử dụng mảng khởi tạo
 Hàm khởi tạo dễ bị lỗi nếu các đối số được thêm vào hoặc xoá bỏ. Sử dụng một phần tử đơn để thay thế.
 Như thế này là sai: 
  
@@ -254,42 +347,47 @@ Tóm lại điều này hoạt động tương đối ổn, ngoại trừ trư�
 Vì vậy, hãy viết
  
 Phân bổ rõ ràng chiều dài của một mảng sử dụng new Array (length) được phép khi thích hợp.
-5.2.3	Phần tử không phải là số
+
+#### 5.2.3	Phần tử không phải là số
 Không định nghĩa hoặc sử dụng phần tử không phải số trên một mảng (Trừ chiều dài). Thay vào đó, sử dụng bản đồ hoặc đối tượng thay thế.
-5.2.4	Destructuring
+
+#### 5.2.4	Destructuring
 Mảng kí tự có thể được sử dụng ở phía bên trái của một phép gán thể thể hiện Destructuring. Yếu tố cuối cùng bao gồm (Không khoảng trống giữa … và tên biến). Phần tử nên được bỏ qua nếu chúng không được sử dụng.
  
 Destructuring có thể được sử dụng cho các hàm tham số (Lưu ý rằng một tên tham số là cần thiết nhưng bỏ qua). Luôn phải ghi rõ [] là giá trị mặc định nếu tham số mảng Destructuring là không bắt buộc và cung cấp giá trị mặc định ở phía bên trái.
  
 Không phù hợp: 
  
-5.2.5	Spread operator
+#### 5.2.5	Spread operator
 Mảng Kí Tự có thể bao gồm Spread Operator (…) để san bằng các phần tử ra khỏi một hoặc nhiều iterables khác. Spead Operator nên được sử dụng thay vì các cấu trúc bất tiện với Array.prototype. Không có khoảng trắng sau dấu …
  
-5.3	Đối tượng kí tự
+### 5.3	Đối tượng kí tự
 
-5.3.1	Sử dụng dấu phẩy đuôi
+#### 5.3.1	Sử dụng dấu phẩy đuôi
 Bao gồm dấu phẩy đuôi bất cứ khi nào có xuống dòng giữa thuộc tính cuối cùng và dấu ngoặc đóng.
-5.3.2	Không sử dụng khởi tạo Object
+
+#### 5.3.2	Không sử dụng khởi tạo Object
 Trong khi Object không có những rắc rối tương tự như mảng, nó vẫn không được phép nhất quán. Sử dụng một đối tượng đơn ({} or {a: 0, b: 1, c: 2}) thay thế.
-5.3.3: Không được pha trộn từ khoá trích dẫn và không trích dẫn
+
+#### 5.3.3: Không được pha trộn từ khoá trích dẫn và không trích dẫn
 Đối tượng kí tự có thể đại diện một trong hai cấu trúc (với từ khoá không trích dẫn và/hoặc kí hiệu). Không pha lẫn các từ khoá này với đối tượng kí tự.
 Trường hợp vi phạm:
  
-5.3.4: Tên thuộc tính ước tính
+#### 5.3.4: Tên thuộc tính ước tính
 Tên thuộc tính ước tính (Ví dụ {['key' + foo()]: 42}) được cho phép và được coi là ….
-5.3.5: Phương thức shorthand
+
+#### 5.3.5: Phương thức shorthand
 Các phương thức có thể được xác định trên đối tượng đơn sử dụng phương thức shorthand ({method() {… }}) ở vị trí sau dấu hai chấm theo sau bởi một hàm hoặc hàm mũi tên đơn.
 Ví dụ: 
  
 Lưu ý rằng this trong phương thức shorthand hoặc hàm dùng để chỉ chính các đối tượng đơn.
  
-5.3.6	Đặc tính Shorthand
+#### 5.3.6	Đặc tính Shorthand
 Đặc tính Shorthand được cho phép trong đối tượng kí tự
 Ví dụ:
  
 
-5.3.7	Destructuring
+#### 5.3.7	Destructuring
 Khuôn mẫu đối tượng destructuring có thể được sử dụng ở phía trái của một phép gán để thực hiện destructuring và giải nén nhiều giá trị từ một đối tượng duy nhất.
 Đối tượng bị phá huỷ cũng có thể được sử dụng như hàm tham số nhưng càng giữ được càng lâu càng tốt….
 Ví dụ: 
@@ -297,22 +395,29 @@ Ví dụ:
 Trường hợp vi phạm
  
 Destructuring cũng có thể sử dụng cho câu lệnh goog.require và trong trường hợp không thể xuống dòng.
-5.3.8	Enums
+
+#### 5.3.8	Enums
 Sự liệt kê được định nghĩa bởi thêm chú thích @enum đến một đối tượng kí tự. Thuộc tính bổ sung có thể không được thêm vào một enum sau khi nó được định nghĩa. Enums phải là đại lượng không đổi và tất cả các giá trị của Enums cũng phải bất biến.
 
  
-5.4	Lớp
-5.4.1 Hàm khởi tạo
+### 5.4	Lớp
+
+#### 5.4.1 Hàm khởi tạo
+
 Hàm khởi tạo không bắt buộc với lớp cụ thể và khi hiện diện thì phải là phương thức đầu tiên được định nghĩa trong lớp kí tự. Hàm khởi tạo các lớp con phải gọi super() trước khi cài đặt hoặc truy cập lớp cha. Interfaces không phải là định nghĩa một hàm khởi tạo.
-5.4.2 Trường
+
+#### 5.4.2 Trường
+
 Đặt tất cả trường của một đối tượng cụ thể(Tức là tất cả đặc tính ngoài các phương thức) trong hàm khởi tạo. Chú thích các trường không bao giờ được gán lại với @const. Trường Private phải được chú thích với @private và tên của chúng phải được kết thúc bằng dấu gạch dưới. Các trường không bao giờ được đặt trong lớp cụ thể prototype
-5.4.3 Thuộc tính Computed
+
+#### 5.4.3 Thuộc tính Computed
 
 ## 6. Đặt tên
 
-  - [ ] 6.1 Quy định chung cho tất cả định danh
-  - Định danh chỉ sử dụng ký tự trong ASCII chữ và chữ số, and, trong một số trường hợp nêu dưới đây, gạch dưới và rất it khi sử dụng kí hiệu đô la (khi có yêu cầu của Framework như Angular).
-  - Một tên cần mô tả tốt chức năng, ý nghĩa của nó. Bạn đừng quá để tâm đến việc tiết kiệm không gian, ngắn gón vì việc thể hiện được ý nghĩa của tên là quan trọng hơn khi nó giúp một người đọc mới nhanh chóng hiểu được code của bạn. Không sử dụng các chữ viết tắt không rõ ràng hoặc không quen thuộc với những người ngoài dự án, không viết tắt bằng cách xóa bớt chữ trong một từ.
+### 6.1 Quy định chung cho tất cả định danh
+
+- Định danh chỉ sử dụng ký tự trong ASCII chữ và chữ số, and, trong một số trường hợp nêu dưới đây, gạch dưới và rất it khi sử dụng kí hiệu đô la (khi có yêu cầu của Framework như Angular).
+- Một tên cần mô tả tốt chức năng, ý nghĩa của nó. Bạn đừng quá để tâm đến việc tiết kiệm không gian, ngắn gón vì việc thể hiện được ý nghĩa của tên là quan trọng hơn khi nó giúp một người đọc mới nhanh chóng hiểu được code của bạn. Không sử dụng các chữ viết tắt không rõ ràng hoặc không quen thuộc với những người ngoài dự án, không viết tắt bằng cách xóa bớt chữ trong một từ.
 ```javascript
    priceCountReader      // không viết tắt.
    numErrors             // "num" là một quy ước phổ biến.
@@ -330,8 +435,6 @@ Hàm khởi tạo không bắt buộc với lớp cụ thể và khi hiện di�
    kSecondsPerDay        // Không sử dụng kí hiệu.
 ```
 
-  - [ ] 6.2 Quy đinh theo loại định danh
-
 
 
 ```javascript
@@ -345,13 +448,3 @@ function someFunction() {
   // …
 }
 ```
-
-
-
-
-
-
-
-
-- [ ] Demo checklist 1
-- [ ] Demo checklist 2
