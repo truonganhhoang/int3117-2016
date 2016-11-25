@@ -34,3 +34,4 @@ Từ commandline (hoặc terminal) chạy: `jshint <file-name>`
 Ví dụ: `jshint app.js`
 
 Kết quả:
+![jshint-result](https://github.com/trieudh58/int3117-2016/blob/master/DangHaiTrieu/JSHint%20Example/screenshots/jshint-result.PNG)
