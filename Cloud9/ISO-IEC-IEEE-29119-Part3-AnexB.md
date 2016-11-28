@@ -1,4 +1,4 @@
-# Tài liệu ISO/IEC-IEEE 29119 phần 3, phụ lục B
+# Tài liệu ISO/IEC/IEEE 29119 phần 3, phụ lục B
 
 **Nội dung:** Đối chiếu các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2 sang các đầu mục thông tin trong ISO/IEC/IEEE 29119-3
 
@@ -10,7 +10,7 @@ Bảng dưới đây tóm tắt các yêu cầu quy chuẩn trong ISO/IEC/IEEE 2
 
 ### Bảng B.1 - Tóm lược về các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2, nơi mỗi đầu mục thông tin trong ISO/IEC/IEEE 29119-3 được mô tả
 
-Các đầu mục thông tin trong chuẩn ISO/IEC-IEEE 29119-3 | Yêu cầu quy chuẩn 
+Các đầu mục thông tin trong chuẩn ISO/IEC/IEEE 29119-3 | Yêu cầu quy chuẩn 
 --- | ---
 **B.1.1 Chính sách kiểm thử ở mức tổ chức** |
 a) Các tuyên bố về chính sách kiểm thử: | 
