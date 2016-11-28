@@ -243,8 +243,10 @@ Ví dụ: Effects & animation, SVG, Charting, Shims (Thêm một số tính năn
 
 ### Đọc, hợp tác, đóng góp cho mã nguồn mở
 Những frameworks mã nguồn mở là sản phẩn của những con người vô cùng hấp dẫn. Họ tạo nên những thứ rất tốt.
-Học thêm tại jquery mootools prototype scriptaculous raphaël
-Những anh hùng Paul Irish, Thomas Fuchs, John Resig, Dmitry Baranovskiy
+
+Học thêm tại [jquery](https://github.com/jquery), [mootools](https://github.com/mootools/), [prototype](https://github.com/sstephenson/prototype/) [scriptaculous](https://github.com/madrobby/scriptaculous/) [raphaël](https://github.com/DmitryBaranovskiy/raphael/)
+
+Những anh hùng [Paul Irish](http://twitter.com/paul_irish/), [Thomas Fuchs](https://twitter.com/madrobby), [John Resig](https://twitter.com/jeresig/), [Dmitry Baranovskiy](https://twitter.com/dmitrybaranovskiy/)
 
 ## 6.HIỆU NĂNG (PERFORMANCE)
 ### Thực hành tốt nhất của YUI
@@ -336,7 +338,7 @@ Bảo trì trang web với các ca kiểm thử được nâng cấp là cách t
 - Coi CSS3 là phần thưởng thị giác cho trình duyệt có khả năng
 - Dùng con nêm cho tính năng HTML5 nếu chúng không hoạt động đủ tốt
 
-## 8.Tính truy cập (ACCESSIBILITY)
+## 8.TÍNH TRUY CẬP (ACCESSIBILITY)
 ### Con người
 Tính truy cận là vấn đề, nó là vấn đề với những ai cố dùng sản phẩn của ta mà họ bị khuyết tật, nó ở trong hợp đồng của ta, nó cũng trực tiếp liên quan tớn luật phân biệt ta cần biết, cũng như biết việc gì đúng phải làm.
 Viết cú pháp HTML, CSS linh hoạt với giao diện và kích thước phông cũng như dùng Javascript để thêm hỗ trợ bàn phioms còn một con đường dài phải đi để khiến web app dễ truy cập nhất có thể được.
