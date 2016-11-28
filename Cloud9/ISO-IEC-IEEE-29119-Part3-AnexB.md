@@ -19,8 +19,23 @@ viii) Đo lường các giá trị trong kiểm thử | Có thể có hoặc kh�
 ix) Lưu trữ và tái sử dụng tài sản kiểm thử | Có thể có hoặc không
 x) Cải tiến quá trình kiểm thử | Có thể có hoặc không
 **B.1.2 Chiến lược kiểm thử ở mức tổ chức** |
-... | ...
-... | ...
+a) Các tuyên bố về chiến lược kiểm thử ở mức tổ chức xuyên suốt dự án | 
+i) Quản trị các nguy cơ chung | Bắt buộc phải có
+ii) Lựa chọn và sắp xếp ưu tiên kiểm thử | Bắt buộc phải có
+iii) Báo cáo và tài liệu kiểm thử | Có thể có hoặc không
+iv) Các công cụ và tự động hóa kiểm thử | Có thể có hoặc không
+v) Thiết lập quản trị đối với các sản phẩm của công việc kiểm thử | Có thể có hoặc không
+vi) Quản trị biến cố | Có thể có hoặc không
+vii) Các tiến trình con trong kiểm thử | Có thể có hoặc không
+b) Các tuyên bố về chiến lược kiểm thử ở mức tổ chức đối với các tiến trình con trong kiểm thử | 
+i) Tiêu chí vào, ra | Có thể có hoặc không
+ii) Tiêu chí hoàn thiện kiểm thử | Có thể có hoặc không
+iii) Báo cáo và tài liệu kiểm thử | Có thể có hoặc không
+iv) Mức độ độc lập | Có thể có hoặc không
+v) Các kỹ thuật thiết kế kiểm thử | Có thể có hoặc không
+vi) Môi trường kiểm thử | Có thể có hoặc không
+vii) Các độ đo cần thu thập | Có thể có hoặc không
+viii) Kiểm thử lại và kiểm thử hồi quy | Có thể có hoặc không
 **B.1.3 Kế hoạch kiểm thử** |
 ... | ...
 ... | ...
