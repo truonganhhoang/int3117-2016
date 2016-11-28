@@ -187,7 +187,160 @@ Nếu chúng ta sử dụng Javascript như vậy, sẽ làm chất lượng mã
 <a href="javascript:myKillerFunction('sucks', true);">Click here</a>
 ```
 Có nghĩa là nếu có điều gì trục tặc trang web vẫn có thể hoạt động mà không có phần nâng cấp.
-Nân cấp tiếp diễn cũng hỗ trợ bảo trì, giữ javascript tách biệt có nghĩa là không cần tìm tất cả tài liệu cho phần gọi hàm.
+Nâng cấp tiếp diễn cũng hỗ trợ bảo trì, giữ javascript tách biệt có nghĩa là không cần tìm tất cả tài liệu cho phần gọi hàm.
+
+#### Làm sạch API
+Vì chúng ta không phải những kẻ lộn xộn ta có thể có những tên gọi ngắn cho phương thức và biến như sau:
+```javascript
+var Toggler = {
+  open: function() {},
+  close: function() {},
+  toggle: function() {}
+}	
+```
+
+#### Tranh luận lựa chọn (Optional Arguments)
+Chỉ thêm vào những tham số quan trọng phần arg, cho tất cả các tham số lựa chọn khác vào dấu ngoặc lựa chọn
+```javascript
+function circle(x,y,radius,options) {
+  options = options || {};
+}
+```
+
+#### Điều khiển
+Điều khiển bắt đầu qua một thành phần chứa có class="init", ví dụ
+```javascript
+<div class="init" data-control="AwesomeToggler">
+```
+Khi tải nó sẽ chọn thành phần ở trên và bắt đầu AwesomeToggler Control, có hai hàm khởi tạo được định danh, "initOnce" hữu ích cho các sự kiện được ủy thác, "init" không chạy cho mỗi thể hiện của điều khiển trên trâng
+```javascript
+Controls.AwesomeToggler = {
+  initOnce: function() {
+    $body.delegate('.toggler .trigger', 'click', function() {});
+  },
+  init: function() {
+    alert('TOG');
+  }
+});
+```
+
+### Thực hành
+- Sử dụng framework DRY (Don't Repeat Yourself)
+- Tránh viết nhiều trên 1 dòng và nhúng js
+- Giữ tầm nhìn cả dự án trong sạch, đặt mã vào các phần có tên như Page, Util, Controls
+- Kiểm thử tính năng trên tất cả trình duyệt ở trên - dùng `console.time` để tìm ra thắc cổ chai.
+- Giảm tối đã lắng nghe sự kiện trên trang, dùng ủy thác sự kiện.
+- Giữ các phần càng độc lập càng tốt.
+
+## 5.FRAMEWORKS
+*"Nếu bạn muốn dùng một thư viện bạn phải đọc hết nó, hiểu nó, đồng ý với nó, và không thể viết ra một cái tốt hơn trong những ngày thành công nhất của bạn trong việc viết mã nguồn." @sentience*
+
+Framework không phải ma quỷ, chúng tiết kiệm thời gian, sửa chữa việc tương thích các trình duyệt và giúp ta nghĩ theo hướng mới. Nhưng, chúng cũng thêm vào nhiều thứ đau đầu nên trước khi lao vào chúng, hãy đọc dòng trích ở trên.
+
+### Javascript
+Chúng ta chỉ nên có một framework chính cho javascript, những thư viện khác cho một số tính năng đặc biệt không có trong framework chính đó có thể được thêm vào nếu đáp ứng điều kiện bên trên. 
+Ví dụ: Effects & animation, SVG, Charting, Shims (Thêm một số tính năng không được hỗ trợ bởi một số trình duyệt)
+
+### Đọc, hợp tác, đóng góp cho mã nguồn mở
+Những frameworks mã nguồn mở là sản phẩn của những con người vô cùng hấp dẫn. Họ tạo nên những thứ rất tốt.
+Học thêm tại jquery mootools prototype scriptaculous raphaël
+Những anh hùng Paul Irish, Thomas Fuchs, John Resig, Dmitry Baranovskiy
+
+## 6.Hiệu năng
+### Thực hành tốt nhất của YUI
+Đội nhóm YUI đã làm rất nhiều nghiên cứu vào phần hiệu năng front-end.
+Dưới đây là phiên bản súc tích cho nghiên cứu của họ, dù sao đọc cả bài báo vẫn là tốt hơn. http://developer.yahoo.com/performance/rules.html
+
+#### Tối thiểu yêu cầu HTTP
+Ghép lại tất cả kịch bản và stylesheets và nén ảnh để giảm lượng truy cập đến máy chủ.
+
+####S ử dụng mạng truyền dữ liệu
+Nên chuyển tất cả các tệp css, js, hình ảnh... tới máy chủ phân tán như Akamai.
+
+#### Đặt stylesheets lên đầu
+Đặt stylesheets lên phần `<head>` giúp trang web triết xuất một cách tiếp diễn.
+
+#### Đặt scripts xuống cuối
+Thẻ `<script>` ngăn cản tải dữ liệu song song, đặt chúng ở cuối để những tài nguyên khác có thể được tải trước.
+
+#### Tránh Expressions
+Expressions là cách để chạy javascript như một phần của CSS ở IE 6-7. Nó có thể dùng để sửa một số tính năng không được hỗ trợ như cố định vị trí. Vấn đề là chúng luôn được đẩy lên nên trang web sẽ chậm lại
+```javascript
+e6 .fixed {
+  top: expression(0+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px');
+}
+```
+
+#### Làm Javascript và CSS ở ngoài
+Bộ nhớ đệm là bạn tốt. Ngoại lệ duy nhất là các trang với một khung nhìn trên phiên làm việc có thể có lợi từ script ở trong.
+
+#### Làm nhỏ javascript và CSS
+Chúng ta nên sử dụng bộ thu gọn như JSMin, YUI Compressor hoặc Closure Complier để giảm kích cỡ file CSS, JS.
+Bỏ bớt các biến toàn cục có thể tạo hiệu quả tốt hơn là nén vì tên có thể được làm ngắn không thể được truy cập bên ngoài hàm đóng của chúng.
+```javascript
+var canIBeShortened = 'no';
+(function() {
+	var willMyReallyLongVariableBeShortnedByTheMinifier = 'yes';
+	alert(willMyReallyLongVariableBeShortnedByTheMinifier);
+})();
+```
+```javascript
+// Minified
+var canIBeShortened="no"function(){alert("yes")})()
+```
+
+#### Tránh tái định hướng
+Làm chậm lại trải nghiệm người dùng
+
+#### Giảm số lượng phần tử DOM
+Làm nhỏ trang với ít thành phần hơn sẽ nhanh hơn để truy cận và điều chỉnh.
+
+#### Tối thiểu số lượng Iframes
+Đắt đỏ kể cả trống bởi chúng là dạng cửa số mới, chúng cũng chặn các sự kiện khi tải của trang.
+
+#### Không có lỗi 404
+Nhìn một lượt và loại bỏ những tuyến đường không cần thiết đến máy chủ.
+
+#### Làm giảm kích thướng cookie
+Chuyển đến phần headers của trang, bỏ cookies không cần thiết, giữ chúng nhỏ, đặt ngày hết hạn.
+
+#### Tránh bộ lọc IE trong CSS
+Bộ lọc là tính năng đặc biệt của CSS cho IE, chúng có thể làm chậm trang, nên dùng cẩn thận.
+
+#### Tối ưu các ảnh
+Sử dụng bộ nén ảnh như ImageOptim hoặc Sprite Generator để làm ảnh càng bé càng tốt nhưng vẫn giữ chất lượng.
+
+#### Giữ các thành phần nhỏ hơn 25k
+IPhone không cho vào bộ nhớ đệm bất kỳ cái gì lớn hơn 25K không được nén.
+
+## HTML5/CSS3
+
+### Đồ chơi mới
+Dùng đồ mới, nhưng vẫn phải nhớ tính tích hợp với cải cũ và nâng cấp tiếp diễn. Làm trang web có vẻ đặc biệt không phải là mục tiên, chỉ không nên quá dựa dẫm vào HTML5/CSS3 cho một số tính năng đặc biệt trên trang.
+CSS3 có thể được dùng, tuy nhiên với số đông người dùng trên IE6 chúng ta vẫn coi tính năng của CSS3 như phần thưởng thị giác cho nhữn gthuwsc đẹp và tiết kiệm thời gian, như gradients và border-radius. 
+```css
+#slides img:hover {
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+```
+
+### Bảo trì
+Bảo trì trang web với các ca kiểm thử được nâng cấp là cách tốt nhất. Nó giúp bạn biết cách sử dụng, và nếu bạn không thường luyện tập bạn sẽ quên cái đã học.
+
+### Thực hành
+- Xác định tính năg
+- Coi CSS3 là phần thưởng thị giác cho trình duyệt có khả năng
+- Dùng con nêm cho tính năng HTML5 nếu chúng không hoạt động đủ tốt
+
+## 8.Tính truy cập
+
+
+
+
 
 
 
