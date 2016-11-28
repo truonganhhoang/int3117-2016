@@ -54,7 +54,7 @@ viii) Kiểm thử lại và kiểm thử hồi quy | Có thể có hoặc khôn
 **B.1.6 Đặc tả thiết kế kiểm thử** |
 ... | ...
 ... | ...
-**B.1.7 Đặc tả ca kiểm thử** |
+**B.1.7 Đặc tả ca kiểm thử** | Bắt Buộc Phải Có
 a, Hạng mục bao phủ kiểm thử | Bắt Buộc Phải Có
 i. Nhận dạng tính độc đáo | Bắt Buộc Phải Có
 ii. Mô tả | Bắt Buộc Phải Có 
@@ -69,9 +69,9 @@ v. Điều kiện tiên quyết | Bắt Buộc Phải Có
 vi. Đầu vào | Bắt Buộc Phải Có
 vii. Kết quả dự kiến | Bắt Buộc Phải Có
 viii. Kết quả thực tế và kết quả kiểm thử | Bắt Buộc Phải Có
-**B.1.8 Đặc tả quy trình kiểm thử** |
+**B.1.8 Đặc tả quy trình kiểm thử** | Bắt Buộc Phải Có
 a, Bộ dữ liệu kiểm thử |  Bắt Buộc Phải Có
-i. Nhận dạng độc đáo | 
+i. Nhận dạng độc đáo | Bắt Buộc Phải Có
 ii.  Mục tiêu | Bắt Buộc Phải Có
 iii. Độ ưu tiên | Bắt Buộc Phải Có
 iv. Nội dung (Truy xuất nguồn gốc) | Bắt Buộc Phải Có
