@@ -129,7 +129,7 @@ iv. Khởi động | Bắt Buộc Phải Có
 v. Các trường hợp kiểm thử sẽ được thực hiện (Truy xuất nguồn gốc) | Bắt Buộc Phải Có
 vi. Mối liên hệ với các quy trình kiểm thử | Bắt Buộc Phải Có
 vii. Dừng và đóng lại | Bắt Buộc Phải Có
-**B.1.9 Các yêu cầu dữ liệu kiểm thử** |
+**B.1.9 Các yêu cầu dữ liệu kiểm thử** | Bắt buộc phải có
 a, Chi tiết của các yêu cầu dữ liệu kiểm thử | Bắt buộc phải có
 i. Định danh duy nhất | Bắt buộc phải có
 ii. Mô tả | Bắt buộc phải có
@@ -137,27 +137,27 @@ iii. Trách nhiệm | Bắt buộc phải có
 iv. Thời gian cần thiết | Bắt buộc phải có
 v. Những thứ cần thiết lập lại | Bắt buộc phải có
 vi. Lưu trữ hoặc xử lý | Bắc buộc phải có
-**B.1.10 Các yêu cầu về môi trường kiểm thử** |
+**B.1.10 Các yêu cầu về môi trường kiểm thử** | Bắt buộc phải có
 a, Chi tiết các yêu cầu về môi trường kiểm thử | Bắt buộc phải có
 i. Định danh duy nhất | Bắt buộc phải có
 ii. Mô tả | Bắt buộc phải có
 iii. Trách nhiệm | Bắt buộc phải có
 iv. Thời gian cần thiết | Bắt buộc phải có
-**B.1.11 Báo cáo về sự sẵn sàng của dữ liệu kiểm thử** |
+**B.1.11 Báo cáo về sự sẵn sàng của dữ liệu kiểm thử** | Bắt buộc phải có
 a, Trạng thái của dữ liệu kiểm thử | Bắt buộc phải có
 i. Định danh duy nhất | Bắt buộc phải có
 ii. Mô tả trạng thái | Bắt buộc phải có
-**B.1.12 Báo cáo về sự sẵn sàng của môi trường kiểm thử** |
+**B.1.12 Báo cáo về sự sẵn sàng của môi trường kiểm thử** | Bắt buộc phải có
 a, Trạng thái của môi trường kiểm thử | Bắt buộc phải có
 i. Định danh duy nhất | Bắt buộc phải có
 ii. Mô tả về trạng thái | Bắt buộc phải có
-**B.1.13 Ghi chép về thực thi kiểm thử** |
+**B.1.13 Ghi chép về thực thi kiểm thử** | Bắt buộc phải có
 a, Các sự kiện | Bắt buộc phải có
 i. Định danh duy nhất | Bắt buộc phải có
 ii. Thời gian | Bắt buộc phải có
 iii. Mô tả | Bắt buộc phải có
 iv. Ảnh hưởng | Bắt buộc phải có
-**B.1.14 Báo cáo về biến cố phát sinh** |
+**B.1.14 Báo cáo về biến cố phát sinh** | Bắt buộc phải có
 a, Chi tiết về biến cố | Bắt buộc phải có
 i. Thông tin về thời gian | Bắt buộc phải có
 ii. Người tạo ra | Bắt buộc phải có
