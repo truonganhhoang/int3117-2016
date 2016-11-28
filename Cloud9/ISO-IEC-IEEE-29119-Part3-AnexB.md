@@ -2,6 +2,12 @@
 
 **Nội dung:** Đối chiếu các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2 sang các đầu mục thông tin trong ISO/IEC/IEEE 29119-3
 
+**Đường dẫn đến tài liệu gốc:** [tại đây](https://www.dropbox.com/home?preview=ISO_IEC_IEEE_29119_Part3.pdf) (trang 58-62)
+
+Phụ lục này giải thích ở mức một mức cao cách mà các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2 được đối chiếu sang các đầu mục thông tin trong các mẫu tài liệu được định nghĩa trong ISO/IEC/IEEE 29119-3. Đối với những người chỉ sử dụng chuẩn ISO/IEC/IEEE 29119-3 mà không sử dụng chuẩn ISO/IEC/IEEE 29119-2, phụ lục này chỉ mang tính chất tham khảo.
+
+Bảng dưới đây tóm tắt các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2, nơi mỗi đầu mục thông tin trong ISO/IEC/IEEE 29119-3 được mô tả.
+
 ### Bảng B.1 - Tóm lược về các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2, nơi mỗi đầu mục thông tin trong ISO/IEC/IEEE 29119-3 được mô tả
 
 Các đầu mục thông tin trong chuẩn ISO/IEC-IEEE 29119-3 | Yêu cầu quy chuẩn 
