@@ -1,19 +1,18 @@
 Ở bài viết này, tôi giả định bạn đã có những ý niệm về coding-style của JavaScript trước rồi. Vì thế, tôi sẽ tập trung vào Node, những điều mà tôi cảm thấy quan trọng
 
 ###Dàn ý:
-  1. Tránh xa 'this' và 'new'
-  2. Phân chia thành nhiều hàm nhỏ
-  3. Nhất quán khi viết hàm bất đồng bộ
-  4. Luôn luôn kiểm tra lỗi trong hàm callbacks
-  5. Trả về callbacks
-  6. Chỉ ném ngoại lệ (throw error) trong hàm đồng bộ (synchronous functions)
-  7. Bắt lỗi trong lời gọi đồng bộ
-  8. Gắn bó với chuẩn callback
+  1. [Tránh xa 'this' và 'new'](#1-tránh-xa-this-và-new)
+  2. [Phân chia thành nhiều hàm nhỏ](#2-phân-chia-thành-nhiều-hàm-nhỏ)
+  3. [Nhất quán khi viết hàm bất đồng bộ](#3-nhất-quán-khi-viết-hàm-bất-đồng-bộ)
+  4. [Luôn luôn kiểm tra lỗi trong hàm callbacks](#4-luôn-luôn-kiểm-tra-lỗi-trong-hàm-callbacks)
+  5. [Trả về callbacks](#5-trả-về-callbacks)
+  6. [Chỉ ném ngoại lệ (throw error) trong hàm đồng bộ (synchronous functions)](#6-chỉ-ném-ngoại-lệ-throw-error-trong-hàm-đồng-bộ-synchronous-functions)
+  7. [Bắt lỗi trong lời gọi đồng bộ](#7-bắt-lỗi-trong-lời-gọi-đồng-bộ)
+  8. [Gắn bó với chuẩn callback](#8-gắn-bó-với-chuẩn-callback)
 
 
 
 ##1. Tránh xa 'this' và 'new'
-https://github.com/minhnt58/int3117-2016/tree/master/nhom_12
 Vì lập trình với Node không tránh khỏi việc phải thực hiện nhiều callbacks lồng nhau, hàm này gọi hàm kia theo quan hệ phân cấp; bạn nên đảm bảo rằng các hàm dễ dàng được sử dụng khi được đặt vào những ngữ cảnh khác nhau. 
 
 ```
