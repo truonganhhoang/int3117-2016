@@ -20,7 +20,7 @@
 
   8. Accessibility
 
-##1. Các trình duyệt 
+## 1. CÁC TRÌNH DUYỆT 
 
 ###Thống kê
 Thống kê truy cập của người dùng sẽ quyết định chúng ta nên hỗ trợ trình duyệt nào một cách chính thức. Tuy nhiên nếu ta cho khách hàng lý do tốt để nâng cấp hoặc chuyển sang một trình duyệt mới hơn, hỗ trợ các chuẩn nhiều hơn thì công việc của ta sẽ dễ dàng hơn, không tốn thêm thời gian sửa lỗi ở các bản trình duyệt cũ.
@@ -168,7 +168,7 @@ Một bài báo rất hay về nội dung này: http://dev.opera.com/articles/vi
 - Tránh !important
 - Đừng dùng cách dòng `<br>` chỉ để thêm khoảng trống cho giao diện
 
-##4. JavaScript
+## 4. JAVASCRIPT
 ###Những phần chuyển động
 Javascript nằm trên nền tảng HTML và CSS và nâng cao trải nghiệm người dùng và hành vi trang web.
 ####Javascript tốt cho?
@@ -246,7 +246,7 @@ Những frameworks mã nguồn mở là sản phẩn của những con người 
 Học thêm tại jquery mootools prototype scriptaculous raphaël
 Những anh hùng Paul Irish, Thomas Fuchs, John Resig, Dmitry Baranovskiy
 
-## 6.Hiệu năng
+## 6.HIỆU NĂNG (PERFORMANCE)
 ### Thực hành tốt nhất của YUI
 Đội nhóm YUI đã làm rất nhiều nghiên cứu vào phần hiệu năng front-end.
 Dưới đây là phiên bản súc tích cho nghiên cứu của họ, dù sao đọc cả bài báo vẫn là tốt hơn. http://developer.yahoo.com/performance/rules.html
@@ -313,11 +313,11 @@ Sử dụng bộ nén ảnh như ImageOptim hoặc Sprite Generator để làm �
 #### Giữ các thành phần nhỏ hơn 25k
 IPhone không cho vào bộ nhớ đệm bất kỳ cái gì lớn hơn 25K không được nén.
 
-## HTML5/CSS3
+## 7.HTML5/CSS3
 
 ### Đồ chơi mới
 Dùng đồ mới, nhưng vẫn phải nhớ tính tích hợp với cải cũ và nâng cấp tiếp diễn. Làm trang web có vẻ đặc biệt không phải là mục tiên, chỉ không nên quá dựa dẫm vào HTML5/CSS3 cho một số tính năng đặc biệt trên trang.
-CSS3 có thể được dùng, tuy nhiên với số đông người dùng trên IE6 chúng ta vẫn coi tính năng của CSS3 như phần thưởng thị giác cho nhữn gthuwsc đẹp và tiết kiệm thời gian, như gradients và border-radius. 
+CSS3 có thể được dùng, tuy nhiên với số đông người dùng trên IE6 chúng ta vẫn coi tính năng của CSS3 như phần thưởng thị giác cho những trình duyệt có khả năng và tiết kiệm thời gian, như gradients và border-radius. 
 ```css
 #slides img:hover {
   -moz-transform: scale(1.6);
@@ -336,7 +336,43 @@ Bảo trì trang web với các ca kiểm thử được nâng cấp là cách t
 - Coi CSS3 là phần thưởng thị giác cho trình duyệt có khả năng
 - Dùng con nêm cho tính năng HTML5 nếu chúng không hoạt động đủ tốt
 
-## 8.Tính truy cập
+## 8.Tính truy cập (ACCESSIBILITY)
+### Con người
+Tính truy cận là vấn đề, nó là vấn đề với những ai cố dùng sản phẩn của ta mà họ bị khuyết tật, nó ở trong hợp đồng của ta, nó cũng trực tiếp liên quan tớn luật phân biệt ta cần biết, cũng như biết việc gì đúng phải làm.
+Viết cú pháp HTML, CSS linh hoạt với giao diện và kích thước phông cũng như dùng Javascript để thêm hỗ trợ bàn phioms còn một con đường dài phải đi để khiến web app dễ truy cập nhất có thể được.
+Không luôn luôn khó để làm một thứ dễ truy cập, luôn luôn hỏi mình có thể làm gì để nâng cao tính truy cập của trang.
+
+### Khuyết tật thị giác
+Hỗ trợ người dùng bị mù màu xem mành hình với phần mềm như JAWS/NVDA là trường hợp hiển nhiên, nhưng vẫn còn những điều khác nữa. Dùng mọt phông cữ dễ đọc và thêm nhưng stylesheets cho các kích thước phông khác nhau. Dùng đủ tương phản giữa các màu nền để tăng tính dễ đọc.
+
+### Bảng và mẫu dễ truy cập
+Giữ bảng đơn giản và tránh tiêu đề lồng nhau. Dùng thành phần `<th>` cho ô tiêu đề với scope đúng là bước đầu để tạo bảng.
+```html
+<table>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Age</th>
+    <th scope="col">Birthday</th>
+  </tr>
+  <tr>
+    <th scope="row">Jackie</th>
+    <td>5</td>
+    <td>April 5</td>
+  </tr>
+  <tr>
+    <th scope="row">Beth</th>
+    <td>8</td>
+    <td>January 14</td>
+  </tr>
+</table>
+```
+Nối nhãn với dữ liệu đầu vào cho phần thuốc tính là bước đầu để làm mẫu đơn giản
+```html
+<label for="email">Email</label>
+<input id="email">
+```
+Học thêm tại http://www.456bereastreet.com/archive/200410/bring_on_the_tables/
+http://www.webstandards.org/learn/tutorials/accessible-forms/
 
 
 
