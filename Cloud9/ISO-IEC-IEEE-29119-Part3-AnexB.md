@@ -1,15 +1,23 @@
 # Tài liệu ISO/IEC-IEEE 29119 phần 3, phụ lục B
 
-**Nội dung:** Đối chiếu các yêu cầu quy chuẩn trong ISO/IEC-IEEE 29119-2 sang các đầu mục thông tin trong ISO/IEC-IEEE 29119-3
+**Nội dung:** Đối chiếu các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2 sang các đầu mục thông tin trong ISO/IEC/IEEE 29119-3
 
-### Bảng B.1
+### Bảng B.1 - Tóm lược về các yêu cầu quy chuẩn trong ISO/IEC/IEEE 29119-2, nơi mỗi đầu mục thông tin trong ISO/IEC/IEEE 29119-3 được mô tả
 
 Các đầu mục thông tin trong chuẩn ISO/IEC-IEEE 29119-3 | Yêu cầu quy chuẩn 
 --- | ---
 **B.1.1 Chính sách kiểm thử ở mức tổ chức** |
 a) Các tuyên bố về chính sách kiểm thử: | 
-... | ...
-... | ...
+i) Các mục tiêu kiểm thử | Bắt buộc phải có
+ii) Quá trình kiểm thử | Có thể có hoặc không
+iii) Cấu trúc tổ chức kiểm thử | Có thể có hoặc không
+iv) Huấn luyện người kiểm thử | Có thể có hoặc không
+v) Đạo đức học đối với người kiểm thử | Có thể có hoặc không
+vi) Các quy chuẩn | Có thể có hoặc không
+vii) Các chính sách liên quan khác | Có thể có hoặc không
+viii) Đo lường các giá trị trong kiểm thử | Có thể có hoặc không
+ix) Lưu trữ và tái sử dụng tài sản kiểm thử | Có thể có hoặc không
+x) Cải tiến quá trình kiểm thử | Có thể có hoặc không
 **B.1.2 Chiến lược kiểm thử ở mức tổ chức** |
 ... | ...
 ... | ...
