@@ -42,18 +42,64 @@ v) Các kỹ thuật thiết kế kiểm thử | Có thể có hoặc không
 vi) Môi trường kiểm thử | Có thể có hoặc không
 vii) Các độ đo cần thu thập | Có thể có hoặc không
 viii) Kiểm thử lại và kiểm thử hồi quy | Có thể có hoặc không
-**B.1.3 Kế hoạch kiểm thử** |
-... | ...
-... | ...
-**B.1.4 Báo cáo tình trạng kiểm thử** |
-... | ...
-... | ...
-**B.1.5 Báo cáo hoàn thiện kiểm thử** |
-... | ...
-... | ...
-**B.1.6 Đặc tả thiết kế kiểm thử** |
-... | ...
-... | ...
+**B.1.3 Kế hoạch kiểm thử** | Bắt buộc phải có
+a) Ngữ cảnh của kiểm thử: | Bắt buộc phải có
+i) Dự án/kiểm thử quá trình con | Bắt buộc phải có
+ii) Kiểm thử mục | Bắt buộc phải có
+iii) Kiểm thử phạm vi | Bắt buộc phải có
+iv) Giả định và hạn chế | Nên có
+v) Các bên liên quan | Nên có
+b) Kiểm thử truyền thông: | Nên có
+c) Rủi ro đăng kí: | Bắt buộc phải có
+i) Rủi ro sản phẩm | Bắt buộc phải có
+ii) Rủi ro dự án | Bắt buộc phải có
+d) Chiến lược kiểm thử: | Bắt buộc phải có
+i) Kiểm thử quá trình con | Bắt buộc phải có
+ii) Kiểm thử chuyển giao | Bắt buộc phải có
+iii) Kiểm thử kĩ thuật thiết kế | Bắt buộc phải có
+iv) Kiểm thử tiêu chuẩn hoàn thiện | Bắt buộc phải có
+v) Số liệu được thu thập | Bắt buộc phải có
+vi) Kiểm thử yêu cầu dữ liệu | Bắt buộc phải có
+vii) Kiểm thử yêu cầu môi trường | Bắt buộc phải có
+viii) Kiểm thử lại và kiểm thử hồi quy | Bắt buộc phải có
+ix) Tiêu chuẩn treo và nối lại hệ thống | Bắt buộc phải có
+x) Độ lệch từ chiến lược kiểm tra tổ chức | Nên có
+e) Hoạt động kiểm thử và ước lượng: | Bắt buộc phải có
+f) Nhân sự: | Nên có
+i) Vai trò, hoạt động và trách nhiệm | Nên có
+ii) Yêu cầu tuyển dụng | Nên có
+iii) Yêu cầu đào tạo | Nên có
+g) Lịch trình: | Bắt buộc phải có
+**B.1.4 Báo cáo tình trạng kiểm thử** | Bắt buộc phải có
+a) Trạng thái kiểm thử: | Bắt buộc phải có
+i) Báo cáo tiến độ | Bắt buộc phải có
+ii) Tiến độ so với kế hoạch kiểm thử | Bắt buộc phải có
+iii) Các yếu tố ngăn chặn tiến trình | Bắt buộc phải có
+iv) Thước đo kiểm thử | Bắt buộc phải có
+v) Rủi ro mới và bị thay đổi | Bắt buộc phải có
+**B.1.5 Báo cáo hoàn thiện kiểm thử** | Bắt buộc phải có
+a) Kiểm thử hiệu năng: | Bắt buộc phải có
+i) Tóm tắt các kiểm thử được thực hiện | Bắt buộc phải có
+ii) Độ lệch từ kế hoạch kiểm thử | Bắt buộc phải có
+iii) Đánh giá hoàn thành thử nghiệm | Bắt buộc phải có
+iv) Các yếu tố ngăn chặn tiến trình | Bắt buộc phải có
+v) Thước đo kiểm thử | Bắt buộc phải có
+vi) Rủi ro còn lại | Bắt buộc phải có
+vii) Kiểm thử chuyển giao | Bắt buộc phải có
+viii) Kiểm tra tài nguyên sử dụng lại | Nên có
+ix) Bài học kinh nghiệm | Bắt buộc phải có
+**B.1.6 Đặc tả thiết kế kiểm thử** | Bắt buộc phải có
+a) Tập tính năng: | Bắt buộc phải có
+i) Định danh duy nhất | Bắt buộc phải có
+ii) Mục tiêu | Bắt buộc phải có
+iii) Ưu tiên | Bắt buộc phải có
+iv) Trích chiến lược | Bắt buộc phải có
+v) Truy xuất nguồn gốc | Bắt buộc phải có
+b) Điều kiện kiểm thử: | Bắt buộc phải có
+i) Định danh duy nhất | Bắt buộc phải có
+ii) Mô tả | Bắt buộc phải có
+iii) Ưu tiên | Bắt buộc phải có
+iv) Truy xuất nguồn gốc | Bắt buộc phải có 
 **B.1.7 Đặc tả ca kiểm thử** | Bắt Buộc Phải Có
 a, Hạng mục bao phủ kiểm thử | Bắt Buộc Phải Có
 i. Nhận dạng tính độc đáo | Bắt Buộc Phải Có
