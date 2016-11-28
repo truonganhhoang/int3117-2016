@@ -100,35 +100,35 @@ i) Định danh duy nhất | Bắt buộc phải có
 ii) Mô tả | Bắt buộc phải có
 iii) Ưu tiên | Bắt buộc phải có
 iv) Truy xuất nguồn gốc | Bắt buộc phải có 
-**B.1.7 Đặc tả ca kiểm thử** | Bắt Buộc Phải Có
-a, Hạng mục bao phủ kiểm thử | Bắt Buộc Phải Có
-i. Nhận dạng tính độc đáo | Bắt Buộc Phải Có
-ii. Mô tả | Bắt Buộc Phải Có 
-iii. Độ ưu tiên | Bắt Buộc Phải Có
-iv. Truy tìm nguồn gốc | Bắt Buộc Phải Có
-b, Các trường hợp kiểm thử | Bắt Buộc Phải Có
-i. Nhận dạng độc đáo | Bắt Buộc Phải Có
-ii. Mục tiêu kiểm thử | Nên Có
-iii. Độ ưu tiên | Bắt Buộc Phải Có
-iv. Truy tìm nguồn gốc | Bắt Buộc Phải Có
-v. Điều kiện tiên quyết | Bắt Buộc Phải Có
-vi. Đầu vào | Bắt Buộc Phải Có
-vii. Kết quả dự kiến | Bắt Buộc Phải Có
-viii. Kết quả thực tế và kết quả kiểm thử | Bắt Buộc Phải Có
-**B.1.8 Đặc tả quy trình kiểm thử** | Bắt Buộc Phải Có
-a, Bộ dữ liệu kiểm thử |  Bắt Buộc Phải Có
-i. Nhận dạng độc đáo | Bắt Buộc Phải Có
-ii.  Mục tiêu | Bắt Buộc Phải Có
-iii. Độ ưu tiên | Bắt Buộc Phải Có
-iv. Nội dung (Truy xuất nguồn gốc) | Bắt Buộc Phải Có
-b, Thủ tục kiểm thử | Bắt Buộc Phải Có 
-i. Nhận dạng độc đáo | Bắt Buộc Phải Có
-ii. Mục tiêu | Bắt Buộc Phải Có
-iii. Độ ưu tiên | Bắt Buộc Phải Có
-iv. Khởi động | Bắt Buộc Phải Có
-v. Các trường hợp kiểm thử sẽ được thực hiện (Truy xuất nguồn gốc) | Bắt Buộc Phải Có
-vi. Mối liên hệ với các quy trình kiểm thử | Bắt Buộc Phải Có
-vii. Dừng và đóng lại | Bắt Buộc Phải Có
+**B.1.7 Đặc tả ca kiểm thử** | Bắt buộc phải có
+a, Hạng mục bao phủ kiểm thử | Bắt buộc phải có
+i. Nhận dạng tính độc đáo | Bắt buộc phải có
+ii. Mô tả | Bắt buộc phải có
+iii. Độ ưu tiên | Bắt buộc phải có
+iv. Truy tìm nguồn gốc | Bắt buộc phải có
+b, Các trường hợp kiểm thử | Bắt buộc phải có
+i. Nhận dạng độc đáo | Bắt buộc phải có
+ii. Mục tiêu kiểm thử | Nên có
+iii. Độ ưu tiên | Bắt buộc phải có
+iv. Truy tìm nguồn gốc | Bắt buộc phải có
+v. Điều kiện tiên quyết | Bắt buộc phải có
+vi. Đầu vào | Bắt buộc phải có
+vii. Kết quả dự kiến | Bắt buộc phải có
+viii. Kết quả thực tế và kết quả kiểm thử | Bắt buộc phải có
+**B.1.8 Đặc tả quy trình kiểm thử** | Bắt buộc phải có
+a, Bộ dữ liệu kiểm thử | Bắt buộc phải có
+i. Nhận dạng độc đáo | Bắt buộc phải có
+ii.  Mục tiêu | Bắt buộc phải có
+iii. Độ ưu tiên | Bắt buộc phải có
+iv. Nội dung (Truy xuất nguồn gốc) | Bắt buộc phải có
+b, Thủ tục kiểm thử | Bắt buộc phải có
+i. Nhận dạng độc đáo | Bắt buộc phải có
+ii. Mục tiêu | Bắt buộc phải có
+iii. Độ ưu tiên | Bắt buộc phải có
+iv. Khởi động | Bắt buộc phải có
+v. Các trường hợp kiểm thử sẽ được thực hiện (Truy xuất nguồn gốc) | Bắt buộc phải có
+vi. Mối liên hệ với các quy trình kiểm thử | Bắt buộc phải có
+vii. Dừng và đóng lại | Bắt buộc phải có
 **B.1.9 Các yêu cầu dữ liệu kiểm thử** | Bắt buộc phải có
 a, Chi tiết của các yêu cầu dữ liệu kiểm thử | Bắt buộc phải có
 i. Định danh duy nhất | Bắt buộc phải có
