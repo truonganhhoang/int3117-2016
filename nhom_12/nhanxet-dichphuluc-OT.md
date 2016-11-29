@@ -1,21 +1,18 @@
 # Nhận xét phần dịch phụ lục từ O-T của các nhóm 7,8,9
-(Updated 10h30' 29/11)
+(Updated 29/11)
 
 ## Nhận xét phần O, P của nhóm 7
 
-### Phần O:
 
-- Dịch đầy đủ, chính xác.
-
-### Phần P:
-
-- Chỉ có template của bảng là giống tài liệu, còn nội dung bên trong không hề liên quan:
-  + Trong tài liệu: Kiểm tra cách hệ thống xử lý phạm vi đo được định nghĩa cho NCS.
-  + Trong phần dịch: Kiểm tra việc đăng ký, đăng nhập, tạo và quản lý đơn hàng.
+- Tài liệu chưa dịch
+- Bù lại, nội dung đó được áp dụng luôn vào dự án thực tế :
+  + Áp dụng đúng template trong tài liệu; các test case, kết quả mong đợi, kết quả thực nghiệm, ... chi tiết, đúng.
 
 ## Nhận xét phần Q, R của nhóm 8
 
 (chưa có tài liệu dịch trên Github)
+
+- Trên lớp, có hiểu và nêu rõ được nội dung của 2 phần.
 
 ## Nhận xét phần S, T của nhóm 9
 
