@@ -859,16 +859,78 @@ class Foo {
    kSecondsPerDay        // Không sử dụng kí hiệu.
 ```
 
+### 6.2	Quy định theo loại định danh
 
+#### 6.2.1 Tên gói
+
+- Tên gói là theo dạng lowerCamelCase. Ví dụ: my.exampleCode.deepSpace, chứ không phải my.examplecode.deepspace hay my.example_code.deep_space.
+
+#### 6.2.2 Tên lớp
+
+- Tên lớp, giao diện, bản ghi, typedef được viết theo dạng UpperCamelCase. Lớp Unexported chỉ là địa phương: không được đánh dấu @private và do đó không được đặt tên với một dấu gạch dưới.
+- Tên phải là danh từ hoặc cụm danh từ thường. Ví dụ: ImmutableList, VisibilityMode. Ngoài ra, tên của giao diện đôi khi có thể là tính từ hoặc cụm tính từ thay vào đó (ví dụ Readable).
+
+#### 6.2.3 Tên phương thức
+
+- Tên phương thức được được đặt theo dạng lowerCamelCase. Các phương pháp có tên đơn phải kết thúc với một dấu gạch dưới.
+- Tên phương pháp là những động từ hoặc cụm động từ. Ví dụ: SendMessage, stop_.
+- Gạch cũng có thể xuất hiện trong JsUnit tên phương pháp thử nghiệm để tách các thành phần logic của tên. Một kiểu điển hình là test <MethodUnderTest> _ <state>, ví dụ testPop_emptyStack.
+
+#### 6.2.4 Enum names
+
+- Tên Enum được viết theo kiểu UpperCamelCase, tương tự như các lớp, nói chung nên là danh từ số ít. mục riêng lẻ trong enum có tên trong CONSTANT_CASE.
+
+#### 6.2.5 Tên hằng
+
+- tên hằng được viết theo kiểu CONSTANT_CASE: tất cả các chữ cái viết hoa, với những từ phân cách bằng dấu gạch dưới. Không có lý do cho một hằng số được đặt tên với một dấu gạch dưới.
+
+##### 6.2.5.1 Định nghĩa về “constant”
+
+- Mỗi hằng là một giá trị @const tĩnh hoặc một tuyên bố const module-địa phương, nhưng không phải tất cả các thuộc tính tĩnh @const và consts module-địa phương đều là các hằng số. Trước khi lựa chọn trường hợp, xem xét nó có thực sự là một hằng số bất biến. Mới chỉ có ý định không bao giờ biến những đối tượng thường là không đủ.
+- Tên các hằng số là danh từ hoặc cụm danh từ.
+- Ví dụ:
 
 ```javascript
-const randomName = goog.require('something.else'); // name must match
+   // Constants
+   const NUMBER = 5;
+   /** @const */ exports.NAMES = ImmutableList.of('Ed', 'Ann');
+   /** @enum */ exports.SomeEnum = { ENUM_CONSTANT: 'value' };
 
-const {clear, forEach, map} = // don't break lines
-    goog.require('goog.array');
-
-function someFunction() {
-  const alias = goog.require('my.long.name.alias'); // must be at top level
-  // …
-}
+   // Not constants
+   let letVariable = 'non-const';
+   class MyClass { constructor() { /** @const */ this.nonStatic = 'non-static'; } };
+   /** @type {string} */ MyClass.staticButMutable = 'not @const, can be reassigned';
+   const /** Set<String> */ mutableCollection = new Set();
+   const /** ImmutableSet<SomeMutableType> */ mutableElements = ImmutableSet.of(mutable);
+   const Foo = goog.require('my.Foo');  // mirrors imported name
+   const logger = log.getLogger('loggers.are.not.immutable');
 ```
+
+#### 6.2.6  Non-constant field names
+
+- tên của Non-constant được viết theo dạng lowerCamelCase, với một dấu gạch dưới cho tên đơn.
+- Những tên này là danh từ hoặc cụm danh từ. Ví dụ: computedValues hoặc index_.
+
+#### 6.2.7 Tên tham số
+
+- Tên tham số được viết dưới dạng lowerCamelCase. Lưu ý rằng điều này được áp dụng ngay cả khi các thông số theo kiểu một constructor.
+- Ngoại lệ: Khi yêu cầu một khuôn khổ của bên thứ ba, tên tham số có thể bắt đầu với một $. Ngoại lệ này không áp dụng đối với bất kỳ định dạng khác (ví dụ như các biến địa phương hoặc tài sản).
+
+#### 6.2.8 Tên biến địa phương
+
+- tên biến địa phương được viết bằng lowerCamelCase, ngoại trừ cho các hằng số mô-đun-địa phương, như mô tả ở trên. Hằng số trong phạm vi chức năng vẫn đang có tên trong lowerCamelCase. Lưu ý rằng lowerCamelCase áp dụng ngay cả khi biến giữ một constructor.
+
+#### 6.2.9 Template parameter names
+
+- Tên tham số mẫu nên ngắn gọn, đơn thư định danh,  chẳng hạn như TYPE hoặc THIS.
+
+### 6.3 CamelCase: định nghĩa
+
+- Đôi khi có nhiều hơn một cách hợp lý để chuyển đổi một cụm từ tiếng Anh sang trường hợp camel case, chẳng hạn như khi viết tắt hoặc cấu trúc khác thường như IPv6 hay iOS có mặt. Để cải thiện khả năng dự đoán, Google Style quy định cụ thể như sau.
+- Beginning with the prose form of the name:
+  + Chuyển đổi các cụm từ về ASCII và loại bỏ bất kỳ dấu nháy. Ví dụ, Müller's algorithm có thể trở thành Muellers algorithm.
+  + Chia kết quả này thành các từ, tách về không gian và bất kỳ dấu chấm câu còn lại (thường là dấu gạch ngang).
+  + Bây giờ viết thường tất cả mọi thứ (kể cả viết tắt), sau đó chữ hoa chỉ ký tự đầu tiên của:
+    + mỗi từ, để mang lại camel case
+    + mỗi từ trừ từ đầu tiên, để mang lại trường hợp lạc đà thấp
+  + Cuối cùng, gộp tất cả các từ vào một định danh duy nhất.

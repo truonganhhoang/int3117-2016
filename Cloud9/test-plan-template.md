@@ -1,0 +1,1 @@
+Đường dẫn đến tài liệu mẫu: https://drive.google.com/open?id=0Bz-SEnQx6I77UTFZSE4yaVRtOE0
