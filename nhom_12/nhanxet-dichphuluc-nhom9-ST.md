@@ -11,7 +11,7 @@
 
 - Chỉ có template của bảng là giống tài liệu, còn nội dung bên trong không hề liên quan:
   + Trong tài liệu: Kiểm tra cách hệ thống xử lý phạm vi đo được định nghĩa cho NCS.
-  + Trong phần dịch: Kiể tra việc đăng ký, đăng nhập, tạo và quản lý đơn hàng.
+  + Trong phần dịch: Kiểm tra việc đăng ký, đăng nhập, tạo và quản lý đơn hàng.
 
 ## Nhận xét phần Q, R của nhóm 8
 
