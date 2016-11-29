@@ -53,7 +53,7 @@ Công ty Traditional là một công ty nhỏ cung cấp các trang thiết bị
 
 <b> Tóm tắt: </b> Dữ liệu kiểm thử chưa sẵn sàng. Sự di chuyển dữ liệu kiểm thử đến môi trường kiểm thử sẽ được hoàn thành vào ngày 22-03-2008
 
-<b> Trạng tái dữ liệu kiểm thử </b> được mô tả trong bảng
+<b> Trạng thái dữ liệu kiểm thử: </b> được mô tả trong bảng
 
 | Yêu cầu | Trạng thái | Mô tả | 
 | ------- | ---------- | ----- |
