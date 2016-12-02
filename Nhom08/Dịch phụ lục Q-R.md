@@ -22,7 +22,7 @@ Chú ý thông tin này có thể được trình bày trong nhiều định d�
 Traditional Ltd là một công ty nhỏ chuyên sản xuất các thiết bị phân tích cao cấp cho ngành công nông nghiệp. Xem chi tiết trong phần giới thiệu ở phụ lục C
 Việc đăng ký kết quả thử nghiệm cũng được thực hiện trực tiếp theo hình thức thủ tục kiểm tra. Việc đăng ký được hiển thị những chữ in nghiêng ở đây
 
-![block](http://imgur.com/zXxwvFe)
+![block](http://imgur.com/gallery/BcfpZ)
 
 -----
 
