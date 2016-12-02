@@ -76,4 +76,6 @@ http://prntscr.com/d2a53x
 ----
 # Đo mức độ bao phủ của bài toán
 ![link](https://github.com/PhanHai123/int3117-2017/blob/master/PhanThiThanhHai/BT2/%C4%90%E1%BB%99%20bao%20ph%E1%BB%A7.PNG)
+# Kết quả  test
+![link](https://github.com/PhanHai123/int3117-2017/blob/master/PhanThiThanhHai/BT2/K%E1%BA%BFt%20qu%E1%BA%A3%20test.PNG)
 =======
