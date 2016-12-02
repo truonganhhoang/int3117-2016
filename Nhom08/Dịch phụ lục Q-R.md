@@ -1,6 +1,7 @@
 #Bài tập nhóm : dịch phụ lục Q-R
 ##Phụ lục Q : Kết quả kiểm thử- Test Rult
 *Q.1 Ví dụ 1 – Công ty Agile*
+
 Công ty Agile là một tổ chức sản xuất tạp chí và sách lớn. Chúng ta có thể xem chi tiết tại phụ lục C.
 
 ```sh
