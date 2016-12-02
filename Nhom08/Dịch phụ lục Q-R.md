@@ -22,7 +22,7 @@ Chú ý thông tin này có thể được trình bày trong nhiều định d�
 Traditional Ltd là một công ty nhỏ chuyên sản xuất các thiết bị phân tích cao cấp cho ngành công nông nghiệp. Xem chi tiết trong phần giới thiệu ở phụ lục C
 Việc đăng ký kết quả thử nghiệm cũng được thực hiện trực tiếp theo hình thức thủ tục kiểm tra. Việc đăng ký được hiển thị những chữ in nghiêng ở đây
 
-![block](https://github.com/PhanHai123/int3117-2017/blob/master/Nhom08/b%C3%A0i%20test.PNG)
+![block](https://github.com/PhanHai123/int3117-2017/blob/master/Nhom08/Image2.PNG)
 
 -----
 
@@ -37,7 +37,7 @@ Một thỏa thuận đã được thực hiện giữa các Agile Corp và khá
 Traditional Ltd là một công ty nhỏ chuyên sản xuất các thiết bị phân tích cao cấp cho ngành công nông nghiệp. Xem chi tiết trong phần giới thiệu ở phụ lục C
 Đây là một đoạn trích của nhật ký thực thi - execution log cho các bài kiểm tra hệ thống của máy tính phần UV / TIT-14 33A
 
-![Link](https://github.com/PhanHai123/int3117-2017/blob/master/Nhom08/%E1%BA%A3nh%20b%C3%A0i%20d%E1%BB%8Bch%20ph%E1%BB%A5%20l%E1%BB%A5c.PNG)
+![Link](https://github.com/PhanHai123/int3117-2017/blob/master/Nhom08/Image1.PNG)
 
 ###Lưu ý rằng có sự sai lệch từ khi định nghĩa nhật kí kiểm tra sự thưc thi - Test Execution Log quy định tại khoản 7.11
 
