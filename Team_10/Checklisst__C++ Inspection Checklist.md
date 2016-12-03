@@ -2,22 +2,22 @@
 bài viết được dịch từ: http://www.literateprogramming.com/Baldwin-inspect.pdf
 
 ## Nội dung
-1. [1. Khai báo biến](#khai-báo-biến)
-2. [2. Sử dụng dữ liệu](#sử-dụng-dữ-liệu)
-3. [3. Khởi tạo](#khởi-tạo)
-4. [Macros](#macros)
-5. [Kích thước dữ liệu](#kích-thước-dữ-liệu)
-6. [Cấp phát động](#cấp-phát-động)
-7. [Con trỏ](#con-trỏ)
-8. [Toán tử ép kiểu](#toán-tử-ép-kiểu)
-9. [Tính toán](#tính-toán)
-10. [Điều kiện](#điều-kiện)
-11. [Luồng điều khiển](#luồng-điều-khiển)
-12. [Phép gán](#phép-gán)
-13. [Đối số](#đối-số)
-14. [Giá trị trả về](#giá-trị-trả-về) 
-15. [Gọi hàm](#gọi-hàm)
-16. [Tệp tin](#tệp-tin)
+1. [Khai báo biến](#1-khai-báo-biến)
+2. [Sử dụng dữ liệu](#2-sử-dụng-dữ-liệu)
+3. [Khởi tạo](#3-khởi-tạo)
+4. [Macros](#4-macros)
+5. [Kích thước dữ liệu](#5-kích-thước-dữ-liệu)
+6. [Cấp phát động](#6-cấp-phát-động)
+7. [Con trỏ](#7-con-trỏ)
+8. [Toán tử ép kiểu](#8-toán-tử-ép-kiểu)
+9. [Tính toán](#9-tính-toán)
+10. [Điều kiện](#10-điều-kiện)
+11. [Luồng điều khiển](#11-luồng-điều-khiển)
+12. [Phép gán](#12-phép-gán)
+13. [Đối số](#13-đối-số)
+14. [Giá trị trả về](#14-giá-trị-trả-về) 
+15. [Gọi hàm](#15-gọi-hàm)
+16. [Tệp tin](#16-tệp-tin)
 
 ## 1. Khai báo biến
 
