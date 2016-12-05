@@ -12,15 +12,15 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 # Annex P: Actual Results
 | Test Procedure ID        |Objective and Priority         | Estimated Duration |
 | ------------- |:-------------:| -----:|
-| 1-3     | Mục đích kiểm thử việc đăng ký tài khoản trên hệ thống |  |
+| **1-3**     | **Mục đích kiểm thử việc đăng ký tài khoản trên hệ thống** |  |
 |  <br>    |     |   |
 | Relationships to other procedures:       | 
-| Test Log       | 	
-| Date: | Initials:     | Test item: |  Ok/ Not Ok |
+| **Test Log**       | 	
+| **Date:** | **Initials:**     | **Test item:** |  **Ok/ Not Ok** |
 | <br> |      |  |   |
-|Comments:  |
-|Procedure:  |
-|Step no. Test case |Activities |Examination of result | Actual results |OK |
+|**Comments:**  |
+|**Procedure:** |
+|**Step no. Test case** |**Activities** |**Examination of result** | **Actual results** |**OK** |
 |1 |Đăng ký bằng email đã được sử dụng |Kiểm tra thông báo:“Email đã đăng ký”|Hiển thị:“Email đã đăng ký” |OK |
 |2 |Đăng ký bằng email không tồn tại |Kiểm tra thông báo:“Email không hợp lệ” | Hiển thị:“Email không hợp lệ” |OK |
 |3 |Đăng ký băng email chưa được tạo tài khoản nhưng mật khẩu ngắn hơn 8 ký tự |Kiểm tra thông báo: “mật khẩu ngắn hơn 8 ký tự” |Hiển thị “mật khẩu ngắn hơn 8 ký tự” |OK |
@@ -28,15 +28,15 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 
 | Test Procedure ID        |Objective and Priority         | Estimated Duration  |
 | ------------- |:-------------:| -----:|
-| 1-3     |Mục đích kiểm thử việc đăng nhập/ đăng xuất tài khoản trên hệ thống|  |
+| **1-3**     | **Mục đích kiểm thử việc đăng nhập/ đăng xuất tài khoản trên hệ thống** |  |
 |  <br>    |     |   |
-| Relationships to other procedures: Đăng ký thành công| 
-| Test Log       | 	
-| Date: | Initials:     | Test item: |  Ok/ Not Ok |
+|Relationships to other procedures: Đăng ký thành công     | 
+| **Test Log**       | 	
+| **Date:** | **Initials:**     | **Test item:** |  **Ok/ Not Ok** |
 | <br> |      |  |   |
-|Comments:  |
-|Procedure:  |
-|Step no. Test case |Activities |Examination of result | Actual results |OK |
+|**Comments:**  |
+|**Procedure:** |
+|**Step no. Test case** |**Activities** |**Examination of result** | **Actual results** |**OK** |
 |1 |Đăng nhập bằng email không tồn tại trong hệ thống |Kiểm tra thông báo:“Email không chính xác”|Hiển thị:“Email không chính xác” |OK |
 |2 |Đăng ký bằng email tồn tại trong hệ thống nhưng mật khẩu không chính xác |Kiểm tra thông báo:“mật khẩu không chính xác ”| Hiển thị:“mật khẩu không chính xác” |OK |
 |3 |Đăng ký băng email và mật khẩu chính xác |Trang Home được hiển thị |Hiển thị trang Home|OK |
@@ -44,15 +44,15 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 
 | Test Procedure ID        |Objective and Priority         | Estimated Duration |
 | ------------- |:-------------:| -----:|
-| 1-3     |Mục đích kiểm thử việc tạo và quản lý đơn hàng vận chuyển trong hệ thống|  |
-|   <br>   |     |   |
-| Relationships to other procedures: Đã có tài khoản và đăng nhập trên hệ thống| 
-| Test Log       | 	
-| Date: | Initials:     | Test item: |  Ok/ Not Ok |
-|  <br>|      |  |   |
-|Comments:  |
-|Procedure:  |
-|Step no. Test case |Activities |Examination of result | Actual results |OK |
+| **1-3**     | **Mục đích kiểm thử việc tạo và quản lý đơn hàng vận chuyển trong hệ thống** |  |
+|  <br>    |     |   |
+|Relationships to other procedures: Đã có tài khoản và đăng nhập trên hệ thống    | 
+| **Test Log**       | 	
+| **Date:** | **Initials:**     | **Test item:** |  **Ok/ Not Ok** |
+| <br> |      |  |   |
+|**Comments:**  |
+|**Procedure:** |
+|**Step no. Test case** |**Activities** |**Examination of result** | **Actual results** |**OK** |
 |1 |Tạo yêu cầu vận chuyển: không cung cấp về thời gian, địa điểm |Kiểm tra thông báo gợi ý hộp thoại có biểu tượng * - thông tin chưa đầy đủ nhưng vẫn cho phép tạo giao dịch và thông báo tạo thành công|hộp thoại hiển thị biểu tượng * - thông tin chưa đầy đủ nhưng vẫn cho phép tạo giao dịch và thông báo tạo thành công |OK |
 |2 |Tạo yêu cầu vận chuyển: cung cấp các thông tin đầy đủ về thời gian địa điểm và đảm bảo tính hợp pháp |Kiểm tra thông báo:“Tạo yêu cầu giao dịch thành thông”| Hiển thị:“ Tạo yêu cầu giao dịch thành thông”|OK |
 |3 |Thay đổi thời gian và địa điểm của yêu cầu khi chưa có người nhận yêu cầu |Kiểm tra thông tin: các thông tin hiển thị được cập nhật |các thông tin hiển thị được cập nhật|OK |
