@@ -8,3 +8,12 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | Software     | Ready      |  Phần mềm đã được lập trình hoàn thành các chức năng như thiết kế: Đăng ký, đăng nhập/xuất, đặt dịch vụ vận chuyển, thay đổi yêu cầu vận chuyển, Xác nhận đơn hàng, tìm kiếm đơn hàng, hủy đơn hàng thanh toán và đánh giá thành viên.|
 | Tools | Ready      | XCTest, UI Automation/ Automator,MonkeyRuner |
 | Security | Ready      | Quản lý an ninh bảo mật sẽ được tiến hành mỗi khi việc chuyển đổi dữ liệu được hoàn tất. |
+
+# Annex P: Actual Results
+| Test Procedure ID        |Objective and Priority         | Estimated Duration:  |
+| ------------- |:-------------:| -----:|
+| 1-3     | Mục đích kiểm thử việc đăng ký tài khoản trên hệ thống |  |
+|      |     |   |
+| Relationships to other procedures:       | 
+| Test Log       | 	
+| zebra stripes | are neat      |    $1 |
