@@ -17,7 +17,7 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | Relationships to other procedures:       | 
 | Test Log       | 	
 | Date: | Initials:     | Test item: |  Ok/ Not Ok |
-|  |      |  |   |
+| <br> |      |  |   |
 |Comments:  |
 |Procedure:  |
 |Step no. Test case |Activities |Examination of result | Actual results |OK |
@@ -33,7 +33,7 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | Relationships to other procedures: Đăng ký thành công| 
 | Test Log       | 	
 | Date: | Initials:     | Test item: |  Ok/ Not Ok |
-|  |      |  |   |
+| <br> |      |  |   |
 |Comments:  |
 |Procedure:  |
 |Step no. Test case |Activities |Examination of result | Actual results |OK |
@@ -49,7 +49,7 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | Relationships to other procedures: Đã có tài khoản và đăng nhập trên hệ thống| 
 | Test Log       | 	
 | Date: | Initials:     | Test item: |  Ok/ Not Ok |
-|  |      |  |   |
+|  <br>|      |  |   |
 |Comments:  |
 |Procedure:  |
 |Step no. Test case |Activities |Examination of result | Actual results |OK |
