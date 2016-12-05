@@ -14,7 +14,7 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | ------------- |:-------------:| -----:|
 | **1-3**     | **Mục đích kiểm thử việc đăng ký tài khoản trên hệ thống** |  |
 |  <br>    |     |   |
-|** Relationships to other procedures:**       | 
+|**Relationships to other procedures:**       | 
 | **Test Log**       | 	
 | **Date:** | **Initials:**     | **Test item:** |  **Ok/ Not Ok** |
 | <br> |      |  |   |
@@ -30,7 +30,7 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | ------------- |:-------------:| -----:|
 | **1-3**     | **Mục đích kiểm thử việc đăng nhập/ đăng xuất tài khoản trên hệ thống** |  |
 |  <br>    |     |   |
-|**Relationships to other procedures: Đăng ký thành công **    | 
+|**Relationships to other procedures: Đăng ký thành công**    | 
 | **Test Log**       | 	
 | **Date:** | **Initials:**     | **Test item:** |  **Ok/ Not Ok** |
 | <br> |      |  |   |
