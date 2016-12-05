@@ -10,10 +10,10 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 | Security | Ready      | Quản lý an ninh bảo mật sẽ được tiến hành mỗi khi việc chuyển đổi dữ liệu được hoàn tất. |
 
 # Annex P: Actual Results
-| Test Procedure ID        |Objective and Priority         | Estimated Duration:  |
+| Test Procedure ID        |Objective and Priority         | Estimated Duration |
 | ------------- |:-------------:| -----:|
 | 1-3     | Mục đích kiểm thử việc đăng ký tài khoản trên hệ thống |  |
-|      |     |   |
+|  <br>    |     |   |
 | Relationships to other procedures:       | 
 | Test Log       | 	
 | Date: | Initials:     | Test item: |  Ok/ Not Ok |
@@ -26,10 +26,10 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 |3 |Đăng ký băng email chưa được tạo tài khoản nhưng mật khẩu ngắn hơn 8 ký tự |Kiểm tra thông báo: “mật khẩu ngắn hơn 8 ký tự” |Hiển thị “mật khẩu ngắn hơn 8 ký tự” |OK |
 |4 |Đăng ký bằng emai chưa được tạo tài khoản và mật khẩu 8 (hoặc nhiều hơn 8) ký tự  |Kiểm tra thông báo: “Đăng ký thành công” | hiển thị thông báo : “Đăng ký thành công”|OK|
 
-| Test Procedure ID        |Objective and Priority         | Estimated Duration:  |
+| Test Procedure ID        |Objective and Priority         | Estimated Duration  |
 | ------------- |:-------------:| -----:|
 | 1-3     |Mục đích kiểm thử việc đăng nhập/ đăng xuất tài khoản trên hệ thống|  |
-|      |     |   |
+|  <br>    |     |   |
 | Relationships to other procedures: Đăng ký thành công| 
 | Test Log       | 	
 | Date: | Initials:     | Test item: |  Ok/ Not Ok |
@@ -42,10 +42,10 @@ Cấu hình phần cứng và phần mềm kiểm thử đã được chuẩn b�
 |3 |Đăng ký băng email và mật khẩu chính xác |Trang Home được hiển thị |Hiển thị trang Home|OK |
 |4 |Đăng xuất khỏi hệ thống (Click vào nút Đăng xuất trên màn hình)  |Màn hình đăng nhập xuất hiện | hiển thị thông báo : “Đăng ký thành công”|OK|
 
-| Test Procedure ID        |Objective and Priority         | Estimated Duration:  |
+| Test Procedure ID        |Objective and Priority         | Estimated Duration |
 | ------------- |:-------------:| -----:|
 | 1-3     |Mục đích kiểm thử việc tạo và quản lý đơn hàng vận chuyển trong hệ thống|  |
-|      |     |   |
+|   <br>   |     |   |
 | Relationships to other procedures: Đã có tài khoản và đăng nhập trên hệ thống| 
 | Test Log       | 	
 | Date: | Initials:     | Test item: |  Ok/ Not Ok |
