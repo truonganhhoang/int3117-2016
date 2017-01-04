@@ -1,4 +1,4 @@
-﻿
+
 ## Tiến lên kiểu Miền Nam
 ### Ở trong project này chỉ đặc tả một số thành phần:
  * Bộ bài: Pack
@@ -92,3 +92,4 @@ Lý do: nếu sử dụng phương pháp BVT thì quá dài dòng, và nhiều t
 Đồ thị chương trình:
 
 ![Program Graph](https://github.com/dungntm58/int3117-2016/blob/master/NguyenTrongMinhDung/BT2/program_graph.png)
+

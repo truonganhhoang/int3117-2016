@@ -11,7 +11,7 @@ public class CommonCardTest {
 	
 	@Before
 	public void setUp(){
-		card1 = new CommonCard(3, CommonCard.Suit.spades, 1);
+		card1 = new CommonCard(3, CommonCard.Suit.Spades, 1);
 		card2 = Pack.getCardAt(5);
 	}
 	
