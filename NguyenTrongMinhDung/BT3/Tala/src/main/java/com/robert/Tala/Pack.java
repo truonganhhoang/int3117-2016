@@ -11,11 +11,11 @@ public class Pack {
 	private static ArrayList<CommonCard> cards;
 	
 	private Pack(){
-		cards = new ArrayList<CommonCard>();
+		cards = new ArrayList();
 		
-		int cardNumber[] = new int[52];
-		int level[] = new int[52];
-		Suit suit[] = new Suit[52];
+		int[] cardNumber = new int[52];
+		int[] level = new int[52];
+		Suit[] suit = new Suit[52];
 		for (int i = 0; i < numberOfCards; i++){
 			if (i>=4){
 				level[i] = i-3;
@@ -43,13 +43,6 @@ public class Pack {
 	
 	public static CommonCard getCardAt(int index){
 		return cards.get(index);
-	}
-	
-	public static void printConsole(){
-		int i = 0;
-		for (CommonCard card : cards){
-			System.out.println((i++)+ " " + card.toString() + " " + card.getLevel());
-		}
 	}
 	
 	public static CommonCard getFirst(){

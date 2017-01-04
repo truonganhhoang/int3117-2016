@@ -26,7 +26,7 @@ public class TableCardsTest {
 		tableCards1.addCard(Pack.getCardAt(6));
 		assertEquals("3 Ro", tableCards1.getCardAt(3).toString());
 		
-		assertEquals(tableCards1.typeOfLegalCards(), Type.kxd);
+		assertEquals(tableCards1.typeOfLegalCards(), Type.Undefined);
 	}
 	
 	@Test
@@ -188,7 +188,7 @@ public class TableCardsTest {
 		tableCards1.addCard(Pack.getCardAt(11));
 		
 		tableCards2.addCard(Pack.getCardAt(3));
-		assertEquals(Type.tu_quy, tableCards1.typeOfLegalCards());
+		assertEquals(Type.Quadra, tableCards1.typeOfLegalCards());
 		assertTrue(tableCards1.isStrongerThan(emptyTableCards));
 		assertTrue(tableCards2.isStrongerThan(emptyTableCards));
 		

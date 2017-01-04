@@ -11,7 +11,7 @@ public class CommonCardTest {
 	
 	@Before
 	public void setUp(){
-		card1 = new CommonCard(3, CommonCard.Suit.spades, 1);
+		card1 = new CommonCard(3, CommonCard.Suit.Spades, 1);
 		card2 = Pack.getCardAt(5);
 	}
 	
@@ -19,26 +19,6 @@ public class CommonCardTest {
 	public void testToString(){
 		assertEquals("3 Bich", card1.toString());
 	}
-	
-	/*
-	@Test
-	public void testInit() {
-		try {
-			CommonCard card = new CommonCard("2 Bich");
-			assertEquals(2, card.getCardNumber());
-			assertEquals(Suit.spades, card.getSuit());
-			
-			card = new CommonCard("A Bich");
-			assertEquals(14, card.getCardNumber());
-			assertEquals(Suit.spades, card.getSuit());
-			
-			card = new CommonCard("A Co");
-			assertEquals(14, card.getCardNumber());
-			assertEquals(Suit.hearts, card.getSuit());
-		}
-		catch(Exception e) {}
-	}
-	*/
 	
 	@Test
 	public void testCardEquivalentFalse() {
